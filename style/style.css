@@ -1,7 +1,7 @@
 @font-face {
     font-family: SamsungSharpSans;
-    src: url(fonts/SamsungSharpSans-Bold.ttf) format("truetype");
+    src: url(../fonts/samsung_sharp_sans.ttf) format("truetype");
 }
-html { 
-    font-family: "SamsungSharpSans";
+* { 
+    font-family: "SamsungSharpSans", serif;
 }
