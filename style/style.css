@@ -1,0 +1,7 @@
+@font-face {
+    font-family: SamsungSharpSans;
+    src: url(fonts/SamsungSharpSans-Bold.ttf);
+}
+* { 
+    font-family: "SamsungSharpSans";
+}
