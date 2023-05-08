@@ -4,6 +4,8 @@
 
     <head>
         <link rel="stylesheet" href="/Pluers.github.io/style/style.css">
+        <!-- Get icons -->
+        <script src="/Pluers.github.io/scripts.js"></script>
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/wazybr/fluentui-system-icons-font/webfonts/css/fluent-icons-filled-20.css">
         <link rel="stylesheet"
