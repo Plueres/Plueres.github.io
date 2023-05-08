@@ -1,7 +1,279 @@
-@font-face {
-    font-family: SamsungSharpSans;
-    src: url(../fonts/samsung_sharp_sans.ttf) format("truetype");
+/* VARIABLES */
+:root {
+    --navbar-padding: 1rem;
+    --border-spacing: 11px;
+    --border-radius: 6px;
+    --navbar-height: 14px;
+    --navbar-main-color: #e4e4e4;
+    --navbar-admin-color: #c4f3ff;
+    --button-transition: filter ease-in-out 0.2s;
+    --button-filter-brightness: brightness(0.9);
 }
-* { 
-    font-family: "SamsungSharpSans", serif;
+
+body {
+    margin: unset;
+    padding: unset;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.create_pages {
+    background: gainsboro;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 10px;
+    text-align-last: center;
+    text-align: -webkit-center;
+}
+
+/* MAIN NAV BAR */
+ul {
+    list-style-type: none;
+    margin: unset;
+    overflow: hidden;
+    padding: var(--navbar-padding);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+ul.main_panel {
+    background: linear-gradient(90deg, var(--navbar-main-color), var(--navbar-admin-color), var(--navbar-admin-color));
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: var(--navbar-height) 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li,
+li a,
+div,
+section {
+    border-radius: var(--border-radius);
+}
+
+/* TABLE */
+table {
+    border: solid gray 3px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    border-spacing: 0;
+}
+
+thead.table_eventname_header {
+    background: gray;
+    color: white;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    display: table-caption;
+}
+
+.table_eventname_header th {
+    padding: 5px;
+
+}
+
+th:not(.table_eventname_header th) {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+td,
+th:not(.table_eventname_header th) {
+    border: solid gray 1px;
+    padding: 10px;
+}
+
+/* BUTTONS */
+button {
+    padding: 5px 10px;
+    margin: 10px;
+    border: none;
+    background: gray;
+    border-radius: var(--border-radius);
+    color: white;
+    font-weight: bold;
+    transition: var(--button-transition);
+    cursor: pointer;
+}
+
+button:disabled {
+    padding: 5px 10px;
+    margin: 10px;
+    border: none;
+    background: darkgray;
+    border-radius: var(--border-radius);
+    color: white;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+.create_pages > button {
+    text-align: center;
+}
+
+button:hover,
+.calendar:hover {
+    filter: var(--button-filter-brightness);
+    transition: var(--button-transition);
+}
+
+.calendar {
+    background-color: grey;
+    color: #fff;
+    transition: var(--button-transition);
+}
+
+/* INPUT */
+
+.create_pages input,
+.create_pages select {
+    width: 75%;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    margin: 3px;
+}
+
+/* ADMIN */
+
+.admin_panel {
+    border-radius: var(--border-radius);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.admin_panel li {
+    margin: 0 5px;
+}
+
+.admin_panel li,
+.admin_panel li a {
+    transition: var(--button-transition);
+}
+
+.admin_panel li:hover,
+.admin_panel li a:hover {
+    filter: var(--button-filter-brightness);
+    transition: var(--button-transition);
+}
+
+.link_event_band,
+.link_event_band a {
+    background-color: #a6affe;
+    color: #000b67;
+}
+
+.create_event,
+.create_event a {
+    background-color: #feeca6;
+    color: #777700;
+}
+
+.create_band,
+.create_band a {
+    background-color: #a6fea6;
+    color: #047e00;
+}
+
+.login,
+.login a {
+    background-color: #ff8b8b;
+    color: #7a0000;
+}
+
+.account,
+.account a {
+    background-color: #ff98ee;
+    color: #7a0074;
+}
+
+/* ICONS */
+.fluent-icons-filled-20,
+.fluent-icons-regular-20,
+.fluent-icons-20 {
+    vertical-align: bottom;
+}
+
+.create_pages .fluent-icons-filled-20,
+.create_pages.fluent-icons-regular-20,
+.create_pages.fluent-icons-20 {
+    vertical-align: middle;
+}
+
+.fluent-icons-filled-20 {
+    font-family: "FluentIcons Filled 20";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: 'liga';
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+}
+
+/* TOOLTIPS */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* ERRORS */
+p.errors {
+    color: red;
+    width: fit-content;
+    display: block;
+    padding: 5px 0;
+    margin: 0;
+    border-radius: var(--border-radius);
+}
+
+/* PHONE SIZE */
+@media only screen and (max-width: 810px) {
+
+    .calendar span,
+    .login span,
+    .account span,
+    .create_band span,
+    .create_event span,
+    .link_event_band span {
+        display: none;
+    }
 }
