@@ -1,5 +1,5 @@
 ---
 layout: page
-title: more information
+title: More Information
 permalink: /more-info
 ---

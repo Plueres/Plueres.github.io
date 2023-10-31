@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: mail@mail.com
+title: Thers
+email: ""
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -27,8 +27,14 @@ description: >- # this means to ignore newlines until "baseurl:"
 domain: Plueres.github.io # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:title/ # the default permalinks for posts and pages (optional)
 twitter_username: _Rickname_
 github_username:  Plueres
+
+collections:
+  mcarticles:
+    output: true
+    permalink: /:collection/:title/
 
 # Build settings
 theme: minima

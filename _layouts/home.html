@@ -28,7 +28,17 @@ layout: default
         {%- endfor -%}
     </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml" | relative_url }}">via RSS</a></p>
+    <p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></p>
     {%- endif -%}
+
+    <ul>
+        {% for article in site.articles %}
+        <li>
+            <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+            <p>{{ article.excerpt }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
 
 </div>
