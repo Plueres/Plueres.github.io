@@ -40,5 +40,23 @@ layout: default
         {% endfor %}
     </ul>
 
+    <ul>
+        {% for minecraft in site.minecraft %}
+        <li>
+            <h2><a href="{{ minecraft.url }}">{{ minecraft.title }}</a></h2>
+            <p>{{ minecraft.excerpt }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <ul>
+        {% for blogpost in site.blogposts %}
+        <li>
+            <h2><a href="{{ blogpost.url }}">{{ blogpost.title }}</a></h2>
+            <p>{{ blogpost.excerpt }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
 
 </div>

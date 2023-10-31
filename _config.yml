@@ -32,7 +32,13 @@ twitter_username: _Rickname_
 github_username:  Plueres
 
 collections:
-  mcarticles:
+  articles:
+    output: true
+    permalink: /:collection/:title/
+  minecraft:
+    output: true
+    permalink: /:collection/:title/
+  blogposts:
     output: true
     permalink: /:collection/:title/
 
