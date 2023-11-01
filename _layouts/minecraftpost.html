@@ -34,18 +34,26 @@ layout: default
     <ul>
         {% for version in pack.versions %}
         <li>
-            <h2>{{ version.number }}</h2>
+            <h2><b>{{ version.number }}</b>
+                <a href="{{site.files}}{{pack.filename}}_{{ version.number }}.zip" download>
+                    zip
+                    <span class="material-symbols-rounded">
+                        download
+                    </span>
+                </a>
+                <a href="{{site.files}}{{pack.filename}}_{{ version.number }}.mcpack" download>
+                    mcpack
+                    <span class="material-symbols-rounded">
+                        download
+                    </span>
+                </a>
+            </h2>
             {% assign changelog = site.data.changelogs[pack.filename] %}
             {% for change in changelog[version.number] %}
             <p>{{ change }}</p>
 
             {% endfor %}
-            <a href="{{site.files}}{{pack.filename}}_{{ version.number }}.zip" download>
-                zip
-            </a>
-            <a href="{{site.files}}{{pack.filename}}_{{ version.number }}.mcpack" download>
-                mcpack
-            </a>
+
         </li>
         {% endfor %}
     </ul>
