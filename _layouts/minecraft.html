@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+
+<div class="minecraft">
+    {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+    {%- endif -%}
+
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+        {% for minecraft in site.minecraft %}
+        <li>
+            <h2><a href="{{ minecraft.url }}">{{ minecraft.title }}</a></h2>
+            <p>{{ minecraft.excerpt }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></p>
+
+</div>

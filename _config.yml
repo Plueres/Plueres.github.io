@@ -28,6 +28,7 @@ domain: Plueres.github.io # if you want to force HTTPS, specify the domain witho
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:title/ # the default permalinks for posts and pages (optional)
+files: /files/ # location of the files folder that the user can download
 twitter_username: _Rickname_
 github_username:  Plueres
 
@@ -41,7 +42,9 @@ collections:
   blogposts:
     output: true
     permalink: /:collection/:title/
-
+  changelogs:
+    output: false
+    
 # Build settings
 theme: minima
 plugins:
