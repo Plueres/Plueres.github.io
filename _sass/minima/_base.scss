@@ -35,9 +35,10 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal;
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   flex-direction: column;
 }
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -62,7 +63,16 @@ figure,
  * `main` element
  */
 main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 1s ease;
+}
+
+main .content-wrapper {
+  justify-content: center;
+  /* position: relative; */
+  width: 100%;
 }
 
 /**
@@ -181,7 +191,7 @@ pre {
 /**
  * Wrapper
  */
-wrapper {
+.content-wrapper {
   max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
