@@ -73,30 +73,31 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   min-width: 100vw;
   transition: all 0.5s ease;
 }
 #lists {
   transform: translateX(-100vw);
 }
+#lists .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+#lists #movieslist {
+  background-color: black;
+}
+#lists #showslist {
+  background-color: gray;
+}
+#lists #gameslist {
+  background-color: white;
+}
 #about {
   transform: translateY(100vh);
 }
-#about .wrapper {
-  margin: 5% 10% 0 10%;
-}
 #blogs {
   transform: translateX(100vw);
-}
-
-#lists-button,
-#blogs-button,
-#lists-back-button,
-#blogs-back-button,
-#about-button,
-#about-back-button {
 }
 
 #lists-button,
@@ -127,17 +128,10 @@ main {
   width: 100vw;
   height: 5%;
 }
-#about-button {
-  bottom: 0;
-}
-#about-back-button {
-  top: 0;
-}
 .wrapper {
   text-align: center;
-  align-self: center;
   width: 100%;
-  margin: 0 10% 5% 10%;
+  margin: 0 10%;
 }
 
 button {
@@ -312,24 +306,20 @@ pre {
  */
 table {
   margin-bottom: $spacing-unit;
-  width: 100%;
-  text-align: $table-text-align;
-  color: lighten($text-color, 18%);
+  width: fit-content;
+  // text-align: $table-text-align;
+  // color: lighten($text-color, 18%);
   border-collapse: collapse;
-  border: 1px solid $grey-color-light;
+  // border: 1px solid $grey-color-light;
   tr {
     &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
     }
   }
   th,
   td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+    padding: ($spacing-unit / 2);
   }
   th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
   }
   td {
     border: 1px solid $grey-color-light;
