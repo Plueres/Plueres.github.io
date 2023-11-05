@@ -35,8 +35,8 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal;
   display: flex;
-  height: 100vh;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 /**
@@ -64,15 +64,88 @@ figure,
  */
 main {
   display: flex;
-  align-items: center;
-  overflow: hidden;
-  transition: transform 1s ease;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  width: 300vw;
 }
 
-main .content-wrapper {
-  justify-content: center;
-  /* position: relative; */
+.content-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  min-width: 100vw;
+  transition: all 0.5s ease;
+}
+#lists {
+  transform: translateX(-100vw);
+}
+#about {
+  transform: translateY(100vh);
+}
+#about .wrapper {
+  margin: 5% 10% 0 10%;
+}
+#blogs {
+  transform: translateX(100vw);
+}
+
+#lists-button,
+#blogs-button,
+#lists-back-button,
+#blogs-back-button,
+#about-button,
+#about-back-button {
+}
+
+#lists-button,
+#blogs-button,
+#lists-back-button,
+#blogs-back-button {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 10%;
+}
+#lists-button {
+  left: 0;
+}
+#lists-back-button {
+  right: 0;
+}
+#blogs-button {
+  right: 0;
+}
+#blogs-back-button {
+  left: 0;
+}
+#about-button,
+#about-back-button {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 5%;
+}
+#about-button {
+  bottom: 0;
+}
+#about-back-button {
+  top: 0;
+}
+.wrapper {
+  text-align: center;
+  align-self: center;
   width: 100%;
+  margin: 0 10% 5% 10%;
+}
+
+button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: large;
+  cursor: pointer;
 }
 
 /**

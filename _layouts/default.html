@@ -5,33 +5,176 @@
 
     <body>
 
-        <main id="main">
-            <div id="about" class="content-wrapper" style="transform: translateX(100vw);">
+        <main>
+            <div id="lists" class="content-wrapper">
+                {% include lists.html -%}
+            </div>
+            <div id="about" class="content-wrapper">
                 {% include about.html -%}
             </div>
             <div id="home" class="content-wrapper">
                 {% include home.html -%}
             </div>
-            <div id="blogs" class="content-wrapper" style="transform: translateX(-100vw);">
+            <div id="blogs" class="content-wrapper">
                 {% include blogs.html -%}
             </div>
         </main>
 
         <script>
+            window.onload = function () {
+                var home = document.getElementById('home');
+                var lists = document.getElementById('lists');
+                var about = document.getElementById('about');
+                var blogs = document.getElementById('blogs');
+
+                // Temporarily remove transition
+                home.style.transition = 'none';
+                lists.style.transition = 'none';
+                about.style.transition = 'none';
+                blogs.style.transition = 'none';
+
+                switch (window.location.pathname) {
+                    case '/lists':
+                        home.style.transform = 'translateX(100vw)';
+                        lists.style.transform = 'translateX(0)';
+                        break;
+                    case '/about':
+                        home.style.transform = 'translateY(-100vh)';
+                        about.style.transform = 'translateY(0)';
+                        break;
+                    case '/blogs':
+                        home.style.transform = 'translateX(-100vw)';
+                        blogs.style.transform = 'translateX(0)';
+                        break;
+                    default:
+                        // No path or unrecognized path, show home page
+                        home.style.transform = 'translateX(0)';
+                        lists.style.transform = 'translateX(-100vw)';
+                        about.style.transform = 'translateY(100vh)';
+                        blogs.style.transform = 'translateX(100vw)';
+                        break;
+                }
+
+                // Re-add transition after a short delay
+                setTimeout(function () {
+                    home.style.transition = '';
+                    lists.style.transition = '';
+                    about.style.transition = '';
+                    blogs.style.transition = '';
+                }, 1); // Adjust delay as needed
+            }
+            document.getElementById('lists-button').addEventListener('click', function () {
+                document.getElementById('home').style.transform = 'translateX(100vw)';
+                document.getElementById('lists').style.transform = 'translateX(0)';
+                history.pushState(null, null, 'lists');
+            });
+
             document.getElementById('about-button').addEventListener('click', function () {
-                document.getElementById('main').style.transform = 'translateX(-100vw)';
+                document.getElementById('home').style.transform = 'translateY(-100vh)';
+                document.getElementById('about').style.transform = 'translateY(0)';
+                history.pushState(null, null, 'about');
             });
 
             document.getElementById('blogs-button').addEventListener('click', function () {
-                document.getElementById('main').style.transform = 'translateX(100vw)';
-            });
-
-
-            document.getElementById('aboutback--button').addEventListener('click', function () {
                 document.getElementById('home').style.transform = 'translateX(-100vw)';
-                document.getElementById('about').style.transform = 'translateX(0)';
-                document.getElementById('blogs').style.transform = 'translateX(-100vw)';
+                document.getElementById('blogs').style.transform = 'translateX(0)';
+                history.pushState(null, null, 'blogs');
             });
+
+            document.getElementById('lists-back-button').addEventListener('click', function () {
+                document.getElementById('home').style.transform = 'translateX(0)';
+                document.getElementById('lists').style.transform = 'translateX(-100vw)';
+                history.pushState(null, null, '/');
+            });
+
+            document.getElementById('about-back-button').addEventListener('click', function () {
+                document.getElementById('home').style.transform = 'translateY(0)';
+                document.getElementById('about').style.transform = 'translateY(100vh)';
+                history.pushState(null, null, '/');
+            });
+
+            document.getElementById('blogs-back-button').addEventListener('click', function () {
+                document.getElementById('home').style.transform = 'translateX(0)';
+                document.getElementById('blogs').style.transform = 'translateX(100vw)';
+                history.pushState(null, null, '/');
+            });
+            document.addEventListener('mousemove', function (event) {
+                var buttons = document.getElementsByTagName('button');
+                var windowWidth = window.innerWidth;
+                for (var i = 0; i < buttons.length; i++) {
+                    var rect = buttons[i].getBoundingClientRect();
+                    var buttonCenterX = rect.left + rect.width / 2;
+                    var buttonSide = buttonCenterX > windowWidth / 2 ? 'left' : 'right';
+                    var color = buttonSide === 'left' ? 'rgba(0, 0, 255, 0.5)' : 'rgba(255, 165, 0, 0.5)'; // 50% opacity
+                    var dist = buttonSide === 'left' ? windowWidth - event.clientX : event.clientX;
+                    var maxDist = windowWidth / 2; // Adjust distance as needed
+                    var gradientIntensity = 1 - dist / maxDist;
+                    buttons[i].style.background = `linear-gradient(to ${buttonSide}, ${color}, transparent ${gradientIntensity * 100}%)`;
+                    buttons[i].style.opacity = gradientIntensity;
+                }
+            });
+            var lastX, lastY;
+            var mouseMoved = false;
+
+            function createParticle(x, y) {
+                var size = Math.random() * 50 + 50;
+                var particle = document.createElement('div');
+                particle.style.position = 'absolute';
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                particle.style.background = 'radial-gradient(circle, purple, transparent)';
+                particle.style.borderRadius = '50%';
+                particle.style.pointerEvents = 'none';
+                particle.style.left = x - size / 2 + 'px';
+                particle.style.top = y - size / 2 + 'px';
+                particle.style.zIndex = '-1';
+                particle.style.filter = 'blur(10px)';
+
+                var animationName = 'fadeOut' + Date.now();
+                var keyframes = '@keyframes ' + animationName + ' { to { transform: scale(0); opacity: 0; } }';
+                var style = document.createElement('style');
+                style.textContent = keyframes;
+                document.head.appendChild(style);
+                particle.style.animation = animationName + ' 2s ease-out forwards';
+
+                document.body.appendChild(particle);
+
+                setTimeout(function () {
+                    document.body.removeChild(particle);
+                    document.head.removeChild(style);
+                }, 2000);
+            }
+
+            function updateParticles() {
+                if (mouseMoved) {
+                    var dx = lastX - prevX;
+                    var dy = lastY - prevY;
+                    var d = Math.sqrt(dx * dx + dy * dy);
+                    var steps = Math.ceil(d / 20);
+                    for (var j = 0; j < steps; j++) {
+                        var x = prevX + dx * j / steps;
+                        var y = prevY + dy * j / steps;
+                        createParticle(x, y);
+                    }
+                    prevX = lastX;
+                    prevY = lastY;
+                    mouseMoved = false;
+                }
+                requestAnimationFrame(updateParticles);
+            }
+
+            var prevX, prevY;
+            document.addEventListener('mousemove', function (event) {
+                lastX = event.clientX;
+                lastY = event.clientY;
+                if (prevX === undefined) {
+                    prevX = lastX;
+                    prevY = lastY;
+                }
+                mouseMoved = true;
+            });
+
+            updateParticles();
         </script>
 
     </body>
