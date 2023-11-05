@@ -11,8 +11,17 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit: 30px !default;
 
-$text-color: #ddd !default;
-$background-color: #191919 !default;
+$border-radius: 6px !default;
+
+$text-color: #ebe2db !default;
+$text-color-dark: #9a928d !default;
+$background-color: #161514 !default;
+$primary-color: #ff8400 !default;
+$primary-color-dim: #854500 !default;
+$secondary-color: #303030 !default;
+$accent-color: #004085 !default;
+$accent-color-dim: #002145 !default;
+
 $brand-color: #2a7ae2 !default;
 
 $grey-color: #828282 !default;
@@ -45,4 +54,4 @@ $on-laptop: 800px !default;
 }
 
 // Import partials.
-@import "minima/base", "minima/default", "minima/syntax-highlighting";
+@import "plueres/header", "plueres/homepage", "plueres/blogspage";

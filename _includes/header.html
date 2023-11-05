@@ -1,13 +1,12 @@
 <header class="site-header" role="banner">
-
-    <wrapper>
+    <div class="header-wrapper">
         {%- assign default_paths = site.pages | map: "path" -%}
         {%- assign page_paths = site.header_pages | default: default_paths -%}
-
-        {%- if page_paths -%}
-        <nav class="site-nav">
-
+        <nav>
+            <a href="javascript:history.back()"><span class="material-symbols-rounded">
+                    arrow_back
+                </span>
+            </a>
         </nav>
-        {%- endif -%}
-    </wrapper>
+    </div>
 </header>

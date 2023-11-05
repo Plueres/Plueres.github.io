@@ -2,29 +2,6 @@
 layout: pages
 ---
 
-<style>
-yes:before { 
-	background: rgba(0, 140, 40, 0.5); 
-	padding: 5px 12px; 
-	color: white; 
-	border-radius: 15px; 
-	content: "Yes";
-}
-no:before { 
-	background: rgba(200, 0, 0, 0.5); 
-	padding: 5px 12px; 
-	color: white; 
-	border-radius: 15px; 
-	content: "No";
-}	
-tag { 
-	background: rgba(0, 0, 0, 0.1); 
-	padding: 4px 8px; 
-	border-radius: 6px; 
-}	
-</style>
-
-
 | Name of movie | Genre | Description | Has seen movie | Rating | Elabration |
 | --- | --- | --- | --- | --- | --- |
 | El Camino | | Breaking Bad spinoff | <yes> | ⭐⭐⭐⭐⭐ | |

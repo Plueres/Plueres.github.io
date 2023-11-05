@@ -22,6 +22,11 @@
 
         <script>
             window.onload = function () {
+
+                // Add a global flag for whether scrolling is allowed
+                var allowScroll = true;
+                var mouseX = 0;
+
                 var home = document.getElementById('home');
                 var lists = document.getElementById('lists');
                 var about = document.getElementById('about');
@@ -37,14 +42,17 @@
                     case '/lists':
                         home.style.transform = 'translateX(100vw)';
                         lists.style.transform = 'translateX(0)';
+                        allowScroll = false;
                         break;
                     case '/about':
                         home.style.transform = 'translateY(-100vh)';
                         about.style.transform = 'translateY(0)';
+                        allowScroll = true;
                         break;
                     case '/blogs':
                         home.style.transform = 'translateX(-100vw)';
                         blogs.style.transform = 'translateX(0)';
+                        allowScroll = false;
                         break;
                     default:
                         // No path or unrecognized path, show home page
@@ -52,6 +60,7 @@
                         lists.style.transform = 'translateX(-100vw)';
                         about.style.transform = 'translateY(100vh)';
                         blogs.style.transform = 'translateX(100vw)';
+                        allowScroll = true;
                         break;
                 }
 
@@ -62,10 +71,6 @@
                     about.style.transition = '';
                     blogs.style.transition = '';
                 }, 1); // Adjust delay as needed
-
-                // Add a global flag for whether scrolling is allowed
-                var allowScroll = true;
-                var mouseX = 0;
 
                 function updateButtonGradients() {
                     var buttons = document.getElementsByTagName('button');
@@ -124,7 +129,7 @@
 
                 window.addEventListener('wheel', function (event) {
                     if (!allowScroll) {
-                        // If scrolling is not allowed, do nothing
+                        // If scrolling is not allowed or if the user is on the 'blogs' page, do nothing
                         return;
                     }
 
@@ -148,6 +153,9 @@
                     } else {
                         history.pushState(null, null, '/');
                     }
+                });
+                window.addEventListener('popstate', function () {
+                    allowScroll = true; // Enable scrolling
                 });
             }
 
