@@ -77,21 +77,29 @@ main {
   min-width: 100vw;
   transition: all 0.5s ease;
 }
+#home .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
 #lists {
   transform: translateX(-100vw);
 }
 #lists .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: dense;
 }
 #lists #movieslist {
-  background-color: black;
+  background-image: linear-gradient(to bottom right, #ff0000, #ff00ff);
 }
 #lists #showslist {
-  background-color: gray;
+  background-image: linear-gradient(to bottom right, #2600ff, #00ffff);
 }
 #lists #gameslist {
-  background-color: white;
+  background-image: linear-gradient(to bottom right, #2bff00, #ffbf00);
 }
 #about {
   transform: translateY(100vh);
@@ -306,7 +314,7 @@ pre {
  */
 table {
   margin-bottom: $spacing-unit;
-  width: fit-content;
+  width: 100vw;
   // text-align: $table-text-align;
   // color: lighten($text-color, 18%);
   border-collapse: collapse;
