@@ -156,11 +156,8 @@ window.onload = function () {
         // Calculate the difference in Y coordinates
         var diffY = startY - endY;
 
-        // Define a small epsilon value
-        var epsilon = 0.1;
-
-        // If homePosition is not close enough to 0 or if scrolling upwards, prevent the default touch action
-        if (Math.abs(homePosition) > epsilon || diffY < 0) {
+        // If homePosition is not exactly 0, prevent the default touch action
+        if (homePosition !== 0) {
             event.preventDefault();
         }
 
