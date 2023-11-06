@@ -150,6 +150,14 @@ window.onload = function () {
 
     // Listen for the touchmove event
     window.addEventListener('touchmove', function (event) {
+        // Get the current URL
+        var currentURL = window.location.pathname;
+
+        // If the current URL is '/about', prevent the default touch action
+        if (currentURL === '/about') {
+            event.preventDefault();
+        }
+
         // Get the Y coordinate of the touch event
         var endY = event.touches[0].clientY;
 
