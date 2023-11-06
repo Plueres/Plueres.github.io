@@ -139,7 +139,6 @@ window.onload = function () {
 
 
     var startY;
-    var isAnimating = false;
 
     // Listen for the touchstart event
     window.addEventListener('touchstart', function (event) {
@@ -149,38 +148,34 @@ window.onload = function () {
 
     // Listen for the touchmove event
     window.addEventListener('touchmove', function (event) {
-        // If an animation is already in progress, ignore this swipe
-        if (isAnimating) {
-            return;
-        }
-
         // Get the Y coordinate of the touch event
         var endY = event.touches[0].clientY;
 
         // Calculate the difference in Y coordinates
         var diffY = startY - endY;
 
-        // If pulling down, animate the swipe
-        if (diffY < 0) {
-            // Set the animation flag
-            isAnimating = true;
-
+        // If pulling up, animate the swipe to the about page
+        if (diffY > 0 && homePosition === 0) {
             // Animate the swipe
             homePosition = -100;
             aboutPosition = 0;
 
-            // Update the transform for each section
-            home.style.transform = `translateY(${homePosition}vh)`;
-            about.style.transform = `translateY(${aboutPosition}vh)`;
-
             // Update the URL based on the current section
             history.pushState(null, null, 'about');
-
-            // Reset the animation flag after the animation duration
-            setTimeout(function () {
-                isAnimating = false;
-            }, 1000); // Adjust the timeout to match your CSS transition duration
         }
+        // If pulling down, animate the swipe to the home page
+        else if (diffY < 0 && homePosition === -100) {
+            // Animate the swipe
+            homePosition = 0;
+            aboutPosition = 100;
+
+            // Update the URL based on the current section
+            history.pushState(null, null, '/');
+        }
+
+        // Update the transform for each section
+        home.style.transform = `translateY(${homePosition}vh)`;
+        about.style.transform = `translateY(${aboutPosition}vh)`;
 
         // Update startY to the current Y position for the next move event
         startY = endY;
