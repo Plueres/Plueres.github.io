@@ -169,21 +169,24 @@ window.onload = function () {
 
         // If pulling up or down
         if (Math.abs(diffY) > Math.abs(diffX)) {
-            // If pulling up, animate the swipe to the about page
-            if (diffY > 0 && homePositionY === 0) {
-                // Animate the swipe
-                homePositionY = -100;
-                aboutPosition = 0;
-                listsPosition = -200;
-                history.pushState({}, '', '/about');
-            }
-            // If pulling down, animate the swipe to the home page
-            else if (diffY < 0 && homePositionY === -100) {
-                // Animate the swipe
-                homePositionY = 0;
-                aboutPosition = 100;
-                listsPosition = -100;
-                history.pushState({}, '', '/');
+            // Only allow swiping up or down on the homepage
+            if (homePositionX === 0) {
+                // If pulling up, animate the swipe to the about page
+                if (diffY > 0 && homePositionY === 0) {
+                    // Animate the swipe
+                    homePositionY = -100;
+                    aboutPosition = 0;
+                    listsPosition = -200;
+                    history.pushState({}, '', '/about');
+                }
+                // If pulling down, animate the swipe to the home page
+                else if (diffY < 0 && homePositionY === -100) {
+                    // Animate the swipe
+                    homePositionY = 0;
+                    aboutPosition = 100;
+                    listsPosition = -100;
+                    history.pushState({}, '', '/');
+                }
             }
         }
         // If swiping left or right
