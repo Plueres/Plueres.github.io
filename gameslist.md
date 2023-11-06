@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: lists
 permalink: list/gameslist
 ---
 | Name of game | Genre | Platform | Description | Has Played | Has Finished Story | Rating | Elabration |
