@@ -134,6 +134,56 @@ window.onload = function () {
     window.addEventListener('popstate', function () {
         allowScroll = true; // Enable scrolling
     });
+
+
+
+
+    var startY;
+
+    // Existing code...
+
+    // Listen for the touchstart event
+    window.addEventListener('touchstart', function (event) {
+        // Get the Y coordinate of the touch event
+        startY = event.touches[0].clientY;
+    }, false);
+
+    // Listen for the touchmove event
+    window.addEventListener('touchmove', function (event) {
+        // Get the Y coordinate of the touch event
+        var endY = event.touches[0].clientY;
+
+        // Calculate the difference in Y coordinates
+        var diffY = startY - endY;
+
+        // Scale the difference by a factor to control the speed of the swipe
+        var scrollAmount = diffY * 0.1; // Adjust the scaling factor as needed
+
+        // Perform the same actions as in the wheel event listener
+        if (!allowScroll) {
+            return;
+        }
+
+        // Update the positions and ensure they stay within their boundaries
+        homePosition = Math.min(Math.max(homePosition - scrollAmount, -100), 0);
+        aboutPosition = Math.min(Math.max(aboutPosition - scrollAmount, 0), 100);
+
+        // Update the transform for each section
+        home.style.transform = `translateY(${homePosition}vh)`;
+        about.style.transform = `translateY(${aboutPosition}vh)`;
+
+        // Update the URL based on the current section
+        if (homePosition <= -50) {
+            history.pushState(null, null, 'about');
+        } else {
+            history.pushState(null, null, '/');
+        }
+
+        // Update startY to the current Y position for the next move event
+        startY = endY;
+    }, { passive: false }); // Set the passive option to false to allow preventDefault
+
+    // Existing code...
 }
 
 // var lastX, lastY;
