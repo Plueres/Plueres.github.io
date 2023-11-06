@@ -1,5 +1,6 @@
 ---
 layout: pages
+permalink: list/movielist
 ---
 
 | Name of movie | Genre | Description | Has seen movie | Rating | Elabration |

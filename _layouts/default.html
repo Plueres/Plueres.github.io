@@ -6,18 +6,10 @@
     <body>
 
         <main>
-            <div id="lists" class="content-wrapper">
-                {% include listspage.html -%}
-            </div>
-            <div id="about" class="content-wrapper">
-                {% include aboutpage.html -%}
-            </div>
-            <div id="home" class="content-wrapper">
-                {% include homepage.html -%}
-            </div>
-            <div id="blogs" class="content-wrapper">
-                {% include blogspage.html -%}
-            </div>
+            {% include listspage.md -%}
+            {% include aboutpage.md -%}
+            {% include homepage.md -%}
+            {% include blogspage.md -%}
         </main>
 
         <script>
@@ -81,7 +73,7 @@
                         var buttonSide = buttonCenterX > windowWidth / 2 ? 'left' : 'right';
                         var color = buttonSide === 'left' ? 'rgba(0, 0, 255, 0.5)' : 'rgba(255, 165, 0, 0.5)'; // 50% opacity
                         var dist = buttonSide === 'left' ? windowWidth - mouseX : mouseX;
-                        var maxDist = windowWidth / 3; // Lowered distance
+                        var maxDist = windowWidth / 6; // Lowered distance
                         var gradientIntensity = 1 - dist / maxDist;
                         buttons[i].style.background = `linear-gradient(to ${buttonSide}, ${color}, transparent ${gradientIntensity * 100}%)`;
                         buttons[i].style.opacity = gradientIntensity;
@@ -221,6 +213,7 @@
             // });
 
             // updateParticles();
+
         </script>
 
     </body>
