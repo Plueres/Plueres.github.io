@@ -157,16 +157,10 @@ window.onload = function () {
 
     // Listen for the touchstart event
     window.addEventListener('touchstart', function (event) {
-        // If the touch starts at the top of the page, set a flag
-        if (event.touches[0].clientY <= 0) {
-            touchStartAtTop = true;
-        } else {
-            touchStartAtTop = false;
-        }
-
         // Get the Y and X coordinates of the touch event
         startY = event.touches[0].clientY;
         startX = event.touches[0].clientX;
+        swipeInProgress = false; // Reset the swipeInProgress flag
     }, false);
 
     // Listen for the touchmove event
@@ -174,10 +168,6 @@ window.onload = function () {
         // If a swipe is already in progress, do nothing
         if (swipeInProgress) {
             return;
-        }
-        // If a swipe is already in progress or the touch started at the top of the page, prevent default behavior
-        if (swipeInProgress || (touchStartAtTop && homePositionY === -100)) {
-            event.preventDefault();
         }
 
         // Set the swipeInProgress flag to true
@@ -261,7 +251,7 @@ window.onload = function () {
         // Update startY and startX to the current Y and X positions for the next move event
         startY = endY;
         startX = endX;
-    }, { passive: false });
+    }, false);
 }
 
 // var lastX, lastY;
