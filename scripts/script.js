@@ -9,37 +9,58 @@ window.onload = function () {
     var about = document.getElementById('about');
     var blogs = document.getElementById('blogs');
 
+
+
+    var homePosition = 0;
+    var aboutPosition = 100;
+    var scrollSpeed = 0.05;
+
+    var startY, startX;
+    var homePositionX = 0, homePositionY = 0, aboutPosition = 100, listsPosition = -100, blogsPosition = 100;
+    var swipeInProgress = false; // Add this line
+
     // Temporarily remove transition
     home.style.transition = 'none';
     lists.style.transition = 'none';
     about.style.transition = 'none';
     blogs.style.transition = 'none';
 
+    // Check the current URL path
     switch (window.location.pathname) {
         case '/lists':
-            home.style.transform = 'translateX(100vw)';
-            lists.style.transform = 'translateX(0)';
-            allowScroll = false;
+            homePositionX = 100;
+            listsPosition = 0;
+            aboutPosition = 100;
+            blogsPosition = 200;
             break;
         case '/about':
-            home.style.transform = 'translateY(-100vh)';
-            about.style.transform = 'translateY(0)';
-            allowScroll = true;
+            homePositionY = -100;
+            aboutPosition = 0;
+            listsPosition = -200;
             break;
         case '/blogs':
-            home.style.transform = 'translateX(-100vw)';
-            blogs.style.transform = 'translateX(0)';
-            allowScroll = false;
+            homePositionX = -100;
+            listsPosition = -200;
+            aboutPosition = 100;
+            blogsPosition = 0;
             break;
         default:
             // No path or unrecognized path, show home page
-            home.style.transform = 'translateX(0)';
-            lists.style.transform = 'translateX(-100vw)';
-            about.style.transform = 'translateY(100vh)';
-            blogs.style.transform = 'translateX(100vw)';
-            allowScroll = true;
+            homePositionX = 0;
+            homePositionY = 0;
+            aboutPosition = 100;
+            listsPosition = -100;
+            blogsPosition = 100;
             break;
     }
+
+    // Update the transform for each section
+    home.style.transform = `translateX(${homePositionX}vw) translateY(${homePositionY}vh)`;
+    about.style.transform = `translateY(${aboutPosition}vh)`;
+    lists.style.transform = `translateX(${listsPosition}vw)`;
+    blogs.style.transform = `translateX(${blogsPosition}vw)`;
+
+    // Existing code...
 
     // Re-add transition after a short delay
     setTimeout(function () {
@@ -100,10 +121,6 @@ window.onload = function () {
 
     updateButtonGradients();
 
-    var homePosition = 0;
-    var aboutPosition = 100;
-    var scrollSpeed = 0.05;
-
     window.addEventListener('wheel', function (event) {
         if (!allowScroll) {
             // If scrolling is not allowed or if the user is on the 'blogs' page, do nothing
@@ -137,10 +154,6 @@ window.onload = function () {
 
 
 
-
-    var startY, startX;
-    var homePositionX = 0, homePositionY = 0, aboutPosition = 100, listsPosition = -100, blogsPosition = 100;
-    var swipeInProgress = false; // Add this line
 
     // Listen for the touchstart event
     window.addEventListener('touchstart', function (event) {
@@ -191,6 +204,10 @@ window.onload = function () {
         }
         // If swiping left or right
         else {
+            // If on the about page, do not allow left or right swipes
+            if (homePositionY === -100) {
+                return;
+            }
             // If swiping left from home, animate the swipe to the lists page
             if (diffX < 0 && homePositionX === 0) {
                 homePositionX = 100;
