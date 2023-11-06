@@ -169,6 +169,11 @@ window.onload = function () {
         if (swipeInProgress) {
             return;
         }
+        // If on the about page, prevent default behavior (i.e., page reload)
+        if (homePositionY === -100) {
+            event.preventDefault();
+            return;
+        }
 
         // Set the swipeInProgress flag to true
         swipeInProgress = true;
