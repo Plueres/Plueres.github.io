@@ -150,11 +150,8 @@ window.onload = function () {
 
     // Listen for the touchmove event
     window.addEventListener('touchmove', function (event) {
-        // Get the current URL
-        var currentURL = window.location.pathname;
-
-        // If the current URL is '/about', prevent the default touch action
-        if (currentURL === '/about') {
+        // If homePosition is not 0, prevent the default touch action
+        if (homePosition !== 0) {
             event.preventDefault();
         }
 
