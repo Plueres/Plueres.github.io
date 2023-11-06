@@ -24,19 +24,19 @@ window.addEventListener('DOMContentLoaded', (event) => {
 function promptForPassword() {
     // When user logs in
     var userPassword;
-    while (true) {
+    var checkPasswordInterval = setInterval(function () {
         userPassword = prompt('Please enter the password:');
         if (userPassword === null) {
             // User clicked "Cancel"
-            window.location.href = 'javascript:history.back()';
-            break;
+            // Do nothing, the prompt will show again
         } else if (btoa(userPassword) === 'cGFzc3dvcmQ=') { // 'password' encoded in Base64
             // Save logged in status
             sessionStorage.setItem('isLoggedIn', 'true');
-            break;
+            // Stop checking the password
+            clearInterval(checkPasswordInterval);
         } else {
             alert('Incorrect password');
             // The page will not reload, but the prompt will show again
         }
-    }
+    }, 100); // Check the password every 100 milliseconds
 }
