@@ -139,6 +139,8 @@ window.onload = function () {
 
 
     var startY;
+    var isPullDown = false;
+
     // Listen for the touchstart event
     window.addEventListener('touchstart', function (event) {
         // Get the Y coordinate of the touch event
@@ -147,14 +149,16 @@ window.onload = function () {
 
     // Listen for the touchmove event
     window.addEventListener('touchmove', function (event) {
-        // Prevent the default touch action
-        event.preventDefault();
-
         // Get the Y coordinate of the touch event
         var endY = event.touches[0].clientY;
 
         // Calculate the difference in Y coordinates
         var diffY = startY - endY;
+
+        // If pulling down, set isPullDown to true
+        if (diffY < 0) {
+            isPullDown = true;
+        }
 
         // Scale the difference by a factor to control the speed of the swipe
         var scrollAmount = diffY * 0.1; // Adjust the scaling factor as needed
@@ -182,6 +186,16 @@ window.onload = function () {
         // Update startY to the current Y position for the next move event
         startY = endY;
     }, false); // Remove the { passive: false } option
+
+    // Listen for the touchend event
+    window.addEventListener('touchend', function (event) {
+        // If pulled down, prevent the default touch action
+        if (isPullDown) {
+            event.preventDefault();
+        }
+        // Reset isPullDown
+        isPullDown = false;
+    }, false);
 }
 
 // var lastX, lastY;
