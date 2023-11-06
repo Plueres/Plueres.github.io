@@ -1,0 +1,9 @@
+#personallists .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+}
+#bucketlist,
+#wishlist {
+    background-image: linear-gradient(to bottom right, #ff0000, #ff00ff);
+}

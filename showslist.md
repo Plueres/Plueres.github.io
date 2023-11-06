@@ -1,5 +1,6 @@
 ---
 layout: pages
+permalink: list/showslist
 ---
 
 | Name of show | Genre | Description | Season | Has seen all episodes | Rating | Elabration |
