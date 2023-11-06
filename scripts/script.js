@@ -181,7 +181,7 @@ window.onload = function () {
 
         // Update startY to the current Y position for the next move event
         startY = endY;
-    }, { passive: false }); // Set the passive option to false to allow preventDefault
+    }, false); // Remove the { passive: false } option
 
     // Existing code...
 }
