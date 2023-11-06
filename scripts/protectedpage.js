@@ -3,23 +3,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
     if (window.location.pathname.includes('/personal')) {
         // If the URL includes '/personal', show the password prompt
         if (sessionStorage.getItem('promptShown') !== 'true') {
-            promptForPassword();
-            sessionStorage.setItem('promptShown', 'true');
-        }
-        // If the user is logged in, show the content inside the 'personallists' element
-        if (sessionStorage.getItem('isLoggedIn') === 'true') {
-            if (document.getElementById('personallists')) {
-                document.getElementById('personallists').style.display = 'flex';
-            } else if (document.getElementById('personallist')) {
-                document.getElementById('personallist').style.display = 'block';
-            }
-        } else {
-            // If the user is not logged in, hide the content
+            // Initially hide the content
             if (document.getElementById('personallists')) {
                 document.getElementById('personallists').style.display = 'none';
             } else if (document.getElementById('personallist')) {
                 document.getElementById('personallist').style.display = 'none';
             }
+            promptForPassword();
+            sessionStorage.setItem('promptShown', 'true');
         }
     } else {
         // If the URL does not include '/personal', remove the session and the promptShown flag
