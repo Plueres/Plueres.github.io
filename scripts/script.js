@@ -256,7 +256,7 @@ window.onload = function () {
         // Update startY and startX to the current Y and X positions for the next move event
         startY = endY;
         startX = endX;
-    }, false);
+    }, { passive: false });
 }
 
 // var lastX, lastY;
