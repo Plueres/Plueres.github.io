@@ -50,6 +50,6 @@
                 <p>{{ blogpost.excerpt }}</p>
             </li>
             {% endfor %}
-        </ul>
+        </ul>-->
     </div>
 </div>

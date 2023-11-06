@@ -1,28 +1,36 @@
-window.onload = function () {
-    var modal = document.getElementById("myModal");
-    var btn = document.getElementById("submitBtn");
-    var input = document.getElementById("pwd");
+window.addEventListener('DOMContentLoaded', (event) => {
+    // Check the current URL
+    if (window.location.pathname.includes('/personal')) {
+        // If the URL includes '/personal', show the password prompt
+        if (sessionStorage.getItem('promptShown') !== 'true') {
+            promptForPassword();
+            sessionStorage.setItem('promptShown', 'true');
+        }
+    } else {
+        // If the URL does not include '/personal', remove the session and the promptShown flag
+        sessionStorage.removeItem('isLoggedIn');
+        sessionStorage.removeItem('promptShown');
+    }
+});
 
-    // Show the modal
-    modal.style.display = "block";
-
-    // When user submits the password
-    btn.onclick = function () {
-        var userPassword = input.value;
-        if (btoa(userPassword) === 'd2VibWFzdGVy') { // 'webmaster' encoded in Base64
+function promptForPassword() {
+    // When user logs in
+    var userPassword;
+    while (true) {
+        userPassword = prompt('Please enter the password:');
+        if (userPassword === null) {
+            // User clicked "Cancel"
+            window.location.href = 'javascript:history.back()';
+            break;
+        } else if (btoa(userPassword) === 'cGFzc3dvcmQ=') { // 'password' encoded in Base64
             // Save logged in status
             sessionStorage.setItem('isLoggedIn', 'true');
-            // Hide the modal
-            modal.style.display = "none";
+            // Show the content inside the 'personallists' element
+            document.getElementById('personallists').style.display = 'flex';
+            break;
         } else {
             alert('Incorrect password');
-            window.location.href = 'lockedpage';
+            // The page will not reload, but the prompt will show again
         }
-    }
-
-    // Check logged in status
-    if (sessionStorage.getItem('isLoggedIn') !== 'true') {
-        alert('You are not logged in');
-        window.location.href = 'personal/homepage';
     }
 }
