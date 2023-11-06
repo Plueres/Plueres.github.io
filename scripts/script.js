@@ -139,7 +139,7 @@ window.onload = function () {
 
 
     var startY;
-    var isPullDown = false;
+    var isAnimating = false;
 
     // Listen for the touchstart event
     window.addEventListener('touchstart', function (event) {
@@ -149,53 +149,42 @@ window.onload = function () {
 
     // Listen for the touchmove event
     window.addEventListener('touchmove', function (event) {
+        // If an animation is already in progress, ignore this swipe
+        if (isAnimating) {
+            return;
+        }
+
         // Get the Y coordinate of the touch event
         var endY = event.touches[0].clientY;
 
         // Calculate the difference in Y coordinates
         var diffY = startY - endY;
 
-        // If pulling down, set isPullDown to true
+        // If pulling down, animate the swipe
         if (diffY < 0) {
-            isPullDown = true;
-        }
+            // Set the animation flag
+            isAnimating = true;
 
-        // Scale the difference by a factor to control the speed of the swipe
-        var scrollAmount = diffY * 0.1; // Adjust the scaling factor as needed
+            // Animate the swipe
+            homePosition = -100;
+            aboutPosition = 0;
 
-        // Perform the same actions as in the wheel event listener
-        if (!allowScroll) {
-            return;
-        }
+            // Update the transform for each section
+            home.style.transform = `translateY(${homePosition}vh)`;
+            about.style.transform = `translateY(${aboutPosition}vh)`;
 
-        // Update the positions and ensure they stay within their boundaries
-        homePosition = Math.min(Math.max(homePosition - scrollAmount, -100), 0);
-        aboutPosition = Math.min(Math.max(aboutPosition - scrollAmount, 0), 100);
-
-        // Update the transform for each section
-        home.style.transform = `translateY(${homePosition}vh)`;
-        about.style.transform = `translateY(${aboutPosition}vh)`;
-
-        // Update the URL based on the current section
-        if (homePosition <= -50) {
+            // Update the URL based on the current section
             history.pushState(null, null, 'about');
-        } else {
-            history.pushState(null, null, '/');
+
+            // Reset the animation flag after the animation duration
+            setTimeout(function () {
+                isAnimating = false;
+            }, 1000); // Adjust the timeout to match your CSS transition duration
         }
 
         // Update startY to the current Y position for the next move event
         startY = endY;
     }, false); // Remove the { passive: false } option
-
-    // Listen for the touchend event
-    window.addEventListener('touchend', function (event) {
-        // If pulled down, prevent the default touch action
-        if (isPullDown) {
-            event.preventDefault();
-        }
-        // Reset isPullDown
-        isPullDown = false;
-    }, false);
 }
 
 // var lastX, lastY;
