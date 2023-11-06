@@ -6,6 +6,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
             promptForPassword();
             sessionStorage.setItem('promptShown', 'true');
         }
+        // If the user is logged in, show the content inside the 'personallists' element
+        if (sessionStorage.getItem('isLoggedIn') === 'true') {
+            if (document.getElementById('personallists')) {
+                document.getElementById('personallists').style.display = 'flex';
+            } else if (document.getElementById('personallist')) {
+                document.getElementById('personallist').style.display = 'block';
+            }
+        }
     } else {
         // If the URL does not include '/personal', remove the session and the promptShown flag
         sessionStorage.removeItem('isLoggedIn');
@@ -25,8 +33,6 @@ function promptForPassword() {
         } else if (btoa(userPassword) === 'cGFzc3dvcmQ=') { // 'password' encoded in Base64
             // Save logged in status
             sessionStorage.setItem('isLoggedIn', 'true');
-            // Show the content inside the 'personallists' element
-            document.getElementById('personallists').style.display = 'flex';
             break;
         } else {
             alert('Incorrect password');
