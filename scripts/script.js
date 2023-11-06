@@ -172,89 +172,85 @@ window.onload = function () {
 
         // Set the swipeInProgress flag to true
         swipeInProgress = true;
+        // Get the Y and X coordinates of the touch event
+        var endY = event.touches[0].clientY;
+        var endX = event.touches[0].clientX;
 
-        // Use requestAnimationFrame for smoother animations
-        requestAnimationFrame(function () {
-            // Get the Y and X coordinates of the touch event
-            var endY = event.touches[0].clientY;
-            var endX = event.touches[0].clientX;
+        // Calculate the difference in Y and X coordinates
+        var diffY = startY - endY;
+        var diffX = startX - endX;
 
-            // Calculate the difference in Y and X coordinates
-            var diffY = startY - endY;
-            var diffX = startX - endX;
-
-            // If pulling up or down
-            if (Math.abs(diffY) > Math.abs(diffX)) {
-                // Only allow swiping up or down on the homepage
-                if (homePositionX === 0) {
-                    // If pulling up, animate the swipe to the about page
-                    if (diffY > 0 && homePositionY === 0) {
-                        // Animate the swipe
-                        homePositionY = -100;
-                        aboutPosition = 0;
-                        listsPosition = -200;
-                        history.pushState({}, '', '/about');
-                    }
-                    // If pulling down, animate the swipe to the home page
-                    else if (diffY < 0 && homePositionY === -100) {
-                        // Animate the swipe
-                        homePositionY = 0;
-                        aboutPosition = 100;
-                        listsPosition = -100;
-                        history.pushState({}, '', '/');
-                    }
-                }
-            }
-            // If swiping left or right
-            else {
-                // If on the about page, do not allow left or right swipes
-                if (homePositionY === -100) {
-                    return;
-                }
-                // If swiping left from home, animate the swipe to the lists page
-                if (diffX < 0 && homePositionX === 0) {
-                    homePositionX = 100;
-                    listsPosition = 0;
-                    aboutPosition = 100;
-                    blogsPosition = 200;
-                    history.pushState({}, '', '/lists');
-                }
-                // If swiping right from home, animate the swipe to the blogs page
-                else if (diffX > 0 && homePositionX === 0) {
-                    homePositionX = -100;
+        // If pulling up or down
+        if (Math.abs(diffY) > Math.abs(diffX)) {
+            // Only allow swiping up or down on the homepage
+            if (homePositionX === 0) {
+                // If pulling up, animate the swipe to the about page
+                if (diffY > 0 && homePositionY === 0) {
+                    // Animate the swipe
+                    homePositionY = -100;
+                    aboutPosition = 0;
                     listsPosition = -200;
-                    aboutPosition = 100;
-                    blogsPosition = 0;
-                    history.pushState({}, '', '/blogs');
+                    history.pushState({}, '', '/about');
                 }
-                // If swiping right from lists, animate the swipe to the home page
-                if (diffX > 0 && homePositionX === 100) {
-                    homePositionX = 0;
-                    listsPosition = -100;
+                // If pulling down, animate the swipe to the home page
+                else if (diffY < 0 && homePositionY === -100) {
+                    // Animate the swipe
+                    homePositionY = 0;
                     aboutPosition = 100;
-                    blogsPosition = 100;
-                    history.pushState({}, '', '/');
-                }
-                // Else if swiping left from blogs, animate the swipe to the home page
-                else if (diffX < 0 && homePositionX === -100) {
-                    homePositionX = 0;
                     listsPosition = -100;
-                    aboutPosition = 100;
-                    blogsPosition = 100;
                     history.pushState({}, '', '/');
                 }
             }
+        }
+        // If swiping left or right
+        else {
+            // If on the about page, do not allow left or right swipes
+            if (homePositionY === -100) {
+                return;
+            }
+            // If swiping left from home, animate the swipe to the lists page
+            if (diffX < 0 && homePositionX === 0) {
+                homePositionX = 100;
+                listsPosition = 0;
+                aboutPosition = 100;
+                blogsPosition = 200;
+                history.pushState({}, '', '/lists');
+            }
+            // If swiping right from home, animate the swipe to the blogs page
+            else if (diffX > 0 && homePositionX === 0) {
+                homePositionX = -100;
+                listsPosition = -200;
+                aboutPosition = 100;
+                blogsPosition = 0;
+                history.pushState({}, '', '/blogs');
+            }
+            // If swiping right from lists, animate the swipe to the home page
+            if (diffX > 0 && homePositionX === 100) {
+                homePositionX = 0;
+                listsPosition = -100;
+                aboutPosition = 100;
+                blogsPosition = 100;
+                history.pushState({}, '', '/');
+            }
+            // Else if swiping left from blogs, animate the swipe to the home page
+            else if (diffX < 0 && homePositionX === -100) {
+                homePositionX = 0;
+                listsPosition = -100;
+                aboutPosition = 100;
+                blogsPosition = 100;
+                history.pushState({}, '', '/');
+            }
+        }
 
-            // Update the transform for each section
-            home.style.transform = `translateX(${homePositionX}vw) translateY(${homePositionY}vh)`;
-            about.style.transform = `translateY(${aboutPosition}vh)`;
-            lists.style.transform = `translateX(${listsPosition}vw)`;
-            blogs.style.transform = `translateX(${blogsPosition}vw)`;
+        // Update the transform for each section
+        home.style.transform = `translateX(${homePositionX}vw) translateY(${homePositionY}vh)`;
+        about.style.transform = `translateY(${aboutPosition}vh)`;
+        lists.style.transform = `translateX(${listsPosition}vw)`;
+        blogs.style.transform = `translateX(${blogsPosition}vw)`;
 
-            // Update startY and startX to the current Y and X positions for the next move event
-            startY = endY;
-            startX = endX;
-        });
+        // Update startY and startX to the current Y and X positions for the next move event
+        startY = endY;
+        startX = endX;
     }, false);
 }
 
