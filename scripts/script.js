@@ -150,8 +150,11 @@ window.onload = function () {
 
     // Listen for the touchmove event
     window.addEventListener('touchmove', function (event) {
-        // If homePosition is not 0, prevent the default touch action
-        if (homePosition !== 0) {
+        // Define a small epsilon value
+        var epsilon = 0.1;
+
+        // If homePosition is not close enough to 0, prevent the default touch action
+        if (Math.abs(homePosition) > epsilon) {
             event.preventDefault();
         }
 
