@@ -150,19 +150,19 @@ window.onload = function () {
 
     // Listen for the touchmove event
     window.addEventListener('touchmove', function (event) {
-        // Define a small epsilon value
-        var epsilon = 0.1;
-
-        // If homePosition is not close enough to 0, prevent the default touch action
-        if (Math.abs(homePosition) > epsilon) {
-            event.preventDefault();
-        }
-
         // Get the Y coordinate of the touch event
         var endY = event.touches[0].clientY;
 
         // Calculate the difference in Y coordinates
         var diffY = startY - endY;
+
+        // Define a small epsilon value
+        var epsilon = 0.1;
+
+        // If homePosition is not close enough to 0 or if scrolling upwards, prevent the default touch action
+        if (Math.abs(homePosition) > epsilon || diffY < 0) {
+            event.preventDefault();
+        }
 
         // Scale the difference by a factor to control the speed of the swipe
         var scrollAmount = diffY * 0.1; // Adjust the scaling factor as needed
