@@ -171,8 +171,8 @@ window.onload = function () {
             return;
         }
 
-        // If the touch started at the top of the page and the user is trying to scroll down, prevent default behavior
-        if (touchStartY <= 10 && event.touches[0].clientY > touchStartY) {
+        // If the user is trying to scroll down and the page is already scrolled to the top, prevent default behavior
+        if (event.touches[0].clientY > touchStartY && window.scrollY === 0) {
             event.preventDefault();
             return;
         }
