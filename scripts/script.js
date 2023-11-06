@@ -153,13 +153,14 @@ window.onload = function () {
     });
 
 
-
+    let touchStartY;
 
     // Listen for the touchstart event
     window.addEventListener('touchstart', function (event) {
         // Get the Y and X coordinates of the touch event
         startY = event.touches[0].clientY;
         startX = event.touches[0].clientX;
+        touchStartY = startY; // Store the initial Y coordinate
         swipeInProgress = false; // Reset the swipeInProgress flag
     }, false);
 
@@ -167,6 +168,12 @@ window.onload = function () {
     window.addEventListener('touchmove', function (event) {
         // If a swipe is already in progress, do nothing
         if (swipeInProgress) {
+            return;
+        }
+
+        // If the touch started at the top of the page and the user is trying to scroll down, prevent default behavior
+        if (touchStartY <= 10 && event.touches[0].clientY > touchStartY) {
+            event.preventDefault();
             return;
         }
 
