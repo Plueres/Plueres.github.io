@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: lists
 permalink: personal/homepage
 ---
 

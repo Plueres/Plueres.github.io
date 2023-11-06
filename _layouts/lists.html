@@ -1,0 +1,35 @@
+---
+layout: pages
+---
+<style>
+    #personallists,
+    #personallist {
+        display: none;
+    }
+
+    #personallist {
+        margin-top: 6rem;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        margin: 1rem;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    img {
+        height: unset;
+    }
+</style>
+{{ content}}
