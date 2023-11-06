@@ -13,6 +13,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
             } else if (document.getElementById('personallist')) {
                 document.getElementById('personallist').style.display = 'block';
             }
+        } else {
+            // If the user is not logged in, hide the content
+            if (document.getElementById('personallists')) {
+                document.getElementById('personallists').style.display = 'none';
+            } else if (document.getElementById('personallist')) {
+                document.getElementById('personallist').style.display = 'none';
+            }
         }
     } else {
         // If the URL does not include '/personal', remove the session and the promptShown flag
@@ -27,13 +34,20 @@ function promptForPassword() {
     var checkPasswordInterval = setInterval(function () {
         userPassword = prompt('Please enter the password:');
         if (userPassword === null) {
-            // User clicked "Cancel"
-            // Do nothing, the prompt will show again
+            // User clicked "Cancel", redirect to '/lists'
+            window.location.href = '/lists';
+            clearInterval(checkPasswordInterval);
         } else if (btoa(userPassword) === 'cGFzc3dvcmQ=') { // 'password' encoded in Base64
             // Save logged in status
             sessionStorage.setItem('isLoggedIn', 'true');
             // Stop checking the password
             clearInterval(checkPasswordInterval);
+            // Show the content
+            if (document.getElementById('personallists')) {
+                document.getElementById('personallists').style.display = 'flex';
+            } else if (document.getElementById('personallist')) {
+                document.getElementById('personallist').style.display = 'block';
+            }
         } else {
             alert('Incorrect password');
             // The page will not reload, but the prompt will show again
