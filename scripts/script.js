@@ -138,48 +138,100 @@ window.onload = function () {
 
 
 
-    var startY;
+    var startY, startX;
+    var homePositionX = 0, homePositionY = 0, aboutPosition = 100, listsPosition = -100, blogsPosition = 100;
+    var swipeInProgress = false; // Add this line
 
     // Listen for the touchstart event
     window.addEventListener('touchstart', function (event) {
-        // Get the Y coordinate of the touch event
+        // Get the Y and X coordinates of the touch event
         startY = event.touches[0].clientY;
+        startX = event.touches[0].clientX;
+        swipeInProgress = false; // Reset the swipeInProgress flag
     }, false);
 
     // Listen for the touchmove event
     window.addEventListener('touchmove', function (event) {
-        // Get the Y coordinate of the touch event
-        var endY = event.touches[0].clientY;
-
-        // Calculate the difference in Y coordinates
-        var diffY = startY - endY;
-
-        // If pulling up, animate the swipe to the about page
-        if (diffY > 0 && homePosition === 0) {
-            // Animate the swipe
-            homePosition = -100;
-            aboutPosition = 0;
-
-            // Update the URL based on the current section
-            history.pushState(null, null, 'about');
+        // If a swipe is already in progress, do nothing
+        if (swipeInProgress) {
+            return;
         }
-        // If pulling down, animate the swipe to the home page
-        else if (diffY < 0 && homePosition === -100) {
-            // Animate the swipe
-            homePosition = 0;
-            aboutPosition = 100;
 
-            // Update the URL based on the current section
-            history.pushState(null, null, '/');
+        // Set the swipeInProgress flag to true
+        swipeInProgress = true;
+        // Get the Y and X coordinates of the touch event
+        var endY = event.touches[0].clientY;
+        var endX = event.touches[0].clientX;
+
+        // Calculate the difference in Y and X coordinates
+        var diffY = startY - endY;
+        var diffX = startX - endX;
+
+        // If pulling up or down
+        if (Math.abs(diffY) > Math.abs(diffX)) {
+            // If pulling up, animate the swipe to the about page
+            if (diffY > 0 && homePositionY === 0) {
+                // Animate the swipe
+                homePositionY = -100;
+                aboutPosition = 0;
+                listsPosition = -200;
+                history.pushState({}, '', '/about');
+            }
+            // If pulling down, animate the swipe to the home page
+            else if (diffY < 0 && homePositionY === -100) {
+                // Animate the swipe
+                homePositionY = 0;
+                aboutPosition = 100;
+                listsPosition = -100;
+                history.pushState({}, '', '/');
+            }
+        }
+        // If swiping left or right
+        else {
+            // If swiping left from home, animate the swipe to the lists page
+            if (diffX < 0 && homePositionX === 0) {
+                homePositionX = 100;
+                listsPosition = 0;
+                aboutPosition = 100;
+                blogsPosition = 200;
+                history.pushState({}, '', '/lists');
+            }
+            // If swiping right from home, animate the swipe to the blogs page
+            else if (diffX > 0 && homePositionX === 0) {
+                homePositionX = -100;
+                listsPosition = -200;
+                aboutPosition = 100;
+                blogsPosition = 0;
+                history.pushState({}, '', '/blogs');
+            }
+            // If swiping right from lists, animate the swipe to the home page
+            if (diffX > 0 && homePositionX === 100) {
+                homePositionX = 0;
+                listsPosition = -100;
+                aboutPosition = 100;
+                blogsPosition = 100;
+                history.pushState({}, '', '/');
+            }
+            // Else if swiping left from blogs, animate the swipe to the home page
+            else if (diffX < 0 && homePositionX === -100) {
+                homePositionX = 0;
+                listsPosition = -100;
+                aboutPosition = 100;
+                blogsPosition = 100;
+                history.pushState({}, '', '/');
+            }
         }
 
         // Update the transform for each section
-        home.style.transform = `translateY(${homePosition}vh)`;
+        home.style.transform = `translateX(${homePositionX}vw) translateY(${homePositionY}vh)`;
         about.style.transform = `translateY(${aboutPosition}vh)`;
+        lists.style.transform = `translateX(${listsPosition}vw)`;
+        blogs.style.transform = `translateX(${blogsPosition}vw)`;
 
-        // Update startY to the current Y position for the next move event
+        // Update startY and startX to the current Y and X positions for the next move event
         startY = endY;
-    }, false); // Remove the { passive: false } option
+        startX = endX;
+    }, false);
 }
 
 // var lastX, lastY;
