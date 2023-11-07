@@ -157,6 +157,8 @@ window.onload = function () {
 
     // Listen for the touchstart event
     window.addEventListener('touchstart', function (event) {
+
+        event.preventDefault();
         // Get the Y and X coordinates of the touch event
         startY = event.touches[0].clientY;
         startX = event.touches[0].clientX;
@@ -165,6 +167,8 @@ window.onload = function () {
 
     // Listen for the touchmove event
     window.addEventListener('touchmove', function (event) {
+
+        event.preventDefault();
         // If a swipe is already in progress, do nothing
         if (swipeInProgress) {
             return;
