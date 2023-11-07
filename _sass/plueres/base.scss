@@ -110,7 +110,7 @@ main {
 #lists-personal-button,
 #lists-back-button,
 #blogs-back-button {
-    display: none;
+    display: inline-block;
     position: fixed;
     top: 0;
     height: 100vh;
@@ -318,16 +318,6 @@ tag {
     border-radius: 6px;
 }
 
-/* Show the buttons on devices that have a hover capability (usually non-touch devices) */
-@media (hover: hover) {
-    #lists-button,
-    #blogs-button,
-    #lists-personal-button,
-    #lists-back-button,
-    #blogs-back-button {
-        display: inline-block; /* or "block", depending on your layout */
-    }
-}
 /* Hide the buttons on devices that have a coarse pointing system (usually touch devices) */
 @media (pointer: coarse) {
     #lists-button,
