@@ -259,8 +259,16 @@ window.onload = function () {
 }
 
 
-// Check if the device is a touch device
-if ('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0) {
+// Check if the device supports hover
+if (window.matchMedia("(hover: hover)").matches) {
+    // Get the buttons
+    var buttons = document.querySelectorAll('#lists-button, #blogs-button, #lists-personal-button, #lists-back-button, #blogs-back-button');
+
+    // Loop through the buttons and show them
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].style.display = 'inline-block';
+    }
+} else {
     // Get the buttons
     var buttons = document.querySelectorAll('#lists-button, #blogs-button, #lists-personal-button, #lists-back-button, #blogs-back-button');
 
