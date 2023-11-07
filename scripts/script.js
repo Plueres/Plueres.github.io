@@ -32,17 +32,20 @@ window.onload = function () {
             listsPosition = 0;
             aboutPosition = 100;
             blogsPosition = 200;
+            allowScroll = false;
             break;
         case '/about':
             homePositionY = -100;
             aboutPosition = 0;
             listsPosition = -200;
+            allowScroll = true;
             break;
         case '/blogs':
             homePositionX = -100;
             listsPosition = -200;
             aboutPosition = 100;
             blogsPosition = 0;
+            allowScroll = false;
             break;
         default:
             // No path or unrecognized path, show home page
@@ -51,6 +54,7 @@ window.onload = function () {
             aboutPosition = 100;
             listsPosition = -100;
             blogsPosition = 100;
+            allowScroll = true;
             break;
     }
 
@@ -147,9 +151,6 @@ window.onload = function () {
         } else {
             history.pushState(null, null, '/');
         }
-    });
-    window.addEventListener('popstate', function () {
-        allowScroll = true; // Enable scrolling
     });
 
 
