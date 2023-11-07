@@ -259,24 +259,13 @@ window.onload = function () {
 }
 
 
-// Check if the device supports hover
-if (window.matchMedia("(hover: hover)").matches) {
-    // Get the buttons
-    var buttons = document.querySelectorAll('#lists-button, #blogs-button, #lists-personal-button, #lists-back-button, #blogs-back-button');
-
-    // Loop through the buttons and show them
+// Show the buttons when the mouse is moved
+var buttons = document.querySelectorAll('#lists-button, #blogs-button, #lists-personal-button, #lists-back-button, #blogs-back-button');
+window.addEventListener('mousemove', function () {
     for (var i = 0; i < buttons.length; i++) {
         buttons[i].style.display = 'inline-block';
     }
-} else {
-    // Get the buttons
-    var buttons = document.querySelectorAll('#lists-button, #blogs-button, #lists-personal-button, #lists-back-button, #blogs-back-button');
-
-    // Loop through the buttons and hide them
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].style.display = 'none';
-    }
-}
+});
 
 // var lastX, lastY;
 // var mouseMoved = false;
