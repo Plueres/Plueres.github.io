@@ -328,3 +328,13 @@ tag {
         display: inline-block; /* or "block", depending on your layout */
     }
 }
+/* Hide the buttons on devices that have a coarse pointing system (usually touch devices) */
+@media (pointer: coarse) {
+    #lists-button,
+    #blogs-button,
+    #lists-personal-button,
+    #lists-back-button,
+    #blogs-back-button {
+        display: none;
+    }
+}
