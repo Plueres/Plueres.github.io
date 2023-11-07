@@ -15,17 +15,3 @@ h2 {
 .cursor-invisible {
     opacity: 0;
 }
-
-/* Hide the buttons by default */
-#lists-button,
-#blogs-button {
-    display: none;
-}
-
-/* Show the buttons on devices that have a hover capability (usually non-touch devices) */
-@media (hover: hover) {
-    #lists-button,
-    #blogs-button {
-        display: inline-block; /* or "block", depending on your layout */
-    }
-}
