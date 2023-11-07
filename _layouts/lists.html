@@ -27,7 +27,47 @@ layout: pages
     img {
         height: unset;
     }
+
+    yes::before {
+        background: rgba(0, 140, 40, 0.5);
+        padding: 5px 12px;
+        color: white;
+        border-radius: 15px;
+        content: "Yes";
+    }
+
+    notsure::before {
+        background: rgba(135, 140, 0, 0.5);
+        padding: 5px 12px;
+        color: white;
+        border-radius: 15px;
+        content: "Not Sure";
+    }
+
+    no::before {
+        background: rgba(200, 0, 0, 0.5);
+        padding: 5px 12px;
+        color: white;
+        border-radius: 15px;
+        content: "No";
+    }
+
+    tag {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 4px 8px;
+        border-radius: 6px;
+        line-height: 2.2;
+        white-space: nowrap;
+        margin: 0px;
+    }
 </style>
 <div id="personallist">
     {{ content}}
 </div>
+<script>
+    let htmlContent = document.body.innerHTML; // Get the HTML content
+    let replacedContent = htmlContent.replace(/!\s*([\w-]+(\s[\w-]+)*)/g, function (match, p1) {
+        return `<tag>${p1.trim()}</tag>`;
+    });
+    document.body.innerHTML = replacedContent; // Set the HTML content back
+</script>
