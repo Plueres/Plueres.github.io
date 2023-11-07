@@ -258,6 +258,18 @@ window.onload = function () {
     }, false);
 }
 
+
+// Check if the device is a touch device
+if ('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0) {
+    // Get the buttons
+    var buttons = document.querySelectorAll('#lists-button, #blogs-button, #lists-personal-button, #lists-back-button, #blogs-back-button');
+
+    // Loop through the buttons and hide them
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].style.display = 'none';
+    }
+}
+
 // var lastX, lastY;
 // var mouseMoved = false;
 
