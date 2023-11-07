@@ -162,10 +162,13 @@ window.onload = function () {
         startX = event.touches[0].clientX;
         touchStartY = startY; // Store the initial Y coordinate
         swipeInProgress = false; // Reset the swipeInProgress flag
+        console.log('touchstart');
     }, false);
 
     // Listen for the touchmove event
     window.addEventListener('touchmove', function (event) {
+
+        console.log('touchmove');
         // If a swipe is already in progress, do nothing
         if (swipeInProgress) {
             return;
@@ -191,24 +194,25 @@ window.onload = function () {
 
             // If pulling up or down
             if (Math.abs(diffY) > Math.abs(diffX)) {
-                // Only allow swiping up or down on the homepage
+                // Only allow swiping up or down on the homepage or about page
                 if (homePositionX === 0) {
-                    // If pulling up, animate the swipe to the about page
+                    // If pulling down from the homepage, animate the swipe to the about page
                     if (diffY > 0 && homePositionY === 0) {
                         // Animate the swipe
                         homePositionY = -100;
                         aboutPosition = 0;
-                        listsPosition = -200;
                         history.pushState({}, '', '/about');
                     }
-                    // If pulling down, animate the swipe to the home page
+                    // If pulling down from the about page, animate the swipe to the home page
                     else if (diffY < 0 && homePositionY === -100) {
                         // Animate the swipe
                         homePositionY = 0;
                         aboutPosition = 100;
-                        listsPosition = -100;
                         history.pushState({}, '', '/');
+                        console.log("diffY: ", diffY);
                     }
+                    console.log("homePositionY: ", homePositionY);
+                    console.log("homePositionX: ", homePositionX);
                 }
             }
             // If swiping left or right
@@ -221,7 +225,6 @@ window.onload = function () {
                 if (diffX < 0 && homePositionX === 0) {
                     homePositionX = 100;
                     listsPosition = 0;
-                    aboutPosition = 100;
                     blogsPosition = 200;
                     history.pushState({}, '', '/lists');
                 }
@@ -229,7 +232,6 @@ window.onload = function () {
                 else if (diffX > 0 && homePositionX === 0) {
                     homePositionX = -100;
                     listsPosition = -200;
-                    aboutPosition = 100;
                     blogsPosition = 0;
                     history.pushState({}, '', '/blogs');
                 }
@@ -237,7 +239,6 @@ window.onload = function () {
                 if (diffX > 0 && homePositionX === 100) {
                     homePositionX = 0;
                     listsPosition = -100;
-                    aboutPosition = 100;
                     blogsPosition = 100;
                     history.pushState({}, '', '/');
                 }
