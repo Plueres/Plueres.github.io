@@ -54,4 +54,5 @@ $on-laptop: 800px !default;
 }
 
 // Import partials.
-@import "plueres/header", "plueres/homepage", "plueres/articlespage", "plueres/base", "plueres/personallists";
+@import "plueres/base", "plueres/header", "plueres/homepage", "plueres/articlespage", "plueres/articleposts",
+    "plueres/minecraftposts", "plueres/personallists";
