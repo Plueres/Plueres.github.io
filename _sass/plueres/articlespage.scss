@@ -15,7 +15,7 @@ articles {
 #articles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    gap: 3rem;
+    gap: 1rem;
     overflow-y: scroll;
     height: 80vh;
 }
@@ -35,16 +35,17 @@ article {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: $background-color;
     border-radius: $border-radius;
+    background: $secondary-color;
+    height: 50%;
 }
 .article-header-img {
     width: 100%;
-    height: 10rem;
+    height: 16rem;
     object-fit: cover; // Add this line
     border-radius: $border-radius;
 }
 .article-text {
-    margin: 10px;
+    margin: 10px 0;
     width: 100%;
 }

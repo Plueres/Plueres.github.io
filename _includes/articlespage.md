@@ -4,7 +4,6 @@
         <h2>This is the articles of the website</h2>
 
         {%- if site.articles.size > 0 -%}
-        <h2 class="articles-list-heading">{{ page.list_title | default: "articles" }}</h2>
         <articles>
             <div id="articles-grid">
                 {%- assign sorted_articles = site.articles | sort: "date" | reverse -%}
@@ -32,7 +31,7 @@
             </div>
             {%- endif -%}
             <div id="filters">
-                <input type="text" id="search-bar" placeholder="Search articles...">
+                <input type="text" id="search-bar" placeholder="Search">
 
                 {% assign all_categories = "" %}
                 {% for post in site.articles %}
@@ -47,6 +46,7 @@
                 <label for="category-{{ category }}">{{ category }}</label><br>
                 {% endfor %}
             </div>
+
         </articles>
     </div>
 </div>
@@ -92,24 +92,30 @@
                 article.style.display = 'none';
             }
         });
+
+        var url = new URL(window.location.href);
+        if (searchTerm) {
+            url.searchParams.set('search', searchTerm);
+        } else {
+            url.searchParams.delete('search');
+        }
+        window.history.replaceState({}, '', url);
+    });
+
+    window.addEventListener('load', function () {
+        var url = new URL(window.location.href);
+        var searchParam = url.searchParams.get('search');
+        if (searchParam) {
+            document.getElementById('search-bar').value = searchParam;
+            var event = new Event('input', {
+                'bubbles': true,
+                'cancelable': true
+            });
+            document.getElementById('search-bar').dispatchEvent(event);
+        }
+        filterPosts();
     });
 
     window.addEventListener('load', filterPosts);
-</script>
-<!-- <ul>
-            {% for posts in site.posts %}
-            <li>
-                <h2><a href="{{ posts.url }}">{{ posts.title }}</a></h2>
-                <p>{{ posts.excerpt }}</p>
-            </li>
-            {% endfor %}
-        </ul>
 
-        <ul>
-            {% for article in site.articles %}
-            <li>
-                <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
-                <p>{{ article.excerpt }}</p>
-            </li>
-            {% endfor %}
-        </ul>-->
+</script>
