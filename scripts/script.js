@@ -83,7 +83,7 @@ window.onload = function () {
             var buttonSide = buttonCenterX > windowWidth / 2 ? 'left' : 'right';
             var color = buttonSide === 'left' ? 'rgba(0, 0, 255, 0.5)' : 'rgba(255, 165, 0, 0.5)'; // 50% opacity
             var dist = buttonSide === 'left' ? windowWidth - mouseX : mouseX;
-            var maxDist = windowWidth / 3; // Lowered distance
+            var maxDist = windowWidth / 6; // Lowered distance
             var gradientIntensity = 1 - dist / maxDist;
             buttons[i].style.background = `linear-gradient(to ${buttonSide}, ${color}, transparent ${gradientIntensity * 100}%)`;
             buttons[i].style.opacity = gradientIntensity;

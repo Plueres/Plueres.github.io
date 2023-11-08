@@ -37,6 +37,7 @@ article {
     justify-content: center;
     border-radius: $border-radius;
     background: $secondary-color;
+    height: fit-content;
 }
 .article-header-img {
     width: 100%;
@@ -45,6 +46,12 @@ article {
     border-radius: $border-radius;
 }
 .article-text {
-    margin: 10px 0;
+    margin: 1rem 0;
     width: 100%;
+    text-wrap: pretty;
+}
+
+category {
+    padding: 3px 6px;
+    border-radius: 6px;
 }

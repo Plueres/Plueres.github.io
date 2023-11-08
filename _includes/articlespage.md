@@ -16,6 +16,11 @@
                     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                     <div class="article-text">
                         <span class="articles-meta">{{ article.date | date: date_format }}</span>
+                        {% for category in article.categories %}
+                        <a href="{{ site.url }}/articles?categories={{ category | url_encode }}">
+                            <category>{{ category }}</category>
+                        </a>
+                        {% endfor %}
                         <h3>
                             <a class="articles-link" href="{{ article.url | relative_url }}">
                                 {{ article.title | escape }}
@@ -54,6 +59,14 @@
     function filterPosts() {
         var url = new URL(window.location.href);
         var categories = (url.searchParams.get('categories') || '').toLowerCase().split(',');
+
+        categories.forEach(function (category) {
+            var checkbox = document.getElementById('category-' + category);
+            if (checkbox) {
+                checkbox.checked = true;
+            }
+        });
+
         var posts = document.querySelectorAll('#articles-grid article');
         posts.forEach(function (post) {
             var postCategories = post.getAttribute('data-category').toLowerCase().split(' ');
@@ -118,4 +131,30 @@
 
     window.addEventListener('load', filterPosts);
 
+    document.querySelectorAll('category').forEach(category => {
+        const categoryName = category.textContent.trim();
+        var textColor;
+        var brColor;
+
+        switch (categoryName) {
+            case 'minecraft':
+                textColor = 'rgba(0, 112, 40, 1)';
+                brColor = 'rgba(0, 112, 40, 0.2)';
+                break;
+            case 'another-category':
+                textColor = 'blue';
+                brColor = 'black';
+                break;
+            case 'yet-another-category':
+                textColor = 'red';
+                brColor = 'black';
+                break;
+            default:
+                textColor = 'white';
+                brColor = 'gray';
+                break;
+        }
+        category.style.color = textColor;
+        category.style.backgroundColor = brColor;
+    });
 </script>

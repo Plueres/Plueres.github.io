@@ -53,7 +53,7 @@ layout: pages
     }
 
     tag {
-        background: rgba(255, 255, 255, 0.1);
+        font-weight: bold;
         padding: 4px 8px;
         border-radius: 6px;
         line-height: 2.2;
@@ -66,8 +66,40 @@ layout: pages
 </div>
 <script>
     let htmlContent = document.body.innerHTML; // Get the HTML content
-    let replacedContent = htmlContent.replace(/!\s*([\w-]+(\s[\w-]+)*)/g, function (match, p1) {
+    let replacedContent = htmlContent.replace(/!\s*([\w-+\/]+(\s[\w-+\/]+)*)/g, function (match, p1) {
         return `<tag>${p1.trim()}</tag>`;
     });
     document.body.innerHTML = replacedContent; // Set the HTML content back
+
+    document.querySelectorAll('tag').forEach(tag => {
+        const tagName = tag.textContent.trim();
+        var textColor;
+        var brColor;
+
+        switch (tagName.toLowerCase()) {
+            case 'netflix':
+                textColor = 'rgb(229, 9, 19)';
+                brColor = 'rgb(0, 0, 0)';
+                break;
+            case 'disney+':
+                textColor = 'white';
+                brColor = 'linear-gradient(to bottom, rgb(11, 13, 52), rgb(31, 68, 146))';
+                break;
+            case 'star wars':
+                textColor = 'black';
+                brColor = 'black';
+                tag.style.webkitTextStroke = "0.1px rgb(248, 228, 27)";
+                break;
+            case 'marvel':
+                textColor = 'white';
+                brColor = 'rgb(240, 20, 30)';
+                break;
+            default:
+                textColor = 'white';
+                brColor = 'rgba(255, 255, 255, 0.1)';
+                break;
+        }
+        tag.style.color = textColor;
+        tag.style.background = brColor;
+    });
 </script>
