@@ -3,37 +3,37 @@
     <div class="wrapper">
         <h2>This is the blogs of the website</h2>
 
-        {%- if site.articles.size > 0 -%}
-        <h2 class="articles-list-heading">{{ page.list_title | default: "Blogs" }}</h2>
-        <articles>
-            <div id="articles-grid">
-                {%- for articles in site.articles -%}
-                <article>
-                    {%- if articles.header_image -%}
-                    <img src="{{ articles.header_image | relative_url }}" alt="{{ articles.title | escape }}"
-                        class="article-header-img">
-                    {%- endif -%}
-                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                    <div class="article-text">
-                        <span class="articles-meta">{{ articles.date | date: date_format }}</span>
-                        <h3>
-                            <a class="articles-link" href="{{ articles.url | relative_url }}">
-                                {{ articles.title | escape }}
-                            </a>
-                        </h3>
+        {%- if site.blogposts.size > 0 -%}
+                <h2 class="blogposts-list-heading">{{ page.list_title | default: "Blogs" }}</h2>
+                <blogposts>
+                    <div id="blogposts-grid">
+                        {%- for blogpost in site.blogposts -%}
+                        <article>
+                            {%- if blogpost.header_image -%}
+                            <img src="{{ blogpost.header_image | relative_url }}" alt="{{ blogpost.title | escape }}"
+                                class="blogpost-header-img">
+                            {%- endif -%}
+                            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                            <div class="blogpost-text">
+                                <span class="blogposts-meta">{{ blogpost.date | date: date_format }}</span>
+                                <h3>
+                                    <a class="blogposts-link" href="{{ blogpost.url | relative_url }}">
+                                        {{ blogpost.title | escape }}
+                                    </a>
+                                </h3>
+                            </div>
+
+                            {%- if site.show_excerpts -%}
+                            {{ blogpost.excerpt }}
+                            {%- endif -%}
+                        </article>
+                        {%- endfor -%}
                     </div>
-
-                    {%- if site.show_excerpts -%}
-                    {{ articles.excerpt }}
                     {%- endif -%}
-                </article>
-                {%- endfor -%}
-            </div>
-            {%- endif -%}
-            <div id="filters">
-
-            </div>
-        </articles>
+                    <div id="filters">
+                    </div>
+                </blogposts>
+        
         <!-- <ul>
             {% for posts in site.posts %}
             <li>

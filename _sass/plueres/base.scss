@@ -21,11 +21,44 @@ figure {
     padding: 0;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Gabarito:700|Albert Sans:400");
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Gabarito";
+    font-weight: $base-font-weight;
+}
+html {
+    font-size: 100%;
+} /* 16px */
+h1 {
+    font-size: 4.21rem; /* 67.36px */
+}
+h2 {
+    font-size: 3.158rem; /* 50.56px */
+}
+h3 {
+    font-size: 2.369rem; /* 37.92px */
+}
+h4 {
+    font-size: 1.777rem; /* 28.48px */
+}
+h5 {
+    font-size: 1.333rem; /* 21.28px */
+}
+small {
+    font-size: 0.75rem; /* 12px */
+}
+
 /**
  * Basic styling
  */
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    // font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font-family: "Albert Sans";
+    font-weight: 400;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -81,6 +114,11 @@ main {
     height: 100vh;
     font-family: Arial, sans-serif;
 }
+.wrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0 10%;
+}
 #lists {
     transform: translateX(-100vw);
 }
@@ -88,7 +126,16 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: dense;
+    margin: 10%;
+    gap: 3rem;
 }
+
+#lists a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #lists #movieslist {
     background-image: linear-gradient(to bottom right, #ff0000, #ff00ff);
 }
@@ -100,9 +147,6 @@ main {
 }
 #about {
     transform: translateY(100vh);
-}
-#blogs {
-    transform: translateX(100vw);
 }
 
 #lists-button,
@@ -120,7 +164,6 @@ main {
 #lists-personal-button {
     left: 0;
 }
-
 #lists-back-button,
 #blogs-button {
     right: 0;
@@ -131,11 +174,6 @@ main {
     left: 0;
     width: 100vw;
     height: 5%;
-}
-.wrapper {
-    text-align: center;
-    width: 100%;
-    margin: 0 10%;
 }
 
 button {
@@ -169,15 +207,6 @@ li {
     > ol {
         margin-bottom: 0;
     }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: $base-font-weight;
 }
 
 a {

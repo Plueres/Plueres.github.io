@@ -1,14 +1,18 @@
+#blogs {
+    transform: translateX(100vw);
+}
+
 #blogs-back-button {
     left: 0;
 }
 
-articles {
+blogposts {
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 1rem;
 }
 
-#articles-grid {
+#blogposts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     gap: 3rem;
@@ -34,12 +38,13 @@ article {
     background: $background-color;
     border-radius: $border-radius;
 }
-.article-header-img {
+.blogpost-header-img {
     width: 100%;
     height: 10rem;
+    object-fit: cover; // Add this line
     border-radius: $border-radius;
 }
-.article-text {
+.blogpost-text {
     margin: 10px;
     width: 100%;
 }
