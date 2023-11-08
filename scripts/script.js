@@ -7,7 +7,7 @@ window.onload = function () {
     var home = document.getElementById('home');
     var lists = document.getElementById('lists');
     var about = document.getElementById('about');
-    var blogs = document.getElementById('blogs');
+    var articles = document.getElementById('articles');
 
 
 
@@ -16,14 +16,14 @@ window.onload = function () {
     var scrollSpeed = 0.05;
 
     var startY, startX;
-    var homePositionX = 0, homePositionY = 0, aboutPosition = 100, listsPosition = -100, blogsPosition = 100;
+    var homePositionX = 0, homePositionY = 0, aboutPosition = 100, listsPosition = -100, articlesPosition = 100;
     var swipeInProgress = false; // Add this line
 
     // Temporarily remove transition
     home.style.transition = 'none';
     lists.style.transition = 'none';
     about.style.transition = 'none';
-    blogs.style.transition = 'none';
+    articles.style.transition = 'none';
 
     // Check the current URL path
     switch (window.location.pathname) {
@@ -31,7 +31,7 @@ window.onload = function () {
             homePositionX = 100;
             listsPosition = 0;
             aboutPosition = 100;
-            blogsPosition = 200;
+            articlesPosition = 200;
             allowScroll = false;
             break;
         case '/about':
@@ -40,11 +40,11 @@ window.onload = function () {
             listsPosition = -200;
             allowScroll = true;
             break;
-        case '/blogs':
+        case '/articles':
             homePositionX = -100;
             listsPosition = -200;
             aboutPosition = 100;
-            blogsPosition = 0;
+            articlesPosition = 0;
             allowScroll = false;
             break;
         default:
@@ -53,7 +53,7 @@ window.onload = function () {
             homePositionY = 0;
             aboutPosition = 100;
             listsPosition = -100;
-            blogsPosition = 100;
+            articlesPosition = 100;
             allowScroll = true;
             break;
     }
@@ -62,7 +62,7 @@ window.onload = function () {
     home.style.transform = `translateX(${homePositionX}vw) translateY(${homePositionY}vh)`;
     about.style.transform = `translateY(${aboutPosition}vh)`;
     lists.style.transform = `translateX(${listsPosition}vw)`;
-    blogs.style.transform = `translateX(${blogsPosition}vw)`;
+    articles.style.transform = `translateX(${articlesPosition}vw)`;
 
     // Existing code...
 
@@ -71,7 +71,7 @@ window.onload = function () {
         home.style.transition = '';
         lists.style.transition = '';
         about.style.transition = '';
-        blogs.style.transition = '';
+        articles.style.transition = '';
     }, 1); // Adjust delay as needed
 
     function updateButtonGradients() {
@@ -98,10 +98,10 @@ window.onload = function () {
         allowScroll = false; // Disable scrolling
     });
 
-    document.getElementById('blogs-button').addEventListener('click', function () {
+    document.getElementById('articles-button').addEventListener('click', function () {
         document.getElementById('home').style.transform = 'translateX(-100vw)';
-        document.getElementById('blogs').style.transform = 'translateX(0)';
-        history.pushState(null, null, 'blogs');
+        document.getElementById('articles').style.transform = 'translateX(0)';
+        history.pushState(null, null, 'articles');
         allowScroll = false; // Disable scrolling
     });
 
@@ -112,9 +112,9 @@ window.onload = function () {
         allowScroll = true; // Enable scrolling
     });
 
-    document.getElementById('blogs-back-button').addEventListener('click', function () {
+    document.getElementById('articles-back-button').addEventListener('click', function () {
         document.getElementById('home').style.transform = 'translateX(0)';
-        document.getElementById('blogs').style.transform = 'translateX(100vw)';
+        document.getElementById('articles').style.transform = 'translateX(100vw)';
         history.pushState(null, null, '/');
         allowScroll = true; // Enable scrolling
     });
@@ -127,7 +127,7 @@ window.onload = function () {
 
     window.addEventListener('wheel', function (event) {
         if (!allowScroll) {
-            // If scrolling is not allowed or if the user is on the 'blogs' page, do nothing
+            // If scrolling is not allowed or if the user is on the 'articles' page, do nothing
             return;
         }
 
@@ -218,31 +218,31 @@ window.onload = function () {
                 homePositionX = 100;
                 listsPosition = 0;
                 aboutPosition = 100;
-                blogsPosition = 200;
+                articlesPosition = 200;
                 history.pushState({}, '', '/lists');
             }
-            // If swiping right from home, animate the swipe to the blogs page
+            // If swiping right from home, animate the swipe to the articles page
             else if (diffX > 0 && homePositionX === 0) {
                 homePositionX = -100;
                 listsPosition = -200;
                 aboutPosition = 100;
-                blogsPosition = 0;
-                history.pushState({}, '', '/blogs');
+                articlesPosition = 0;
+                history.pushState({}, '', '/articles');
             }
             // If swiping right from lists, animate the swipe to the home page
             if (diffX > 0 && homePositionX === 100) {
                 homePositionX = 0;
                 listsPosition = -100;
                 aboutPosition = 100;
-                blogsPosition = 100;
+                articlesPosition = 100;
                 history.pushState({}, '', '/');
             }
-            // Else if swiping left from blogs, animate the swipe to the home page
+            // Else if swiping left from articles, animate the swipe to the home page
             else if (diffX < 0 && homePositionX === -100) {
                 homePositionX = 0;
                 listsPosition = -100;
                 aboutPosition = 100;
-                blogsPosition = 100;
+                articlesPosition = 100;
                 history.pushState({}, '', '/');
             }
         }
@@ -251,7 +251,7 @@ window.onload = function () {
         home.style.transform = `translateX(${homePositionX}vw) translateY(${homePositionY}vh)`;
         about.style.transform = `translateY(${aboutPosition}vh)`;
         lists.style.transform = `translateX(${listsPosition}vw)`;
-        blogs.style.transform = `translateX(${blogsPosition}vw)`;
+        articles.style.transform = `translateX(${articlesPosition}vw)`;
 
         // Update startY and startX to the current Y and X positions for the next move event
         startY = endY;
@@ -261,7 +261,7 @@ window.onload = function () {
 
 
 // Show the buttons when the mouse is moved
-var buttons = document.querySelectorAll('#lists-button, #blogs-button, #lists-personal-button, #lists-back-button, #blogs-back-button');
+var buttons = document.querySelectorAll('#lists-button, #articles-button, #lists-personal-button, #lists-back-button, #articles-back-button');
 window.addEventListener('mousemove', function () {
     for (var i = 0; i < buttons.length; i++) {
         buttons[i].style.display = 'inline-block';

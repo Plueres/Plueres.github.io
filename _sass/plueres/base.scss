@@ -150,10 +150,10 @@ main {
 }
 
 #lists-button,
-#blogs-button,
+#articles-button,
 #lists-personal-button,
 #lists-back-button,
-#blogs-back-button {
+#articles-back-button {
     display: none;
     position: fixed;
     top: 0;
@@ -165,7 +165,7 @@ main {
     left: 0;
 }
 #lists-back-button,
-#blogs-button {
+#articles-button {
     right: 0;
 }
 #about-button,

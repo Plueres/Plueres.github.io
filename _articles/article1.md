@@ -3,6 +3,7 @@ layout: article
 title:  "Welcome to Jekyll!"
 date:   2021-12-01 14:31:01 +0100
 header_image: "/assets/images/header.jpg"
+categories: "article testpost"
 ---
 
 ![Header image]({{ page.header_image | relative_url }})

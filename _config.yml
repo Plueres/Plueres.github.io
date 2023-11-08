@@ -33,10 +33,9 @@ github_username:  Plueres
 collections:
   wishlists:
     output: true
-    permalink: /:collection/:title/
-  blogposts:
+  articles:
     output: true
-    permalink: /:collection/:title/
+    permalink: articleposts/:title/
   changelogs:
     output: false
     
