@@ -2,7 +2,8 @@
 layout: lists
 permalink: personal/wishlist
 ---
-
-## Kerstlijst
-- ![](https://media.s-bol.com/x9vgV4Nrmknq/qYzKyPD/681x1200.jpg)
-### Deken die armen heeft
+<wishlists>
+{% for wishlist in site.wishlists %}
+    <h2><a href="{{ site.baseurl }}{{ wishlist.url }}">{{ wishlist.title }}</a></h2>
+{% endfor %}
+</wishlists>

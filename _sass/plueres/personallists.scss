@@ -1,3 +1,4 @@
+// Homepage for personallists
 #personallists .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -6,4 +7,48 @@
 #bucketlist,
 #wishlist {
     background-image: linear-gradient(to bottom right, #ff0000, #ff00ff);
+}
+
+// Wishlist pages
+#mainwishlist {
+    flex-direction: column;
+    width: 100vw;
+}
+.listgrid {
+    display: grid;
+    gap: 2rem;
+    margin: 0.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+.listitem {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    background: $secondary-color;
+    border-radius: $border-radius * 2;
+    border: $primary-color solid 3px;
+    transition: all 0.2s ease;
+}
+.listitem:hover {
+    border: $primary-color-dim solid 3px;
+    background: $background-color;
+}
+.listitemimg {
+    background: white;
+    border-radius: $border-radius * 2;
+    display: flex;
+    justify-content: center;
+    margin: 6px;
+}
+.listitemcontent {
+    margin: 1rem;
+}
+.listitem img {
+    height: 30rem;
+    align-self: center;
+    object-fit: contain; // Add this line
+    width: 100%; // Add this line
+    border-radius: $border-radius * 2;
 }
