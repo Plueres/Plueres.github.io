@@ -39,7 +39,7 @@ permalink: list/showslist
 | Imperfects | !Kids with superpowers | Season 1 |<yes>| ⭐⭐⭐⭐⭐ | Pretty good and funny |
 | Inside Job | !Netflix | Season 1 | <yes> | ⭐⭐⭐⭐⭐ | Banger intro |
 | Inside Job | !Netflix | Season 2 | <notsure> | ⭐⭐⭐⭐ | |
-| Iron fist | !Disney+ | Marvel | <no> | | |
+| Iron fist | !Disney+ !Marvel | | <no> | | |
 | Jupiter’s Legacy | !Superhero !Netflix | | <yes> | ⭐⭐⭐ | It being one season was kind of bad and i didn’t really care for the show that much |
 | Legends of Tomorrow | | All Seasons |<yes>| ⭐⭐⭐⭐⭐ | |
 | Loki | !Time Travel !Disney+ | Season 1 | <yes> | ⭐⭐⭐⭐⭐ | Good show |
