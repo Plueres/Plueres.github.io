@@ -8,10 +8,12 @@ wishlist:
         url: ""
 christmaslist:
   - image: "https://media.s-bol.com/x9vgV4Nrmknq/qYzKyPD/681x1200.jpg"
-    name: "Deken die armen heeft"
+    name: "Deken die mouwen heeft"
     description: "(het liefst ook met handschoenen als die bestaan)"
     links:
-      - name: "bol.com"
+      - name: "bol.com - van de foto"
+        url: "https://www.bol.com/nl/nl/p/kesser-fleece-deken-met-mouwen-voetenzak-plaid-met-mouwen-extra-snuggie-incl-2-in-1-externe-zak-draagbare-hoodie-deken-bruin/9300000160017718/"
+      - name: "bol.com - een andere soort"
         url: "https://www.bol.com/nl/nl/p/o-daddy-fleece-deken-met-mouwen-fleece-plaid-150x200-fleece-deken-sherpa-super-zacht-plaids-met-mouwen-grijs/9200000054686077/?bltgh=tf9-4hxaEzvaQ98ujpxPjg.2.7.ProductImage"
   - image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.tldevtech.com%2Fwp-content%2Fuploads%2F2021%2F06%2FAISBUGUR-Pocket-Notebook.jpg&f=1&nofb=1&ipt=431a9781c0d2369db81bb16e4f6247622d019e976be07456851080bb96cb08e4&ipo=images"
     name: "Pocket notebook"
