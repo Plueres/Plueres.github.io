@@ -37,7 +37,7 @@ article {
     justify-content: center;
     border-radius: $border-radius;
     background: $secondary-color;
-    height: fit-content;
+    height: max-content;
 }
 .article-header-img {
     width: 100%;
@@ -49,6 +49,11 @@ article {
     margin: 1rem 0;
     width: 100%;
     text-wrap: pretty;
+}
+
+.article-text h3 {
+    margin: 15px 0;
+    line-height: 40px;
 }
 
 category {

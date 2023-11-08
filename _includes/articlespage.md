@@ -136,7 +136,7 @@
         var textColor;
         var brColor;
 
-        switch (categoryName) {
+        switch (categoryName.toLowerCase()) {
             case 'minecraft':
                 textColor = 'rgba(0, 112, 40, 1)';
                 brColor = 'rgba(0, 112, 40, 0.2)';
