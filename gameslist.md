@@ -2,106 +2,105 @@
 layout: lists
 permalink: list/gameslist
 ---
-| Name of game | Genre | Platform | Description | Has Played | Has Finished Story | Rating | Elabration |
-| --- | --- | --- | --- | --- | --- | --- |
-| Life is Strange | Time Travel | PC | | Yes | Yes | ⭐⭐⭐⭐⭐ | Good Game |
-| Life is Strange: Before the Storm | | PC | | Yes | Yes | ⭐⭐⭐⭐⭐ | Good Game |
-| Life is Strange 2 | | PC | | Yes | Yes | ⭐⭐⭐⭐⭐ | Good Game |
-| Life is Strange True Colors | | PC | | Yes | Yes | ⭐⭐⭐⭐⭐ | Good Game |
-| No Time | Sandbox | PC | | Yes | Yes | ⭐⭐⭐⭐⭐ | Good Game |
-| Among Us | | PC | | Yes | | ⭐⭐ | |
-| Captain Spirit | | PC | | Yes | Yes | ⭐⭐⭐ | |
-| Brawlhalla | | PC | | Yes | | ⭐⭐ | |
-| Call of Juarez | Shooter | Steam Deck | | Yes | | ⭐⭐⭐ | |
-| The Complex | Simulation | PC | | Yes | Yes | ⭐⭐⭐⭐ | |
-| CS:GO | FPS | PC | | Yes | | ⭐⭐ | |
-| Crab Game | | PC | Carb Game | Yes | | ⭐⭐⭐ | |
-| Creative Destruction | Fortnite Type | PC | | Yes | | ⭐⭐⭐ | |
-| Creativerse | | PC | Idk what this is | Yes | | ⭐ | |
-| FPS Chess | FPS, Chess | Steam Deck | | Yes | No | ⭐⭐⭐ | |
-| Horizon Zero Dawn | | PC, Playstation | | Yes | Yes | ⭐⭐⭐⭐⭐ | |
-| Horizon Forbidden West | | Playstation | | Yes | Yes | ⭐⭐⭐⭐⭐ | |
-| Just Cause 3 | | PC | | Yes | Yes | ⭐⭐⭐⭐⭐ | |
-| Just Cause 4 | | PC, Steam Deck | | Yes | Yes | ⭐⭐⭐⭐⭐ | |
-| Lake | | Steam Deck | | Yes | Yes | ⭐⭐⭐⭐ | |
-| LEGO MARVEL Super Heroes | | Steam Deck | | Yes | No | ⭐⭐⭐ | |
-| LEGO NINJAGO MOVIE Videogame | | Steam Deck | | Yes | No | ⭐⭐⭐ | |
-| LEGO Pirates of the Caribbean | | Steam Deck | | Yes | No | ⭐⭐⭐⭐ | |
-| LEGO Star Wars the Complete Saga | | PC, Steam Deck | | Yes | Yes | ⭐⭐⭐⭐ | |
-| LEGO Star Wars lll The Clone Wars | | Steam Deck | | Yes | No | ⭐⭐⭐⭐ | |
-| LEGO The Incredibles | | Steam Deck | | Yes | Yes | ⭐⭐⭐ | |
-| LEGO The Lord of the Rings | | Steam Deck | | Yes | Yes | ⭐⭐⭐⭐ | |
-| MUCK | | PC | | Yes | No | ⭐⭐⭐ | |
-| Multiversus | | Steam Deck | | Yes | No | ⭐⭐ | |
-| Plasticity | | Steam Deck | | Yes | No | | |
-| Portal | | PC | | Yes | Yes | ⭐⭐⭐⭐ | |
-| Portal 2 | | PC | | Yes | Yes | ⭐⭐⭐⭐⭐ | |
-| Portal Reloaded | | PC | | Yes | Yes | ⭐⭐⭐⭐⭐ | |
-| Portal Stories: Mel | | PC | | Yes | No | ⭐⭐⭐⭐ | |
-| Portal With RTX | | PC | | No | No | | |
-| Reminiscence | | PC | | Yes | No | | |
-| Republique | | Mobile, Steam Deck | | Yes | No | ⭐⭐⭐ | |
-| Jedi: Fallen Order | | PC, Steam Deck | | Yes | No | ⭐⭐⭐⭐ | |
-| Stardew Valley | | PC, Mobile | | Yes | Yes | ⭐⭐⭐⭐⭐ | |
-| Tell Me Why | | PC, Steam Deck | | Yes | No | ⭐⭐⭐ | |
-| Undefeated | | PC, Steam Deck | | Yes | | | |
-| Waves | | Steam Deck | | | | | |
-| What Remains of Edith Finch | | Steam Deck | | Yes | No | | |
-| STAR WARS Battlefront ll | | PC | | Yes | No | ⭐⭐⭐⭐ | |
-| A Plague Tale: Innocence | | Steam Deck | | Yes | Yes | ⭐⭐⭐⭐ | |
-| A Plague Tale: Requiem | | Steam Deck | | Yes | Yes | ⭐⭐⭐⭐ | Bad Performance |
-| Alan Wake | | Steam Deck | | Yes | No | | |
-| Among Trees | Survival | PC | Survival Game | Yes | No | ⭐⭐⭐ | |
-| Astroneer | | PC | | Yes | No | | |
-| Beyond: Two Souls | | PC | | Yes | Yes | ⭐⭐⭐⭐⭐ | |
-| Cyberpunk 2077 | | Steam Deck, PC | | Yes | Yes | ⭐⭐⭐⭐⭐ | |
-| Detroid: Become Human | | Steam Deck | | Yes | No | ⭐⭐ | Not Playable |
-| Exo One | | Steam Deck | Flying disc | Yes | No | | |
-| God of War | | PC | | Yes | No | | |
-| GTA: Vice City | | Mobile, PC | | Yes | Yes | ⭐⭐⭐⭐ | |
-| Harmony: The Fall of Reverie | | PC | | Yes | No | ⭐⭐⭐ | |
-| Hogwards Legacy | | Steam Deck, PC | Wizard | Yes | Yes | ⭐⭐⭐⭐⭐ | |
-| Kena Bridge of Spirits | | | | Yes | No | | |
-| Last Stop | | | | No | No | | |
-| LEGO Batman | | Steam Deck/PC | | Yes | Yes | ⭐⭐⭐⭐ | |
-| LEGO City Undercover | | Steam Deck | | Yes | No | | |
-| LEGO DC Supervillains | | Playstation | | Yes | Yes | ⭐⭐⭐⭐ | |
-| LEGO Star Wars The Skywalker Saga | | Playstation, PC, Steam Deck | | Yes | Yes | ⭐⭐⭐⭐⭐ | |
-| LEGO Worlds | | Steam Deck | | Yes | No | | |
-| Martha is Dead | | PC | | Yes | No | | |
-| Marvels Guardians of the Galaxy | | PC | | Yes | No | | |
-| Marvel’s Spider-Man Miles Morales | | Steam Deck | | Yes | 99% | ⭐⭐⭐⭐⭐ | |
-| Minecraft Legends | | PC | | Yes | No | ⭐⭐ | |
-| Mirror’s Edge | | PC | | Yes | No | | |
-| Mirror’s Edge: Catalyst | | PC | | No | No | | |
-| Ori and the Blind Forest | | PC | | Yes | No | | |
-| Phasmophobia | | PC | | Yes | No | | |
-| RavenField | | PC, Steam Deck | | Yes | No | | |
-| Red Dead Redemption 2 | | PC | | Yes | No | | |
-| Road 96 | | Steam Deck | | Yes | Yes | ⭐⭐⭐⭐ | |
-| Road 96 Mile 0 | | Steam Deck | | Yes | No | ⭐⭐⭐⭐ | |
-| Scars Above | | | | No | | | |
-| Superhot | | PC | | Yes | No | | |
-| Tchia | | PC, Steam Deck | | Yes | No | | |
-| The Last of Us Part 1 | | PC | | Yes | No | | |
-| The Sims 4 | | PC | | Yes | No | | |
-| Twin Mirror | | Steam Deck | | Yes | No | | |
-| Uncharted Legacy of Thieves Collection | | PC | | Yes | No | | |
-| \* \* \* | \* \* \* | \* \* \* | \* \* \* | \* \* \* | \* \* \* | \* \* \* | \* \* \* |
-| Infamous second son | | Playstation | Something with superpowers | No | | | |
-| Havendock | | | | No | | | |
-| GTA 4 | | | | No | | | |
-| Anthem | | | | No | | | |
-| Planet of Lana | | | | Yes | Demo | | |
-| Heavy rain | | | | No | | | |
-| Detroit become human | | | | Yes | No | | |
-| Edengate | | | | No | | | |
-| Green hell | | | | No | | | |
-| Sonic frontiers | | | | No | | | |
-| Twin mirror | | | | No | | | |
-| Portal rtx | | | | Yes | No | | Very Laggy |
-| Season: a letter to the future | | | | No | | | |
-| PREY | | | | No | | | |
-| Starfield | | | | No | | | Still a bit too big and laggy 120GB |
-| sifu | | | | no | | | |
-| Alan Wake 2 | | | | no | | | |
+| Name of game | Genre | Has Played | Has Finished Story | Rating | Elabration |
+| --- | --- | --- | --- | --- | --- |
+| A Plague Tale: Innocence | !Steam Deck | <yes> | <yes> | ⭐⭐⭐⭐ | |
+| A Plague Tale: Requiem | !Steam Deck | <yes> | <yes> | ⭐⭐⭐⭐ | Bad game performance |
+| Alan Wake | !Steam Deck | <yes> | <no> | | |
+| Alan Wake 2 | | <no> | | | |
+| Among Trees | !Survival !PC | <yes> | <no> | ⭐⭐⭐ | Survival Game |
+| Among Us | !PC | <yes> | | ⭐⭐ | |
+| Anthem | | <no> | | | |
+| Astroneer | !PC | <yes> | <no> | | |
+| Beyond: Two Souls | !PC | <yes> | <yes> | ⭐⭐⭐⭐⭐ | Good game |
+| Brawlhalla | !PC | <yes> | | ⭐⭐ | |
+| Call of Juarez | !Shooter !Steam Deck | <yes> | | ⭐⭐⭐ | |
+| Captain Spirit | !PC | <yes> | <yes> | ⭐⭐⭐ | |
+| Crab Game | !PC | <yes> | | ⭐⭐⭐ | Carb Game |
+| Creative Destruction | !Fortnite Type !PC | <yes> | | ⭐⭐⭐ | |
+| Creativerse | !PC | <yes> | | ⭐ | Weird game |
+| CS:GO | !FPS !PC | <yes> | | ⭐⭐ | |
+| Cyberpunk 2077 | !Steam Deck !PC | <yes> | <yes> | ⭐⭐⭐⭐⭐ | |
+| Detroid: Become Human | !Steam Deck | <yes> | <no> | ⭐⭐ | Not playable on steam deck |
+| Edengate | | <no> | | | |
+| Exo One | !Steam Deck | <yes> | <no> | | Flying disc |
+| FPS Chess | !FPS !Chess !Steam Deck | <yes> | <no> | ⭐⭐⭐ | |
+| God of War | !PC | <yes> | <no> | | |
+| Green hell | | <no> | | | |
+| Grand Theft Auto 4 | | <no> | | | |
+| Grand Theft Auto 5 | | <yes> | <yes> | | |
+| Grand Theft Auto: Vice City | !Mobile !PC | <yes> | <yes> | ⭐⭐⭐⭐ | |
+| Harmony: The Fall of Reverie | !PC | <yes> | <no> | ⭐⭐⭐ | |
+| Havendock | | <no> | | | |
+| Heavy rain | | <no> | | | |
+| Hogwards Legacy | !Steam Deck !PC | <yes> | <yes> | ⭐⭐⭐⭐⭐ | Wizard |
+| Horizon Forbidden West | !Playstation | <yes> | <yes> | ⭐⭐⭐⭐⭐ | |
+| Horizon Zero Dawn | !PC !Playstation | <yes> | <yes> | ⭐⭐⭐⭐⭐ | |
+| Infamous second son | !Playstation | <no> | | | Something with superpowers |
+| Jedi: Fallen Order | !PC !Steam Deck | <yes> | <no> | ⭐⭐⭐⭐ | |
+| Just Cause 3 | !PC | <yes> | <yes> | ⭐⭐⭐⭐⭐ | |
+| Just Cause 4 | !PC !Steam Deck | <yes> | <yes> | ⭐⭐⭐⭐⭐ | |
+| Kena Bridge of Spirits | | <yes> | <no> | | |
+| Lake | !Steam Deck | <yes> | <yes> | ⭐⭐⭐⭐ | |
+| Last Stop | | <no> | <no> | | |
+| LEGO Batman | !Steam Deck !PC | <yes> | <yes> | ⭐⭐⭐⭐ | |
+| LEGO City Undercover | !Steam Deck | <yes> | <no> | | |
+| LEGO DC Supervillains | !Playstation | <yes> | <yes> | ⭐⭐⭐⭐ | |
+| LEGO MARVEL Super Heroes | !Steam Deck | <yes> | <no> | ⭐⭐⭐ | |
+| LEGO NINJAGO MOVIE Videogame | !Steam Deck | <yes> | <no> | ⭐⭐⭐ | |
+| LEGO Pirates of the Caribbean | !Steam Deck | <yes> | <no> | ⭐⭐⭐⭐ | |
+| LEGO Star Wars the Complete Saga | !PC !Steam Deck | <yes> | <yes> | ⭐⭐⭐⭐ | |
+| LEGO Star Wars III The Clone Wars | !Steam Deck | <yes> | <no> | ⭐⭐⭐⭐ | |
+| LEGO Star Wars The Skywalker Saga | !Playstation !PC !Steam Deck | <yes> | <yes> | ⭐⭐⭐⭐⭐ | |
+| LEGO The Incredibles | !Steam Deck | <yes> | <yes> | ⭐⭐⭐ | |
+| LEGO The Lord of the Rings | !Steam Deck | <yes> | <yes> | ⭐⭐⭐⭐ | |
+| LEGO Worlds | !Steam Deck | <yes> | <no> | | |
+| Life is Strange | !Time Travel !PC | <yes> | <yes> | ⭐⭐⭐⭐⭐ | Good Game |
+| Life is Strange: Before the Storm | !PC | <yes> | <yes> | ⭐⭐⭐⭐⭐ | Good Game |
+| Life is Strange 2 | !PC | <yes> | <yes> | ⭐⭐⭐⭐⭐ | Good Game |
+| Life is Strange True Colors | !PC | <yes> | <yes> | ⭐⭐⭐⭐⭐ | Good Game |
+| Martha is Dead | !PC | <yes> | <no> | | |
+| Marvel’s Guardians of the Galaxy | !PC | <yes> | <no> | | |
+| Marvel’s Spider-Man Miles Morales | !Steam Deck !Playstation | <yes> | 99% | ⭐⭐⭐⭐⭐ | |
+| Minecraft Legends | !PC | <yes> | <canceled> | ⭐⭐ | |
+| Mirror’s Edge | !PC | <yes> | <no> | | |
+| Mirror’s Edge: Catalyst | !PC | <no> | <no> | | |
+| Muck | !PC | <yes> | <canceled> | ⭐⭐⭐ | |
+| Multiversus | !Steam Deck | <yes> | <canceled> | ⭐⭐ | |
+| No Time | !Sandbox !Time Travel !PC | <yes> | <yes> | ⭐⭐⭐⭐⭐ | Good Game |
+| Ori and the Blind Forest | !PC | <yes> | <no> | | |
+| Phasmophobia | !PC | <yes> | <no> | | |
+| Planet of Lana | | <yes> | Demo | | |
+| Plasticity | !Steam Deck | <yes> | <no> | | |
+| PREY | | <no> | | | |
+| Portal | !PC | <yes> | <yes> | ⭐⭐⭐⭐ | |
+| Portal 2 | !PC | <yes> | <yes> | ⭐⭐⭐⭐⭐ | |
+| Portal Prelude RTX | !PC | <yes> | <no> | ⭐⭐⭐ | This is a whole new game|
+| Portal Reloaded | !PC | <yes> | <yes> | ⭐⭐⭐⭐⭐ | |
+| Portal Stories: Mel | !PC | <yes> | <no> | ⭐⭐⭐⭐ | |
+| Portal With RTX | !PC | <yes> | <no> | | |
+| RavenField | !PC !Steam Deck | <yes> | <no> | | |
+| Red Dead Redemption 2 | !PC | <yes> | <no> | | |
+| Reminiscence | !PC | <yes> | <no> | | |
+| Republique | !Mobile !Steam Deck | <yes> | <no> | ⭐⭐⭐ | |
+| Road 96 | !Steam Deck | <yes> | <yes> | ⭐⭐⭐⭐ | |
+| Road 96 Mile 0 | !Steam Deck | <yes> | <no> | ⭐⭐⭐⭐ | |
+| Scars Above | | <yes> | <canceled>  | | |
+| Season: a letter to the future | | <no> | | | |
+| sifu | | <no> | | | |
+| Sonic frontiers | | <no> | | | |
+| STAR WARS Battlefront ll | !PC | <yes> | <no> | ⭐⭐⭐⭐ | |
+| Stardew Valley | !PC !Mobile | <yes> | <yes> | ⭐⭐⭐⭐⭐ | |
+| Starfield | | <no> | | | Still a bit too big and laggy 120GB |
+| Superhot | !PC | <yes> | <no> | | |
+| Tchia | !PC !Steam Deck | <yes> | <canceled> | | |
+| Tell Me Why | !PC !Steam Deck | <yes> | <no> | ⭐⭐⭐ | |
+| The Complex | !Simulation !PC | <yes> | <yes> | ⭐⭐⭐⭐ | Backrooms game |
+| The Last of Us Part 1 | !PC | <yes> | <no> | | |
+| The Sims 4 | !PC | <yes> | <no> | | |
+| Thinking with Time Machine | !PC | <yes> | <no> | | |
+| Twin Mirror | !Steam Deck | <yes> | <no> | | |
+| Uncharted Legacy of Thieves Collection | !PC | <yes> | <no> | | |
+| Undefeated | !PC !Steam Deck | <yes> | <canceled>  | | |
+| Waves | !Steam Deck | <yes> | <canceled> | | |
+| What Remains of Edith Finch | !Steam Deck | <yes> | <no> | | |
