@@ -33,6 +33,7 @@ github_username:  Plueres
 collections:
   wishlists:
     output: true
+    permalink: /:collection/:title/
   articles:
     output: true
     permalink: articleposts/:title/
