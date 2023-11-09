@@ -130,6 +130,13 @@ main {
     gap: 3rem;
 }
 
+@include media-query($on-palm) {
+    #lists .wrapper {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
 #lists a {
     display: flex;
     align-items: center;
@@ -274,9 +281,9 @@ blockquote {
 pre,
 code {
     @include relative-font-size(0.9375);
-    border: 1px solid $grey-color-light;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 3px;
-    background-color: #eef;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 code {

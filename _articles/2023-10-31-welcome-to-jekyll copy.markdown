@@ -1,9 +1,8 @@
 ---
 layout: article
-title:  "jekyll"
+title:  "Welcome to Jekyll!"
 date:   2023-10-31 19:49:39 +0100
-header_image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmichael-kuehnel.de%2Fassets%2Fimg%2Fjekyll-logo.png&f=1&nofb=1&ipt=69d4b52c989255227545970c0590fe09b48b153574b2df61eca43d3dcba0e88e&ipo=images"
-categories: Jekyll-Update
+categories: jekyll update
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
