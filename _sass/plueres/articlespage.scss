@@ -60,3 +60,13 @@ category {
     padding: 3px 6px;
     border-radius: 6px;
 }
+
+@include media-query($on-palm) {
+    articles {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #articles-grid {
+        height: 75vh;
+    }
+}
