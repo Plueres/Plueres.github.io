@@ -94,6 +94,7 @@ window.onload = function () {
     document.getElementById('lists-button').addEventListener('click', function () {
         document.getElementById('home').style.transform = 'translateX(100vw)';
         document.getElementById('lists').style.transform = 'translateX(0)';
+        document.getElementById('about').style.transform = 'translateY(100vw)';
         history.pushState(null, null, 'lists');
         allowScroll = false; // Disable scrolling
     });
@@ -101,6 +102,7 @@ window.onload = function () {
     document.getElementById('articles-button').addEventListener('click', function () {
         document.getElementById('home').style.transform = 'translateX(-100vw)';
         document.getElementById('articles').style.transform = 'translateX(0)';
+        document.getElementById('about').style.transform = 'translateY(100vw)';
         history.pushState(null, null, 'articles');
         allowScroll = false; // Disable scrolling
     });
@@ -108,6 +110,7 @@ window.onload = function () {
     document.getElementById('lists-back-button').addEventListener('click', function () {
         document.getElementById('home').style.transform = 'translateX(0)';
         document.getElementById('lists').style.transform = 'translateX(-100vw)';
+        document.getElementById('about').style.transform = 'translateY(100vw)';
         history.pushState(null, null, '/');
         allowScroll = true; // Enable scrolling
     });
@@ -115,6 +118,7 @@ window.onload = function () {
     document.getElementById('articles-back-button').addEventListener('click', function () {
         document.getElementById('home').style.transform = 'translateX(0)';
         document.getElementById('articles').style.transform = 'translateX(100vw)';
+        document.getElementById('about').style.transform = 'translateY(100vw)';
         history.pushState(null, null, '/');
         allowScroll = true; // Enable scrolling
     });
