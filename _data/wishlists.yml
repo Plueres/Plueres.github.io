@@ -1,20 +1,18 @@
 wishlist:
-  - image: ""
-    name: ""
+  - name: "Galaxy Smarttag"
+    image: "https://m.media-amazon.com/images/I/619mOsYv29L._AC_SX679_.jpg"
     links:
-      - name: "bol.com"
-        url: ""
-      - name: "amazon"
-        url: ""
+      - name: "amazon.nl"
+        url: "https://www.amazon.nl/Origineel-Samsung-Galaxy-SmartTag-Siliconen/dp/B0CHRWMWF1/ref=sr_1_82?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2CJRQZUXIYLG4&keywords=samsung&qid=1699706652&refinements=p_89%3ASAMSUNG&rnid=16463267031&s=electronics&sprefix=samsung%2Caps%2C85&sr=1-82"
 christmaslist:
   - image: "https://media.s-bol.com/x9vgV4Nrmknq/qYzKyPD/681x1200.jpg"
     name: "Deken die mouwen heeft"
     description: "(het liefst ook met handschoenen als die bestaan)"
     links:
       - name: "bol.com - van de foto"
-        url: "https://www.bol.com/nl/nl/p/kesser-fleece-deken-met-mouwen-voetenzak-plaid-met-mouwen-extra-snuggie-incl-2-in-1-externe-zak-draagbare-hoodie-deken-bruin/9300000160017718/"
-      - name: "bol.com - een andere soort"
         url: "https://www.bol.com/nl/nl/p/o-daddy-fleece-deken-met-mouwen-fleece-plaid-150x200-fleece-deken-sherpa-super-zacht-plaids-met-mouwen-grijs/9200000054686077/?bltgh=tf9-4hxaEzvaQ98ujpxPjg.2.7.ProductImage"
+      - name: "bol.com - een andere soort"
+        url: "https://www.bol.com/nl/nl/p/kesser-fleece-deken-met-mouwen-voetenzak-plaid-met-mouwen-extra-snuggie-incl-2-in-1-externe-zak-draagbare-hoodie-deken-bruin/9300000160017718/"
   - image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.tldevtech.com%2Fwp-content%2Fuploads%2F2021%2F06%2FAISBUGUR-Pocket-Notebook.jpg&f=1&nofb=1&ipt=431a9781c0d2369db81bb16e4f6247622d019e976be07456851080bb96cb08e4&ipo=images"
     name: "Pocket notebook"
     links:  
@@ -27,3 +25,10 @@ christmaslist:
     links:
       - name: "amazon.com"
         url: "https://www.amazon.com/Plinyvel-Compatible-Moleskine-Waterproof-Multifunctional/dp/B0BYHYRCJW/ref=sr_1_8?keywords=pocket%2Bnotebook%2Bcover&qid=1699457536&refinements=p_36%3A1253550011&rnid=386479011&s=office-products&sr=1-8&th=1"
+      - name: "amazon.nl"
+        url: "https://www.amazon.nl/Journal-Wisdompro-Notebook-Moleskine-Notebooks/dp/B08P2MRW4K/ref=sr_1_5?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3V73361Y97C6O&keywords=pocket+%2B+notebook+%2B+journal+cover&qid=1699705786&sprefix=pocket+notebook+journal+cover%2Caps%2C93&sr=8-5"
+  - name: "USB C Adapter 4 Stuks"
+    image: "https://m.media-amazon.com/images/I/51CZ9AOq8JL._AC_SX679_.jpg"
+    links:
+      - name: "amazon.nl"
+        url: "https://www.amazon.nl/Adapter-Compatibel-MacBook-Samsung-Telefoons/dp/B0B8PBDZS9/ref=zg_bs_g_electronics_sccl_46/261-1502484-7867435?psc=1"

@@ -2,7 +2,7 @@
     <button id="lists-button">Lists</button>
     <button id="articles-button">Articles</button>
     <div class="wrapper">
-        <h2 id="animated-text">Rick Slierendregt</h2>
+        <h1 id="animated-text">Rick Slierendregt</h1>
     </div>
 </div>
 

@@ -96,6 +96,7 @@ permalink: list/gameslist
 | Tchia | !PC !Steam Deck | <yes> | <canceled> | | |
 | Tell Me Why | !PC !Steam Deck | <yes> | <no> | ⭐⭐⭐ | |
 | The Complex | !Simulation !PC | <yes> | <yes> | ⭐⭐⭐⭐ | Backrooms game |
+| The Gap | !Deja Vu !Story !Puzzle !PC | <yes> | <yes> | ⭐⭐⭐⭐⭐ | very interesting game |
 | The Last of Us Part 1 | !PC | <yes> | <no> | | |
 | The Sims 4 | !PC | <yes> | <no> | | |
 | Thinking with Time Machine | !PC | <yes> | <no> | | |
