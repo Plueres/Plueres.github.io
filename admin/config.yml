@@ -3,7 +3,7 @@ backend:
   repo: Plueres/Plueres.github.io
   branch: main
 
-media_folder: "assets/images/uploads"
+# media_folder: "assets/images/uploads"
 
 collections:
   - name: "data"
