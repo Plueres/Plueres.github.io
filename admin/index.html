@@ -22,10 +22,12 @@
 
                     return h('div', { style: { fontFamily: 'sans-serif' } },
                         h('table', {},
-                            Object.keys(data).map(key =>
-                                h('tr', {},
-                                    h('td', {}, key),
-                                    h('td', {}, data[key])
+                            h('tbody', {},
+                                Object.keys(data).map(key =>
+                                    h('tr', {},
+                                        h('td', {}, key),
+                                        h('td', {}, data[key])
+                                    )
                                 )
                             )
                         )
