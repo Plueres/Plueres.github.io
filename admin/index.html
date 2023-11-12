@@ -15,18 +15,34 @@
         <script>
             const h = React.createElement;
 
-            CMS.registerPreviewTemplate('data', class extends React.Component {
+            CMS.registerPreviewTemplate('shows', class extends React.Component {
                 render() {
                     const entry = this.props.entry;
-                    const data = entry.get('data');
+                    const data = entry.get('data').toJS();
 
                     return h('div', { style: { fontFamily: 'sans-serif' } },
                         h('table', {},
                             h('tbody', {},
-                                Object.keys(data).map(key =>
+                                data.shows.map(show =>
                                     h('tr', {},
-                                        h('td', {}, key),
-                                        h('td', {}, data[key])
+                                        h('td', {}, 'Title'),
+                                        h('td', {}, show.title),
+                                        h('tr', {},
+                                            h('td', {}, 'Tags'),
+                                            h('td', {}, show.tags),
+                                        ),
+                                        h('tr', {},
+                                            h('td', {}, 'Watched'),
+                                            h('td', {}, show.watched),
+                                        ),
+                                        h('tr', {},
+                                            h('td', {}, 'Personal_Rating'),
+                                            h('td', {}, show.rating),
+                                        ),
+                                        h('tr', {},
+                                            h('td', {}, 'Review'),
+                                            h('td', {}, show.review),
+                                        )
                                     )
                                 )
                             )
