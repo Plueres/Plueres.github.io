@@ -93,14 +93,14 @@
                                     h('th', {}, 'Rating'),
                                     h('th', {}, 'Review')
                                 ),
-                                data.movies.map(movie =>
+                                data.game.map(game =>
                                     h('tr', {},
-                                        h('td', { style: { padding: '10px' } }, movie.title),
-                                        h('td', { style: { padding: '10px' } }, movie.tags),
-                                        h('td', { style: { padding: '10px' } }, movie.played),
-                                        h('td', { style: { padding: '10px' } }, movie.finished),
-                                        h('td', { style: { padding: '10px' } }, movie.personal_rating),
-                                        h('td', { style: { padding: '10px' } }, movie.review),
+                                        h('td', { style: { padding: '10px' } }, game.title),
+                                        h('td', { style: { padding: '10px' } }, game.tags),
+                                        h('td', { style: { padding: '10px' } }, game.played),
+                                        h('td', { style: { padding: '10px' } }, game.finished),
+                                        h('td', { style: { padding: '10px' } }, game.personal_rating),
+                                        h('td', { style: { padding: '10px' } }, game.review),
                                     )
                                 )
                             )
