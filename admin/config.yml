@@ -18,11 +18,11 @@ collections:
             name: "movies"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Tags", name: "tags", widget: "string"}
-              - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no"}
-              - {label: "Personal_Rating", name: "rating", widget: "number"}
-              - {label: "Review", name: "review", widget: "text"}
+              - {label: "Title", name: "title", widget: "string", required: false}
+              - {label: "Tags", name: "tags", widget: "string", required: false}
+              - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
+              - {label: "Personal_Rating", name: "rating", widget: "number", required: false}
+              - {label: "Review", name: "review", widget: "text", required: false}
       - name: "shows"
         label: "Shows"
         file: "_data/shows.yml"
@@ -31,8 +31,8 @@ collections:
             name: "shows"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Tags", name: "tags", widget: "string"}
-              - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no"}
-              - {label: "Personal_Rating", name: "rating", widget: "number"}
-              - {label: "Review", name: "review", widget: "text"}
+              - {label: "Title", name: "title", widget: "string", required: false}
+              - {label: "Tags", name: "tags", widget: "string", required: false}
+              - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
+              - {label: "Personal_Rating", name: "rating", widget: "number", required: false}
+              - {label: "Review", name: "review", widget: "text", required: false}
