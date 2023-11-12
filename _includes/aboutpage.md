@@ -24,6 +24,10 @@
             <div style="height: 100%;">
             </div>
             <div style="height: 10%;">
+                <a href="https://app.netlify.com/sites/plueres/deploys">
+                    <img src="https://api.netlify.com/api/v1/badges/ff94a9c7-9b63-409d-849f-d7b5bed016d7/deploy-status"
+                        alt="Netlify Status">
+                </a>
             </div>
         </div>
         <div id="gridcol4">
