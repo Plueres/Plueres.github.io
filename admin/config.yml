@@ -38,4 +38,4 @@ collections:
                 options: ["!yes", "!no", "!notsure"]
                 default: "!no"
               - {label: "Personal_Rating", name: "rating", widget: "number"}
-              - {label:
+              - {label: "Review", name: "review", widget: "text"}
