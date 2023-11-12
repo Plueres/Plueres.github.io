@@ -8,27 +8,21 @@ media_folder: "assets/images/uploads"
 collections:
   - name: "movies"
     label: "Movies"
-    file: "_data/movieslist.yml"  # Adjust this to the path of your YAML file
+    label_singular: "Movie"  # The label for each item in the list
+    file: "_data/movieslist.yml"
     fields:
-      - label: "Movies"
-        name: "movies"
-        widget: "list"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Tags", name: "tags", widget: "string"}
-          - {label: "Watched", name: "watched", widget: "boolean", default: false}
-          - {label: "Personal Rating", name: "rating", widget: "number"}
-          - {label: "Review", name: "review", widget: "text"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "string"}
+      - {label: "Watched", name: "watched", widget: "boolean", default: false}
+      - {label: "Personal Rating", name: "rating", widget: "number"}
+      - {label: "Review", name: "review", widget: "text"}
   - name: "shows"
     label: "Shows"
-    file: "_data/showslist.yml"  # Adjust this to the path of your YAML file
+    label_singular: "Show"  # The label for each item in the list
+    file: "_data/showslist.yml"
     fields:
-      - label: "Shows"
-        name: "shows"
-        widget: "list"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Tags", name: "tags", widget: "string"}
-          - {label: "Watched", name: "watched", widget: "boolean", default: false}
-          - {label: "Rating", name: "rating", widget: "number"}
-          - {label: "Review", name: "review", widget: "text"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "string"}
+      - {label: "Watched", name: "watched", widget: "boolean", default: false}
+      - {label: "Rating", name: "rating", widget: "number"}
+      - {label: "Review", name: "review", widget: "text"}
