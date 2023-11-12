@@ -61,13 +61,13 @@
                                     h('th', {}, 'Rating'),
                                     h('th', {}, 'Review')
                                 ),
-                                data.shows.map(show =>
+                                data.movies.map(movie =>
                                     h('tr', {},
-                                        h('td', { style: { padding: '10px' } }, show.title),
-                                        h('td', { style: { padding: '10px' } }, show.tags),
-                                        h('td', { style: { padding: '10px' } }, show.watched),
-                                        h('td', { style: { padding: '10px' } }, show.rating),
-                                        h('td', { style: { padding: '10px' } }, show.review),
+                                        h('td', { style: { padding: '10px' } }, movie.title),
+                                        h('td', { style: { padding: '10px' } }, movie.tags),
+                                        h('td', { style: { padding: '10px' } }, movie.watched),
+                                        h('td', { style: { padding: '10px' } }, movie.rating),
+                                        h('td', { style: { padding: '10px' } }, movie.review),
                                     )
                                 )
                             )
