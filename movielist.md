@@ -5,5 +5,5 @@ permalink: list/movielist
 
 | Title | Tags | Watched | Personal Rating | Review |
 | --- | --- | --- | --- | --- |
-{% for movie in site.data.movielist %}| {{ movie.Title }} | {{ movie.Tags }} | {{ movie.Watched }} | {{ movie.Personal_Rating }} | {{ movie.Review }} |
+{% for movie in site.data.movielist %}| {{ movie.title }} | {{ movie.tags }} | {{ movie.watched }} | {{ movie.personal_rating }} | {{ movie.review }} |
 {% endfor %}
