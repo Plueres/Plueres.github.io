@@ -20,11 +20,7 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Tags", name: "tags", widget: "string"}
-              - label: "Watched"
-                name: "watched"
-                widget: "select"
-                options: ["!yes", "!no", "!notsure"]
-                default: "!no"
+              - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no"}
               - {label: "Personal_Rating", name: "rating", widget: "number"}
               - {label: "Review", name: "review", widget: "text"}
       - name: "shows"
@@ -37,11 +33,6 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Tags", name: "tags", widget: "string"}
-              - {label: "Season", name: "season", widget: "string"}
-              - label: "Watched"
-                name: "watched"
-                widget: "select"
-                options: ["!yes", "!no", "!notsure"]
-                default: "!no"
+              - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no"}
               - {label: "Personal_Rating", name: "rating", widget: "number"}
               - {label: "Review", name: "review", widget: "text"}
