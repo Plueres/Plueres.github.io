@@ -25,22 +25,17 @@
                             h('tbody', {},
                                 data.shows.map(show =>
                                     h('tr', {},
-                                        h('td', {}, 'Title'),
                                         h('td', {}, show.title),
                                         h('tr', {},
-                                            h('td', {}, 'Tags'),
                                             h('td', {}, show.tags),
                                         ),
                                         h('tr', {},
-                                            h('td', {}, 'Watched'),
                                             h('td', {}, show.watched),
                                         ),
                                         h('tr', {},
-                                            h('td', {}, 'Personal_Rating'),
                                             h('td', {}, show.rating),
                                         ),
                                         h('tr', {},
-                                            h('td', {}, 'Review'),
                                             h('td', {}, show.review),
                                         )
                                     )
