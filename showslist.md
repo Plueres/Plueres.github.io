@@ -1,6 +1,6 @@
 ---
 layout: lists
-permalink: list/showslist
+permalink: list/showslist?sort=name
 ---
 
 | Title | Tags | Season | Watched | Personal Rating | Review |
