@@ -21,7 +21,7 @@ collections:
               - {label: "Title", name: "title", widget: "string", required: false}
               - {label: "Tags", name: "tags", widget: "string", required: false}
               - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
-              - {label: "Personal_Rating", name: "rating", widget: "number", required: false}
+              - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
               - {label: "Review", name: "review", widget: "text", required: false}
       - name: "shows"
         label: "Shows"
@@ -34,5 +34,5 @@ collections:
               - {label: "Title", name: "title", widget: "string", required: false}
               - {label: "Tags", name: "tags", widget: "string", required: false}
               - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
-              - {label: "Personal_Rating", name: "rating", widget: "number", required: false}
+              - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
               - {label: "Review", name: "review", widget: "text", required: false}

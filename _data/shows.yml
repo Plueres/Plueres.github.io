@@ -151,7 +151,7 @@ shows:
     review: null
   - watched: "!no"
     title: Gen V
-    rating: 4
+    personal_rating: 4
   - title: Glitch
     tags: null
     season: Dead people coming back to life. 3 seasons
