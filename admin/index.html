@@ -26,6 +26,37 @@
                                 h('tr', {},
                                     h('th', {}, 'Title'),
                                     h('th', {}, 'Tags'),
+                                    h('th', {}, 'Season'),
+                                    h('th', {}, 'Watched'),
+                                    h('th', {}, 'Rating'),
+                                    h('th', {}, 'Review')
+                                ),
+                                data.shows.map(show =>
+                                    h('tr', {},
+                                        h('td', { style: { padding: '10px' } }, show.title),
+                                        h('td', { style: { padding: '10px' } }, show.tags),
+                                        h('td', { style: { padding: '10px' } }, show.season),
+                                        h('td', { style: { padding: '10px' } }, show.watched),
+                                        h('td', { style: { padding: '10px' } }, show.rating),
+                                        h('td', { style: { padding: '10px' } }, show.review),
+                                    )
+                                )
+                            )
+                        )
+                    );
+                }
+            });
+            CMS.registerPreviewTemplate('movies', class extends React.Component {
+                render() {
+                    const entry = this.props.entry;
+                    const data = entry.get('data').toJS();
+
+                    return h('div', { style: { fontFamily: 'sans-serif' } },
+                        h('table', {},
+                            h('tbody', {},
+                                h('tr', {},
+                                    h('th', {}, 'Title'),
+                                    h('th', {}, 'Tags'),
                                     h('th', {}, 'Watched'),
                                     h('th', {}, 'Rating'),
                                     h('th', {}, 'Review')
