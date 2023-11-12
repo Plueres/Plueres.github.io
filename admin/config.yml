@@ -6,22 +6,24 @@ backend:
 media_folder: "assets/images/uploads"
 
 collections:
-  - name: "movies"
-    label: "Movies"
-    file: "movielist.md"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "string"}
-      - {label: "Watched", name: "watched", widget: "boolean", default: false}
-      - {label: "Rating", name: "rating", widget: "number"}
-      - {label: "Review", name: "review", widget: "text"}
-
-  - name: "shows"
-    label: "Shows"
-    file: "showlist.md"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "string"}
-      - {label: "Watched", name: "watched", widget: "boolean", default: false}
-      - {label: "Rating", name: "rating", widget: "number"}
-      - {label: "Review", name: "review", widget: "text"}
+  - name: "content"
+    label: "Content"
+    files:
+      - name: "movies"
+        label: "Movies"
+        file: "movielist.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Tags", name: "tags", widget: "string"}
+          - {label: "Watched", name: "watched", widget: "boolean", default: false}
+          - {label: "Rating", name: "rating", widget: "number"}
+          - {label: "Review", name: "review", widget: "text"}
+      - name: "shows"
+        label: "Shows"
+        file: "showlist.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Tags", name: "tags", widget: "string"}
+          - {label: "Watched", name: "watched", widget: "boolean", default: false}
+          - {label: "Rating", name: "rating", widget: "number"}
+          - {label: "Review", name: "review", widget: "text"}
