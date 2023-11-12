@@ -1,0 +1,607 @@
+games:
+- title: "A Plague Tale: Innocence"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 4
+  review: 
+- title: "A Plague Tale: Requiem"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 4
+  review: Bad game performance
+- title: "Alan Wake"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Alan Wake 2"
+  tags: ""
+  played: "<no>"
+  finished: 
+  rating: 
+  review: 
+- title: "Among Trees"
+  tags: "!Survival !PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 3
+  review: Survival Game
+- title: "Among Us"
+  tags: "!PC"
+  played: "<yes>"
+  finished: 
+  rating: 2
+  review: 
+- title: "Anthem"
+  tags: ""
+  played: "<no>"
+  finished: 
+  rating: 
+  review: 
+- title: "Astroneer"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Beyond: Two Souls"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: Good game
+- title: "Brawlhalla"
+  tags: "!PC"
+  played: "<yes>"
+  finished: 
+  rating: 2
+  review: 
+- title: "Call of Juarez"
+  tags: "!Shooter !Steam Deck"
+  played: "<yes>"
+  finished: 
+  rating: 3
+  review: 
+- title: "Captain Spirit"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 3
+  review: 
+- title: "Crab Game"
+  tags: "!PC"
+  played: "<yes>"
+  finished: 
+  rating: 3
+  review: Carb Game
+- title: "Creative Destruction"
+  tags: "!Fortnite Type !PC"
+  played: "<yes>"
+  finished: 
+  rating: 3
+  review: 
+- title: "Creativerse"
+  tags: "!PC"
+  played: "<yes>"
+  finished: 
+  rating: 1
+  review: Weird game
+- title: "CS:GO"
+  tags: "!FPS !PC"
+  played: "<yes>"
+  finished: 
+  rating: 2
+  review: 
+- title: "Cyberpunk 2077"
+  tags: "!Steam Deck !PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: 
+- title: "Detroid: Become Human"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 2
+  review: Not playable on steam deck
+- title: "Edengate"
+  tags: ""
+  played: "<no>"
+  finished: 
+  rating: 
+  review: 
+- title: "Exo One"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: Flying disc
+- title: "FPS Chess"
+  tags: "!FPS !Chess !Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 3
+  review: 
+- title: "God of War"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Green hell"
+  tags: ""
+  played: "<no>"
+  finished: 
+  rating: 
+  review: 
+- title: "Grand Theft Auto 4"
+  tags: ""
+  played: "<no>"
+  finished: 
+  rating: 
+  review: 
+- title: "Grand Theft Auto 5"
+  tags: ""
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 
+  review: 
+- title: "Grand Theft Auto: Vice City"
+  tags: "!Mobile !PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 4
+  review: 
+- title: "Harmony: The Fall of Reverie"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 3
+  review: 
+- title: "Havendock"
+  tags: ""
+  played: "<no>"
+  finished: 
+  rating: 
+  review: 
+- title: "Heavy rain"
+  tags: ""
+  played: "<no>"
+  finished: 
+  rating: 
+  review: 
+- title: "Hogwards Legacy"
+  tags: "!Steam Deck !PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: Wizard
+- title: "Horizon Forbidden West"
+  tags: "!Playstation"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: 
+- title: "Horizon Zero Dawn"
+  tags: "!PC !Playstation"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: 
+- title: "Infamous second son"
+  tags: "!Playstation"
+  played: "<no>"
+  finished: 
+  rating: 
+  review: Something with superpowers
+- title: "Jedi: Fallen Order"
+  tags: "!PC !Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 4
+  review: 
+- title: "Just Cause 3"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: 
+- title: "Just Cause 4"
+  tags: "!PC !Steam Deck"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: 
+- title: "Kena Bridge of Spirits"
+  tags: ""
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Lake"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 4
+  review: 
+- title: "Last Stop"
+  tags: ""
+  played: "<no>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "LEGO Batman"
+  tags: "!Steam Deck !PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 4
+  review: 
+- title: "LEGO City Undercover"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "LEGO DC Supervillains"
+  tags: "!Playstation"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 4
+  review: 
+- title: "LEGO MARVEL Super Heroes"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 3
+  review: 
+- title: "LEGO NINJAGO MOVIE Videogame"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 3
+  review: 
+- title: "LEGO Pirates of the Caribbean"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 4
+  review: 
+- title: "LEGO Star Wars the Complete Saga"
+  tags: "!PC !Steam Deck"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 4
+  review: 
+- title: "LEGO Star Wars III The Clone Wars"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 4
+  review: 
+- title: "LEGO Star Wars The Skywalker Saga"
+  tags: "!Playstation !PC !Steam Deck"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: 
+- title: "LEGO The Incredibles"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 3
+  review: 
+- title: "LEGO The Lord of the Rings"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 4
+  review: 
+- title: "LEGO Worlds"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Life is Strange"
+  tags: "!Time Travel !PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: Good Game
+- title: "Life is Strange: Before the Storm"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: Good Game
+- title: "Life is Strange 2"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: Good Game
+- title: "Life is Strange True Colors"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: Good Game
+- title: "Martha is Dead"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Marvel’s Guardians of the Galaxy"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Marvel’s Spider-Man Miles Morales"
+  tags: "!Steam Deck !Playstation"
+  played: "<yes>"
+  finished: 99%
+  rating: 5
+  review: 
+- title: "Minecraft Legends"
+  tags: "!PC"
+  played: "<yes>"
+  finished: <canceled>
+  rating: 2
+  review: 
+- title: "Mirror’s Edge"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Mirror’s Edge: Catalyst"
+  tags: "!PC"
+  played: "<no>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Muck"
+  tags: "!PC"
+  played: "<yes>"
+  finished: <canceled>
+  rating: 3
+  review: 
+- title: "Multiversus"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: <canceled>
+  rating: 2
+  review: 
+- title: "No Time"
+  tags: "!Sandbox !Time Travel !PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: Good Game
+- title: "Ori and the Blind Forest"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Phasmophobia"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Planet of Lana"
+  tags: ""
+  played: "<yes>"
+  finished: Demo
+  rating: 
+  review: 
+- title: "Plasticity"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "PREY"
+  tags: ""
+  played: "<no>"
+  finished: 
+  rating: 
+  review: 
+- title: "Portal"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 4
+  review: 
+- title: "Portal 2"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: 
+- title: "Portal Prelude RTX"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 3
+  review: This is a whole new game
+- title: "Portal Reloaded"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: 
+- title: "Portal Stories: Mel"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 4
+  review: 
+- title: "Portal With RTX"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "RavenField"
+  tags: "!PC !Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Red Dead Redemption 2"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Reminiscence"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Republique"
+  tags: "!Mobile !Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 3
+  review: 
+- title: "Road 96"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 4
+  review: 
+- title: "Road 96 Mile 0"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 4
+  review: 
+- title: "Scars Above"
+  tags: ""
+  played: "<yes>"
+  finished: <canceled>
+  rating: 
+  review: 
+- title: "Season: a letter to the future"
+  tags: ""
+  played: "<no>"
+  finished: 
+  rating: 
+  review: 
+- title: "sifu"
+  tags: ""
+  played: "<no>"
+  finished: 
+  rating: 
+  review: 
+- title: "Sonic frontiers"
+  tags: ""
+  played: "<no>"
+  finished: 
+  rating: 
+  review: 
+- title: "STAR WARS Battlefront ll"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 4
+  review: 
+- title: "Stardew Valley"
+  tags: "!PC !Mobile"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: 
+- title: "Starfield"
+  tags: ""
+  played: "<no>"
+  finished: 
+  rating: 
+  review: Still a bit too big and laggy 120GB
+- title: "Superhot"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Tchia"
+  tags: "!PC !Steam Deck"
+  played: "<yes>"
+  finished: <canceled>
+  rating: 
+  review: 
+- title: "Tell Me Why"
+  tags: "!PC !Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 3
+  review: 
+- title: "The Complex"
+  tags: "!Simulation !PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 4
+  review: Backrooms game
+- title: "The Gap"
+  tags: "!Deja Vu !Story !Puzzle !PC"
+  played: "<yes>"
+  finished: "<yes>"
+  rating: 5
+  review: very interesting game
+- title: "The Last of Us Part 1"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "The Sims 4"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Thinking with Time Machine"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Twin Mirror"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Uncharted Legacy of Thieves Collection"
+  tags: "!PC"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 
+- title: "Undefeated"
+  tags: "!PC !Steam Deck"
+  played: "<yes>"
+  finished: <canceled>
+  rating: 
+  review: 
+- title: "Waves"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: <canceled>
+  rating: 
+  review: 
+- title: "What Remains of Edith Finch"
+  tags: "!Steam Deck"
+  played: "<yes>"
+  finished: "<no>"
+  rating: 
+  review: 

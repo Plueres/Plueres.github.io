@@ -37,18 +37,23 @@
             </div>
             <div style="height: 100%;">
             </div>
-            <div style="height: 10%;">
+            <div style="height: 10%; padding: 0;">
                 <a href="https://app.netlify.com/sites/plueres/deploys">
                     <img src="https://api.netlify.com/api/v1/badges/ff94a9c7-9b63-409d-849f-d7b5bed016d7/deploy-status"
-                        alt="Netlify Status">
+                        alt="Netlify Status" style="width: 50%;">
                 </a>
             </div>
         </div>
         <div id="gridcol4">
             <div style="height: 55%;">
             </div>
-            <div style="height: 30%;">
-            </div>
+            <span style="display: grid;grid-template-columns: 1fr 1fr;height: 30%;gap: 1rem;">
+                <div>
+                </div>
+                <div>
+                </div>
+            </span>
+
             <div style="height: 100%;">
             </div>
         </div>
