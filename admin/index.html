@@ -10,8 +10,12 @@
     <body>
         <!-- Include the script that builds the page and powers Netlify CMS -->
         <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+        <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
         <script>
-            CMS.registerPreviewTemplate('posts', createClass({
+            const h = React.createElement;
+
+            CMS.registerPreviewTemplate('data', class extends React.Component {
                 render() {
                     const entry = this.props.entry;
                     const title = entry.getIn(['data', 'title']);
@@ -22,7 +26,7 @@
                         h('div', {}, body)
                     );
                 }
-            }));
+            });
         </script>
     </body>
 
