@@ -8,7 +8,18 @@ media_folder: "assets/images/uploads"
 collections:
   - name: "movies"
     label: "Movies"
-    file: "_movies/movielist.md"
+    file: "movielist.md"
+    fields:
+      - label: "Movies"
+        name: "movies"
+        widget: "list"
+        fields:
+          - {label: "Row", name: "row", widget: "list", fields: [
+              {label: "Column", name: "column", widget: "string"}
+            ]}
+  - name: "shows"
+    label: "Shows"
+    file: "movielist.md"
     fields:
       - label: "Movies"
         name: "movies"
