@@ -32,11 +32,11 @@
                                 ),
                                 data.shows.map(show =>
                                     h('tr', {},
-                                        h('td', {}, show.title),
-                                        h('td', {}, show.tags),
-                                        h('td', {}, show.watched),
-                                        h('td', {}, show.rating),
-                                        h('td', {}, show.review),
+                                        h('td', { style: { padding: '10px' } }, show.title),
+                                        h('td', { style: { padding: '10px' } }, show.tags),
+                                        h('td', { style: { padding: '10px' } }, show.watched),
+                                        h('td', { style: { padding: '10px' } }, show.rating),
+                                        h('td', { style: { padding: '10px' } }, show.review),
                                     )
                                 )
                             )
