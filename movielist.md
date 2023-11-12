@@ -1,6 +1,6 @@
 ---
 layout: lists
-permalink: list/movielist?sort=name
+permalink: list/movielist
 ---
 
 | Title | Tags | Watched | Personal Rating | Review |

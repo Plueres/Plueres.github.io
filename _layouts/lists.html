@@ -122,6 +122,19 @@ layout: pages
                 }
             });
         }
+        // Read the 'sort' parameter from the URL
+        var url = new URL(window.location.href);
+        var sortParam = url.searchParams.get('sort');
+
+        if (sortParam) {
+            // Set the selected option of the 'sort' dropdown
+            var sortDropdown = document.getElementById('sort');
+            sortDropdown.value = sortParam;
+
+            // Manually dispatch the 'change' event
+            var event = new Event('change');
+            sortDropdown.dispatchEvent(event);
+        }
     });
 
     document.body.innerHTML = replacedContent; // Set the HTML content back
@@ -216,23 +229,12 @@ layout: pages
 
         // Update the URL's query parameters
         var url = new URL(window.location.href);
-        url.searchParams.set('sort', value);
-        window.history.pushState({}, '', url);
-    }
+        var defaultSortValue = 'name'; // replace with your default sort value
 
-    // Read the 'sort' parameter from the URL
-    var url = new URL(window.location.href);
-    var sortParam = url.searchParams.get('sort');
-
-    if (sortParam) {
-        // Set the selected option of the 'sort' dropdown
-        document.getElementById('sort').value = sortParam;
-
-        // Trigger the sorting function
-        sortTable.call(document.getElementById('sort'));
-    } else {
-        // Trigger the sorting function with the default option
-        document.getElementById('sort').dispatchEvent(new Event('change'));
+        if (value !== '' && value !== defaultSortValue) {
+            url.searchParams.set('sort', value);
+            window.history.pushState({}, '', url);
+        }
     }
 
     // Collect all unique tags
