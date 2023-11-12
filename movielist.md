@@ -96,4 +96,5 @@ permalink: list/movielist
 | The Vow | | <no> | | |
 | They Cloned Tyrone | | <no> | | |
 | Wakanda Forever | !Marvel | <no> | | |
+| Wedding Daze | | <no> | | |
 | What Woman Want | | <no> | | |
