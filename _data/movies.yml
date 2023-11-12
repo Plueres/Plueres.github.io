@@ -32,13 +32,11 @@ movies:
 - title: Avatar 1
   tags: 
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐
-  review: Good movie
+  personal_rating: 4  review: Good movie
 - title: Avatar 2
   tags: 
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐
-  review: Good movie
+  personal_rating: 4  review: Good movie
 - title: Blue Beetle
   tags: 
   watched: "!no"
@@ -47,8 +45,7 @@ movies:
 - title: Brain On Fire
   tags: "!Netflix"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐
-  review: 
+  personal_rating: 4  review: 
 - title: Bright
   tags: 
   watched: "!yes"
@@ -72,18 +69,15 @@ movies:
 - title: Cocaine Bear
   tags: "!Horror !Comedy !Bear on cocaine"
   watched: "!yes"
-  personal_rating: ⭐⭐
-  review: This was just plain stupid
+  personal_rating: 2  review: This was just plain stupid
 - title: Crazy, Stupid, Love
   tags: "!Comedy"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐⭐
-  review: Was pretty funny
+  personal_rating: 5  review: Was pretty funny
 - title: Death Note
   tags: "!Netflix"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐⭐
-  review: 
+  personal_rating: 5  review: 
 - title: Dreamers
   tags: 
   watched: "!no"
@@ -92,8 +86,7 @@ movies:
 - title: Drive 2011
   tags: 
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐
-  review: Good movie
+  personal_rating: 4  review: Good movie
 - title: Edge Of Tomorrow
   tags: "!Sci-fi !Time Loop"
   watched: "!no"
@@ -102,8 +95,7 @@ movies:
 - title: El Camino
   tags: "!Breaking Bad"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐⭐
-  review: 
+  personal_rating: 5  review: 
 - title: Everything Everywhere All At Once
   tags: 
   watched: "!no"
@@ -112,18 +104,15 @@ movies:
 - title: Extinction
   tags: "!Netflix"
   watched: "50%"
-  personal_rating: ⭐⭐
-  review: 
+  personal_rating: 2  review: 
 - title: Extraction 1
   tags: "!Netflix"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐
-  review: 
+  personal_rating: 4  review: 
 - title: Extraction 2
   tags: "!Netflix"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐
-  review: 
+  personal_rating: 3  review: 
 - title: Extraordenary
   tags: 
   watched: "!no"
@@ -132,8 +121,7 @@ movies:
 - title: Fistful Of Vengeance
   tags: "!Netflix"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐⭐
-  review: Sequel to Wu Assassins show
+  personal_rating: 5  review: Sequel to Wu Assassins show
 - title: Flatliners
   tags: "!Afterlife"
   watched: "!yes"
@@ -152,23 +140,19 @@ movies:
 - title: Gone Girl
   tags: 
   watched: "!yes"
-  personal_rating: ⭐⭐⭐
-  review: really dumb ending in my opinion, not satisfying at all
+  personal_rating: 3  review: really dumb ending in my opinion, not satisfying at all
 - title: Green Mile
   tags: 
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐
-  review: 
+  personal_rating: 4  review: 
 - title: Groundhog Day
   tags: "!Time Loop"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐
-  review: I found it weird when he suddendly was out of the timeloop without an explanation
+  personal_rating: 4  review: I found it weird when he suddendly was out of the timeloop without an explanation
 - title: Hidden Strike
   tags: "!Comedy"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐⭐
-  review: Amazing duo with John Cena & Jackie Chan
+  personal_rating: 5  review: Amazing duo with John Cena & Jackie Chan
 - title: Host
   tags: "!Horror !Videocalling"
   watched: "!no"
@@ -222,8 +206,7 @@ movies:
 - title: Jumper
   tags: "!Teleporting"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐
-  review: Anakin Skywalker Teleporting through images
+  personal_rating: 3  review: Anakin Skywalker Teleporting through images
 - title: Jung_e
   tags: "!Japanese !AI"
   watched: "!no"
@@ -232,8 +215,7 @@ movies:
 - title: Kate
   tags: "!Action !Netflix"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐
-  review: 
+  personal_rating: 3  review: 
 - title: La La Land
   tags: 
   watched: "!no"
@@ -242,8 +224,7 @@ movies:
 - title: Lars And The Real Girl
   tags: 
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐
-  review: something with Ryan gosling. A very introverted guy with a delusion where he is in love with a doll
+  personal_rating: 4  review: something with Ryan gosling. A very introverted guy with a delusion where he is in love with a doll
 - title: Love And Monsters
   tags: "!Aliens/Mutated Creatures !Dystopian Future"
   watched: "!yes"
@@ -252,8 +233,7 @@ movies:
 - title: Man From Toronto
   tags: "!Netflix !Comedy"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐
-  review: 
+  personal_rating: 3  review: 
 - title: Maybe I Do
   tags: 
   watched: "!no"
@@ -272,8 +252,7 @@ movies:
 - title: Mother/Android
   tags: "!Netflix"
   watched: "!yes"
-  personal_rating: ⭐⭐
-  review: 
+  personal_rating: 2  review: 
 - title: Mute
   tags: 
   watched: "!no"
@@ -282,8 +261,7 @@ movies:
 - title: No Hard Feelings
   tags: "!Comedy"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐
-  review: 
+  personal_rating: 3  review: 
 - title: Paradise
   tags: "!Sci-fi"
   watched: "!no"
@@ -292,8 +270,7 @@ movies:
 - title: Passengers
   tags: "!Netflix !Sci-fi"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐
-  review: 
+  personal_rating: 3  review: 
 - title: Pooh Blood And Honey
   tags: "!Horror"
   watched: "!no"
@@ -307,8 +284,7 @@ movies:
 - title: Prisoners
   tags: 
   watched: "!yes"
-  personal_rating: ⭐⭐
-  review: not satisfying ending
+  personal_rating: 2  review: not satisfying ending
 - title: Pulp Fiction
   tags: "!Comedy"
   watched: "!no"
@@ -352,23 +328,19 @@ movies:
 - title: Sightless
   tags: "!Netflix !Thriller"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐
-  review: 
+  personal_rating: 4  review: 
 - title: Snowpiercer
   tags: "!Distopian Future"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐
-  review: In a distopian future where the world froze all people live in a train, the ending was dumb
+  personal_rating: 3  review: In a distopian future where the world froze all people live in a train, the ending was dumb
 - title: Spiderhead
   tags: 
   watched: "!yes"
-  personal_rating: ⭐⭐
-  review: 
+  personal_rating: 2  review: 
 - title: Spirited Away
   tags: "!Animated"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐
-  review: I Didn’t really understood what happened at first
+  personal_rating: 3  review: I Didn’t really understood what happened at first
 - title: Spontaneous
   tags: 
   watched: "!no"
@@ -397,13 +369,11 @@ movies:
 - title: The Adam Project
   tags: "!Netflix !Sci-fi"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐
-  review: 
+  personal_rating: 4  review: 
 - title: The Age Of Adaline
   tags: 
   watched: "!yes"
-  personal_rating: ⭐⭐⭐
-  review: woman who doesn’t age, was nothing special
+  personal_rating: 3  review: woman who doesn’t age, was nothing special
 - title: The Breakfast Club
   tags: 
   watched: "!no"
@@ -412,8 +382,7 @@ movies:
 - title: The Cloverfield Paradox
   tags: "!Sci-fi !Space"
   watched: "!yes"
-  personal_rating: ⭐⭐⭐
-  review: 
+  personal_rating: 3  review: 
 - title: The Discovery
   tags: "!Afterlife"
   watched: "!no"
@@ -427,8 +396,7 @@ movies:
 - title: The Perks Of Being A Wallflower
   tags: 
   watched: "!yes"
-  personal_rating: ⭐⭐⭐⭐⭐
-  review: 
+  personal_rating: 5  review: 
 - title: The Sound Of Freedom
   tags: 
   watched: "!no"
