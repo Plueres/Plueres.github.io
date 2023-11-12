@@ -263,6 +263,18 @@ games:
     tags: "!PC"
     played: "!yes"
     finished: "!no"
+  - played: "!yes"
+    finished: "!yes"
+    title: Marvel's Spider-Man
+    tags: "!Steam Deck !Playstation"
+    personal_rating: 4
+    review: Good game but could be better
+  - played: "!yes"
+    finished: "!no"
+    title: Marvel's Spider-Man 2
+    tags: "!Playstation"
+    personal_rating: 5
+    review: Perfect traversal
   - title: Marvel’s Spider-Man Miles Morales
     tags: "!Steam Deck !Playstation"
     played: "!yes"
@@ -457,17 +469,5 @@ games:
     tags: "!Steam Deck"
     played: "!yes"
     finished: "!no"
-  - played: "!yes"
-    finished: "!yes"
-    title: Marvel's Spider-Man
-    tags: "!Steam Deck !Playstation"
-    personal_rating: 4
-    review: Good game but could be better
-  - played: "!yes"
-    finished: "!no"
-    title: Marvel's Spider-Man 2
-    tags: "!Playstation"
-    personal_rating: 5
-    review: Perfect traversal
   - played: "!no"
     finished: "!no"
