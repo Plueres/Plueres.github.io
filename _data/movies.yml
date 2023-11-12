@@ -135,6 +135,9 @@ movies:
     watched: "!yes"
     personal_rating: 5
     review: Sequel to Wu Assassins show
+  - watched: "!no"
+    title: Five Nights at Freddy's
+    tags: "!horror"
   - title: Flatliners
     tags: "!Afterlife"
     watched: "!yes"
@@ -473,6 +476,3 @@ movies:
     watched: "!no"
     personal_rating: null
     review: null
-  - watched: "!no"
-    title: Five Nights at Freddy's
-    tags: "!horror"
