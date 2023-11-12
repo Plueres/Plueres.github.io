@@ -163,12 +163,7 @@ movies:
   tags: "!Time Loop"
   watched: "!yes"
   personal_rating: ⭐⭐⭐⭐
-  review: I found it weird when he suddendly was out of the timeloop without an
-- title: explanation
-  tags: 
-  watched: 
-  personal_rating: 
-  review: 
+  review: I found it weird when he suddendly was out of the timeloop without an explanation
 - title: Hidden Strike
   tags: "!Comedy"
   watched: "!yes"
@@ -244,16 +239,11 @@ movies:
   watched: "!no"
   personal_rating: 
   review: 
-- title: Lars And The Real Gir
+- title: Lars And The Real Girl
   tags: 
   watched: "!yes"
   personal_rating: ⭐⭐⭐⭐
-  review: something with Ryan gosling. A very introverted guy with a delusion where he is
-- title: in love with a doll
-  tags: 
-  watched: 
-  personal_rating: 
-  review: 
+  review: something with Ryan gosling. A very introverted guy with a delusion where he is in love with a doll
 - title: Love And Monsters
   tags: "!Aliens/Mutated Creatures !Dystopian Future"
   watched: "!yes"
@@ -368,12 +358,7 @@ movies:
   tags: "!Distopian Future"
   watched: "!yes"
   personal_rating: ⭐⭐⭐
-  review: In a distopian future where the world froze all people live in a train,
-- title: the ending was dumb
-  tags: 
-  watched: 
-  personal_rating: 
-  review: 
+  review: In a distopian future where the world froze all people live in a train, the ending was dumb
 - title: Spiderhead
   tags: 
   watched: "!yes"
