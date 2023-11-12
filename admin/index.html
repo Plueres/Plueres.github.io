@@ -18,12 +18,17 @@
             CMS.registerPreviewTemplate('data', class extends React.Component {
                 render() {
                     const entry = this.props.entry;
-                    const title = entry.getIn(['data', 'title']);
-                    const body = entry.getIn(['data', 'body']);
+                    const data = entry.get('data');
 
-                    return h('div', {},
-                        h('h1', {}, title),
-                        h('div', {}, body)
+                    return h('div', { style: { fontFamily: 'sans-serif' } },
+                        h('table', {},
+                            Object.keys(data).map(key =>
+                                h('tr', {},
+                                    h('td', {}, key),
+                                    h('td', {}, data[key])
+                                )
+                            )
+                        )
                     );
                 }
             });
