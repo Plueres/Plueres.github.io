@@ -87,6 +87,9 @@ shows:
     watched: "!yes"
     personal_rating: ""
     review: ""
+  - watched: "!no"
+    title: Bodies
+    tags: "!Time Travel"
   - title: Breaking Bad
     tags: "!Netflix"
     season: All seasons
@@ -538,6 +541,3 @@ shows:
     watched: "!no"
     personal_rating: ""
     review: ""
-  - watched: "!no"
-    title: Bodies
-    tags: "!Time Travel"
