@@ -8,6 +8,7 @@ media_folder: "assets/images/uploads"
 collections:
   - name: "data"
     label: "Data"
+    sortableFields: ['title']
     files:
       - name: "movies"
         label: "Movies"
