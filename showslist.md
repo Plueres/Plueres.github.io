@@ -3,7 +3,7 @@ layout: lists
 permalink: list/showslist
 ---
 
-| Name of show | Genre | Season watched | Has seen all episodes of season | Personal rating | Comments |
+| Title | Tags | Watched | Has seen all episodes of season | Personal Rating | Review |
 | --- | --- | --- | --- | --- | --- |
 | 1899 | !Mystery !Sci-fi !Netflix | Season 1 | <yes> | ⭐⭐⭐⭐ | was quite a good show, kind of mysterious|
 | Amazing stories | | | <no> | | |

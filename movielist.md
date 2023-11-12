@@ -2,7 +2,7 @@
 layout: lists
 permalink: list/movielist
 ---
-| Name of movie | Genre | Has seen | Personal rating | Elaboration |
+| Title | Tags | Watched | Personal rating | Review |
 | --- | --- | --- | --- | --- |
 | 65 | !Sci-fi !Time Travel | <no> | | |
 | Avatar 1 | | <yes> | ⭐⭐⭐⭐ | Good movie |
