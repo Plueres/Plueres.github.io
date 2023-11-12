@@ -23,6 +23,13 @@
                     return h('div', { style: { fontFamily: 'sans-serif' } },
                         h('table', {},
                             h('tbody', {},
+                                h('tr', {},
+                                    h('th', {}, 'Title'),
+                                    h('th', {}, 'Tags'),
+                                    h('th', {}, 'Watched'),
+                                    h('th', {}, 'Rating'),
+                                    h('th', {}, 'Review')
+                                ),
                                 data.shows.map(show =>
                                     h('tr', {},
                                         h('td', {}, show.title),
