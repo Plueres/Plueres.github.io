@@ -96,8 +96,12 @@ layout: pages
 
 <script>
     let htmlContent = document.body.innerHTML; // Get the HTML content
-    let replacedContent = htmlContent.replace(/!\s*([\w-+\/]+(\s[\w-+\/]+)*)/g, function (match, p1) {
-        return `<tag>${p1.trim()}</tag>`;
+    let replacedContent = htmlContent.replace(/!(yes|no|notsure|\s*[\w-+\/]+(\s[\w-+\/]+)*)/g, function (match, p1) {
+        if (['yes', 'no', 'notsure'].includes(p1.trim())) {
+            return `<${p1.trim()}>`;
+        } else {
+            return `<tag>${p1.trim()}</tag>`;
+        }
     });
     document.body.innerHTML = replacedContent; // Set the HTML content back
 
@@ -158,7 +162,7 @@ layout: pages
 
         var headers = Array.from(document.querySelectorAll('th')).map(th => th.textContent);
         var ratingIndex = headers.indexOf('Personal rating') + 1;  // +1 because nth-child is 1-based
-        var seenIndex = headers.findIndex(header => header.includes('Has seen')) + 1;  // +1 because nth-child is 1-based
+        var seenIndex = headers.findIndex(header => header.includes('Watched')) + 1;  // +1 because nth-child is 1-based
 
         rows.sort(function (a, b) {
             var aValue, bValue;

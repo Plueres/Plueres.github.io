@@ -6,9 +6,7 @@ backend:
 media_folder: "assets/images/uploads"
 
 collections:
-  - name: "content"
-    label: "Content"
-    files:
+  - files:
       - name: "movies"
         label: "Movies"
         file: "movielist.md"
