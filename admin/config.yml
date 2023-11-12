@@ -11,7 +11,7 @@ collections:
     files:
       - name: "movies"
         label: "Movies"
-        file: "_data/movieslist.yml"
+        file: "_data/movies.yml"
         fields:
           - label: "Movies"
             name: "movies"
@@ -28,7 +28,7 @@ collections:
               - {label: "Review", name: "review", widget: "text"}
       - name: "shows"
         label: "Shows"
-        file: "_data/showslist.yml"
+        file: "_data/shows.yml"
         fields:
           - label: "Shows"
             name: "shows"
@@ -36,6 +36,7 @@ collections:
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Tags", name: "tags", widget: "string"}
+              - {label: "Season", name: "season", widget: "string"}
               - label: "Watched"
                 name: "watched"
                 widget: "select"
