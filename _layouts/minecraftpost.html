@@ -2,12 +2,6 @@
     <title>{{ page.title }}</title>
 </head>
 
-<style>
-    main {
-        width: 100vw;
-    }
-</style>
-
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
@@ -33,6 +27,24 @@
                     </p>
                 </header>
 
+                {% if page.images %}
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+                <div id="carousel">
+                    {% for image in page.images %}
+                    <div class="slide" style="background-image: url('{{ image }}');" onclick="openModal('{{ image }}')">
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="dots">
+                    {% for image in page.images %}
+                    <span class="dot" onclick="setCurrentSlide({{ forloop.index0 }})"></span>
+                    {% endfor %}
+                </div>
+                {%endif%}
 
                 {% for pack in site.data.minecraft %}
                 {% if pack.postname == page.title %}
@@ -81,8 +93,9 @@
                 <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
             </div>
         </main>
+        {%include footer.html %}
     </body>
 
-    <script src="/scripts/protectedpage.js"></script>
+    <script src="/scripts/minecraftpost.js"></script>
 
 </html>

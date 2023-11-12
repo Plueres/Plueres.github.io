@@ -1,5 +1,5 @@
 ---
-layout: lists
+layout: pages
 permalink: personal/bucketlist
 ---
 

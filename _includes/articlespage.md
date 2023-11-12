@@ -1,7 +1,7 @@
 <div id="articles" class="content-wrapper">
     <button id="articles-back-button">Back</button>
     <div class="wrapper">
-        <h2>This is the articles of the website</h2>
+        <h1>This is the articles page of the website</h1>
 
         {%- if site.articles.size > 0 -%}
         <articles>

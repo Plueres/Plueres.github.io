@@ -3,7 +3,7 @@ layout: lists
 permalink: list/showslist
 ---
 
-| Name of show | Genre | Season watched | Has seen all episodes of season | Personal rating | Elabration |
+| Name of show | Genre | Season watched | Has seen all episodes of season | Personal rating | Comments |
 | --- | --- | --- | --- | --- | --- |
 | 1899 | !Mystery !Sci-fi !Netflix | Season 1 | <yes> | ⭐⭐⭐⭐ | was quite a good show, kind of mysterious|
 | Amazing stories | | | <no> | | |
@@ -40,10 +40,11 @@ permalink: list/showslist
 | Inside Job | !Netflix | Season 1 | <yes> | ⭐⭐⭐⭐⭐ | Banger intro |
 | Inside Job | !Netflix | Season 2 | <notsure> | ⭐⭐⭐⭐ | |
 | Iron fist | !Disney+ !Marvel | | <no> | | |
+| Jessica Jones | !Disney+ !Marvel | Season 1 | <yes> | ⭐⭐⭐⭐ | |
 | Jupiter’s Legacy | !Superhero !Netflix | | <yes> | ⭐⭐⭐ | It being one season was kind of bad and i didn’t really care for the show that much |
 | Legends of Tomorrow | | All Seasons |<yes>| ⭐⭐⭐⭐⭐ | |
 | Loki | !Time Travel !Disney+ | Season 1 | <yes> | ⭐⭐⭐⭐⭐ | Good show |
-| Loki | !Time Travel !Disney+ | Season 2 | <no> | ⭐⭐⭐⭐⭐ | The time travel thing is amazing |
+| Loki | !Time Travel !Disney+ | Season 2 | <yes> | ⭐⭐⭐⭐⭐ | The time travel thing is amazing, really good ending |
 | Lost | | | <no> | | |
 | Lost in Space | !Netflix | All Seasons | <yes> | ⭐⭐⭐⭐ | |
 | Love Death + Robots | !Netflix | Season 1 | <yes> | | |
@@ -76,7 +77,7 @@ permalink: list/showslist
 | The power | | | <no> | | |
 | The Rain | !Netflix | Season 1 | <yes> | ⭐⭐⭐ | |
 | The Rain | !Netflix | Season 2 | <yes> | ⭐⭐⭐ | |
-| The Rain | !Netflix | Season 3 | 50% <notsure> | ⭐⭐ | lost interest and didn’t want to finish it |
+| The Rain | !Netflix | Season 3 | <notsure> 50% | ⭐⭐ | lost interest and didn’t want to finish it |
 | The Queen’s Gambit | !Netflix | Season 1 | <yes> | ⭐⭐⭐⭐⭐ | |
 | Time Travelers Wife | | Season 1 |<yes>| ⭐⭐⭐⭐⭐ | canceled after 1 season |
 | Titans | | All Seasons |<yes>| ⭐⭐⭐⭐⭐ | The ending was not that good |

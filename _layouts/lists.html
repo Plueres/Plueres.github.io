@@ -28,6 +28,17 @@ layout: pages
         height: unset;
     }
 
+    .options {
+        display: flex;
+        justify-content: center;
+    }
+
+    #sort,
+    #filter {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
     yes::before {
         background: rgba(0, 140, 40, 0.5);
         padding: 5px 12px;
@@ -69,9 +80,20 @@ layout: pages
         margin: 0px;
     }
 </style>
+<div class="options">
+    <select id="sort">
+        <option value="name" selected>Name</option>
+        <option value="rating">Rating</option>
+        <option value="seen">Seen</option>
+    </select>
+    <select id="filter">
+    </select>
+</div>
+
 <div id="personallist">
     {{ content}}
 </div>
+
 <script>
     let htmlContent = document.body.innerHTML; // Get the HTML content
     let replacedContent = htmlContent.replace(/!\s*([\w-+\/]+(\s[\w-+\/]+)*)/g, function (match, p1) {
@@ -126,4 +148,106 @@ layout: pages
         tag.style.color = textColor;
         tag.style.background = brColor;
     });
+    document.getElementById('sort').addEventListener('change', sortTable);
+
+    function sortTable() {
+        var value = this.value;
+        var table = document.getElementById('personallist');
+        var tbody = table.querySelector('tbody');
+        var rows = Array.from(tbody.querySelectorAll('tr'));  // include all rows
+
+        var headers = Array.from(document.querySelectorAll('th')).map(th => th.textContent);
+        var ratingIndex = headers.indexOf('Personal rating') + 1;  // +1 because nth-child is 1-based
+        var seenIndex = headers.findIndex(header => header.includes('Has seen')) + 1;  // +1 because nth-child is 1-based
+
+        rows.sort(function (a, b) {
+            var aValue, bValue;
+
+            if (value === 'name') {
+                aValue = a.querySelector('td:nth-child(1)').textContent;
+                bValue = b.querySelector('td:nth-child(1)').textContent;
+                return aValue.localeCompare(bValue);
+            } else if (value === 'rating') {
+                aValue = (a.querySelector(`td:nth-child(${ratingIndex})`).textContent.match(/⭐/g) || []).length;
+                bValue = (b.querySelector(`td:nth-child(${ratingIndex})`).textContent.match(/⭐/g) || []).length;
+                return bValue - aValue;  // sort in descending order
+            } else if (value === 'seen') {
+                var tagPriority = function (value) {
+                    if (value.includes('<yes>')) return 3;
+                    if (value.includes('<notsure>')) return 2;
+                    if (value.includes('<no>')) return 1;
+                    return 0;
+                };
+
+                aValue = tagPriority(a.querySelector(`td:nth-child(${seenIndex})`).innerHTML);
+                bValue = tagPriority(b.querySelector(`td:nth-child(${seenIndex})`).innerHTML);
+                return bValue - aValue;
+            }
+        });
+
+        rows.forEach(function (row) {
+            tbody.appendChild(row);
+        });
+
+        // Update the URL's query parameters
+        var url = new URL(window.location.href);
+        url.searchParams.set('sort', value);
+        window.history.pushState({}, '', url);
+    }
+
+    // Read the 'sort' parameter from the URL
+    var url = new URL(window.location.href);
+    var sortParam = url.searchParams.get('sort');
+
+    if (sortParam) {
+        // Set the selected option of the 'sort' dropdown
+        document.getElementById('sort').value = sortParam;
+
+        // Trigger the sorting function
+        sortTable.call(document.getElementById('sort'));
+    } else {
+        // Trigger the sorting function with the default option
+        document.getElementById('sort').dispatchEvent(new Event('change'));
+    }
+
+    // Collect all unique tags
+    var tags = Array.from(new Set(Array.from(document.querySelectorAll('tag')).map(tag => tag.textContent.trim())));
+
+    // Add tags as options to the #filter select
+    var filterSelect = document.getElementById('filter');
+
+    // Add a "no filter" option
+    var noFilterOption = document.createElement('option');
+    noFilterOption.value = '';
+    noFilterOption.textContent = 'No filter';
+    filterSelect.appendChild(noFilterOption);
+
+    tags.forEach(tag => {
+        var option = document.createElement('option');
+        option.value = tag;
+        option.textContent = tag;
+        filterSelect.appendChild(option);
+    });
+
+    // Add an event listener to the #filter select
+    filterSelect.addEventListener('change', function () {
+        var value = this.value;
+
+        // Get all rows
+        var rows = Array.from(document.getElementById('personallist').querySelector('tbody').querySelectorAll('tr'));
+
+        // Show all rows
+        rows.forEach(row => row.style.display = '');
+
+        if (value) {
+            // If a tag is selected, hide the rows that do not have this tag
+            rows.forEach(row => {
+                var rowTags = Array.from(row.querySelectorAll('tag')).map(tag => tag.textContent.trim());
+                if (!rowTags.includes(value)) {
+                    row.style.display = 'none';
+                }
+            });
+        }
+    });
+
 </script>

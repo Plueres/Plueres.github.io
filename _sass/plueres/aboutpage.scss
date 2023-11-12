@@ -1,4 +1,7 @@
 // Masonry Grid
+* {
+    box-sizing: border-box;
+}
 /* Main CSS */
 .grid-wrapper {
     display: grid;
