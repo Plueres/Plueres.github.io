@@ -96,13 +96,34 @@ layout: pages
 
 <script>
     let htmlContent = document.body.innerHTML; // Get the HTML content
-    let replacedContent = htmlContent.replace(/!(yes|no|notsure|\s*[\w-+\/]+(\s[\w-+\/]+)*)/g, function (match, p1) {
-        if (['yes', 'no', 'notsure'].includes(p1.trim())) {
+    let replacedContent = htmlContent.replace(/!(yes|notsure|no|\s*[\w-+\/]+(\s[\w-+\/]+)*)/g, function (match, p1) {
+        if (['yes', 'notsure', 'no'].includes(p1.trim())) {
             return `<${p1.trim()}>`;
         } else {
             return `<tag>${p1.trim()}</tag>`;
         }
     });
+
+    //replace numbers by the amount of stars
+    document.addEventListener('DOMContentLoaded', (event) => {
+        // Get the table
+        const table = document.querySelector('table');
+
+        // Find the index of the 'Personal_Rating' column
+        const headers = Array.from(table.querySelectorAll('th'));
+        const ratingIndex = headers.findIndex(th => th.textContent === 'Personal Rating') + 1;  // +1 because nth-child is 1-based
+
+        // Replace the number in each cell in the 'Personal_Rating' column with stars
+        if (ratingIndex > 0) {
+            table.querySelectorAll(`tr td:nth-child(${ratingIndex})`).forEach(td => {
+                let rating = parseInt(td.textContent.trim(), 10);
+                if (!isNaN(rating)) {
+                    td.textContent = '⭐'.repeat(rating);
+                }
+            });
+        }
+    });
+
     document.body.innerHTML = replacedContent; // Set the HTML content back
 
     document.querySelectorAll('tag').forEach(tag => {
@@ -161,7 +182,7 @@ layout: pages
         var rows = Array.from(tbody.querySelectorAll('tr'));  // include all rows
 
         var headers = Array.from(document.querySelectorAll('th')).map(th => th.textContent);
-        var ratingIndex = headers.indexOf('Personal rating') + 1;  // +1 because nth-child is 1-based
+        var ratingIndex = headers.indexOf('Personal Rating') + 1;  // +1 because nth-child is 1-based
         var seenIndex = headers.findIndex(header => header.includes('Watched')) + 1;  // +1 because nth-child is 1-based
 
         rows.sort(function (a, b) {
@@ -178,8 +199,8 @@ layout: pages
             } else if (value === 'seen') {
                 var tagPriority = function (value) {
                     if (value.includes('<yes>')) return 3;
-                    if (value.includes('<notsure>')) return 2;
                     if (value.includes('<no>')) return 1;
+                    if (value.includes('<notsure>')) return 2;
                     return 0;
                 };
 
