@@ -119,6 +119,11 @@ games:
     finished: ""
     personal_rating: null
     review: Flying disc
+  - played: "!yes"
+    finished: "!no"
+    title: Fortnite
+    tags: "!Shooter"
+    personal_rating: 3
   - title: FPS Chess
     tags: "!FPS !Chess !Steam Deck"
     played: ""
@@ -605,8 +610,3 @@ games:
     finished: ""
     personal_rating: null
     review: null
-  - played: "!yes"
-    finished: "!no"
-    title: Fortnite
-    tags: "!Shooter"
-    personal_rating: 3
