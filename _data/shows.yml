@@ -31,13 +31,71 @@ shows:
       witheachother
   - title: Atypical
     tags: "!Netflix"
-    season: All seasons
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: I really liked it, has a very good storyline
+  - title: Atypical
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: I really liked it, has a very good storyline
+  - title: Atypical
+    tags: "!Netflix"
+    season: season 3
+    watched: "!yes"
+    personal_rating: 5
+    review: I really liked it, has a very good storyline
+  - title: Atypical
+    tags: "!Netflix"
+    season: season 4
     watched: "!yes"
     personal_rating: 5
     review: I really liked it, has a very good storyline
   - title: Better Call Saul
     tags: "!Netflix"
-    season: All seasons
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: Prequel to Breaking Bad and it also has some really good story telling,
+      though it is quite slow sometimes so i still recommend watching Breaking
+      bad first
+  - title: Better Call Saul
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: Prequel to Breaking Bad and it also has some really good story telling,
+      though it is quite slow sometimes so i still recommend watching Breaking
+      bad first
+  - title: Better Call Saul
+    tags: "!Netflix"
+    season: season 3
+    watched: "!yes"
+    personal_rating: 5
+    review: Prequel to Breaking Bad and it also has some really good story telling,
+      though it is quite slow sometimes so i still recommend watching Breaking
+      bad first
+  - title: Better Call Saul
+    tags: "!Netflix"
+    season: season 4
+    watched: "!yes"
+    personal_rating: 5
+    review: Prequel to Breaking Bad and it also has some really good story telling,
+      though it is quite slow sometimes so i still recommend watching Breaking
+      bad first
+  - title: Better Call Saul
+    tags: "!Netflix"
+    season: season 5
+    watched: "!yes"
+    personal_rating: 5
+    review: Prequel to Breaking Bad and it also has some really good story telling,
+      though it is quite slow sometimes so i still recommend watching Breaking
+      bad first
+  - title: Better Call Saul
+    tags: "!Netflix"
+    season: season 6
     watched: "!yes"
     personal_rating: 5
     review: Prequel to Breaking Bad and it also has some really good story telling,
