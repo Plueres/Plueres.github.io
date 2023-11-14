@@ -89,6 +89,7 @@ shows:
   - watched: "!no"
     title: Bodies
     tags: "!Time Travel"
+    season: season 1
   - title: Breaking Bad
     tags: "!Netflix"
     season: All seasons
@@ -115,8 +116,24 @@ shows:
     review: This was a good show
   - title: Dark
     tags: "!Time Travel !Time Loop !German !Netflix"
-    season: 
-    watched: "!yes, All 3 seasons"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: The only bad thing being for me that it was german so it wasn’t easy to
+      follow at some times. At the end i got the feeling like the whole show
+      didn’t matter…
+  - title: Dark
+    tags: "!Time Travel !Time Loop !German !Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: The only bad thing being for me that it was german so it wasn’t easy to
+      follow at some times. At the end i got the feeling like the whole show
+      didn’t matter…
+  - title: Dark
+    tags: "!Time Travel !Time Loop !German !Netflix"
+    season: season 3
+    watched: "!yes"
     personal_rating: 5
     review: The only bad thing being for me that it was german so it wasn’t easy to
       follow at some times. At the end i got the feeling like the whole show
@@ -146,18 +163,19 @@ shows:
     personal_rating: 3
     review: 
   - title: Extraordinary
-    season: 
+    season: season 1
     watched: "!no"
     personal_rating: 
     review: 
   - watched: "!no"
     title: Gen V
+    season: season 1
     personal_rating: 4
   - title: Glitch
-    season: Dead people coming back to life. 3 seasons
+    season: 3 seasons
     watched: "!no"
     personal_rating: 
-    review: 
+    review: Dead people coming back to life. 
   - title: Maid
     tags: "!Netflix"
     season: season 1
@@ -166,10 +184,10 @@ shows:
     review: 
   - title: Midnight Mass
     tags: "!Horror !Netflix"
-    season: Vampire people and religion
+    season: season 1
     watched: "!yes"
     personal_rating: 5
-    review: 
+    review: Vampire people and religion
   - title: My Adventures With Superman
     season: season 1
     watched: "!yes"
@@ -213,7 +231,7 @@ shows:
     review: 
   - title: Iron fist
     tags: "!Disney+ !Marvel"
-    season: 
+    season: season 1
     watched: "!no"
     personal_rating: 
     review: 
@@ -231,8 +249,42 @@ shows:
     review: It being one season was kind of bad and i didn’t really care for the
       show that much
   - title: Legends of Tomorrow
-
-    season: All seasons
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Legends of Tomorrow
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Legends of Tomorrow
+    season: season 3
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Legends of Tomorrow
+    season: season 4
+    watched: "!yes"
+    personal_rating: 4
+    review: 
+  - title: Legends of Tomorrow
+    season: season 5
+    watched: "!yes"
+    personal_rating: 4
+    review: 
+  - title: Legends of Tomorrow
+    season: season 6
+    watched: "!yes"
+    personal_rating: 4
+    review: 
+  - title: Legends of Tomorrow
+    season: season 7
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Legends of Tomorrow
+    season: season 8
     watched: "!yes"
     personal_rating: 5
     review: 
@@ -249,13 +301,25 @@ shows:
     personal_rating: 5
     review: The time travel thing is amazing, really good ending
   - title: Lost
-    season: 
+    season: season 1
     watched: "!no"
     personal_rating: 
     review: 
   - title: Lost in Space
     tags: "!Netflix"
-    season: All seasons
+    season: season 1
+    watched: "!yes"
+    personal_rating: 4
+    review: 
+  - title: Lost in Space
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 3
+    review: 
+  - title: Lost in Space
+    tags: "!Netflix"
+    season: season 3
     watched: "!yes"
     personal_rating: 4
     review: 
@@ -279,23 +343,43 @@ shows:
     review: 
   - title: OA
     tags: "!Netflix"
-    season: All seasons
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: OA
+    tags: "!Netflix"
+    season: season 2
     watched: "!yes"
     personal_rating: 5
     review: 
   - title: Outer Banks
     tags: "!Netflix"
-    season: All seasons
+    season: season 1
+    watched: "!yes"
+    personal_rating: 4
+    review: if i were to compare it to others on this list, this wouldn’t be as good
+      of a show
+  - title: Outer Banks
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 3
+    review: if i were to compare it to others on this list, this wouldn’t be as good
+      of a show
+  - title: Outer Banks
+    tags: "!Netflix"
+    season: season 3
     watched: "!yes"
     personal_rating: 4
     review: if i were to compare it to others on this list, this wouldn’t be as good
       of a show
   - title: Pieces of her
     tags: "!Netflix"
-    season: Something with a murder, police daughter and weird mother
+    season: season 1
     watched: 1 episode
     personal_rating: 
-    review: 
+    review: Something with a murder, police daughter and weird mother
   - title: Resident Evil
     tags: "!Netflix"
     season: season 1
@@ -410,7 +494,47 @@ shows:
     personal_rating: 5
     review: 
   - title: The Flash
-    season: All seasons
+    season: season 1
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 2
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 3
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 4
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 5
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 6
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 7
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 8
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 9
     watched: "!yes"
     personal_rating: 4
     review: The ending was not that good
@@ -454,13 +578,40 @@ shows:
     personal_rating: 5
     review: canceled after 1 season
   - title: Titans
-    season: All seasons
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: The ending was not that good
+  - title: Titans
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: The ending was not that good
+  - title: Titans
+    season: season 3
+    watched: "!yes"
+    personal_rating: 5
+    review: The ending was not that good
+  - title: Titans
+    season: season 4
     watched: "!yes"
     personal_rating: 5
     review: The ending was not that good
   - title: Travelers
     tags: "!Netflix"
-    season: All seasons
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Travelers
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Travelers
+    tags: "!Netflix"
+    season: season 3
     watched: "!yes"
     personal_rating: 5
     review: 
@@ -500,12 +651,6 @@ shows:
     watched: "!yes"
     personal_rating: 5
     review: One of the best shows
-  - title: Warrior Nun
-    tags: "!Netflix"
-    season: season 3
-    watched: "!no"
-    personal_rating: 
-    review: Canceled - WILL BE A MOVIE
   - title: Wednesday
     tags: "!Netflix"
     season: season 1
@@ -525,7 +670,7 @@ shows:
     personal_rating: 5
     review: 
   - title: Yellowjackets
-    season: 
+    season: season 1
     watched: "!no"
     personal_rating: 
     review: 
