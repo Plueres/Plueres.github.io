@@ -2,23 +2,45 @@
 layout: default
 ---
 
-<div id="home" class="content-wrapper">
-  <div id="masonrymedia"></div>
+<div id="home">
+  <div id="masonrymedia">
+    <div class="griditem" style="grid-area: span 2 / span 2"></div>
+    <div class="griditem" style="grid-area: span 5 / span 2"></div>
+    <div class="griditem" style="grid-area: span 4 / span 2"></div>
+    <div class="griditem" style="grid-area: span 1 / span 2"></div>
+    <div class="griditem" style="grid-area: span 1 / span 4; max-height: 200px">
+      <a href="https://github.com/kittinan/spotify-github-profile">
+        <img
+          src="https://spotify-github-profile.vercel.app/api/view?uid=rr6dpm9sb1r6419kubm7jbw4s&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=true"
+          alt="spotify-github-profile"
+        />
+      </a>
+    </div>
+  </div>
   <div id="masonryabout">
-    <div
-      id="name"
-      class="name griditem"
-      style="grid-column: span 4; grid-row: span 1"
-    >
+    <div class="name griditem" style="grid-area: span 1 / span 4">
       <h1 id="animated-text">Rick Slierendregt</h1>
     </div>
-    <div class="griditem" style="grid-column: span 4; grid-row: span 2"></div>
-    <div class="griditem" style="grid-column: span 1; grid-row: span 2"></div>
-    <div class="griditem" style="grid-column: span 2; grid-row: span 2"></div>
-    <div class="griditem" style="grid-column: span 1; grid-row: span 4"></div>
-    <div class="griditem" style="grid-column: span 3; grid-row: span 2"></div>
+    <div class="griditem" style="grid-area: span 2 / span 4"></div>
+    <div class="griditem" style="grid-area: span 2 / span 1"></div>
+    <div class="griditem" style="grid-area: span 2 / span 2"></div>
+    <div class="griditem" style="grid-area: span 4 / span 1"></div>
+    <div class="griditem" style="grid-area: span 2 / span 3"></div>
   </div>
-  <div id="masonryother"></div>
+  <div id="masonryother">
+    <div class="griditem" style="grid-area: span 1 / span 3"></div>
+    <div class="griditem" style="grid-area: span 1 / span 1">
+      <a href="https://app.netlify.com/sites/plueres/deploys">
+        <img
+          src="https://api.netlify.com/api/v1/badges/ff94a9c7-9b63-409d-849f-d7b5bed016d7/deploy-status"
+          alt="Netlify Status"
+        />
+      </a>
+    </div>
+    <div class="griditem" style="grid-area: span 3 / span 4"></div>
+    <div class="griditem" style="grid-area: span 3 / span 3"></div>
+    <div class="griditem" style="grid-area: span 3 / span 1"></div>
+  </div>
 </div>
 
 <script src="/scripts/homepage.js"></script>
