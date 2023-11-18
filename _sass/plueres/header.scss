@@ -1,8 +1,46 @@
 .site-header {
-    padding: 2rem;
+    margin: 2rem;
+    position: fixed;
     z-index: 1;
+    background: $primary-color;
+    width: fit-content;
+    align-self: center;
+    bottom: 0;
+    border-radius: $border-radius * 2;
 }
 .site-header span.material-symbols-rounded {
     font-size: 2rem;
-    color: white;
+    color: $text-color;
+}
+#headernav {
+    display: flex;
+    align-items: center;
+}
+
+#headernav div {
+    z-index: 10;
+    height: 100%;
+    padding: 1rem 2rem;
+    border-radius: $border-radius * 2;
+}
+
+#active-background {
+    position: absolute;
+    height: 100%;
+    color: $text-color;
+    background-color: $accent-color;
+    transition:
+        left 0.3s ease,
+        width 0.3s ease;
+}
+
+#headernav a {
+    font-size: 0; //hide the text
+}
+
+#headernav a.active {
+    color: $text-color;
+    & span {
+        color: $text-color;
+    }
 }

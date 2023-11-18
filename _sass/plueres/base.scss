@@ -97,6 +97,7 @@ main {
     flex-wrap: nowrap;
     overflow-x: hidden;
     width: 300vw;
+    transition: opacity 0.1s;
 }
 
 .content-wrapper {

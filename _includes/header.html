@@ -1,18 +1,107 @@
 <header class="site-header" role="banner">
-    <div class="header-wrapper">
-        <nav>
-            <a href="/articles">
-                <span class="material-symbols-rounded">
-                    article
-                </span>
-                article
-            </a>
-            <a href="/lists">
-                <span class="material-symbols-rounded">
-                    list
-                </span>
-                lists
-            </a>
-        </nav>
+  <nav id="headernav">
+    <div id="active-background"></div>
+    <div>
+      <a href="/lists">
+        <span class="material-symbols-rounded"> list </span>
+        Lists
+      </a>
     </div>
+    <div>
+      <a href="/">
+        <span class="material-symbols-rounded"> home </span>
+        Home
+      </a>
+    </div>
+    <div>
+      <a href="/articles">
+        <span class="material-symbols-rounded"> article </span>
+        Articles
+      </a>
+    </div>
+  </nav>
 </header>
+<script>
+  document.querySelectorAll("#headernav a").forEach((a) => {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      setActiveLink(a);
+      moveBackgroundTo(a.parentNode);
+      var path = new URL(a.href).pathname;
+
+      fetch(a.href)
+        .then((response) => response.text())
+        .then((html) => {
+          var mainElement = document.querySelector("main");
+          mainElement.style.opacity = 0;
+          setTimeout(function () {
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(html, "text/html");
+            var newContent = doc.querySelector("main");
+            mainElement.innerHTML = newContent.innerHTML;
+            mainElement.style.opacity = 1;
+            history.pushState(null, "", a.href);
+
+            // Check if the href is /
+            if (path === "/") {
+              // Execute scripts
+              var scripts = mainElement.querySelectorAll("script");
+              for (var i = 0; i < scripts.length; i++) {
+                var oldScript = scripts[i];
+                if (oldScript.src.endsWith("homepage.js")) {
+                  var newScript = document.createElement("script");
+                  newScript.text = oldScript.text;
+                  if (oldScript.src) {
+                    newScript.src = oldScript.src;
+                  }
+                  oldScript.parentNode.replaceChild(newScript, oldScript);
+                  setTimeout(function () {
+                    mainElement.appendChild(newScript);
+                  }, 500); // Delay execution by 500 milliseconds
+                }
+              }
+            }
+          }, 500);
+        });
+    });
+  });
+
+  function setActiveLink(a) {
+    // Your setActiveLink function implementation
+  }
+
+  function moveBackgroundTo(element) {
+    // Your moveBackgroundTo function implementation
+  }
+
+  function setActiveLink(link) {
+    var activeLink = document.querySelector("#headernav a.active");
+    if (activeLink) {
+      activeLink.classList.remove("active");
+    }
+    link.classList.add("active");
+  }
+
+  function moveBackgroundTo(element) {
+    var background = document.querySelector("#active-background");
+    background.style.width = element.offsetWidth + "px";
+    background.style.left = element.offsetLeft + "px";
+  }
+
+  window.addEventListener("load", function () {
+    var linkUrl = window.location.href;
+    var matchingLink = Array.from(
+      document.querySelectorAll("#headernav a")
+    ).find((a) => {
+      return (
+        a.href === linkUrl ||
+        (linkUrl.endsWith("/") &&
+          (a.href === linkUrl + "index.html" || a.href === linkUrl))
+      );
+    });
+    if (matchingLink) {
+      setActiveLink(matchingLink);
+      moveBackgroundTo(matchingLink.parentNode);
+    }
+  });
+</script>
