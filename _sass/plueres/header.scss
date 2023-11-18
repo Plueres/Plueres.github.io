@@ -2,7 +2,8 @@
     margin: 2rem;
     position: fixed;
     z-index: 1;
-    background: $primary-color;
+    background: rgba(255, 255, 255, 0.1); /* semi-transparent white */
+    backdrop-filter: blur(10px); /* blur effect */
     width: fit-content;
     align-self: center;
     bottom: 0;

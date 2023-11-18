@@ -37,6 +37,25 @@ body {
     overflow: auto; /* add this line */
 }
 
+#liminalimage {
+    background-image: url("images/header.jpg");
+    background-position: bottom;
+}
+
+#waterimage {
+    background-position: top;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2016%2F02%2F240837-nature-sunset-sea-waves-clouds-water-colorful.jpg&f=1&nofb=1&ipt=df051a4ea665055ce5af78f84689d26697c7492acba9575d77dc7a0df8942a8f&ipo=images");
+}
+
+.masonrymedia {
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%; /* adjust as needed */
+    width: 100%; /* adjust as needed */
+    border-radius: $border-radius;
+    background-repeat: no-repeat;
+}
+
 .griditem {
     background-color: #18171c;
     border-radius: 6px;
