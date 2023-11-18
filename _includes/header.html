@@ -42,37 +42,22 @@
             mainElement.style.opacity = 1;
             history.pushState(null, "", a.href);
 
-            // Check if the href is /
-            if (path === "/") {
-              // Execute scripts
-              var scripts = mainElement.querySelectorAll("script");
-              for (var i = 0; i < scripts.length; i++) {
-                var oldScript = scripts[i];
-                if (oldScript.src.endsWith("homepage.js")) {
-                  var newScript = document.createElement("script");
-                  newScript.text = oldScript.text;
-                  if (oldScript.src) {
-                    newScript.src = oldScript.src;
-                  }
-                  oldScript.parentNode.replaceChild(newScript, oldScript);
-                  setTimeout(function () {
-                    mainElement.appendChild(newScript);
-                  }, 500); // Delay execution by 500 milliseconds
-                }
+            // Execute scripts
+            var scripts = mainElement.querySelectorAll("script");
+            for (var i = 0; i < scripts.length; i++) {
+              var oldScript = scripts[i];
+              var newScript = document.createElement("script");
+              newScript.text = oldScript.text;
+              if (oldScript.src) {
+                newScript.src = oldScript.src;
               }
+              oldScript.parentNode.replaceChild(newScript, oldScript);
+              mainElement.appendChild(newScript);
             }
-          }, 500);
+          }, 100);
         });
     });
   });
-
-  function setActiveLink(a) {
-    // Your setActiveLink function implementation
-  }
-
-  function moveBackgroundTo(element) {
-    // Your moveBackgroundTo function implementation
-  }
 
   function setActiveLink(link) {
     var activeLink = document.querySelector("#headernav a.active");

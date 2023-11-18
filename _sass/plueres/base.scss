@@ -96,32 +96,17 @@ main {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: hidden;
-    width: 300vw;
     transition: opacity 0.1s;
 }
 
 .content-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
     min-height: 100vh;
     min-width: 100vw;
     transition: all 0.5s ease;
 }
-#home .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-}
 .wrapper {
     text-align: center;
-    width: 100%;
     margin: 0 10%;
-}
-#lists {
-    transform: translateX(-100vw);
 }
 #lists .wrapper {
     display: grid;
@@ -176,36 +161,6 @@ main {
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpapertip.com%2Fwmimgs%2F80-806806_popular-video-games-collage.jpg&f=1&nofb=1&ipt=b25c790abf645127649c07bee220c3178aa023c4d7ddb3094b8d2009720ab9f8&ipo=images");
     filter: blur(3px) brightness(0.5);
     opacity: 1;
-}
-#about {
-    transform: translateY(100vh);
-}
-
-#lists-button,
-#articles-button,
-#lists-personal-button,
-#lists-back-button,
-#articles-back-button {
-    display: none;
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 10%;
-}
-#lists-button,
-#lists-personal-button {
-    left: 0;
-}
-#lists-back-button,
-#articles-button {
-    right: 0;
-}
-#about-button,
-#about-back-button {
-    position: fixed;
-    left: 0;
-    width: 100vw;
-    height: 5%;
 }
 
 button {
@@ -314,7 +269,7 @@ pre {
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width: calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
+        // padding-right: $spacing-unit / 2;
         // padding-left: $spacing-unit / 2;
         padding-left: 0;
     }
