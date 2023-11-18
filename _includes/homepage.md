@@ -1,9 +1,0 @@
-<div id="home" class="content-wrapper">
-    <button id="lists-button">Lists</button>
-    <button id="articles-button">Articles</button>
-    <div class="wrapper">
-        <h1 id="animated-text">Rick Slierendregt</h1>
-    </div>
-</div>
-
-<script src="/scripts/homepage.js"></script>

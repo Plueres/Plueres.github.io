@@ -5,12 +5,12 @@
 
     <body>
 
+        {%- include header.html -%}
+
         <main>
-            {% include listspage.md -%}
-            {% include aboutpage.md -%}
-            {% include homepage.md -%}
-            {% include articlespage.md -%}
+            {{ content }}
         </main>
+        
         <script src="/scripts/script.js"></script>
         <script src="/scripts/protectedpage.js"></script>
 

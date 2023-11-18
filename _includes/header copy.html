@@ -1,0 +1,14 @@
+<header class="site-header" role="banner">
+    <div class="header-wrapper">
+        {%- assign default_paths = site.pages | map: "path" -%}
+        {%- assign page_paths = site.header_pages | default: default_paths -%}
+        <nav>
+            <a href="#"
+                onclick="event.preventDefault(); if (window.history.length > 2) { window.history.back(); } else { window.location.href = '/'; }">
+                <span class="material-symbols-rounded">
+                    arrow_back
+                </span>
+            </a>
+        </nav>
+    </div>
+</header>
