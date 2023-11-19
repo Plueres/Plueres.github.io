@@ -127,7 +127,12 @@ main {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: hidden;
-    transition: opacity 0.1s;
+    // transition: opacity 0.1s;
+
+    //
+    transition: transform 0.5s ease;
+    position: relative;
+    left: 0;
 }
 
 .content-wrapper {

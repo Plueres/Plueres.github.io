@@ -30,6 +30,35 @@ window.addEventListener('popstate', function (event) {
             }
         });
 });
+// Preload pages
+var pages = {};
+var links = document.querySelectorAll("#headernav a");
+links.forEach((a, index) => {
+    setTimeout(() => {
+        var path = new URL(a.href).pathname;
+        fetch(a.href)
+            .then((response) => response.text())
+            .then((html) => {
+                var parser = new DOMParser();
+                var doc = parser.parseFromString(html, "text/html");
+                var newContent = doc.querySelector("main");
+                pages[path] = newContent;
+            });
+    }, index * 2000); // Delay each preload by 2 seconds
+});
+
+// Create an intersection observer
+var observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            var img = entry.target;
+            img.src = img.dataset.src;
+            observer.unobserve(img);
+        }
+    });
+}, {});
+
+// Handle click events
 document.querySelectorAll("#headernav a").forEach((a) => {
     a.addEventListener("click", function (e) {
         e.preventDefault();
@@ -37,40 +66,37 @@ document.querySelectorAll("#headernav a").forEach((a) => {
         moveBackgroundTo(a.parentNode);
         var path = new URL(a.href).pathname;
 
-        fetch(a.href)
-            .then((response) => response.text())
-            .then((html) => {
-                var parser = new DOMParser();
-                var doc = parser.parseFromString(html, "text/html");
-                var newContent = doc.querySelector("main");
+        // Check if the new page has been preloaded
+        if (pages[path]) {
+            var mainElement = document.querySelector("main");
 
-                // Check if the new page has a main element
-                if (newContent) {
-                    var mainElement = document.querySelector("main");
-                    mainElement.style.opacity = 0;
-                    setTimeout(function () {
-                        mainElement.innerHTML = newContent.innerHTML;
-                        mainElement.style.opacity = 1;
-                        history.pushState(null, "", a.href);
+            // Replace the content
+            mainElement.innerHTML = pages[path].innerHTML;
 
-                        // Execute scripts
-                        var scripts = mainElement.querySelectorAll("script");
-                        for (var i = 0; i < scripts.length; i++) {
-                            var oldScript = scripts[i];
-                            var newScript = document.createElement("script");
-                            newScript.text = oldScript.text;
-                            if (oldScript.src) {
-                                newScript.src = oldScript.src + '?_=' + new Date().getTime();
-                            }
-                            oldScript.parentNode.replaceChild(newScript, oldScript);
-                            mainElement.appendChild(newScript);
-                        }
-                    }, 100);
-                } else {
-                    // If the new page doesn't have a main element, navigate to the page normally
-                    window.location.href = a.href;
+            history.pushState(null, "", a.href);
+
+            // Execute scripts
+            var scripts = mainElement.querySelectorAll("script");
+            for (var i = 0; i < scripts.length; i++) {
+                var oldScript = scripts[i];
+                var newScript = document.createElement("script");
+                newScript.text = oldScript.text;
+                if (oldScript.src) {
+                    newScript.src = oldScript.src + '?_=' + new Date().getTime();
                 }
+                oldScript.parentNode.replaceChild(newScript, oldScript);
+                mainElement.appendChild(newScript);
+            }
+
+            // Observe images
+            var images = mainElement.querySelectorAll("img[data-src]");
+            images.forEach((img) => {
+                observer.observe(img);
             });
+        } else {
+            // If the new page hasn't been preloaded, navigate to the page normally
+            window.location.href = a.href;
+        }
     });
 });
 
