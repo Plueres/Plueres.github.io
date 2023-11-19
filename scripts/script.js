@@ -1,29 +1,29 @@
 window.onload = function () {
 
 
-    document.body.addEventListener('click', function (e) {
-        var target = e.target;
-        while (target && target.nodeName !== 'A') {
-            target = target.parentNode;
-        }
-        if (target && target.href && target.getAttribute('target') !== '_blank') {
-            e.preventDefault();
-            fetch(target.href)
-                .then(response => response.text())
-                .then(html => {
-                    var mainElement = document.querySelector('main');
-                    mainElement.style.opacity = 0;
-                    setTimeout(function () {
-                        var parser = new DOMParser();
-                        var doc = parser.parseFromString(html, 'text/html');
-                        var newContent = doc.querySelector('main').innerHTML;
-                        mainElement.innerHTML = newContent;
-                        mainElement.style.opacity = 1;
-                        history.pushState(null, '', target.href);
-                    }, 100);
-                });
-        }
-    });
+    // document.body.addEventListener('click', function (e) {
+    //     var target = e.target;
+    //     while (target && target.nodeName !== 'A') {
+    //         target = target.parentNode;
+    //     }
+    //     if (target && target.href && target.getAttribute('target') !== '_blank') {
+    //         e.preventDefault();
+    //         fetch(target.href)
+    //             .then(response => response.text())
+    //             .then(html => {
+    //                 var mainElement = document.querySelector('main');
+    //                 mainElement.style.opacity = 0;
+    //                 setTimeout(function () {
+    //                     var parser = new DOMParser();
+    //                     var doc = parser.parseFromString(html, 'text/html');
+    //                     var newContent = doc.querySelector('main').innerHTML;
+    //                     mainElement.innerHTML = newContent;
+    //                     mainElement.style.opacity = 1;
+    //                     history.pushState(null, '', target.href);
+    //                 }, 100);
+    //             });
+    //     }
+    // });
 
     document.querySelectorAll("posttags").forEach((tag) => {
         const tagName = tag.textContent.trim();
