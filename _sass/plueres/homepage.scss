@@ -5,7 +5,7 @@ body {
 #home {
     // grid-template-columns: repeat(3, 1fr);
     display: grid;
-    margin: auto;
+    margin: 1rem auto;
     padding: 1rem;
     gap: 1rem;
     grid-auto-flow: dense;
