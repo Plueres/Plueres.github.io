@@ -11,7 +11,14 @@ permalink: /articles
             <div id="articles-grid">
                 {%- assign sorted_articles = site.articles | sort: "date" | reverse -%}
                 {%- for article in sorted_articles -%}
-                <article data-category="{{ article.categories }}">
+                <article data-tag="{{ article.tags }}">
+                    <div id="article-overlay">
+                        {% for tag in article.tags %}
+                        <a href="{{ site.url }}/articles?tags={{ tag | url_encode }}">
+                            <posttags>{{ tag }}</posttags>
+                        </a>
+                        {% endfor %}
+                    </div>
                     {%- if article.header_image -%}
                     <img src="{{ article.header_image | relative_url }}" alt="{{ article.title | escape }}"
                         class="article-header-img">
@@ -21,11 +28,6 @@ permalink: /articles
                     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                     <div class="article-text">
                         <span class="articles-meta">{{ article.date | date: date_format }}</span>
-                        {% for category in article.categories %}
-                        <a href="{{ site.url }}/articles?categories={{ category | url_encode }}">
-                            <category>{{ category }}</category>
-                        </a>
-                        {% endfor %}
                         <h3>
                             <a class="articles-link" href="{{ article.url | relative_url }}">
                                 {{ article.title | escape }}
@@ -49,18 +51,18 @@ permalink: /articles
                 </div>
 
                 <div id="filterlist">
-                    {% assign all_categories = "" %}
+                    {% assign all_tags = "" %}
                     {% for post in site.articles %}
-                    {% for category in post.categories %}
-                    {% assign all_categories = all_categories | append: " " | append: category %}
+                    {% for tag in post.tags %}
+                    {% assign all_tags = all_tags | append: " " | append: tag %}
                     {% endfor %}
                     {% endfor %}
-                    {% assign all_categories = all_categories | split: " " | uniq | sort %}
-                    {% for category in all_categories %}
+                    {% assign all_tags = all_tags | split: " " | uniq | sort %}
+                    {% for tag in all_tags %}
                     <tag onclick="toggleCheckbox(event)">
-                        <input type="checkbox" id="category-{{ category | capitalize }}"
-                            name="category-{{ category | capitalize }}" value="{{ category | capitalize }}">
-                        <label for="category-{{ category | capitalize }}">{{ category | capitalize }}</label>
+                        <input type="checkbox" id="tag-{{ tag | lowercase }}" name="tag-{{ tag | lowercase }}"
+                            value="{{ tag | lowercase }}">
+                        <label for="tag-{{ tag | lowercase }}">{{ tag | capitalize }}</label>
                     </tag>
                     {% endfor %}
                 </div>

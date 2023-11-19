@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-
     {%- include head.html -%}
 
     <body>
-        {%include header.html -%}
+        {%- include header.html -%}
         <main id="articlecontent">
             {{ content }}
         </main>
         {% include footer.html -%}
     </body>
+    <script src="/scripts/script.js"></script>
 
 </html>

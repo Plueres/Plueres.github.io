@@ -1,0 +1,39 @@
+#lists a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#lists * {
+    transition: all 0.5s ease;
+    color: $text-color;
+    text-decoration: none;
+}
+#lists #movieslist::before,
+#lists #showslist::before,
+#lists #gameslist::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+#lists #movieslist:hover::before {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4839516.jpg&f=1&nofb=1&ipt=11d6d9b615389523e97552d4b94179b96ffb7261f345e9fe6054e46786e9dced&ipo=images");
+    filter: blur(3px) brightness(0.5);
+    opacity: 1;
+}
+#lists #showslist:hover::before {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp10615910.jpg&f=1&nofb=1&ipt=66f0cd60eb8e0e116e1b5db849e942a162504eb49e3a54514e24367026a5ca21&ipo=images");
+    filter: blur(3px) brightness(0.5);
+    opacity: 1;
+}
+#lists #gameslist:hover::before {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpapertip.com%2Fwmimgs%2F80-806806_popular-video-games-collage.jpg&f=1&nofb=1&ipt=b25c790abf645127649c07bee220c3178aa023c4d7ddb3094b8d2009720ab9f8&ipo=images");
+    filter: blur(3px) brightness(0.5);
+    opacity: 1;
+}

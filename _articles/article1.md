@@ -1,9 +1,9 @@
 ---
 layout: article
-title:  "testpost!"
-date:   2021-12-01 14:31:01 +0100
+title: "testpost!"
+date: 2021-12-01 14:31:01 +0100
 header_image: "/assets/images/header.jpg"
-categories: "Article Testpost"
+tags: "Article Testpost"
 ---
 
 ![Header image]({{ page.header_image | relative_url }})

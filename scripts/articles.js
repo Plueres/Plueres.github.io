@@ -32,14 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Get the current URL
   let url = new URL(window.location.href);
 
-  // Parse the URL to get the categories
-  let categories = decodeURIComponent(url.searchParams.get('categories')).toLowerCase().split(',');
+  // Parse the URL to get the tags
+  let tags = decodeURIComponent(url.searchParams.get('tags')).toLowerCase().split(',');
 
-  // For each category, select the category element and add the class to it
-  categories.forEach(function (category) {
-    let categoryElements = document.querySelectorAll('tag input');
-    categoryElements.forEach(function (element) {
-      if (element.value.toLowerCase() === category) {
+  // For each tag, select the tag element and add the class to it
+  tags.forEach(function (tag) {
+    let tagElements = document.querySelectorAll('tag input');
+    tagElements.forEach(function (element) {
+      if (element.value.toLowerCase() === tag) {
         element.parentElement.classList.add('selected');
         element.checked = true;
       }
@@ -49,12 +49,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function filterPosts() {
   var url = new URL(window.location.href);
-  var categories = (url.searchParams.get("categories") || "")
+  var tags = (url.searchParams.get("tags") || "")
     .toLowerCase()
     .split(",");
 
-  categories.forEach(function (category) {
-    var checkbox = document.getElementById("category-" + category);
+  tags.forEach(function (tag) {
+    var checkbox = document.getElementById("tag-" + tag);
     if (checkbox) {
       checkbox.checked = true;
     }
@@ -62,13 +62,13 @@ function filterPosts() {
 
   var posts = document.querySelectorAll("#articles-grid article");
   posts.forEach(function (post) {
-    var postCategories = post
-      .getAttribute("data-category")
+    var posttags = post
+      .getAttribute("data-tag")
       .toLowerCase()
       .split(" ");
     if (
-      categories.some((category) =>
-        postCategories.some((postCategory) => postCategory.includes(category))
+      tags.some((tag) =>
+        posttags.some((posttag) => posttag.includes(tag))
       )
     ) {
       post.style.display = "flex";
@@ -85,14 +85,14 @@ document
       var checkedBoxes = document.querySelectorAll(
         "#filters input[type=checkbox]:checked"
       );
-      var categories = Array.from(checkedBoxes).map(function (box) {
-        return box.value.toLowerCase();
+      var tags = Array.from(checkedBoxes).map(function (box) {
+        return box.value.toLowerCase(); // Ensure the tag is lowercased
       });
       var url = new URL(window.location.href);
-      if (categories.length > 0) {
-        url.searchParams.set("categories", categories.join(","));
+      if (tags.length > 0) {
+        url.searchParams.set("tags", tags.join(","));
       } else {
-        url.searchParams.delete("categories");
+        url.searchParams.delete("tags");
       }
       window.history.replaceState({}, "", url);
       filterPosts();
@@ -104,8 +104,8 @@ document.getElementById("search-bar").addEventListener("input", function () {
   var articles = document.querySelectorAll("#articles-grid article");
   articles.forEach(function (article) {
     var title = article.querySelector("h3 a").textContent.toLowerCase();
-    var categories = article.getAttribute("data-category").toLowerCase();
-    if (title.includes(searchTerm) || categories.includes(searchTerm)) {
+    var tags = article.getAttribute("data-tag").toLowerCase();
+    if (title.includes(searchTerm) || tags.includes(searchTerm)) {
       article.style.display = "block";
     } else {
       article.style.display = "none";
@@ -136,30 +136,3 @@ window.addEventListener("load", function () {
 });
 
 window.addEventListener("load", filterPosts);
-
-document.querySelectorAll("category").forEach((category) => {
-  const categoryName = category.textContent.trim();
-  var textColor;
-  var brColor;
-
-  switch (categoryName.toLowerCase()) {
-    case "minecraft":
-      textColor = "rgba(0, 112, 40, 1)";
-      brColor = "rgba(0, 112, 40, 0.2)";
-      break;
-    case "another-category":
-      textColor = "blue";
-      brColor = "black";
-      break;
-    case "yet-another-category":
-      textColor = "red";
-      brColor = "black";
-      break;
-    default:
-      textColor = "white";
-      brColor = "gray";
-      break;
-  }
-  category.style.color = textColor;
-  category.style.backgroundColor = brColor;
-});
