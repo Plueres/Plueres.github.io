@@ -73,7 +73,8 @@
 }
 
 #filterlist.show {
-    height: 500px; // Adjust this value to the height of your content
+    height: 16rem;
+    overflow: scroll;
     padding: 1rem;
     margin: 1rem auto;
 }
@@ -90,7 +91,7 @@ article {
 .article-header-img {
     width: 100%;
     height: 16rem;
-    object-fit: cover; // Add this line
+    object-fit: cover;
     border-radius: $border-radius;
 }
 .article-text {

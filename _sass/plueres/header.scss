@@ -8,9 +8,7 @@
     align-self: center;
     bottom: 0;
     border-radius: $border-radius * 2;
-    transition:
-        top 0.2s ease-in-out,
-        bottom 0.2s ease-in-out;
+    transition: margin 0.2s ease-in-out;
 }
 .site-header span.material-symbols-rounded {
     font-size: 2rem;
