@@ -1,3 +1,25 @@
+document.querySelector("#filtericon").addEventListener("click", function () {
+  document.querySelector("#filters").classList.toggle("show");
+});
+
+document.querySelector("#articles-grid").addEventListener("scroll", function () {
+  var header = document.querySelector(".site-header");
+  var style = window.getComputedStyle(header);
+  var marginTop = parseInt(style.getPropertyValue('margin-top'));
+  var marginBottom = parseInt(style.getPropertyValue('margin-bottom'));
+  var headerHeight = header.offsetHeight + marginTop + marginBottom;
+  var viewportHeight = window.innerHeight;
+  var bottomValue = (viewportHeight - headerHeight) / viewportHeight * 100;
+
+  if (this.scrollTop + this.clientHeight >= this.scrollHeight - 1) {
+    header.style.top = "0";
+    header.style.bottom = `${bottomValue}vh`;
+  } else {
+    header.style.top = `${bottomValue}vh`;
+    header.style.bottom = "0";
+  }
+});
+
 function filterPosts() {
   var url = new URL(window.location.href);
   var categories = (url.searchParams.get("categories") || "")

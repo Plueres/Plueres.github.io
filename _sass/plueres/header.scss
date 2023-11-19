@@ -1,13 +1,16 @@
 .site-header {
     margin: 2rem;
     position: fixed;
-    z-index: 1;
+    z-index: 11;
     background: rgba(255, 255, 255, 0.1); /* semi-transparent white */
     backdrop-filter: blur(10px); /* blur effect */
     width: fit-content;
     align-self: center;
     bottom: 0;
     border-radius: $border-radius * 2;
+    transition:
+        top 0.2s ease-in-out,
+        bottom 0.2s ease-in-out;
 }
 .site-header span.material-symbols-rounded {
     font-size: 2rem;

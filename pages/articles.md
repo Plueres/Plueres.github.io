@@ -5,7 +5,9 @@ permalink: /articles
 
 <div id="articles" class="content-wrapper">
     <div class="wrapper">
-        <h1>This is the articles page of the website</h1>
+        <button id="filtericon">
+            <span class="material-symbols-rounded">filter_alt</span>
+        </button>
 
         {%- if site.articles.size > 0 -%}
         <articles>
@@ -42,20 +44,27 @@ permalink: /articles
             </div>
             {%- endif -%}
             <div id="filters">
-                <input type="text" id="search-bar" placeholder="Search">
+                <div id="filtersearch">
+                    <input type="text" id="search-bar" placeholder="Search">
+                </div>
 
-                {% assign all_categories = "" %}
-                {% for post in site.articles %}
-                {% for category in post.categories %}
-                {% assign all_categories = all_categories | append: " " | append: category %}
-                {% endfor %}
-                {% endfor %}
-                {% assign all_categories = all_categories | split: " " | uniq | sort %}
-                {% for category in all_categories %}
-                <input type="checkbox" id="category-{{ category }}" name="category-{{ category }}"
-                    value="{{ category }}">
-                <label for="category-{{ category }}">{{ category }}</label><br>
-                {% endfor %}
+                <div id="filterlist">
+                    {% assign all_categories = "" %}
+                    {% for post in site.articles %}
+                    {% for category in post.categories %}
+                    {% assign all_categories = all_categories | append: " " | append: category %}
+                    {% endfor %}
+                    {% endfor %}
+                    {% assign all_categories = all_categories | split: " " | uniq | sort %}
+                    {% for category in all_categories %}
+                    <tag>
+                        <input type="checkbox" id="category-{{ category }}" name="category-{{ category }}"
+                            value="{{ category }}">
+                        <label for="category-{{ category }}">{{ category }}</label>
+                    </tag>
+                    {% endfor %}
+                </div>
+
             </div>
 
         </articles>
