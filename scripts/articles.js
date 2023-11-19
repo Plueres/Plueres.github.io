@@ -3,14 +3,48 @@ document.querySelector("#filtericon").addEventListener("click", function () {
   document.querySelector("#filterlist").classList.toggle("show");
 });
 
-document.querySelector("#articles-grid").addEventListener("scroll", function () {
-  var header = document.querySelector(".site-header");
+document.querySelectorAll('tag').forEach(function (tag) {
+  tag.addEventListener('click', function (event) {
+    var checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    checkbox.checked = !checkbox.checked;
 
-  if (this.scrollTop + this.clientHeight >= this.scrollHeight - 1) {
-    header.style.margin = "0";
-  } else {
-    header.style.margin = "2rem";
-  }
+    // Trigger the change event
+    var changeEvent = new Event('change');
+    checkbox.dispatchEvent(changeEvent);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  let checkboxes = document.querySelectorAll('tag input[type="checkbox"]');
+
+  checkboxes.forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+      if (this.checked) {
+        // Checkbox is checked, add the class to the parent tag
+        this.parentElement.classList.add('selected');
+      } else {
+        // Checkbox is not checked, remove the class from the parent tag
+        this.parentElement.classList.remove('selected');
+      }
+    });
+  });
+
+  // Get the current URL
+  let url = new URL(window.location.href);
+
+  // Parse the URL to get the categories
+  let categories = decodeURIComponent(url.searchParams.get('categories')).toLowerCase().split(',');
+
+  // For each category, select the category element and add the class to it
+  categories.forEach(function (category) {
+    let categoryElements = document.querySelectorAll('tag input');
+    categoryElements.forEach(function (element) {
+      if (element.value.toLowerCase() === category) {
+        element.parentElement.classList.add('selected');
+        element.checked = true;
+      }
+    });
+  });
 });
 
 function filterPosts() {
@@ -37,7 +71,7 @@ function filterPosts() {
         postCategories.some((postCategory) => postCategory.includes(category))
       )
     ) {
-      post.style.display = "block";
+      post.style.display = "flex";
     } else {
       post.style.display = "none";
     }

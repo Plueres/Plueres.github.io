@@ -5,7 +5,7 @@ body {
 #home {
     // grid-template-columns: repeat(3, 1fr);
     display: grid;
-    margin: 1rem auto;
+    margin: 1rem auto; // to 10% on desktop
     padding: 1rem;
     gap: 1rem;
     grid-auto-flow: dense;

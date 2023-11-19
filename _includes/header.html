@@ -75,14 +75,10 @@
 
   window.addEventListener("load", function () {
     var linkUrl = window.location.href;
-    var matchingLink = Array.from(
-      document.querySelectorAll("#headernav a")
-    ).find((a) => {
-      return (
-        a.href === linkUrl ||
-        (linkUrl.endsWith("/") &&
-          (a.href === linkUrl + "index.html" || a.href === linkUrl))
-      );
+    var links = Array.from(document.querySelectorAll("#headernav a"));
+    links.sort((a, b) => b.href.length - a.href.length);
+    var matchingLink = links.find((a) => {
+      return linkUrl.startsWith(a.href);
     });
     if (matchingLink) {
       setActiveLink(matchingLink);

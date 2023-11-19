@@ -3,7 +3,7 @@ layout: default
 permalink: /articles
 ---
 
-<div id="articles" class="content-wrapper">
+<div id="articles">
     <div class="wrapper">
 
         {%- if site.articles.size > 0 -%}
@@ -57,10 +57,10 @@ permalink: /articles
                     {% endfor %}
                     {% assign all_categories = all_categories | split: " " | uniq | sort %}
                     {% for category in all_categories %}
-                    <tag>
-                        <input type="checkbox" id="category-{{ category }}" name="category-{{ category }}"
-                            value="{{ category }}">
-                        <label for="category-{{ category }}">{{ category }}</label>
+                    <tag onclick="toggleCheckbox(event)">
+                        <input type="checkbox" id="category-{{ category | capitalize }}"
+                            name="category-{{ category | capitalize }}" value="{{ category | capitalize }}">
+                        <label for="category-{{ category | capitalize }}">{{ category | capitalize }}</label>
                     </tag>
                     {% endfor %}
                 </div>
