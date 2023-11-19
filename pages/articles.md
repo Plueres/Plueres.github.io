@@ -5,9 +5,6 @@ permalink: /articles
 
 <div id="articles" class="content-wrapper">
     <div class="wrapper">
-        <button id="filtericon">
-            <span class="material-symbols-rounded">filter_alt</span>
-        </button>
 
         {%- if site.articles.size > 0 -%}
         <articles>
@@ -44,8 +41,11 @@ permalink: /articles
             </div>
             {%- endif -%}
             <div id="filters">
-                <div id="filtersearch">
-                    <input type="text" id="search-bar" placeholder="Search">
+
+                <div id="filtersheader">
+                    <input type="text" id="search-bar" placeholder="Search"><button id="filtericon">
+                        <span class="material-symbols-rounded">filter_alt</span>
+                    </button>
                 </div>
 
                 <div id="filterlist">

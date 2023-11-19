@@ -1,5 +1,6 @@
 document.querySelector("#filtericon").addEventListener("click", function () {
-  document.querySelector("#filters").classList.toggle("show");
+  this.classList.toggle("active");
+  document.querySelector("#filterlist").classList.toggle("show");
 });
 
 document.querySelector("#articles-grid").addEventListener("scroll", function () {
