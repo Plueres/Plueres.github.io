@@ -22,13 +22,13 @@ title: Rick Slierendregt
 email: ""
 description: >- # this means to ignore newlines until "baseurl:"
   My website
-domain: Plueres.github.io # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+domain: Plueres.netlify.app # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:title/ # the default permalinks for posts and pages (optional)
 files: /files/ # location of the files folder that the user can download
 twitter_username: _Rickname_
-github_username:  Plueres
+github_username: Plueres
 
 collections:
   wishlists:
@@ -39,12 +39,11 @@ collections:
     permalink: /post/:title/
   changelogs:
     output: false
-    
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
