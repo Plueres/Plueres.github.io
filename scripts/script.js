@@ -25,33 +25,6 @@ window.onload = function () {
     //     }
     // });
 
-    document.querySelectorAll("posttags").forEach((tag) => {
-        const tagName = tag.textContent.trim();
-        var textColor;
-        var brColor;
-
-        switch (tagName.toLowerCase()) {
-            case "minecraft":
-                textColor = "rgb(0, 180, 70)";
-                brColor = "rgba(0, 129, 50, 0.8)";
-                break;
-            case "another-tag":
-                textColor = "blue";
-                brColor = "black";
-                break;
-            case "yet-another-tag":
-                textColor = "red";
-                brColor = "black";
-                break;
-            default:
-                textColor = "white";
-                brColor = "rgb(120, 120, 120, 0.8)";
-                break;
-        }
-        tag.style.color = textColor;
-        tag.style.backgroundColor = brColor;
-    });
-
 
     // // Add a global flag for whether scrolling is allowed
     // var allowScroll = true;
@@ -317,13 +290,13 @@ window.onload = function () {
 }
 
 
-// Show the buttons when the mouse is moved
-var buttons = document.querySelectorAll('#lists-button, #articles-button, #lists-personal-button, #lists-back-button, #articles-back-button');
-window.addEventListener('mousemove', function () {
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].style.display = 'inline-block';
-    }
-});
+// // Show the buttons when the mouse is moved
+// var buttons = document.querySelectorAll('#lists-button, #articles-button, #lists-personal-button, #lists-back-button, #articles-back-button');
+// window.addEventListener('mousemove', function () {
+//     for (var i = 0; i < buttons.length; i++) {
+//         buttons[i].style.display = 'inline-block';
+//     }
+// });
 
 // var lastX, lastY;
 // var mouseMoved = false;

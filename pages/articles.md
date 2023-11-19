@@ -73,4 +73,5 @@ permalink: /articles
     </div>
 
 </div>
-<script src="scripts/articles.js"></script>
+<script src="/scripts/articles.js"></script>
+<script src="/scripts/global.js"></script>

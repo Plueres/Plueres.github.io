@@ -60,7 +60,7 @@ document.querySelectorAll("#headernav a").forEach((a) => {
                             var newScript = document.createElement("script");
                             newScript.text = oldScript.text;
                             if (oldScript.src) {
-                                newScript.src = oldScript.src;
+                                newScript.src = oldScript.src + '?_=' + new Date().getTime();
                             }
                             oldScript.parentNode.replaceChild(newScript, oldScript);
                             mainElement.appendChild(newScript);
