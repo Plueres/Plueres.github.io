@@ -4,7 +4,7 @@ title: "No Time Quick Menu Script"
 date: 2023-11-20 21:33:17 +0100
 tags: [No Time, Script]
 comments: true
-header_image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsteamcdn-a.akamaihd.net%2Fsteam%2Fapps%2F1043340%2Fheader.jpg%3Ft%3D1557467037&f=1&nofb=1&ipt=d45feccdb1e0e7a62cc8cc25b2fdba715bd9d9b7427a61462633508dfcfca83a&ipo=images"
+header_image: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0CAE4C679FAB8550AC9B9FD44BFC8ADFF7F8CA73/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
 ---
 
 {% for item in site.data.quick_menu %}
@@ -17,7 +17,18 @@ header_image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsteam
 
 ---
 
-### 1.4
+## How to install?
+
+1. Click on the <span class="material-symbols-rounded">content_copy</span> button above to copy the code.
+2. Open No Time and hit TAB to open the PLC
+3. to go "" tab and press new file
+4. in the first field, enter a name that you want to call the file (ex. `quickmenu`)
+   - now the next part is important, at the end of the filename, enter `.eee` to tell the PLC that it is a script file
+5. in the second big input field, enter the code that you just copied from this page.
+6. press SAVE, and OK
+7. now everytime you hit EXECUTE. the file will run
+
+### v1.4
 
 - Added more back menu's
 - Added an automatic option to the HVD menu that only needs a year to work and automatically renames the chip to the entered year
