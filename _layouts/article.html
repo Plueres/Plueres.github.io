@@ -4,7 +4,20 @@
 
     <body>
         {%- include header.html -%}
+        {%- include codeblockbuttons.html -%}
         <main id="articlecontent">
+            <h2>{{ page.title }}</h2>
+            {% if page.images %}
+            <div id="ImgModal">
+                <img class="modal-content" id="img">
+                <div id="caption"></div>
+            </div>
+            <div class="previews">
+                {% for image in page.images %}
+                <img class="preview" src="{{ image }}">
+                {% endfor %}
+            </div>
+            {% endif %}
             {{ content }}
         </main>
         {% include footer.html -%}
