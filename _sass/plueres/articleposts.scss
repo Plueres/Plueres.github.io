@@ -52,3 +52,19 @@ body {
     cursor: pointer;
     width: 100%;
 }
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 255, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+#copy {
+    background: var(--grey-color);
+}

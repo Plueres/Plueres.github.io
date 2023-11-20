@@ -54,15 +54,16 @@ permalink: /articles
                     {% assign all_tags = "" %}
                     {% for post in site.articles %}
                     {% for tag in post.tags %}
-                    {% assign all_tags = all_tags | append: " " | append: tag %}
+                    {% assign all_tags = all_tags | append: "|" | append: tag %}
                     {% endfor %}
                     {% endfor %}
-                    {% assign all_tags = all_tags | split: " " | uniq | sort %}
+                    {% assign all_tags = all_tags | split: "|" | uniq | sort %}
                     {% for tag in all_tags %}
                     <tag onclick="toggleCheckbox(event)">
-                        <input type="checkbox" id="tag-{{ tag | lowercase }}" name="tag-{{ tag | lowercase }}"
-                            value="{{ tag | lowercase }}">
-                        <label for="tag-{{ tag | lowercase }}">{{ tag | capitalize }}</label>
+                        <input type="checkbox" id="tag-{{ tag | lowercase | replace: ' ', '-' }}"
+                            name="tag-{{ tag | lowercase | replace: ' ', '-' }}"
+                            value="{{ tag | lowercase | replace: ' ', '-' }}">
+                        <label for="tag-{{ tag | lowercase | replace: ' ', '-' }}">{{ tag | capitalize }}</label>
                     </tag>
                     {% endfor %}
                 </div>
