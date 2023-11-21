@@ -8,6 +8,10 @@ document.querySelectorAll("posttags").forEach((tag) => {
             textColor = "rgb(0, 180, 70)";
             brColor = "rgba(0, 129, 50, 0.8)";
             break;
+        case "no time":
+            textColor = "rgb(143, 69, 6)";
+            brColor = "linear-gradient(#e9720d, #eae609, #e9720d)";
+            break;
         case "another-tag":
             textColor = "blue";
             brColor = "black";
@@ -22,7 +26,7 @@ document.querySelectorAll("posttags").forEach((tag) => {
             break;
     }
     tag.style.color = textColor;
-    tag.style.backgroundColor = brColor;
+    tag.style.background = brColor;
 });
 
 //
@@ -68,4 +72,35 @@ function toggleHeight() {
 document.addEventListener('DOMContentLoaded', (event) => {
     // Move the #codebtncontainer inside the .highlighter-rouge
     document.querySelector('.highlight').appendChild(document.getElementById('codebtncontainer'));
+});
+
+// IMAGE MODAL
+document.addEventListener('DOMContentLoaded', function () {
+    console.log('DOMContentLoaded event fired'); // Debug statement 1
+
+    let previews = document.querySelectorAll('.preview');
+    console.log('Number of previews:', previews.length); // Debug statement 2
+
+    let modal = document.getElementById("ImgModal");
+    let modalImg = document.getElementById("img");
+    let span = document.getElementsByClassName("close")[0];
+    let img = document.querySelector('.modal-content');
+
+    function openModal(image) {
+        console.log('openModal called with image:', image); // Debug statement 4
+        modal.style.display = "flex";
+        console.log('Modal display style:', modal.style.display); // Debug statement 5
+        modalImg.src = image;
+    }
+
+    for (let i = 0; i < previews.length; i++) {
+        previews[i].addEventListener('click', function () {
+            console.log('Preview clicked'); // Debug statement 3
+            openModal(previews[i].src);
+        });
+    }
+
+    img.onclick = function () {
+        modal.style.display = "none";
+    }
 });

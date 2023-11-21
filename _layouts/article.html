@@ -3,7 +3,13 @@
     {%- include head.html -%}
 
     <body>
+        <div id="ImgModal">
+            <img class="modal-content" id="img">
+            <div id="caption"></div>
+        </div>
+
         {%- include codeblockbuttons.html -%}
+
         <main id="articlecontent">
             <div class="post-header">
                 <!-- Tags -->
@@ -31,10 +37,6 @@
             </div>
 
             {% if page.images %}
-            <div id="ImgModal">
-                <img class="modal-content" id="img">
-                <div id="caption"></div>
-            </div>
             <div class="previews">
                 {% for image in page.images %}
                 <img class="preview" src="{{ image }}">
