@@ -9,7 +9,7 @@ permalink: /articles
         {%- if site.articles.size > 0 -%}
         <articles>
             <div id="articles-grid">
-                {%- assign sorted_articles = site.articles | sort: "date" | reverse -%}
+                {%- assign sorted_articles = site.articles | sort: "updated" | reverse -%}
                 {%- for article in sorted_articles -%}
                 <article data-tag="{{ article.tags | join: '|' }}">
                     <div id="article-overlay">
@@ -76,7 +76,6 @@ permalink: /articles
                     {% endif %}
                     {% endfor %}
                 </div>
-
             </div>
 
         </articles>
