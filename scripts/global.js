@@ -67,5 +67,5 @@ function toggleHeight() {
 }
 document.addEventListener('DOMContentLoaded', (event) => {
     // Move the #codebtncontainer inside the .highlighter-rouge
-    document.querySelector('.highlighter-rouge').appendChild(document.getElementById('codebtncontainer'));
+    document.querySelector('.highlight').appendChild(document.getElementById('codebtncontainer'));
 });

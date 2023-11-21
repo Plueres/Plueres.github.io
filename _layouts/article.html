@@ -27,6 +27,7 @@
                             class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
                     {%- endif -%}
                 </p>
+                <hr class="headerline">
             </div>
 
             {% if page.images %}
@@ -40,6 +41,7 @@
                 {% endfor %}
             </div>
             {% endif %}
+
             {{ content }}
         </main>
         {% include footer.html -%}

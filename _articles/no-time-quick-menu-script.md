@@ -8,13 +8,9 @@ header_image: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0C
 images: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0CAE4C679FAB8550AC9B9FD44BFC8ADFF7F8CA73/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
 ---
 
-{% for item in site.data.quick_menu %}
-
 ```vb
-{{ item }}
+{{ site.data.quick_menu }}
 ```
-
-{% endfor %}
 
 ## How to install?
 
