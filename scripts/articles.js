@@ -3,6 +3,19 @@ document.querySelector("#filtericon").addEventListener("click", function () {
   document.querySelector("#filterlist").classList.toggle("show");
 });
 
+document.querySelector(".collapsible").addEventListener("click", function () {
+  console.log("pressed");
+  var colmenu = document.querySelectorAll(".how-to-install");
+  collapsed = true;
+  if (collapsed) {
+    colmenu.style.height = "fit-content";
+    collapsed = false;
+  } else {
+    colmenu.style.height = "0";
+    collapsed = true;
+  }
+});
+
 document.querySelectorAll('tag').forEach(function (tag) {
   tag.addEventListener('click', function (event) {
     var checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
