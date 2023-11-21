@@ -2,7 +2,7 @@
 layout: article
 title: "No Time Quick Menu Script v1.4"
 date: 2023-11-20 21:33:17 +0100
-updated: 2023-11-21 21:17:09 +0100
+updated: 2023-11-21 22:56:04 +0100
 tags: [No Time, Script]
 comments: true
 header_image: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0CAE4C679FAB8550AC9B9FD44BFC8ADFF7F8CA73/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
@@ -14,18 +14,21 @@ images: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0CAE4C67
 ```
 
 <button class="collapsible">How to install?</button>
-<colmenu class="how-to-install">
+<div class="how-to-install">
   <ol>
-  <li>Click on the <span class="material-symbols-rounded">content_copy</span> button above to copy the code.</li>
-  <li>Open No Time, load or create a save file and hit TAB to open the PLC</li>
-  <li>to go "" tab and press new file</li>
-  <li>in the first field, enter a name that you want to call the file (ex. `quickmenu`)</li>
-      - now the next part is important, at the end of the filename, enter `.eee` to tell the PLC that it is a script file
-  <li>in the second big input field, enter the code that you just copied from this page.</li>
-  <li>press SAVE, and OK</li>
-  <li>now everytime you hit EXECUTE. the file will run and you can use the script</li>
-</ol>
-</colmenu>
+    <li>Click on the <span class="material-symbols-rounded">content_copy</span> button above to copy the code.</li>
+    <li>Open No Time, load or create a save file</li>
+    <li>Hit TAB to open the PLC</li>
+    <li>To go "" tab and press new file</li>
+    <li>In the first field, enter a name that you want to call the file (ex. `quickmenu`) <br></li>
+    <ul>
+      <li>Now the next part is important: at the end of the filename, enter `.eee` to tell the PLC that it is a script file</li>
+    </ul>
+    <li>In the second "big" input field, enter the code that you just copied from this page.</li>
+    <li>Press SAVE, and click OK on the popup to confirm saving</li>
+    <li>Now everytime you hit EXECUTE, the script will run</li>
+  </ol>
+</div>
 
 
 ### v1.4
