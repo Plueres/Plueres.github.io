@@ -613,3 +613,8 @@ games:
     finished: ""
     personal_rating: null
     review: null
+  - played: "!yes"
+    finished: "!no"
+    title: Brotato
+    tags: "!shooter !rogue-like"
+    personal_rating: 4
