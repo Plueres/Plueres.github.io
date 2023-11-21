@@ -65,6 +65,11 @@
         height 0.3s ease,
         flex-direction 0.8s ease,
         padding 0.2s ease;
+    &.fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
 }
 
 #filterlist.show {

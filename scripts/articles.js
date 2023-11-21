@@ -136,4 +136,14 @@ window.addEventListener("load", function () {
   filterPosts();
 });
 
+window.addEventListener('scroll', function () {
+  var filterList = document.querySelector('#filtersheader');
+
+  if (window.scrollY > 0) {
+    filterList.classList.add('fixed');
+  } else {
+    filterList.classList.remove('fixed');
+  }
+});
+
 window.addEventListener("load", filterPosts);

@@ -22,17 +22,40 @@
                 </div>
                 <!-- Post title -->
                 <h2 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h2>
+
                 <!-- Date -->
                 <p class="post-meta">
                     <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        {%- assign date_format = site.minima.date_format | default: "%Y-%m-%d %H:%M:%S" -%}
                         {{ page.date | date: date_format }}
                     </time>
+
+                    <time class="dt-updated" datetime="" id="updatedtime" itemprop="dateModified">
+                    </time>
+
                     {%- if page.author -%}
-                    • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
-                            class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+                    <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
+                            itemprop="name">{{ page.author }}</span></span>
                     {%- endif -%}
                 </p>
+
+                <script>
+                    // updatedtime
+                    var now = new Date();
+                    var datetime = document.getElementById('datetime');
+                    datetime.textContent = now.toLocaleString();
+                    datetime.setAttribute('datetime', now.toISOString());
+
+                    var updatedtime = document.getElementById('updatedtime');
+                    var filePath = '{{ page.path }}';
+                    fetch(`https://api.github.com/repos/Plueres/Plueres.github.io/commits?path=${filePath}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            var updatedDate = new Date(data[0].commit.author.date);
+                            updatedtime.textContent = updatedDate.toLocaleString();
+                            updatedtime.setAttribute('datetime', updatedDate.toISOString());
+                        });
+                </script>
                 <hr class="headerline">
             </div>
 
