@@ -56,22 +56,25 @@ body {
     background-repeat: no-repeat;
 }
 
-#spotify-widget {
+.widget {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: rgba(30, 215, 96, 0.5);
-    border-radius: $border-radius;
 }
-#spotify-widget img {
+.widget img {
     height: 100%;
     object-fit: contain; // Add this line
+}
+#spotify-widget {
+    background-color: rgba(30, 215, 96, 0.5);
+    border-radius: $border-radius;
 }
 .griditem {
     background-color: #18171c;
     border-radius: 6px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
