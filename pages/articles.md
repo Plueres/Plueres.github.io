@@ -66,12 +66,14 @@ permalink: /articles
                     {% endfor %}
                     {% assign all_tags = all_tags | split: "|" | uniq | sort %}
                     {% for tag in all_tags %}
+                    {% if tag != "" %}
                     <tag onclick="toggleCheckbox(event)">
                         <input type="checkbox" id="tag-{{ tag | lowercase | replace: ' ', '-' }}"
                             name="tag-{{ tag | lowercase | replace: ' ', '-' }}"
                             value="{{ tag | lowercase | replace: ' ', '-' }}">
                         <label for="tag-{{ tag | lowercase | replace: ' ', '-' }}">{{ tag | capitalize }}</label>
                     </tag>
+                    {% endif %}
                     {% endfor %}
                 </div>
 
