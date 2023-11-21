@@ -1,11 +1,9 @@
 ---
-layout: lists
-permalink: personal/homepage
+layout: default
+permalink: lists/personal/homepage
 ---
 
-<div id="personallists" class="content-wrapper">
-    <div class="wrapper">
+<div id="personallists">
         <a href="bucketlist" id="bucketlist"></a>
         <a href="wishlist" id="wishlist"></a>
-    </div>
 </div>

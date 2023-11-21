@@ -1,8 +1,3 @@
-#lists a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 #lists * {
     transition: all 0.5s ease;
     color: $text-color;
@@ -36,4 +31,46 @@
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpapertip.com%2Fwmimgs%2F80-806806_popular-video-games-collage.jpg&f=1&nofb=1&ipt=b25c790abf645127649c07bee220c3178aa023c4d7ddb3094b8d2009720ab9f8&ipo=images");
     filter: blur(3px) brightness(0.5);
     opacity: 1;
+}
+
+//////
+
+#lists {
+    width: 100vw;
+    height: 100vh;
+}
+
+#lists .wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#listsgrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+    gap: 1rem;
+}
+
+#personalbtn {
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+}
+#personalbtn span {
+    font-size: 3rem;
+}
+
+#lists a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-color;
+    border-radius: $border-radius;
+    padding: 3rem;
+    &:hover {
+        background-color: $accent-color;
+    }
 }

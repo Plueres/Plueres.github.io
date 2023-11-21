@@ -144,13 +144,6 @@ main {
     text-align: center;
     margin: 0 10%;
 }
-#lists .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-flow: dense;
-    margin: 10%;
-    gap: 3rem;
-}
 
 @include media-query($on-palm) {
     #lists .wrapper {

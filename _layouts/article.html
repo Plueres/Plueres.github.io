@@ -26,10 +26,18 @@
                 <!-- Date -->
                 <p class="post-meta">
                     <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                        {%- assign date_format = site.minima.date_format | default: "%Y-%m-%d %H:%M:%S" -%}
+                        {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y | %I:%M:%S %p" -%}
+                        <span class="material-symbols-rounded">
+                            edit_square
+                        </span>
                         {{ page.date | date: date_format }}
+                    </time>
+                    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                         {% if page.updated %}
-                        (Updated at: {{ page.updated | date: date_format }})
+                        <span class="material-symbols-rounded">
+                            update
+                        </span>
+                        {{ page.updated | date: date_format }}
                         {% endif %}
                     </time>
 
