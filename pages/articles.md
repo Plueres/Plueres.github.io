@@ -45,7 +45,14 @@ permalink: /articles
             <div id="filters">
 
                 <div id="filtersheader">
-                    <input type="text" id="search-bar" placeholder="Search"><button id="filtericon">
+                    <div id="searchbarcontainer">
+                        <input type="search" id="search-bar" placeholder="Search">
+                        <span class="material-symbols-rounded">
+                            search
+                        </span>
+                    </div>
+
+                    <button id="filtericon">
                         <span class="material-symbols-rounded">filter_alt</span>
                     </button>
                 </div>
