@@ -62,7 +62,7 @@ games:
   - played: "!yes"
     finished: "!no"
     title: Brotato
-    tags: "!shooter !rogue-like"
+    tags: "!Shooter !Rogue-like"
     personal_rating: 4
   - title: Call of Juarez
     tags: "!Shooter !Steam Deck"
