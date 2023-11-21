@@ -5,7 +5,30 @@
     <body>
         {%- include codeblockbuttons.html -%}
         <main id="articlecontent">
-            <h2>{{ page.title }}</h2>
+            <div class="post-header">
+                <!-- Tags -->
+                <div id="tags">
+                    {% for tag in page.tags %}
+                    <a href="{{ site.url }}/articles?tags={{ tag | url_encode }}">
+                        <posttags>{{ tag }}</posttags>
+                    </a>
+                    {% endfor %}
+                </div>
+                <!-- Post title -->
+                <h2 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h2>
+                <!-- Date -->
+                <p class="post-meta">
+                    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        {{ page.date | date: date_format }}
+                    </time>
+                    {%- if page.author -%}
+                    • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+                            class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+                    {%- endif -%}
+                </p>
+            </div>
+
             {% if page.images %}
             <div id="ImgModal">
                 <img class="modal-content" id="img">
