@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Parse the URL to get the tags
   let tags = decodeURIComponent(url.searchParams.get('tags')).toLowerCase().split(',');
-
   // For each tag, select the tag element and add the class to it
   tags.forEach(function (tag) {
     let tagElements = document.querySelectorAll('tag input');
@@ -65,7 +64,9 @@ function filterPosts() {
     var posttags = post
       .getAttribute("data-tag")
       .toLowerCase()
-      .split(" ");
+      .split("|")
+      .map(tag => tag.replace(/ /g, '-')); // Replace spaces with hyphens
+
     if (
       tags.some((tag) =>
         posttags.some((posttag) => posttag.includes(tag))

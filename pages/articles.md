@@ -11,7 +11,7 @@ permalink: /articles
             <div id="articles-grid">
                 {%- assign sorted_articles = site.articles | sort: "date" | reverse -%}
                 {%- for article in sorted_articles -%}
-                <article data-tag="{{ article.tags }}">
+                <article data-tag="{{ article.tags | join: '|' }}">
                     <div id="article-overlay">
                         {% for tag in article.tags %}
                         <a href="{{ site.url }}/articles?tags={{ tag | url_encode }}">
@@ -67,7 +67,7 @@ permalink: /articles
                     {% assign all_tags = all_tags | split: "|" | uniq | sort %}
                     {% for tag in all_tags %}
                     {% if tag != "" %}
-                    <tag onclick="toggleCheckbox(event)">
+                    <tag>
                         <input type="checkbox" id="tag-{{ tag | lowercase | replace: ' ', '-' }}"
                             name="tag-{{ tag | lowercase | replace: ' ', '-' }}"
                             value="{{ tag | lowercase | replace: ' ', '-' }}">
