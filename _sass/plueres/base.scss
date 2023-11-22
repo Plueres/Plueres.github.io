@@ -111,6 +111,16 @@ body {
     overflow-x: hidden;
 }
 
+@include media-query($on-palm) {
+    // Adjust this value as needed
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        width: 100vw;
+    }
+}
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
