@@ -108,6 +108,7 @@ tag input[type="checkbox"] {
     grid-auto-rows: min-content;
     gap: 1rem;
     overflow-y: scroll;
+    overflow-x: hidden;
     height: 80vh;
     min-width: 100%;
 }
@@ -118,7 +119,7 @@ article {
     justify-content: center;
     border-radius: $border-radius;
     background: $secondary-color;
-    height: max-content;
+    height: 100%;
     min-width: 100%;
     position: relative;
 }
@@ -139,7 +140,7 @@ article {
     line-height: 40px;
 }
 
-#article-overlay {
+.article-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -148,7 +149,24 @@ article {
     width: 100%;
     margin: 6px;
 }
+a.articles-link {
+    & .article-text {
+        color: $text-color;
+        text-decoration: none;
+    }
+    &:hover .article-text {
+        color: $accent-color;
+        text-decoration: none;
+    }
+}
 
+a {
+    text-decoration: none !important;
+}
+
+a:hover posttags {
+    filter: brightness(80%);
+}
 posttags {
     display: flex;
     flex-direction: row;

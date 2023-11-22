@@ -12,32 +12,32 @@ permalink: /articles
                 {%- assign sorted_articles = site.articles | sort: "updated" | reverse -%}
                 {%- for article in sorted_articles -%}
                 <article data-tag="{{ article.tags | join: '|' }}">
-                    <div id="article-overlay">
+                    <div class="article-overlay">
                         {% for tag in article.tags %}
                         <a href="{{ site.url }}/articles?tags={{ tag | url_encode }}">
                             <posttags>{{ tag }}</posttags>
                         </a>
                         {% endfor %}
                     </div>
-                    {%- if article.header_image -%}
-                    <img src="{{ article.header_image | relative_url }}" alt="{{ article.title | escape }}"
-                        class="article-header-img">
-                    {%- else -%}
-                    <div class="article-header-img" style="background-color: gray;"></div>
-                    {%- endif -%}
-                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                    <div class="article-text">
-                        <span class="articles-meta">{{ article.date | date: date_format }}</span>
-                        <h3>
-                            <a class="articles-link" href="{{ article.url | relative_url }}">
+                    <a class="articles-link" href="{{ article.url | relative_url }}">
+                        {%- if article.header_image -%}
+                        <img src="{{ article.header_image | relative_url }}" alt="{{ article.title | escape }}"
+                            class="article-header-img">
+                        {%- else -%}
+                        <div class="article-header-img" style="background-color: gray;"></div>
+                        {%- endif -%}
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        <div class="article-text">
+                            <span class="articles-meta">{{ article.date | date: date_format }}</span>
+                            <h3>
                                 {{ article.title | escape }}
-                            </a>
-                        </h3>
-                    </div>
+                            </h3>
+                        </div>
 
-                    {%- if site.show_excerpts -%}
-                    {{ article.excerpt }}
-                    {%- endif -%}
+                        {%- if site.show_excerpts -%}
+                        {{ article.excerpt }}
+                        {%- endif -%}
+                    </a>
                 </article>
                 {%- endfor -%}
             </div>
