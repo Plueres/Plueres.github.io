@@ -1,6 +1,6 @@
 ---
 layout: pages
-permalink: personal/bucketlist
+permalink: lists/personal/bucketlist
 ---
 
 <div id="personallist" class="content-wrapper">

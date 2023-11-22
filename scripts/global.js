@@ -76,10 +76,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 // IMAGE MODAL
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('DOMContentLoaded event fired'); // Debug statement 1
 
     let previews = document.querySelectorAll('.preview');
-    console.log('Number of previews:', previews.length); // Debug statement 2
 
     let modal = document.getElementById("ImgModal");
     let modalImg = document.getElementById("img");
@@ -87,17 +85,15 @@ document.addEventListener('DOMContentLoaded', function () {
     let img = document.querySelector('.modal-content');
 
     function openModal(image) {
-        console.log('openModal called with image:', image); // Debug statement 4
         modal.style.display = "flex";
-        console.log('Modal display style:', modal.style.display); // Debug statement 5
         modalImg.src = image;
     }
-
-    for (let i = 0; i < previews.length; i++) {
-        previews[i].addEventListener('click', function () {
-            console.log('Preview clicked'); // Debug statement 3
-            openModal(previews[i].src);
-        });
+    if (previews) {
+        for (let i = 0; i < previews.length; i++) {
+            previews[i].addEventListener('click', function () {
+                openModal(previews[i].src);
+            });
+        }
     }
 
     img.onclick = function () {

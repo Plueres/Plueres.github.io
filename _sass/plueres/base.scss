@@ -58,29 +58,37 @@ small {
 }
 
 //scrollbar
-main {
-    scrollbar-width: thin;
-    scrollbar-color: $accent-color $primary-color;
+html {
+    overflow: auto;
 }
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: calc(100vw - 10px);
+    margin: 0;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: $secondary-color;
     border-radius: $border-radius;
 }
+
 ::-webkit-scrollbar-thumb {
     background: $primary-color;
     border-radius: $border-radius;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: $accent-color;
 }
+
 ::-webkit-scrollbar-corner {
     display: none;
-}
-::-webkit-scrollbar {
-    height: 0;
 }
 
 /**
