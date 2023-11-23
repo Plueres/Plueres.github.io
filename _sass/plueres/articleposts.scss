@@ -7,6 +7,10 @@ body {
     height: unset;
 }
 
+hr {
+    margin: 2rem 0;
+}
+
 .headerline {
     width: 100%;
     margin-bottom: 2rem;
@@ -49,6 +53,7 @@ time .material-symbols-rounded {
 
 #ImgModal {
     display: none;
+    cursor: pointer;
     justify-content: center;
     position: fixed;
     top: 0;
@@ -61,7 +66,7 @@ time .material-symbols-rounded {
 
 .modal-content {
     object-fit: contain;
-    cursor: pointer;
+    cursor: default;
 }
 
 .previews {

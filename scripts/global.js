@@ -81,8 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let modal = document.getElementById("ImgModal");
     let modalImg = document.getElementById("img");
-    let span = document.getElementsByClassName("close")[0];
-    let img = document.querySelector('.modal-content');
 
     function openModal(image) {
         modal.style.display = "flex";
@@ -96,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    img.onclick = function () {
+    modal.onclick = function () {
         modal.style.display = "none";
     }
 });
