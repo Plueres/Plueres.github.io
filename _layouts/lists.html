@@ -79,6 +79,36 @@ layout: pages
         white-space: nowrap;
         margin: 0px;
     }
+
+    @media screen and (max-width: 600px) {
+        table {
+            table-layout: auto;
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 6rem;
+        }
+
+        table thead {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        table tr {
+            margin-bottom: 0.5rem;
+            /* Adjust space between rows */
+        }
+
+        table td,
+        table th {
+            padding: 0.5rem;
+            /* Adjust padding */
+            text-align: left;
+            /* Align text to the left */
+            font-size: 0.8rem;
+            /* Adjust text size */
+        }
+    }
 </style>
 <div class="options">
     <select id="sort">

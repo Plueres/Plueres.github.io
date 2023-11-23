@@ -9,6 +9,11 @@ wishlist:
     links:
       - name: "bol.com"
         url: "https://www.bol.com/nl/nl/p/samsung-galaxy-tab-s9-notepaper-screen-wit/9300000151141465/?bltgh=jJLoSD--HC19C3-XHnhA8g.2.5.ProductTitle"
+  - name: "Sennheiser Momentum 4 - Denim skin"
+    image: "https://media.s-bol.com/7wjPwmJRRvB8/3zryZR/967x1200.jpg"
+    links:
+      - name: "bol.com"
+        url: "https://www.bol.com/nl/nl/p/sennheiser-momentum-4-wireless-denim-over-ear-koptelefoon/9300000160782409/?bltgh=oMCfKgDVMnyK3X4dvLdKMQ.2.3.ProductImage"
 christmaslist:
   - image: "https://media.s-bol.com/x9vgV4Nrmknq/qYzKyPD/681x1200.jpg"
     name: "Deken met mouwen"
@@ -32,7 +37,7 @@ christmaslist:
       - name: "amazon.com"
         url: "https://www.amazon.com/Plinyvel-Compatible-Moleskine-Waterproof-Multifunctional/dp/B0BYHYRCJW/ref=sr_1_8?keywords=pocket%2Bnotebook%2Bcover&qid=1699457536&refinements=p_36%3A1253550011&rnid=386479011&s=office-products&sr=1-8&th=1"
       - name: "amazon.nl"
-        url: "https://www.amazon.nl/Journal-Wisdompro-Notebook-Moleskine-Notebooks/dp/B08P2MRW4K/ref=sr_1_5?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3V73361Y97C6O&keywords=pocket+%2B+notebook+%2B+journal+cover&qid=1699705786&sprefix=pocket+notebook+journal+cover%2Caps%2C93&sr=8-5"
+        url: "https://www.amazon.nl/Journal-Wisdompro-Notebook-Moleskine-Notebooks/dp/B08P2L7JK3/ref=sr_1_5?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3V73361Y97C6O&keywords=pocket%2B%2B%2Bnotebook%2B%2B%2Bjournal%2Bcover&qid=1699705786&sprefix=pocket%2Bnotebook%2Bjournal%2Bcover%2Caps%2C93&sr=8-5&th=1"
   - name: "USB C Adapter 4 Stuks"
     image: "https://m.media-amazon.com/images/I/51CZ9AOq8JL._AC_SX679_.jpg"
     links:

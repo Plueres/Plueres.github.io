@@ -57,6 +57,28 @@ small {
     font-size: 0.75rem; /* 12px */
 }
 
+@include media-query($on-palm) {
+    h1 {
+        font-size: 3.21rem; /* 51.36px */
+    }
+    h2 {
+        font-size: 2.158rem; /* 34.528px */
+    }
+    h3 {
+        font-size: 1.369rem; /* 21.904px */
+    }
+    h4 {
+        font-size: 0.777rem; /* 12.432px */
+    }
+    h5 {
+        font-size: 0.1616rem; /* 2.5856 */
+    }
+
+    small {
+        font-size: 0.75rem; /* 12px */
+    }
+}
+
 //scrollbar
 html {
     overflow: auto;
@@ -176,6 +198,13 @@ button {
     color: white;
     font-size: large;
     cursor: pointer;
+}
+
+select {
+    background-color: $primary-color;
+    border: none;
+    border-radius: $border-radius;
+    color: $text-color;
 }
 
 img {

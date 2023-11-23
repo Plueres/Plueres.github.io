@@ -1,6 +1,6 @@
 ---
-layout: pages
-permalink: lists/personal/homepage
+layout: personallist
+permalink: /personal/homepage
 ---
 
 <div id="personallists">

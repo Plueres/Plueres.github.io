@@ -1,6 +1,6 @@
 ---
 layout: lists
-permalink: list/gameslist
+permalink: /list/gameslist
 ---
 | Name of game | Tags | Has Played | Has Finished Story | Personal rating | Review |
 | --- | --- | --- | --- | --- | --- |

@@ -1,6 +1,6 @@
 ---
 layout: pages
-permalink: lists/personal/wishlist
+permalink: /personal/wishlist
 ---
 
 <wishlists>
