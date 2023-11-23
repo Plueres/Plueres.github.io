@@ -5,7 +5,7 @@ permalink: /lists
 
 
 <div id="lists">
-    <button id="personalbtn" onclick="window.location.href='lists/personal/homepage'">
+    <button id="personalbtn" onclick="window.location.href='/personal/homepage'">
         <span class="material-symbols-rounded">
             person
         </span>
