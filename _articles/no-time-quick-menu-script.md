@@ -2,9 +2,11 @@
 layout: article
 title: "No Time Quick Menu Script v1.4"
 date: 2023-11-20 21:33:17 +0100
-updated: 2023-11-21 22:56:04 +0100
+updated: 2023-11-23 19:42:01 +0100
 tags: [No Time, Script]
 comments: true
+codeblock: true
+github: "https://github.com/Plueres/plueres/blob/main/No_Time/quick_menu.ms"
 header_image: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0CAE4C679FAB8550AC9B9FD44BFC8ADFF7F8CA73/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
 images: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0CAE4C679FAB8550AC9B9FD44BFC8ADFF7F8CA73/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
 ---
@@ -13,7 +15,10 @@ images: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0CAE4C67
 {{ site.data.quick_menu }}
 ```
 
-<button class="collapsible">How to install?</button>
+<button class="collapsible">
+  How to install?
+  <span class="material-symbols-rounded">add</span>
+</button>
 <div class="how-to-install">
   <ol>
     <li>Click on the <span class="material-symbols-rounded">content_copy</span> button above to copy the code.</li>
@@ -29,6 +34,7 @@ images: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0CAE4C67
     <li>Now everytime you hit EXECUTE, the script will run</li>
   </ol>
 </div>
+
 
 
 ### v1.4

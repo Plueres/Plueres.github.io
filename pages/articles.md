@@ -23,8 +23,6 @@ permalink: /articles
                         {%- if article.header_image -%}
                         <img src="{{ article.header_image | relative_url }}" alt="{{ article.title | escape }}"
                             class="article-header-img">
-                        {%- else -%}
-                        <div class="article-header-img" style="background-color: gray;"></div>
                         {%- endif -%}
                         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                         <div class="article-text">

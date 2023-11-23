@@ -1,4 +1,10 @@
 <div id="codebtncontainer">
+    {% if page.github %}
+    <a href="{{ page.github }}">
+        <img alt="Static Badge"
+            src="https://img.shields.io/badge/Github-rgba(0%2C0%2C0%2C0)?style=for-the-badge&logo=github&link=https%3A%2F%2Fgithub.com%2FPlueres%2Fplueres%2Fblob%2Fmain%2FNo_Time%2Fquick_menu.ms">
+    </a>
+    {% endif %}
     <button id="copycode" class="codebuttons" onclick="copyToClipboard()">
         <span class="material-symbols-rounded">
             content_copy

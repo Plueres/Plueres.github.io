@@ -102,6 +102,12 @@ pre.highlight {
     right: 0;
     margin: 1rem;
     transition: opacity 0.2s ease;
+    height: -webkit-fill-available;
+}
+#codebtncontainer a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 .codebuttons {
     background: rgba(0, 0, 0, 0.3);
@@ -120,6 +126,9 @@ pre.highlight {
     padding: 1rem;
     background-color: $accent-color;
     border-radius: $border-radius;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .how-to-install {

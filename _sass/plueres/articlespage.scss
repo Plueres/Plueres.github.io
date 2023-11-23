@@ -125,9 +125,9 @@ article {
 }
 .article-header-img {
     width: 100%;
-    height: 16rem;
+    aspect-ratio: 16/9;
     object-fit: cover;
-    border-radius: $border-radius;
+    border-radius: 6px;
 }
 .article-text {
     margin: 1rem 0;
