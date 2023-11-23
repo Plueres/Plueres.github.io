@@ -79,36 +79,6 @@ layout: pages
         white-space: nowrap;
         margin: 0px;
     }
-
-    @media screen and (max-width: 600px) {
-        table {
-            table-layout: auto;
-            width: 100%;
-            overflow-x: auto;
-            margin-bottom: 6rem;
-        }
-
-        table thead {
-            position: sticky;
-            top: 0;
-            z-index: 1;
-        }
-
-        table tr {
-            margin-bottom: 0.5rem;
-            /* Adjust space between rows */
-        }
-
-        table td,
-        table th {
-            padding: 0.5rem;
-            /* Adjust padding */
-            text-align: left;
-            /* Align text to the left */
-            font-size: 0.8rem;
-            /* Adjust text size */
-        }
-    }
 </style>
 <div class="options">
     <select id="sort">
@@ -131,6 +101,33 @@ layout: pages
             return `<${p1.trim()}>`;
         } else {
             return `<tag>${p1.trim()}</tag>`;
+        }
+    });
+
+    var clonedThead = null;
+
+    window.addEventListener('scroll', function () {
+        var thead = document.querySelector('thead');
+        if (window.pageYOffset > thead.offsetTop && !clonedThead) {
+            clonedThead = thead.cloneNode(true); // Clone the thead
+            clonedThead.style.position = 'fixed';
+            clonedThead.style.top = '0';
+            clonedThead.style.display = 'table';
+            clonedThead.style.background = 'linear-gradient(to bottom, black, transparent)';
+            clonedThead.style.backdropFilter = 'blur(1px)';
+
+            // Set the width and padding of each th in the clone to match the original
+            var originalThs = Array.from(thead.querySelectorAll('th'));
+            var clonedThs = Array.from(clonedThead.querySelectorAll('th'));
+            originalThs.forEach((originalTh, index) => {
+                clonedThs[index].style.width = `${originalTh.offsetWidth}px`;
+                clonedThs[index].style.padding = window.getComputedStyle(originalTh).padding;
+            });
+
+            document.body.appendChild(clonedThead); // Add the clone to the body
+        } else if (window.pageYOffset <= thead.offsetTop && clonedThead) {
+            clonedThead.remove(); // Remove the clone
+            clonedThead = null;
         }
     });
 
