@@ -67,6 +67,11 @@
             {% endif %}
 
             {{ content }}
+
+            <!-- add disqus comments here -->
+            {% if page.comments %}
+            {%- include disqus_comments.html -%}
+            {% endif %}
         </main>
         {% include footer.html -%}
     </body>

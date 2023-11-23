@@ -2,7 +2,7 @@
 layout: article
 title: "No Time Quick Menu Script v1.4"
 date: 2023-11-20 21:33:17 +0100
-updated: 2023-11-23 20:38:53 +0100
+updated: 2023-11-23 21:25:22 +0100
 tags: [No Time, Script]
 comments: true
 codeblock: true
@@ -55,7 +55,7 @@ images:
     - Cool down, get and set location
   - Change time speed
   - Quest settings
-  
+
 ---
 
 ### v1.4

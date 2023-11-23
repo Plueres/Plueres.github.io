@@ -1,8 +1,24 @@
 // Homepage for personallists
-#personallists .wrapper {
+#pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+#pages main {
+    width: 100%;
+    height: 100%;
+    padding: 10rem;
+}
+
+#personallists {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: dense;
+    width: 100%;
+    height: 100%;
 }
 #bucketlist,
 #wishlist {
@@ -16,7 +32,7 @@
 }
 .listgrid {
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     margin: 0.5rem;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 }
@@ -52,9 +68,9 @@
     font-size: 1.369rem;
 }
 .listitem img {
-    height: 30rem;
+    aspect-ratio: 3/4;
     align-self: center;
-    object-fit: contain; // Add this line
-    width: 100%; // Add this line
+    object-fit: contain;
+    width: 100%;
     border-radius: $border-radius * 2;
 }
