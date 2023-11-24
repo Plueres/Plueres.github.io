@@ -40,16 +40,6 @@ body {
     overflow: auto; /* add this line */
 }
 
-#liminalimage {
-    background-image: url("images/header.jpg");
-    background-position: bottom;
-}
-
-#waterimage {
-    background-position: top;
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2016%2F02%2F240837-nature-sunset-sea-waves-clouds-water-colorful.jpg&f=1&nofb=1&ipt=df051a4ea665055ce5af78f84689d26697c7492acba9575d77dc7a0df8942a8f&ipo=images");
-}
-
 .masonrymedia {
     background-attachment: fixed;
     background-size: cover;
@@ -70,7 +60,8 @@ body {
     object-fit: contain; // Add this line
 }
 #spotify-widget {
-    background-color: rgba(30, 215, 96, 0.5);
+    background-color: black;
+    border: 5px solid rgba(30, 215, 96, 0.5);
     border-radius: $border-radius;
     justify-content: center;
 }
@@ -110,5 +101,9 @@ h1 {
     .masonrycol {
         width: 100%;
         height: 100%;
+    }
+    .masonrymedia {
+        background-position: center;
+        background-attachment: unset;
     }
 }
