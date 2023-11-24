@@ -179,7 +179,7 @@ main {
 }
 .wrapper {
     text-align: center;
-    margin: 0 10%;
+    margin: 0 3%;
 }
 
 #lists .wrapper {
@@ -187,6 +187,9 @@ main {
     grid-template-rows: 1fr 1fr 1fr;
 }
 @include media-query($on-tablet) {
+    .wrapper {
+        margin: 0 10%;
+    }
 }
 
 button {
