@@ -29,7 +29,9 @@ footer .wrapper {
 }
 
 .footer-col {
-    float: left;
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width: calc(100% - (#{$spacing-unit} / 2));
     margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
 }
@@ -49,6 +51,12 @@ footer .wrapper {
     width: calc(45% - (#{$spacing-unit} / 2));
 }
 
+@include media-query($on-tablet) {
+    .footer-col {
+        float: left;
+    }
+}
+
 @include media-query($on-laptop) {
     .footer-col-1,
     .footer-col-2 {
@@ -57,14 +65,6 @@ footer .wrapper {
     }
 
     .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width: calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width: calc(100% - (#{$spacing-unit} / 2));
     }

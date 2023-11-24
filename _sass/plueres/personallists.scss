@@ -10,25 +10,58 @@
 #pages main {
     width: 100%;
     height: 100%;
-    padding: 10rem;
+    padding: 6rem 0;
 }
 
 #personallists {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-auto-flow: dense;
     width: 100%;
     height: 100%;
 }
-#bucketlist,
-#wishlist {
-    background-image: linear-gradient(to bottom right, #ff0000, #ff00ff);
+
+@include media-query($on-tablet) {
+    #pages main {
+        width: 100%;
+        height: 100%;
+        padding: 6rem;
+    }
+    #personallists {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: unset;
+    }
 }
 
 // Wishlist pages
 #mainwishlist {
     flex-direction: column;
     width: 100vw;
+}
+
+.personallist {
+    padding: 1rem;
+    border: $secondary-color solid 3px;
+    overflow-y: scroll;
+}
+
+.personallistitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    background: $secondary-color;
+    border-radius: $border-radius * 2;
+    border: $primary-color solid 3px;
+    transition: all 0.2s ease;
+    & h3 {
+        margin: 0;
+    }
+    &:hover {
+        border: $accent-color solid 3px;
+        background: $background-color;
+    }
 }
 .listgrid {
     display: grid;
@@ -46,10 +79,10 @@
     border-radius: $border-radius * 2;
     border: $primary-color solid 3px;
     transition: all 0.2s ease;
-}
-.listitem:hover {
-    border: $primary-color-dim solid 3px;
-    background: $background-color;
+    &:hover {
+        border: $accent-color solid 3px;
+        background: $background-color;
+    }
 }
 .listitemimg {
     background: white;
@@ -60,12 +93,12 @@
 }
 .listitemcontent {
     margin: 1rem;
-}
-.listitemcontent h2 {
-    font-size: 2.158rem;
-}
-.listitemcontent h3 {
-    font-size: 1.369rem;
+    & h2 {
+        font-size: 2.158rem;
+    }
+    & h3 {
+        font-size: 1.369rem;
+    }
 }
 .listitem img {
     aspect-ratio: 3/4;

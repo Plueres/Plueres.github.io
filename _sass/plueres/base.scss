@@ -38,79 +38,80 @@ h5 {
 html {
     font-size: 100%;
 } /* 16px */
+
 h1 {
-    font-size: 4.21rem; /* 67.36px */
+    font-size: 3.21rem; /* 51.36px */
 }
 h2 {
-    font-size: 3.158rem; /* 50.56px */
+    font-size: 2.158rem; /* 34.528px */
 }
 h3 {
-    font-size: 2.369rem; /* 37.92px */
+    font-size: 1.369rem; /* 21.904px */
 }
 h4 {
-    font-size: 1.777rem; /* 28.48px */
+    font-size: 0.777rem; /* 12.432px */
 }
 h5 {
-    font-size: 1.333rem; /* 21.28px */
+    font-size: 0.1616rem; /* 2.5856 */
 }
+
 small {
     font-size: 0.75rem; /* 12px */
 }
-
-@include media-query($on-palm) {
+@include media-query($on-tablet) {
     h1 {
-        font-size: 3.21rem; /* 51.36px */
+        font-size: 4.21rem; /* 67.36px */
     }
     h2 {
-        font-size: 2.158rem; /* 34.528px */
+        font-size: 3.158rem; /* 50.56px */
     }
     h3 {
-        font-size: 1.369rem; /* 21.904px */
+        font-size: 2.369rem; /* 37.92px */
     }
     h4 {
-        font-size: 0.777rem; /* 12.432px */
+        font-size: 1.777rem; /* 28.48px */
     }
     h5 {
-        font-size: 0.1616rem; /* 2.5856 */
+        font-size: 1.333rem; /* 21.28px */
     }
-
     small {
         font-size: 0.75rem; /* 12px */
     }
 }
 
-//scrollbar
-html {
-    overflow: auto;
-}
+@include media-query($on-tablet) {
+    //scrollbar
+    html {
+        overflow: auto;
+    }
 
-body {
-    overflow: hidden;
-    height: 100vh;
-    width: calc(100vw - 10px);
-    margin: 0;
-}
+    body {
+        overflow: hidden;
+        height: 100vh;
+        width: calc(100vw - 10px);
+        margin: 0;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
+    ::-webkit-scrollbar-track {
+        background: $secondary-color;
+        border-radius: $border-radius;
+    }
 
-::-webkit-scrollbar-track {
-    background: $secondary-color;
-    border-radius: $border-radius;
-}
+    ::-webkit-scrollbar-thumb {
+        background: $primary-color;
+        border-radius: $border-radius;
+    }
 
-::-webkit-scrollbar-thumb {
-    background: $primary-color;
-    border-radius: $border-radius;
-}
+    ::-webkit-scrollbar-thumb:hover {
+        background: $accent-color;
+    }
 
-::-webkit-scrollbar-thumb:hover {
-    background: $accent-color;
-}
-
-::-webkit-scrollbar-corner {
-    display: none;
+    ::-webkit-scrollbar-corner {
+        display: none;
+    }
 }
 
 /**
@@ -131,16 +132,6 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-}
-
-@include media-query($on-palm) {
-    // Adjust this value as needed
-    html {
-        overflow-x: hidden;
-    }
-    body {
-        width: 100vw;
-    }
 }
 
 /**
@@ -185,11 +176,11 @@ main {
     margin: 0 10%;
 }
 
-@include media-query($on-palm) {
-    #lists .wrapper {
-        grid-template-columns: unset;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
+#lists .wrapper {
+    grid-template-columns: unset;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+@include media-query($on-tablet) {
 }
 
 button {
@@ -311,8 +302,6 @@ pre {
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width: calc(#{$content-width} - (#{$spacing-unit}));
-        // padding-right: $spacing-unit / 2;
-        // padding-left: $spacing-unit / 2;
         padding-left: 0;
     }
 }
@@ -377,7 +366,8 @@ table {
         background-color: $primary-color;
     }
 }
-@media screen and (max-width: 600px) {
+
+@include media-query($on-tablet) {
     table {
         table-layout: auto;
         width: 100%;
