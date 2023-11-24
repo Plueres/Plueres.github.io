@@ -104,7 +104,7 @@ document.getElementById("search-bar").addEventListener("input", function () {
   var searchTerm = this.value.toLowerCase();
   var articles = document.querySelectorAll("#articles-grid article");
   articles.forEach(function (article) {
-    var title = article.querySelector("h3 a").textContent.toLowerCase();
+    var title = article.querySelector("a h3").textContent.toLowerCase();
     var tags = article.getAttribute("data-tag").toLowerCase();
     if (title.includes(searchTerm) || tags.includes(searchTerm)) {
       article.style.display = "block";

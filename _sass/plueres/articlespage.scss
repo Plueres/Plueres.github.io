@@ -9,9 +9,6 @@
     gap: 1rem;
     padding: 1rem;
     margin: 1rem auto;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
 }
 #searchbarcontainer {
     padding: 11px;
@@ -20,7 +17,6 @@
     border-radius: $border-radius;
     color: $text-color;
     display: flex;
-    flex-direction: row;
 
     &:focus-within {
         box-shadow: inset 0 0 0 2px $accent-color;
@@ -66,7 +62,7 @@
         height 0.3s ease,
         flex-direction 0.8s ease,
         padding 0.2s ease;
-    &.fixed {
+    .fixed {
         position: fixed;
         top: 0;
         right: 0;
@@ -191,10 +187,30 @@ posttags {
 @include media-query($on-laptop) {
     articles {
         display: grid;
-        grid-template-columns: auto 1fr;
+        gap: 20px;
+        grid-template-columns: 9fr 3fr;
     }
     #articles-grid {
         height: 80vh;
         grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    }
+    #filters {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        gap: 1rem;
+    }
+    #filtericon {
+        display: none;
+    }
+    #filtersheader {
+        gap: 0;
+        margin: 0;
+    }
+
+    #filterlist {
+        overflow-y: scroll;
+        background-color: transparent;
+        height: 100%;
     }
 }
