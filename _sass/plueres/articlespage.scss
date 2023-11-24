@@ -135,8 +135,7 @@ article {
 }
 
 .article-text h3 {
-    margin: 15px 0;
-    line-height: 40px;
+    margin: 0 1rem;
 }
 
 .article-overlay {
@@ -149,6 +148,8 @@ article {
     margin: 6px;
 }
 a.articles-link {
+    height: 100%;
+    width: 100%;
     .article-text {
         color: $text-color;
         text-decoration: none;
@@ -212,5 +213,9 @@ posttags {
         overflow-y: scroll;
         background-color: transparent;
         height: 100%;
+        &::-webkit-scrollbar {
+            width: 0;
+            display: none;
+        }
     }
 }
