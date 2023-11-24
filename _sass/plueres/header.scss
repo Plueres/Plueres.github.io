@@ -10,7 +10,6 @@
     border-radius: $border-radius * 2;
     transition: margin 0.2s ease-in-out;
     user-select: none;
-
     * {
         user-select: none;
     }
@@ -22,6 +21,23 @@
 #headernav {
     display: flex;
     align-items: center;
+
+    div {
+        z-index: 10;
+        height: 100%;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: $text-color;
+        text-decoration: none;
+        font-size: 0; //hide the text
+        width: 100%;
+        height: 100%;
+        padding: 1rem 2rem;
+        border-radius: $border-radius * 2;
+    }
 }
 #active-background {
     position: absolute;
@@ -43,24 +59,22 @@
     padding: 1rem 8rem;
 }
 
-#headernav div {
-    z-index: 10;
-    height: 100%;
-}
-
-#headernav a {
-    display: flex;
-    text-decoration: none;
-    font-size: 0; //hide the text
-    width: 100%;
-    height: 100%;
-    padding: 1rem 2rem;
-    border-radius: $border-radius * 2;
-}
-
 #headernav a.active {
     color: $text-color;
-    & span {
+    span {
         color: $text-color;
+    }
+}
+
+@include media-query($on-laptop) {
+    .site-header {
+        bottom: unset;
+        top: 0;
+    }
+
+    #headernav {
+        a {
+            font-size: unset;
+        }
     }
 }

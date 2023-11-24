@@ -114,6 +114,12 @@ small {
     }
 }
 
+@include media-query($on-laptop) {
+    main {
+        margin-top: 7rem;
+    }
+}
+
 /**
  * Basic styling
  */
