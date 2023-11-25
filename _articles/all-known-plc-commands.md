@@ -2,12 +2,13 @@
 layout: article
 title: "All known PLC commands in No Time"
 date: 2023-11-20 18:41:33 +0100
-updated: 2023-11-25 22:56:09 +0100
+updated: 2023-11-26 00:03:25 +0100
 tags: [No Time, Script, Commands]
 header_image: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0CAE4C679FAB8550AC9B9FD44BFC8ADFF7F8CA73/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
 ---
 
 # No Time exclusive commands
+
 - `breakline` not sure if this is exclusive or name differently, but this just breaks a line so you continue on the next line
 - `connectgate` Connect to a nearby dimension gate
 - `dialgate` dial a location or time after connecting to a dimension gate
@@ -23,6 +24,10 @@ header_image: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0C
 ```vb
 writelines "test.eee", 1, "testing"
 ```
+- `readline` Creates an input field and reads that line from the console. Useful for getting user input. You can also store it in a variable `name = readline`
+- `readkey` Reads the key that is pressed by the user in the console. You can also store it in a variable `name = readkey`
+    
+    for both `readkey` and `readline`, you might need to add `wait 0` before this function to not skip the input
 - `find "name of file"` tries to find a file in the current directory with the gives name. if it cannot find it, it will return -1 (useful for checking in if statements).
 - `copy "filename"` copies the file?
 - `paste` pastes the file? The pasted file will act the same way as the original file. So i can rename the original and the copy will update too
@@ -35,8 +40,6 @@ writelines "test.eee", 1, "testing"
 - `getday` returns the current day
 - `gethour` returns the current hour
 - `getminute` returns the current minute
-
-
 
 # Miniscript commands
 
@@ -259,16 +262,6 @@ exit
 //comment
 ```
 A comment is a line of code that is not run. It is useful for explaining what a line of code does.
-### Readline
-```vb
-line = readline
-```
-Reads a line from the console. Useful for getting user input. The line is stored in a variable, here called `line` but can be named almost anything.
-### Readkey
-```vb
-key = readkey
-```
-Reads a key from the console. Useful for getting user input. The key is stored in a variable, here called `key` but can be named almost anything.
 ### Sign
 ```vb
 sign(-98) //prints -1
@@ -350,3 +343,9 @@ cd "Item_HoloDisk(Clone)" // the directory of the HVD chips when they are inside
 cd "FPSController" // the directory of the PLC
 ```
 
+***
+
+### For more info check out:
+- [the website](https://miniscript.org/)
+- [the documentation](https://miniscript.org/files/MiniMicro-CheatSheet.pdf)
+- [the editor](https://miniscript.org/tryit/) which also has some tutorials and information
