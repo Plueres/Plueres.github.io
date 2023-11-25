@@ -2,8 +2,8 @@
 layout: article
 title: "All known PLC commands in No Time"
 date: 2023-11-20 18:41:33 +0100
-updated: 2023-11-25 15:59:14 +0100
-tags: No Time, Script, Commands
+updated: 2023-11-25 22:56:09 +0100
+tags: [No Time, Script, Commands]
 header_image: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0CAE4C679FAB8550AC9B9FD44BFC8ADFF7F8CA73/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
 ---
 
@@ -12,15 +12,24 @@ header_image: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0C
 - `connectgate` Connect to a nearby dimension gate
 - `dialgate` dial a location or time after connecting to a dimension gate
 - `reboot` Reboot the system
+- `timegraph` shows the time graph and tells where you can travel to
 - `setlabel` Set the label of a HVD chip
 - `create "name of file"` creates a new file in the current directory
 - `delete "name of file"` deletes a file with the gives name in the current directory
 - `countlines "filename"` Count lines in a file
+- `readfile("name of file", linenumber)` Read a file. you can print it like so: `print readfile("textfile", countlines("textfile")) // prints the last line of the file`
+    you will need to use a forloop to get all the lines in the file
 - `writelines "name of file", linenumber, "line to write"` Write lines to a file
 ```vb
 writelines "test.eee", 1, "testing"
 ```
 - `find "name of file"` tries to find a file in the current directory with the gives name. if it cannot find it, it will return -1 (useful for checking in if statements).
+- `copy "filename"` copies the file?
+- `paste` pastes the file? The pasted file will act the same way as the original file. So i can rename the original and the copy will update too
+- `rename "filename", "new filename"` i think this renames a file in the current directory
+- `edit "filename"` Opens the file in the editor
+- `cantravel(yearnumber)` a miniature version of timegraph, usefull for conditional commands. To know if you can travel to a certain year
+- `slice("variable", characternumber)` removes a character from a variable. `slice("string", 1) // Will be tring` will remove the first character from the string
 - `getyear` returns the current year
 - `getmonth` returns the current month
 - `getday` returns the current day
@@ -260,11 +269,19 @@ Reads a line from the console. Useful for getting user input. The line is stored
 key = readkey
 ```
 Reads a key from the console. Useful for getting user input. The key is stored in a variable, here called `key` but can be named almost anything.
+### Sign
+```vb
+sign(-98) //prints -1
+```
+Returns the sign of a number. If the number is positive, it will return 1. If the number is negative, it will return -1. If the number is 0, it will return 0.
 ### Clear
 ```vb
 clear
 ```
 Clears the console.
+
+***
+
 ### List
 ```vb
 list = [1, 2, 3, 4, 5]

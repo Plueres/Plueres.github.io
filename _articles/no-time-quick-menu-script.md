@@ -2,7 +2,7 @@
 layout: article
 title: "No Time Quick Menu Script v1.4"
 date: 2023-11-20 21:33:17 +0100
-updated: 2023-11-23 21:25:22 +0100
+updated: 2023-11-25 22:56:09 +0100
 tags: [No Time, Script]
 comments: true
 codeblock: true
@@ -11,6 +11,7 @@ header_image: "/assets/images/quick-menu-plc.jpg"
 images: 
   - "/assets/images/quick-menu-plc.jpg" 
   - "/assets/images/quick-menu-plc-run.jpg"
+  - "/assets/images/quick-menu-plc-run-new.jpg"
 ---
 
 ```vb
@@ -57,6 +58,12 @@ images:
   - Quest settings
 
 ---
+
+### v1.4.5
+
+- Refractored a lot of code
+- Added a lot of comments
+- added arrays for the functions
 
 ### v1.4
 
