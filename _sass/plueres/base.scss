@@ -115,7 +115,7 @@ small {
 }
 
 @include media-query($on-laptop) {
-    main > div:not(#lists) {
+    main > div:not(#lists):first-child {
         margin-top: 7rem;
     }
 }
