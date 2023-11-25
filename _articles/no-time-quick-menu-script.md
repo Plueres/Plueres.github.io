@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "No Time Quick Menu Script v1.4"
+title: "No Time Quick Menu Script v1.5"
 date: 2023-11-20 21:33:17 +0100
-updated: 2023-11-25 22:56:09 +0100
+updated: 2023-11-25 23:45:23 +0100
 tags: [No Time, Script]
 comments: true
 codeblock: true
@@ -59,11 +59,13 @@ images:
 
 ---
 
-### v1.4.5
+### v1.5
 
 - Refractored a lot of code
-- Added a lot of comments
-- added arrays for the functions
+- Added a tiny bit of UI
+- Added arrays for most of the functions, so overall less code
+- Removed unnecessary code
+- Fixed some not working functions
 
 ### v1.4
 
