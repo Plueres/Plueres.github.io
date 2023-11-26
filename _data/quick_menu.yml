@@ -4,7 +4,7 @@
 
   // Variables
   connectionTime = 2
-  enableMonthNames = false
+  enableMonthNames = true
 
   // Convert month number to month shortname
   MonthName = function(monthnumber)
