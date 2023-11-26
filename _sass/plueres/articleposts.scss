@@ -70,16 +70,8 @@ time .material-symbols-rounded {
 }
 
 .previews {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 10px;
-    justify-content: center;
-}
-
-.preview {
-    cursor: pointer;
-    max-height: 20rem;
-    object-fit: contain;
+    height: 20rem;
+    overflow: scroll;
 }
 
 #popup {
@@ -154,4 +146,22 @@ li::marker {
     color: $accent-color;
     font-size: 16px;
     font-weight: bold;
+}
+
+@include media-query($on-laptop) {
+    .previews {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        height: unset;
+        overflow: unset;
+    }
+
+    .preview {
+        cursor: pointer;
+        max-height: 15rem;
+        object-fit: contain;
+    }
 }
