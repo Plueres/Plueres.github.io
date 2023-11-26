@@ -1,8 +1,6 @@
 |
   // Quick Menu Script
   // By: Thers
-  // TODO: add the sign for checks that use negative numbers
-  // TODO: add actual settings for the script
 
   // Variables
   connectionTime = 2
