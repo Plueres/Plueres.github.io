@@ -71,15 +71,14 @@ time .material-symbols-rounded {
 
 .previews {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-flow: column;
     gap: 10px;
     justify-content: center;
 }
 
 .preview {
     cursor: pointer;
-    width: 100%;
-    aspect-ratio: 16/9;
+    max-height: 20rem;
     object-fit: contain;
 }
 

@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "No Time Quick Menu Script v1.5"
+title: "No Time Quick Menu Script v1.5.1"
 date: 2023-11-20 21:33:17 +0100
-updated: 2023-11-26 13:31:26 +0100
+updated: 2023-11-26 20:49:05 +0100
 tags: [No Time, Script]
 comments: true
 codeblock: true
