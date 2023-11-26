@@ -30,7 +30,7 @@ window.addEventListener('popstate', function (event) {
             }
         });
 });
-// Preload pages
+// Lazy Preload pages
 var pages = {};
 var links = document.querySelectorAll("#headernav a");
 links.forEach((a, index) => {
@@ -44,7 +44,7 @@ links.forEach((a, index) => {
                 var newContent = doc.querySelector("main");
                 pages[path] = newContent;
             });
-    }, index * 2000); // Delay each preload by 2 seconds
+    }, index * 1000); // Delay each preload by 1 second
 });
 
 // Create an intersection observer

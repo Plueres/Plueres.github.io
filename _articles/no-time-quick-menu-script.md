@@ -2,7 +2,7 @@
 layout: article
 title: "No Time Quick Menu Script v1.5"
 date: 2023-11-20 21:33:17 +0100
-updated: 2023-11-25 23:45:23 +0100
+updated: 2023-11-26 12:11:24 +0100
 tags: [No Time, Script]
 comments: true
 codeblock: true
@@ -58,6 +58,9 @@ images:
   - Quest settings
 
 ---
+
+### v1.5.1
+- fixed the function of creating a HVD chip
 
 ### v1.5
 
