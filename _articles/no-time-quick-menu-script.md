@@ -2,7 +2,7 @@
 layout: article
 title: "No Time Quick Menu Script v1.5.1"
 date: 2023-11-20 21:33:17 +0100
-updated: 2023-11-26 21:22:04 +0100
+updated: 2023-11-27 09:26:52 +0100
 tags: [No Time, Script]
 comments: true
 codeblock: true
@@ -11,7 +11,6 @@ header_image: "/assets/images/quick-menu-plc.jpg"
 images: 
   - "/assets/images/no_time/quick-menu-plc-run-new.jpg"
   - "/assets/images/no_time/quick-menu-plc-overview.jpg"
-  - "/assets/images/no_time/quick-menu-plc-run-coco.jpg"
   - "/assets/images/no_time/quick-menu-plc-run-coco.jpg"
   - "/assets/images/no_time/quick-menu-plc-run.jpg"
   - "/assets/images/no_time/quick-menu-plc.jpg"
