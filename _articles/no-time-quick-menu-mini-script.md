@@ -2,17 +2,19 @@
 layout: article
 title: "No Time Quick Menu Mini Script v1.0"
 date: 2023-11-27 09:31:15 +0100
-updated: 2023-11-27 19:48:42 +0100
+updated: 2023-11-27 22:19:30 +0100
 tags: [No Time, Script]
 comments: false
 codeblock: true
 github: "https://github.com/Plueres/plueres/blob/main/No_Time/quick_menu_mini.ms"
-header_image: "/assets/images/no_time/quick-menu-plc-run-new.jpg"
+header_image: "/assets/images/no_time/quick-menu-mini-plc-run.jpg"
+images:
+- "/assets/images/no_time/quick-menu-mini-plc-run.jpg"
+- "/assets/images/no_time/quick-menu-mini-plc-overview.jpg"
 ---
-Not available yet
-{% comment %} ```vb
+```vb
 {{ site.data.quick_menu_mini }}
-``` {% endcomment %}
+```
 
 <button class="collapsible">
   How to install?
@@ -40,7 +42,14 @@ Not available yet
 - Travel with the dimension gate to a date or planet
 - Shortcuts to travel back to the save house from travel with the dimension gate
 - Quickly create a HVD chip
+- Timegraph
 
 ---
 
 ### v1.0
+- Created minified version of the Quick Menu script
+- Size is now just 10kb instead of the previous 27kb!
+- Removed the menu items: cococrab mode and other functions
+- Other functions still work the same
+- Removed some wait times for quicker access
+- Optimized functions

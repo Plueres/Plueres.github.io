@@ -1,0 +1,432 @@
+|
+  // Quick Menu Mini Script
+  // By: Thers
+
+  // Variables
+  connectionTime = 2
+  enableMonthNames = true
+  datePrompts = [["Enter Day:", 31, 2, "Day: "], ["Enter Month:", 12, 2, "Month: "], ["Enter Year:", 2076, 4, "Year: "], ["Enter Hour as Number (HH):", 24, 2, "Hour: "], ["Enter Minute as Number (MM):", 59, 2, "Minute: "]]
+
+  Travel_History = function
+    //Create History File
+    if find ("Travel History") == -1 then
+      breakline
+      create "Travel History"
+      writeline "Travel History", 0, "Travel History:"
+    end if
+  end function
+  getInputFromPrompts = function()
+      inputs = []
+      epoch = ""
+      for prompt in datePrompts
+          print prompt[0]
+          input = readline
+          while len(input) < prompt[2]
+              input = "0" + input
+          end while
+          wait 0
+          if input.val <= prompt[1] then
+              inputs.push(input)
+              clear
+              for i in inputs.indexes
+                  print datePrompts[i][3] + inputs[i]
+                  breakline
+              end for
+              if datePrompts[2] == prompt then
+                  if cantravel(inputs[2].val) != 1 then
+                      breakline
+                      print "You cannot travel to that date"
+                      wait 2
+                      CreateChip
+                  end if
+              end if
+              // Check if value is negative
+              if sign(input) == -1 then
+                  epoch = "-"
+                  input = slice(input, 1)
+              else
+                  epoch = ""
+              end if
+          else
+              print "Invalid input. Aborting"
+              wait
+              CreateChip
+          end if
+      end for
+      return [inputs, epoch]
+  end function
+  MonthName = function(monthnumber)
+    if enableMonthNames == false then return monthnumber
+    months = {01:"Jan", 02:"Feb", 03:"Mar", 04:"Apr", 05:"May", 06:"Jun", 07:"Jul", 08:"Aug", 09:"Sep", 10:"Oct", 11:"Nov", 12:"Dec"}
+      for i in months.indexes
+      if monthnumber.val == i then
+              return months[i]
+          end if
+    end for
+    return "Invalid. entering default: May"
+  end function
+
+  main = function
+    clear
+    print "    ____        _      _        __  __                  v1.5.1"
+    breakline
+    print "   / __ \      (_)    | |      |  \/  |                 "
+    breakline
+    print "  | |  | |_   _ _  ___| | __   | \  / | ___ _ __  _   _ "
+    breakline
+    print "  | |  | | | | | |/ __| |/ /   | |\/| |/ _ \ '_ \| | | |"
+    breakline
+    print "  | |__| | |_| | | (__|   <    | |  | |  __/ | | | |_| |"
+    breakline
+    print "   \___\_\\__,_|_|\___|_|\_\   |_|  |_|\___|_| |_|\__,_| Mini"
+    breakline
+    breakline
+    print "1 - Time Travel                2 - Space Travel"
+    breakline
+    print "3 - Return from Time Travel    4 - Return from Space Travel"
+    breakline
+    print "5 - Create HVD Chip            6 - Timegraph"
+    breakline
+    print "(Needs HVD Chip in the PLC)"
+    breakline
+    choice = readkey
+    functions = {1:@TimeModule, 2:@SpaceModule, 3:@RecallTimeGate, 4:@RecallSpaceGate, 5:@CreateChip, 6:@Timegraph}
+    for i in functions.indexes
+      if choice.val == i then
+        functions[i]()
+      end if
+    end for
+    main
+  end function
+
+  TimeModule = function
+    clear
+    connectgate
+    wait connectionTime
+    breakline
+    print "1 - Random Date and Time"
+    breakline
+    print "2 - Enter Date and Time"
+    breakline
+    print "    Press any other key to go back"
+    choice = readkey
+    functions = {1:@TimeModule_RandomDateTime, 2:@TimeModule_EnterDateTime}
+    for i in functions.indexes
+      if choice.val == i then
+        functions[i]()
+      end if
+    end for
+    main
+  end function
+  TimeModule_RandomDateTime = function
+    //Randomize Time function
+    RandomTime = function(timeNumber, length=2)
+      //Convert number to string
+      timeString = str(timeNumber)
+      //add leading 0s for every value that should have 2 characters
+      while timeString.len < length
+        timeString = "0" + timeString
+      end while
+      return timeString
+    end function
+    month = RandomTime(ceil(rnd * 12))
+    day = RandomTime(ceil(rnd * 30))
+    hour = RandomTime(floor(rnd * 24))
+    minute = RandomTime(floor(rnd * 60))
+    // check if the year is negative
+    year = floor((0-3795) + (2077 - (0-3795)) * rnd)
+    year = str(year)
+    if year[0] == "-" then
+      epoch = ""
+      // Could be a '-' if negative years worked with the dimension gate
+      year = slice(year, 1)
+    else
+      epoch = ""
+    end if
+    while year.len < 4
+      year = "0" + year
+    end while
+    clear
+    print "Random address:"
+    breakline
+    print "Day: " + day
+    breakline
+    print "Month: " + MonthName(month)
+    breakline
+    print "Year: " + epoch + year
+    breakline
+    print "Time: " + hour + ":" + minute
+    breakline
+    Overridedate_Value = epoch + month + day + year + hour + minute;
+    dialgate Overridedate_Value //start dialing the address
+    Travel_History()
+    writeline "Travel History", countlines("Travel History")+1, "Random Date: " + day + " " + MonthName(month) + " " + epoch + year + " " + hour + ":" + minute
+    breakline
+    wait 3
+    print "Press any button to go back"
+    readkey
+    TimeModule
+  end function
+  TimeModule_EnterDateTime = function
+      clear
+      result = getInputFromPrompts()
+      inputs = result[0]
+      epoch = result[1]
+      Overridedate_Value = epoch + inputs[1] + inputs[0] + inputs[2] + inputs[3] + inputs[4]
+      clear
+      dialgate Overridedate_Value
+      print "You Entered:"
+      breakline
+      print "Day: " + inputs[0]
+      breakline
+      print "Month: " + MonthName(inputs[1])
+      breakline
+      print "Year: " + epoch + inputs[2]
+      breakline
+      print "Time: " + inputs[3] + ":" + inputs[4]
+      breakline
+      Travel_History()
+      writeline "Travel History", countlines("Travel History")+1, "Date: " + inputs[0] + " " + MonthName(inputs[1]) + " " + inputs[2] + " " + inputs[3] + ":" + inputs[4]
+      breakline
+      wait 3
+      print "Press any button to go back"
+      readkey
+      TimeModule
+  end function
+
+  SpaceModule = function
+    clear
+    connectgate
+    wait connectionTime
+    breakline
+    print "1 - Random Dialgate Code"
+    breakline
+    print "2 - Enter Dialgate Code"
+    breakline
+    print "    Press any other key to go back"
+    choice = readkey
+    functions = {1:@SpaceModule_RandomDialgateCode, 2:@SpaceModule_EnterDialgateCode}
+    for i in functions.indexes
+      if choice.val == i then
+        functions[i]()
+      end if
+    end for
+    main
+  end function
+  SpaceModule_RandomDialgateCode = function
+    // Generate random space gate address
+    Space_Coordinate = ""
+    for i in range(1, 5)
+      Space_Coordinate = Space_Coordinate + char(rnd * 24 + 97)
+    end for
+    breakline
+    dialgate Space_Coordinate.lower
+    Travel_History()
+    writeline "Travel History", countlines("Travel History")+1, "Random Planet Code: " + Space_Coordinate.upper
+    wait 3
+    print "Press any button to go back"
+    breakline
+    readkey
+    SpaceModule
+  end function
+  SpaceModule_EnterDialgateCode = function
+    clear
+    print "Please enter Coordinates using 5 characters (A-X)"
+    wait 0
+    Space_Coordinate = readline
+    while Space_Coordinate.len < 5
+      Space_Coordinate = char(rnd * 24 + 97) + Space_Coordinate
+    end while
+    if Space_Coordinate.len < 5 then // if it is not exactly 5 characters then exit
+      print "Please enter the correct format"
+      wait
+      SpaceModule
+    end if
+    dialgate Space_Coordinate.lower
+    Travel_History()
+    writeline "Travel History", countlines("Travel History")+1, "Planet Code: " + Space_Coordinate.upper
+    wait 3
+    breakline
+    print "Press any button to go back"
+    readkey
+    SpaceModule
+  end function
+
+  RecallTimeGate = function
+    recalltimegate
+    wait 3
+    breakline
+    print "Press any button to go back"
+    readkey
+    main
+  end function 
+
+  RecallSpaceGate = function
+    connectgate
+    breakline
+    print "Please wait until it starts dialing"
+    wait 2
+    dialgate "xxxxx"
+    wait 3
+    breakline
+    print "Press any button to go back"
+    readkey
+    main
+  end function
+
+  CreateChip = function
+    clear
+    cd "Item_HoloDisk(Clone)"
+    breakline
+    print "1 - Overridedate"
+    breakline
+    print "2 - Overridedate (Automatic)"
+    breakline
+    print "3 - Set chip label"
+    breakline
+    print "    Press any other key to go back"
+    breakline
+
+    choice = readkey
+    functions = {1:@CreateChip_Overridedate, 2:@CreateChip_OverridedateYear, 3:@CreateChip_SetLabel}
+    for i in functions.indexes
+      if choice.val == i then
+        functions[i]()
+      end if
+    end for
+    cd "FPSController"
+    main
+  end function
+  CreateChip_Overridedate = function
+    clear
+      result = getInputFromPrompts()
+      inputs = result[0]
+      epoch = result[1]
+      wait 
+    clear
+    print "You Entered:"
+    breakline
+    print "Day: " + inputs[0]
+    breakline
+    print "Month: " + MonthName(inputs[1])
+    breakline
+    print "Year: " + epoch + inputs[2]
+    breakline
+    print "Time: " + inputs[3] + ":" + inputs[4]
+    Overridedate_Value = epoch + inputs[1] + inputs[0] + inputs[2] + inputs[3] + inputs[4]
+    breakline
+    print Overridedate_Value
+    breakline
+      wait
+    if find ("startup.eee") != -1 then
+      lines = countlines ("startup.eee")
+    else 
+      lines = 0
+    end if
+      CheckStartupFile(lines, Overridedate_Value)
+    breakline
+    cd "FPSController"
+    wait 3
+    print "Press any button to go back"
+    readkey
+    CreateChip
+  end function
+  CreateChip_OverridedateYear = function
+    clear
+    print "Enter Year: (Can be negative)"
+    year = readline
+    // Check for leading '-'
+    if year[0] == "-" then
+      epoch = "-"
+      year = slice(year, 1)
+    else
+      epoch = ""
+    end if
+    while len(year) < 4
+      year = "0" + year
+    end while
+    Overridedate_Value = epoch + "06" + "16" + year + "10" + "10"
+    breakline
+    print Overridedate_Value
+    breakline
+    if find ("startup.eee") != -1 then
+      lines = countlines("startup.eee")
+    else 
+      lines = 0
+    end if
+    setlabel epoch + year + "_" + "chip"
+    CheckStartupFile(lines, Overridedate_Value)
+  end function
+  CreateChip_SetLabel = function
+    clear
+    print "Enter a name for the HVD chip"
+    breakline
+    wait 0
+    chipName = readline
+    clear
+    print "The name will be '" + chipName + "'. Is this correct? (Y)es or (N)o"
+    wait 0
+    chipName_Conf = readkey
+    if chipName_Conf == "yes" or chipName_Conf == "y" then
+      breakline
+      print "Setting chip name to " + chipName + "..."
+      wait
+      breakline
+      setlabel str(chipName)
+      wait 2
+      cd "FPSController"
+      main
+    else
+      breakline
+      print "Could not set the chip name to " + chipName
+      wait
+      CreateChip
+    end if
+  end function
+
+  writeToFile = function(linecount, value)
+      print "Writing into file."
+      breakline
+      writeline "startup.eee", linecount, "overridedate " + value
+      cd "FPSController"
+      print "Done"
+      breakline
+      wait 3
+      print "Press any button to go back"
+      readkey
+      CreateChip
+  end function
+  CheckStartupFile = function(linecount, value)
+      breakline
+      print "Checking if file exists and if it is empty"
+      breakline
+      wait
+      if find ("startup.eee") == -1 then
+          print "File doesn't exist yet, creating file."
+          breakline
+          create "startup.eee"
+          wait
+          print "Writing lines"
+          wait
+          breakline
+          writeToFile(0, value)
+      else if linecount < 1 then
+          print "Nothing in the file yet, writing."
+          breakline
+          writeToFile(linecount, value)
+      else
+          print "startup.eee has existing lines, overwriting."
+          breakline
+          writeToFile(linecount, value)
+      end if
+  end function
+
+  Timegraph = function
+    bgcolor 0,0,0
+    timegraph
+    clear
+    wait 0
+  end function
+
+  // Start the script with the main menu
+  main
