@@ -2,16 +2,19 @@
 layout: article
 title: "All known PLC commands in No Time"
 date: 2023-11-20 18:41:33 +0100
-updated: 2023-11-26 00:03:25 +0100
+updated: 2023-12-03 22:01:39 +0100
 tags: [No Time, Script, Commands]
 header_image: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0CAE4C679FAB8550AC9B9FD44BFC8ADFF7F8CA73/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
 ---
+> For more information and documentation see the bottom of this page
 
 # No Time exclusive commands
 
 - `breakline` not sure if this is exclusive or name differently, but this just breaks a line so you continue on the next line
 - `connectgate` Connect to a nearby dimension gate
 - `dialgate` dial a location or time after connecting to a dimension gate
+- `gatereadings` get info of the destination from the space core
+- `gettemperature` get temperature as read from the plc temperature meter
 - `reboot` Reboot the system
 - `timegraph` shows the time graph and tells where you can travel to
 - `setlabel` Set the label of a HVD chip
@@ -40,6 +43,7 @@ writelines "test.eee", 1, "testing"
 - `getday` returns the current day
 - `gethour` returns the current hour
 - `getminute` returns the current minute
+- `cococrab` enables cococrab mode
 
 # Miniscript commands
 
@@ -65,20 +69,29 @@ print "OK, ""Bob""."
 Operators:
 - `+` string concatenation
 - `-` string subtraction (chop)
-- `*`, / replication, division
-- `==`, `!=`, `>`, `>=`, `<`, `<=` comparison
+- `*`, `/` replication, division
+- `==` equals to
+- `!=` is not
+- `>` is bigger than
+- `>=` is bigger and equal to
+- `<` is smaller than
+- `<=` is smaller and equal to
 - `[i]` get character i
+
 ```vb
 text = "Hello"
 print text[0] //prints H
 ```
+
 - `[i:j]` get slice from i up to j
+
 ```vb
 text = "Hello"
 print text[0:2] //prints He
 ```
 
 ## Conditional commands
+
 ```vb
 if condition then
     do something
@@ -88,8 +101,10 @@ else                        // else
     do something else
 end if
 ```
+
 Conditionals are checks to see if a certain condition is true or false. If the condition is true, the code inside the if statement will run. If the condition is false, the code inside the else statement will run.
 example:
+
 ```vb
 if 1 == 1 then
     print("1 is equal to 1")
@@ -99,7 +114,9 @@ else
     print("1 is not equal to 1 or 2")
 end if
 ```
+
 you can use and, or and not in if statements loops:
+
 ```vb
 if i == 1 or i == 2 then
     print i     //prints 1 and 2
