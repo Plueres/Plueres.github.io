@@ -145,6 +145,11 @@ movies:
   - title: Infinity Pool
     tags: "!Horror"
     watched: "!no"
+  - watched: "!yes"
+    title: Interstellar
+    tags: "!Time Travel !Space !Sci-fi"
+    personal_rating: 4
+    review: Good movie but it didn't make as much impact as i thought it would
   - title: IO
     tags: "!Dystopian Future"
     watched: "!no"
