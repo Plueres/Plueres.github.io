@@ -9,7 +9,7 @@ layout: pages
     main {
         flex-direction: column;
         width: 100vw;
-        overflow: scroll;
+        overflow-y: scroll;
     }
 
     ul {
@@ -121,7 +121,12 @@ layout: pages
             var clonedThs = Array.from(clonedThead.querySelectorAll('th'));
             originalThs.forEach((originalTh, index) => {
                 clonedThs[index].style.width = `${originalTh.offsetWidth}px`;
-                clonedThs[index].style.padding = window.getComputedStyle(originalTh).padding;
+
+                if (window.innerWidth <= 768) { // for screens smaller or equal to 768px
+                    clonedThs[index].style.padding = '0'; // set padding to 5px
+                } else {
+                    clonedThs[index].style.padding = window.getComputedStyle(originalTh).padding;
+                }
             });
 
             document.body.appendChild(clonedThead); // Add the clone to the body
