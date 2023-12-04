@@ -4,6 +4,7 @@
     z-index: 11;
     background: rgba(255, 255, 255, 0.1); /* semi-transparent white */
     backdrop-filter: blur(10px); /* blur effect */
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
     width: fit-content;
     align-self: center;
     bottom: 0;
@@ -22,9 +23,6 @@
 #headernav {
     display: flex;
     align-items: center;
-    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
-    border-radius: $border-radius * 2;
-    margin: 0;
 
 
     div {

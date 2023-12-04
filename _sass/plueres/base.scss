@@ -342,6 +342,7 @@ table {
     width: 100vw;
     border: none;
     border-spacing: 0;
+    table-layout: auto;
 
     tr {
         &:nth-child(even) {
@@ -378,7 +379,6 @@ table {
 
 @include media-query($on-tablet) {
     table {
-        table-layout: auto;
         width: 100%;
         overflow-x: auto;
         margin-bottom: 6rem;
