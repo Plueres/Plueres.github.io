@@ -24,12 +24,15 @@ header_image: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0C
 - `readfile("name of file", linenumber)` Read a file. you can print it like so: `print readfile("textfile", countlines("textfile")) // prints the last line of the file`
     you will need to use a forloop to get all the lines in the file
 - `writelines "name of file", linenumber, "line to write"` Write lines to a file
+
 ```vb
 writelines "test.eee", 1, "testing"
 ```
+
 - `readline` Creates an input field and reads that line from the console. Useful for getting user input. You can also store it in a variable `name = readline`
+
 - `readkey` Reads the key that is pressed by the user in the console. You can also store it in a variable `name = readkey`
-    
+
     for both `readkey` and `readline`, you might need to add `wait 0` before this function to not skip the input
 - `find "name of file"` tries to find a file in the current directory with the gives name. if it cannot find it, it will return -1 (useful for checking in if statements).
 - `copy "filename"` copies the file?
@@ -48,9 +51,11 @@ writelines "test.eee", 1, "testing"
 # Miniscript commands
 
 ## Numbers
+
 All numbers are stored in full-precision
 format. Numbers also represent true (1)
 and false (0). Operators:
+
 - `+`, `-`, `*`, `/` standard math
 - `%` modulus (remainder)
 - `^` power
@@ -58,15 +63,19 @@ and false (0). Operators:
 - `==`, `!=`, `>`, `>=`, `<`, `<=` comparisons
 
 ## Strings
+
 Text is stored in strings of Unicode
 characters. Write strings by
 surrounding them with quotes. If you
 need to include a quotation mark in the
 string, type it twice.
+
 ```vb
 print "OK, ""Bob""."
 ```
+
 Operators:
+
 - `+` string concatenation
 - `-` string subtraction (chop)
 - `*`, `/` replication, division
@@ -126,6 +135,7 @@ end if
 ***
 
 ## Function commands
+
 ```vb
 functionname = function
     print "do something"
@@ -134,6 +144,7 @@ functionname //will print: do something
 ```
 
 Create a function with function(), including parameters with optional default values. Assign the result to a variable. Invoke by using that variable. Use @ to reference a function without invoking.
+
 ```vb
 triple = function(n=1)
  return n*3
@@ -145,10 +156,13 @@ print f(5) // also 15
 ```
 
 ### Return
+
 ```vb
 return
 ```
+
 Return something. This is useful for functions, as it will return a value. Or nothing will be returned if nothing is specified.
+
 ```vb
 test = function
     variable = 2
@@ -159,27 +173,35 @@ end function
 ***
 
 ## Loops
+
 ### for loop
+
 ```vb
 for numbervariable in range(startnumber, end number, (optional) steps to take)
     print number
 end for
 ```
+
 A for loop loops through numbers in a range. The first number is the start number, the second number is the end number, and the third number is the steps to take. The steps to take is optional, and if not specified, it will default to 1.
 example:
+
 ```vb
 for i in range(1, 10)
     print i         //prints numbers 1 through 10
 end for
 ```
+
 ### while loop
+
 ```vb
 while condition
     print "do something"
 end while
 ```
+
 A while loop loops through code while a condition is true. The condition is checked before the code is run, and if the condition is false, the code will not run.
 example:
+
 ```vb
 canwrite = true
 while canwrite

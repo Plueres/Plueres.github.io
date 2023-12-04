@@ -342,7 +342,7 @@ table {
     width: 100vw;
     border: none;
     border-spacing: 0;
-    table-layout: auto;
+    table-layout: fixed;
 
     tr {
         &:nth-child(even) {
