@@ -337,6 +337,10 @@ pre {
     }
 }
 
+table *, thead * {
+    font-size: 9px;
+}
+
 table {
     margin-bottom: 6rem;
     width: 100vw;
@@ -378,6 +382,10 @@ table {
 }
 
 @include media-query($on-tablet) {
+    table *, thead * {
+        font-size: 1rem;
+    }
+
     table {
         width: 100%;
         overflow-x: auto;
@@ -401,7 +409,5 @@ table {
         /* Adjust padding */
         text-align: left;
         /* Align text to the left */
-        font-size: 0.8rem;
-        /* Adjust text size */
     }
 }
