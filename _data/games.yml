@@ -600,6 +600,9 @@ games:
     finished: ""
     personal_rating: null
     review: null
+  - played: "!no"
+    finished: "!no"
+    title: Undertale
   - title: Undefeated
     tags: "!PC !Steam Deck"
     played: ""
