@@ -165,8 +165,6 @@ main {
     flex-wrap: nowrap;
     overflow-x: hidden;
     // transition: opacity 0.1s;
-
-    //
     transition: transform 0.5s ease;
     position: relative;
     left: 0;
@@ -337,7 +335,8 @@ pre {
     }
 }
 
-table *, thead * {
+table *,
+thead * {
     font-size: 9px;
 }
 
@@ -382,7 +381,8 @@ table {
 }
 
 @include media-query($on-tablet) {
-    table *, thead * {
+    table *,
+    thead * {
         font-size: 1rem;
     }
 

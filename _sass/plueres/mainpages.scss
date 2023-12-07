@@ -1,0 +1,426 @@
+/*
+ ****************************************************** HOMEPAGE ******************************************************
+*/
+body {
+    height: calc(100vh - env(safe-area-inset-top));
+}
+
+#home {
+    // grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    margin: 1rem auto; // to 10% on desktop
+    padding: 1rem;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-template-areas:
+        "masonryabout"
+        "masonrymedia"
+        "masonryother";
+}
+
+#masonryabout {
+    grid-area: masonryabout;
+}
+
+#masonrymedia {
+    grid-area: masonrymedia;
+}
+
+#masonryother {
+    grid-area: masonryother;
+}
+
+#home h2 {
+    margin: 0;
+}
+
+.masonrycol {
+    width: 90vw;
+    height: auto;
+    height: 85vh;
+    gap: 1rem;
+    display: grid;
+    overflow: auto; /* add this line */
+}
+
+.masonrymedia {
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%; /* adjust as needed */
+    width: 100%; /* adjust as needed */
+    border-radius: $border-radius;
+    background-repeat: no-repeat;
+}
+
+.widget {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.widget img {
+    height: 100%;
+    object-fit: contain; // Add this line
+}
+#spotify-widget {
+    background-color: black;
+    border: 5px solid rgba(30, 215, 96, 0.5);
+    border-radius: $border-radius;
+    justify-content: center;
+}
+.griditem {
+    background-color: #18171c;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    container-type: size;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+.cursor-visible {
+    opacity: 1;
+}
+
+.cursor-invisible {
+    opacity: 0;
+}
+
+@include media-query($on-laptop) {
+    #home {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "masonrymedia masonryabout masonryother";
+        width: 100%;
+        height: 80vh;
+        margin: 0rem 7rem;
+    }
+    .masonrycol {
+        width: 100%;
+        height: 100%;
+    }
+    .masonrymedia {
+        background-position: center;
+        background-attachment: unset;
+    }
+}
+
+/*
+ **************************************************** LISTS PAGE ******************************************************
+*/
+
+#lists * {
+    transition: all 0.5s ease;
+    color: $text-color;
+    text-decoration: none;
+}
+#lists #movieslist::before,
+#lists #showslist::before,
+#lists #gameslist::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+#lists #movieslist:hover::before {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F4839516.jpg&f=1&nofb=1&ipt=11d6d9b615389523e97552d4b94179b96ffb7261f345e9fe6054e46786e9dced&ipo=images");
+    filter: blur(3px) brightness(0.5);
+    opacity: 1;
+}
+#lists #showslist:hover::before {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp10615910.jpg&f=1&nofb=1&ipt=66f0cd60eb8e0e116e1b5db849e942a162504eb49e3a54514e24367026a5ca21&ipo=images");
+    filter: blur(3px) brightness(0.5);
+    opacity: 1;
+}
+#lists #gameslist:hover::before {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpapertip.com%2Fwmimgs%2F80-806806_popular-video-games-collage.jpg&f=1&nofb=1&ipt=b25c790abf645127649c07bee220c3178aa023c4d7ddb3094b8d2009720ab9f8&ipo=images");
+    filter: blur(3px) brightness(0.5);
+    opacity: 1;
+}
+
+//////
+
+#lists {
+    width: 100vw;
+    height: 100vh;
+}
+
+#lists .wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#listsgrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+    gap: 1rem;
+    height: 60%;
+}
+
+#personalbtn {
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+}
+#personalbtn span {
+    font-size: 3rem;
+}
+
+#lists a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-color;
+    border-radius: $border-radius;
+    &:hover {
+        background-color: $accent-color;
+    }
+}
+
+@include media-query($on-laptop) {
+    .wrapper #listsgrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: unset;
+    }
+}
+
+/*
+ ******************************************************* ARTICLES PAGE ******************************************************
+*/
+
+#articles {
+    width: 100%;
+}
+#filtersheader {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+#searchbarcontainer {
+    padding: 11px;
+    width: 100%;
+    background-color: $primary-color;
+    border-radius: $border-radius;
+    color: $text-color;
+    display: flex;
+
+    &:focus-within {
+        box-shadow: inset 0 0 0 2px $accent-color;
+    }
+}
+
+#filtersheader input[type="search"] {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    color: $text-color;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+#filtericon {
+    cursor: pointer;
+    padding: 0.7rem;
+    border-radius: $border-radius;
+    display: grid;
+    aspect-ratio: 1 / 1;
+
+    &.active {
+        background-color: $primary-color;
+    }
+}
+
+#filters {
+    width: 100%;
+}
+#filterlist {
+    background-color: $secondary-color;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    gap: 1rem;
+    overflow: hidden;
+    transition:
+        height 0.3s ease,
+        flex-direction 0.8s ease,
+        padding 0.2s ease;
+    .fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
+
+#filterlist.show {
+    height: 16rem;
+    overflow: scroll;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+tag {
+    background-color: $primary-color;
+    border-radius: $border-radius;
+    padding: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+tag.selected {
+    background-color: $accent-color;
+}
+
+tag input[type="checkbox"] {
+    display: none;
+}
+
+// articles {
+//     display: grid;
+//     grid-template-columns: 4fr 1fr;
+//     gap: 1rem;
+// }
+
+articles {
+    display: flex;
+    flex-direction: column-reverse;
+}
+#articles-grid {
+    display: grid;
+    overflow-y: unset;
+    height: unset;
+    grid-auto-rows: min-content;
+    gap: 1rem;
+    min-width: 100%;
+    padding-bottom: 8rem;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    background: $secondary-color;
+    height: 100%;
+    min-width: 100%;
+    position: relative;
+}
+.article-header-img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.article-text {
+    margin: 1rem 0;
+    width: 100%;
+    text-wrap: pretty;
+}
+
+.article-text h3 {
+    margin: 0 1rem;
+}
+
+.article-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 6px;
+}
+a.articles-link {
+    height: 100%;
+    width: 100%;
+    .article-text {
+        color: $text-color;
+        text-decoration: none;
+    }
+    &:hover .article-text {
+        color: $accent-color;
+        text-decoration: none;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover posttags {
+    filter: brightness(80%);
+}
+posttags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3px 6px;
+    border-radius: 6px;
+    margin-right: 5px; // Space between tags
+    font-weight: bold;
+}
+@include media-query($on-tablet) {
+    #articles-grid {
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 75vh;
+        padding-bottom: 0;
+    }
+}
+@include media-query($on-laptop) {
+    articles {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 3fr 1fr;
+    }
+    #articles-grid {
+        height: 80vh;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    }
+    #filters {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        gap: 1rem;
+    }
+    #filtericon {
+        display: none;
+    }
+    #filtersheader {
+        gap: 0;
+        margin: 0;
+    }
+
+    #filterlist {
+        overflow-y: scroll;
+        background-color: transparent;
+        height: 100%;
+        &::-webkit-scrollbar {
+            width: 0;
+            display: none;
+        }
+    }
+}

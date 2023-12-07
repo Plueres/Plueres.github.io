@@ -5,7 +5,7 @@
 
     <body id="pages">
         {% include header-pages.html -%}
-        <main>
+        <main class="{{ page.permalink | remove: '/' }}">
             {{ content }}
         </main>
     </body>

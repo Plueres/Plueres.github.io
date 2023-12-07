@@ -113,5 +113,5 @@ $on-laptop: 1024px !default;
 }
 
 // Import partials.
-@import "minima/syntax-highlighting", "plueres/base", "plueres/header", "plueres/homepage", "plueres/articlespage",
-    "plueres/articleposts", "plueres/listspage", "plueres/personallists", "plueres/footer";
+@import "minima/syntax-highlighting", "plueres/base", "plueres/header", "plueres/mainpages", "plueres/posts",
+    "plueres/personal", "plueres/pages", "plueres/footer";
