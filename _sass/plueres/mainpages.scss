@@ -5,6 +5,10 @@ body {
     height: calc(100vh - env(safe-area-inset-top));
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 #home {
     // grid-template-columns: repeat(3, 1fr);
     display: grid;
@@ -94,6 +98,9 @@ h1 {
 }
 
 @include media-query($on-laptop) {
+    ::-webkit-scrollbar {
+        display: unset;
+    }
     #home {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "masonrymedia masonryabout masonryother";
