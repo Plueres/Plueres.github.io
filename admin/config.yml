@@ -60,7 +60,7 @@ collections:
             label: "Wishlist"
             widget: "object"
             fields:
-              - label: "List items"
+              - label: "List item"
                 name: "list item"
                 widget: "list"
                 fields:
@@ -71,8 +71,8 @@ collections:
             label: "Christmas List"
             widget: "object"
             fields:
-              - label: "List Items"
-                name: "list items"
+              - label: "List Item"
+                name: "list item"
                 widget: "list"
                 fields:
                   - {label: "Name", name: "name", widget: "string", required: false}
