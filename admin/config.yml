@@ -6,16 +6,15 @@ backend:
 media_folder: "assets/images/uploads"
 
 collections:
-  - name: "lists"
-    label: "Lists"
-    # sortableFields: ['title']
+  - name: "data"
+    label: "Data"
     files:
-      - name: "movies"
-        label: "Movies"
+      - name: "content"
+        label: "Content"
         file: "_data/lists.yml"
         fields:
-          - label: "Movies"
-            name: "movies"
+          - name: "movies"
+            label: "Movies"
             widget: "list"
             fields:
               - {label: "Title", name: "title", widget: "string", required: false}
@@ -23,12 +22,8 @@ collections:
               - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
               - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
               - {label: "Review", name: "review", widget: "text", required: false}
-      - name: "shows"
-        label: "Shows"
-        file: "_data/lists.yml"
-        fields:
-          - label: "Shows"
-            name: "shows"
+          - name: "shows"
+            label: "Shows"
             widget: "list"
             fields:
               - {label: "Title", name: "title", widget: "string", required: false}
@@ -36,12 +31,8 @@ collections:
               - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
               - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
               - {label: "Review", name: "review", widget: "text", required: false}
-      - name: "games"
-        label: "Games"
-        file: "_data/lists.yml"
-        fields:
-          - label: "Games"
-            name: "games"
+          - name: "games"
+            label: "Games"
             widget: "list"
             fields:
               - {label: "Title", name: "title", widget: "string", required: false}
@@ -50,3 +41,10 @@ collections:
               - {label: "Finished", name: "finished", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
               - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
               - {label: "Review", name: "review", widget: "text", required: false}
+          - name: "wishlists"
+            label: "Wishlists"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string", required: false}
+              - {label: "Tags", name: "tags", widget: "string", required: false}
+              - {label: "Priority", name: "priority", widget: "select", options: ["!high", "!medium", "!low"], default: "!low", required: false}
