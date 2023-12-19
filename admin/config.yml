@@ -6,13 +6,13 @@ backend:
 media_folder: "assets/images/uploads"
 
 collections:
-  - name: "data"
-    label: "Data"
-    sortableFields: ['title']
+  - name: "lists"
+    label: "Lists"
+    # sortableFields: ['title']
     files:
       - name: "movies"
         label: "Movies"
-        file: "_data/movies.yml"
+        file: "_data/lists.yml"
         fields:
           - label: "Movies"
             name: "movies"
@@ -25,7 +25,7 @@ collections:
               - {label: "Review", name: "review", widget: "text", required: false}
       - name: "shows"
         label: "Shows"
-        file: "_data/shows.yml"
+        file: "_data/lists.yml"
         fields:
           - label: "Shows"
             name: "shows"
@@ -38,7 +38,7 @@ collections:
               - {label: "Review", name: "review", widget: "text", required: false}
       - name: "games"
         label: "Games"
-        file: "_data/games.yml"
+        file: "_data/lists.yml"
         fields:
           - label: "Games"
             name: "games"
