@@ -1,6 +1,13 @@
 /*
  ****************************************************** HOMEPAGE ******************************************************
 */
+@media (preferes-color-scheme: light) {
+    $text-color: black;
+    $background-color: rgb(240, 240, 240);
+    $primary-color: rgb(188, 180, 218);
+    $secondary-color: rgb(170, 163, 199);
+    $accent-color: rgb(112, 71, 250);
+}
 body {
     height: calc(100vh - env(safe-area-inset-top));
 }
