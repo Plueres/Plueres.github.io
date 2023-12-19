@@ -9,13 +9,14 @@ collections:
   - name: "data"
     label: "Data"
     files:
-      - name: "content"
-        label: "Content"
+      - name: "lists"
+        label: "Lists"
         file: "_data/lists.yml"
         fields:
           - name: "movies"
             label: "Movies"
             widget: "list"
+            collapsed: true
             fields:
               - {label: "Title", name: "title", widget: "string", required: false}
               - {label: "Tags", name: "tags", widget: "string", required: false}
@@ -25,6 +26,7 @@ collections:
           - name: "shows"
             label: "Shows"
             widget: "list"
+            collapsed: true
             fields:
               - {label: "Title", name: "title", widget: "string", required: false}
               - {label: "Tags", name: "tags", widget: "string", required: false}
@@ -34,6 +36,7 @@ collections:
           - name: "games"
             label: "Games"
             widget: "list"
+            collapsed: true
             fields:
               - {label: "Title", name: "title", widget: "string", required: false}
               - {label: "Tags", name: "tags", widget: "string", required: false}
@@ -44,6 +47,7 @@ collections:
           - name: "wishlists"
             label: "Wishlists"
             widget: "list"
+            collapsed: true
             fields:
               - {label: "Name", name: "name", widget: "string", required: false}
               - {label: "Image", name: "image", widget: "link", required: false}
