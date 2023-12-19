@@ -3,9 +3,19 @@ backend:
   repo: Plueres/Plueres.github.io
   branch: main
 
-media_folder: "assets/images/uploads"
+media_folder: "assets/images"
 
 collections:
+  - name: "articles"
+    label: "Articles"
+    folder: "_articles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", default: ""}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "lists"
     label: "Lists"
     files:

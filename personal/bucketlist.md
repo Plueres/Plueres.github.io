@@ -14,3 +14,4 @@ permalink: /personal/bucketlist
 - Gitaar leren spelen
 - Overnachten in een vakantiehuis met besneeuwde omgeving
 - Indoor bergbeklimmen
+- Een keer in een luchtballon vliegen
