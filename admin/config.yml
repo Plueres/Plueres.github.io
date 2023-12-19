@@ -52,3 +52,14 @@ collections:
               - {label: "Finished", name: "finished", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
               - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
               - {label: "Review", name: "review", widget: "text", required: false}
+      - name: "wishlists"
+        label: "Wishlists"
+        file: "_data/wishlists.yml"
+        fields:
+          - label: "Wishlists"
+            name: "wishlists"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string", required: false}
+              - {label: "Image", name: "image", widget: "image", required: false}
+              - {label: "Links", name: "links", widget: "list", fields: [{label: "Link", name: "link", widget: "string"}]}
