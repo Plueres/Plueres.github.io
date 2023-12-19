@@ -9,34 +9,37 @@ permalink: /articles
         {%- if site.articles.size > 0 -%}
         <articles>
             <div id="articles-grid">
-                {%- assign sorted_articles = site.articles | sort: "updated" | reverse -%}
+                {%- assign sorted_articles = site.articles | sort: "date" | reverse -%}
+                {%- assign sorted_articles = sorted_articles | sort: "updated" | reverse -%}
                 {%- for article in sorted_articles -%}
-                <article data-tag="{{ article.tags | join: '|' }}">
-                    <div class="article-overlay">
-                        {% for tag in article.tags %}
-                        <a href="{{ site.url }}/articles?tags={{ tag | url_encode }}">
-                            <posttags>{{ tag }}</posttags>
-                        </a>
-                        {% endfor %}
-                    </div>
-                    <a class="articles-link" href="{{ article.url | relative_url }}">
-                        {%- if article.header_image -%}
-                        <img src="{{ article.header_image | relative_url }}" alt="{{ article.title | escape }}"
-                            class="article-header-img">
-                        {%- endif -%}
-                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                        <div class="article-text">
-                            <span class="articles-meta">{{ article.date | date: date_format }}</span>
-                            <h3>
-                                {{ article.title | escape }}
-                            </h3>
+                    {%- if article.hidden != true -%}
+                    <article data-tag="{{ article.tags | join: '|' }}">
+                        <div class="article-overlay">
+                            {% for tag in article.tags %}
+                            <a href="{{ site.url }}/articles?tags={{ tag | url_encode }}">
+                                <posttags>{{ tag }}</posttags>
+                            </a>
+                            {% endfor %}
                         </div>
+                        <a class="articles-link" href="{{ article.url | relative_url }}">
+                            {%- if article.header_image -%}
+                            <img src="{{ article.header_image | relative_url }}" alt="{{ article.title | escape }}"
+                                class="article-header-img">
+                            {%- endif -%}
+                            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                            <div class="article-text">
+                                <span class="articles-meta">{{ article.date | date: date_format }}</span>
+                                <h3>
+                                    {{ article.title | escape }}
+                                </h3>
+                            </div>
 
-                        {%- if site.show_excerpts -%}
-                        {{ article.excerpt }}
-                        {%- endif -%}
-                    </a>
-                </article>
+                            {%- if site.show_excerpts -%}
+                            {{ article.excerpt }}
+                            {%- endif -%}
+                        </a>
+                    </article>
+                    {%- endif -%}
                 {%- endfor -%}
             </div>
             {%- endif -%}
