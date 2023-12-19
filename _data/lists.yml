@@ -1,0 +1,1737 @@
+movies:
+  - title: 65
+    tags: "!Sci-fi !Time Travel"
+    watched: "!no"
+  - title: American Psycho
+    tags: "!Horror"
+    watched: "!no"
+  - title: Antman Quantumania
+    tags: "!Sci-fi"
+    watched: "!no"
+  - title: Anon
+    watched: "!no"
+    review: Some secrets hiding girl
+  - title: Arq
+    tags: "!Time Loop"
+    watched: "!no"
+  - title: Arrival
+    watched: "!no"
+  - title: Avatar 1
+    watched: "!yes"
+    personal_rating: 4
+    review: Good movie
+  - title: Avatar 2
+    watched: "!yes"
+    personal_rating: 4
+    review: Good movie
+  - title: Blue Beetle
+    watched: "!no"
+  - title: Brain On Fire
+    tags: "!Netflix"
+    watched: "!yes"
+    personal_rating: 4
+  - title: Bright
+    watched: "!yes"
+    review: police aliens
+  - title: Bullet Train
+    tags: "!Netflix"
+    watched: 50%
+  - title: Chaos Walking
+    watched: "!no"
+    review: Tom holland and Daisy Ridley
+  - title: Choose Or Die
+    tags: "!Sci-fi !Netflix"
+    watched: "!no"
+  - title: Cocaine Bear
+    tags: "!Horror !Comedy !Bear on cocaine"
+    watched: "!yes"
+    personal_rating: 2
+    review: This was just plain stupid
+  - title: Crazy, Stupid, Love
+    tags: "!Comedy"
+    watched: "!yes"
+    personal_rating: 5
+    review: Was pretty funny
+  - title: Death Note
+    tags: "!Netflix"
+    watched: "!yes"
+    personal_rating: 5
+  - title: Dreamers
+    watched: "!no"
+  - title: Drive 2011
+    watched: "!yes"
+    personal_rating: 4
+    review: Good movie
+  - title: Edge Of Tomorrow
+    tags: "!Sci-fi !Time Loop"
+    watched: "!no"
+  - title: El Camino
+    tags: "!Breaking Bad"
+    watched: "!yes"
+    personal_rating: 5
+  - title: Everything Everywhere All At Once
+    watched: "!no"
+  - title: Extinction
+    tags: "!Netflix"
+    watched: 50%
+    personal_rating: 2
+  - title: Extraction 1
+    tags: "!Netflix"
+    watched: "!yes"
+    personal_rating: 4
+  - title: Extraction 2
+    tags: "!Netflix"
+    watched: "!yes"
+    personal_rating: 3
+  - title: Extraordenary
+    watched: "!no"
+    review: something with one person not having a superpower while the rest of the
+      world does
+  - title: Fistful Of Vengeance
+    tags: "!Netflix"
+    watched: "!yes"
+    personal_rating: 5
+    review: Sequel to Wu Assassins show
+  - watched: "!no"
+    title: Five Nights at Freddy's
+    tags: "!horror"
+  - title: Flatliners
+    tags: "!Afterlife"
+    watched: "!yes"
+  - title: Gattaca
+    tags: "!Dystopian Future"
+    watched: "!no"
+  - title: Girlfiend’s Day
+    watched: "!no"
+  - title: Gone Girl
+    watched: "!yes"
+    personal_rating: 3
+    review: really dumb ending in my opinion, not satisfying at all
+  - title: Green Mile
+    watched: "!yes"
+    personal_rating: 4
+  - title: Groundhog Day
+    tags: "!Time Loop"
+    watched: "!yes"
+    personal_rating: 4
+    review: I found it weird when he suddendly was out of the timeloop without an
+      explanation
+  - title: Hidden Strike
+    tags: "!Comedy"
+    watched: "!yes"
+    personal_rating: 5
+    review: Amazing duo with John Cena & Jackie Chan
+  - title: Host
+    tags: "!Horror !Videocalling"
+    watched: "!no"
+  - title: How It Ends
+    watched: "!no"
+    review: End of the world movie with the guy from time travelers wife
+  - title: I Am Mother
+    tags: "!Netflix"
+    watched: "!yes"
+  - title: Ideocrazy
+    tags: "!Comedy"
+    watched: "!yes"
+    review: Two people wake up many years later where people became stupid
+  - title: In Your Eyes
+    watched: "!no"
+  - title: Inception
+    tags: "!Sci-fi"
+    watched: "!no"
+    review: cool science fiction something
+  - title: Infinite
+    watched: "!no"
+  - title: Infinity Pool
+    tags: "!Horror"
+    watched: "!no"
+  - watched: "!yes"
+    title: Interstellar
+    tags: "!Time Travel !Space !Sci-fi"
+    personal_rating: 4
+    review: Good movie but it didn't make as much impact as i thought it would
+  - title: IO
+    tags: "!Dystopian Future"
+    watched: "!no"
+    review: human Extinction movie with Margaret qualley
+  - title: It’s Such A Beautiful Day
+    watched: "!no"
+    review: Year 2012
+  - title: Jumper
+    tags: "!Teleporting"
+    watched: "!yes"
+    personal_rating: 3
+    review: Anakin Skywalker Teleporting through images
+  - title: Jung_e
+    tags: "!Japanese !AI"
+    watched: "!no"
+  - title: Kate
+    tags: "!Action !Netflix"
+    watched: "!yes"
+    personal_rating: 3
+  - title: La La Land
+    watched: "!no"
+  - title: Lars And The Real Girl
+    watched: "!yes"
+    personal_rating: 4
+    review: something with Ryan gosling. A very introverted guy with a delusion
+      where he is in love with a doll
+  - watched: "!yes"
+    title: Leave the world behind
+    personal_rating: 3
+    review: Another bad ending, was a pretty good movie apart from that
+  - title: Love And Monsters
+    tags: "!Aliens/Mutated Creatures !Dystopian Future"
+    watched: "!yes"
+  - title: Man From Toronto
+    tags: "!Netflix !Comedy"
+    watched: "!yes"
+    personal_rating: 3
+  - title: Maybe I Do
+    watched: "!no"
+  - title: Minari
+    watched: "!no"
+    review: something emotional?
+  - title: Mortal Engines
+    tags: "!Post Apocalyptic"
+    watched: "!no"
+    review: Post Apocalyptic London with machines
+  - title: Mother/Android
+    tags: "!Netflix"
+    watched: "!yes"
+    personal_rating: 2
+  - title: Mute
+    watched: "!no"
+  - title: No Hard Feelings
+    tags: "!Comedy"
+    watched: "!yes"
+    personal_rating: 3
+  - title: Paradise
+    tags: "!Sci-fi"
+    watched: "!no"
+  - title: Passengers
+    tags: "!Netflix !Sci-fi"
+    watched: "!yes"
+    personal_rating: 3
+  - title: Pooh Blood And Honey
+    tags: "!Horror"
+    watched: "!no"
+  - title: Primer
+    watched: "!no"
+  - title: Prisoners
+    watched: "!yes"
+    personal_rating: 2
+    review: not satisfying ending
+  - title: Pulp Fiction
+    tags: "!Comedy"
+    watched: "!no"
+  - title: R.I.P.D.
+    tags: "!Afterlife"
+    watched: "!yes"
+    review: afterlife but with police and Ryan Reynolds
+  - title: Rebirth
+    watched: "!no"
+  - title: Rim Of The World
+    tags: "!Aliens"
+    watched: "!no"
+  - title: Secret Society Of Second Born Royals
+    tags: "!Superhumans"
+    watched: "!no"
+    review: Some weird people with superpowers movie
+  - title: See You Yesterday
+    tags: "!Time Travel"
+    watched: "!yes"
+  - title: Self-less
+    watched: "!yes"
+  - title: She’s All That
+    watched: "!no"
+  - title: Sightless
+    tags: "!Netflix !Thriller"
+    watched: "!yes"
+    personal_rating: 4
+  - title: Snowpiercer
+    tags: "!Distopian Future"
+    watched: "!yes"
+    personal_rating: 3
+    review: In a distopian future where the world froze all people live in a train,
+      the ending was dumb
+  - title: Spiderhead
+    watched: "!yes"
+    personal_rating: 2
+  - title: Spirited Away
+    tags: "!Animated"
+    watched: "!yes"
+    personal_rating: 3
+    review: I Didn’t really understood what happened at first
+  - title: Spontaneous
+    watched: "!no"
+    review: watch before September 1 on netflix
+  - title: Synchronic
+    watched: "!no"
+    review: falcon guy and something with time
+  - title: TAU
+    tags: "!Sci-fi !Netflix"
+    watched: "!no"
+  - title: Tenet
+    tags: "!Time Travel"
+    watched: 50%
+  - title: The 5th Wave
+    tags: "!Aliens"
+    watched: "!yes"
+  - title: The Adam Project
+    tags: "!Netflix !Sci-fi"
+    watched: "!yes"
+    personal_rating: 4
+  - title: The Age Of Adaline
+    watched: "!yes"
+    personal_rating: 3
+    review: woman who doesn’t age, was nothing special
+  - title: The Breakfast Club
+    watched: "!no"
+  - title: The Cloverfield Paradox
+    tags: "!Sci-fi !Space"
+    watched: "!yes"
+    personal_rating: 3
+  - title: The Discovery
+    tags: "!Afterlife"
+    watched: "!no"
+  - title: The Park
+    watched: "!no"
+  - title: The Perks Of Being A Wallflower
+    watched: "!yes"
+    personal_rating: 5
+  - title: The Sound Of Freedom
+    watched: "!no"
+  - title: The Titan
+    watched: "!no"
+    review: Man becomes less man and more creature
+  - title: The Tree House
+    tags: "!Time Travel"
+    watched: "!no"
+  - title: The Vow
+    watched: "!no"
+  - title: They Cloned Tyrone
+    watched: "!no"
+  - title: Wakanda Forever
+    tags: "!Marvel"
+    watched: "!no"
+  - title: Wedding Daze
+    watched: "!no"
+  - title: What Woman Want
+    watched: "!no"
+shows:
+  - title: 1899
+    tags: "!Mystery !Sci-fi !Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 4
+    review: was quite a good show, kind of mysterious
+  - title: Amazing stories
+    season: 
+    watched: "!no"
+    personal_rating: 
+    review: 
+  - title: Andor
+    tags: "!Star Wars !Disney+"
+    season: 
+    watched: "!no"
+    personal_rating: 
+    review: 
+  - title: Arcane
+    tags: "!Action !Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: Really good show, also really love the animation style
+  - title: Archive 81
+    tags: "!Time Travel !Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: One of the best shows because it links 2 times and makes them interact
+      witheachother
+  - title: Atypical
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: I really liked it, has a very good storyline
+  - title: Atypical
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: I really liked it, has a very good storyline
+  - title: Atypical
+    tags: "!Netflix"
+    season: season 3
+    watched: "!yes"
+    personal_rating: 5
+    review: I really liked it, has a very good storyline
+  - title: Atypical
+    tags: "!Netflix"
+    season: season 4
+    watched: "!yes"
+    personal_rating: 5
+    review: I really liked it, has a very good storyline
+  - title: Better Call Saul
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: Prequel to Breaking Bad and it also has some really good story telling,
+      though it is quite slow sometimes so i still recommend watching Breaking
+      bad first
+  - title: Better Call Saul
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: Prequel to Breaking Bad and it also has some really good story telling,
+      though it is quite slow sometimes so i still recommend watching Breaking
+      bad first
+  - title: Better Call Saul
+    tags: "!Netflix"
+    season: season 3
+    watched: "!yes"
+    personal_rating: 5
+    review: Prequel to Breaking Bad and it also has some really good story telling,
+      though it is quite slow sometimes so i still recommend watching Breaking
+      bad first
+  - title: Better Call Saul
+    tags: "!Netflix"
+    season: season 4
+    watched: "!yes"
+    personal_rating: 5
+    review: Prequel to Breaking Bad and it also has some really good story telling,
+      though it is quite slow sometimes so i still recommend watching Breaking
+      bad first
+  - title: Better Call Saul
+    tags: "!Netflix"
+    season: season 5
+    watched: "!yes"
+    personal_rating: 5
+    review: Prequel to Breaking Bad and it also has some really good story telling,
+      though it is quite slow sometimes so i still recommend watching Breaking
+      bad first
+  - title: Better Call Saul
+    tags: "!Netflix"
+    season: season 6
+    watched: "!yes"
+    personal_rating: 5
+    review: Prequel to Breaking Bad and it also has some really good story telling,
+      though it is quite slow sometimes so i still recommend watching Breaking
+      bad first
+  - title: Big Mouth
+    tags: "!Netflix"
+    season: All seasons
+    watched: "!yes"
+    personal_rating: 4
+    review: Was good at first but gets a bit repetetive at the later stages
+  - title: Black mirror
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 3
+    review: Good but kind of gross
+  - title: Black mirror
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 4
+    review: Bit more sci-fi, kind of liked this one
+  - title: Black mirror
+    tags: "!Netflix"
+    season: season 3
+    watched: "!yes"
+    personal_rating: 4
+    review: Very mixed, there were some kind of not enjoyable ones and some really
+      really good ones in there
+  - title: Black mirror
+    tags: "!Netflix"
+    season: season 4
+    watched: "!yes"
+    personal_rating: 
+    review: 
+  - title: Black mirror
+    tags: "!Netflix"
+    season: season 5
+    watched: "!yes"
+    personal_rating: 
+    review: 
+  - title: Black mirror
+    tags: "!Netflix"
+    season: season 6
+    watched: "!yes"
+    personal_rating: 
+    review: 
+  - watched: "!no"
+    title: Bodies
+    tags: "!Time Travel"
+    season: season 1
+  - title: Breaking Bad
+    tags: "!Netflix"
+    season: All seasons
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Cabinet of curiosities
+    tags: "!Horror"
+    season: 8 stories
+    watched: "!no"
+    personal_rating: 
+    review: 
+  - title: Chicago Party Aunt
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 2
+    review: Not that interesting or funny and that voice was very annoying
+  - title: Cyberpunk EdgeRunners
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: This was a good show
+  - title: Dark
+    tags: "!Time Travel !Time Loop !German !Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: The only bad thing being for me that it was german so it wasn’t easy to
+      follow at some times. At the end i got the feeling like the whole show
+      didn’t matter…
+  - title: Dark
+    tags: "!Time Travel !Time Loop !German !Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: The only bad thing being for me that it was german so it wasn’t easy to
+      follow at some times. At the end i got the feeling like the whole show
+      didn’t matter…
+  - title: Dark
+    tags: "!Time Travel !Time Loop !German !Netflix"
+    season: season 3
+    watched: "!yes"
+    personal_rating: 5
+    review: The only bad thing being for me that it was german so it wasn’t easy to
+      follow at some times. At the end i got the feeling like the whole show
+      didn’t matter…
+  - title: Disenchantment
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Disenchantment
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 4
+    review: 
+  - title: Disenchantment
+    tags: "!Netflix"
+    season: season 3
+    watched: "!yes"
+    personal_rating: 4
+    review: 
+  - title: Disenchantment
+    tags: "!Netflix"
+    season: season 4
+    watched: "!yes"
+    personal_rating: 3
+    review: 
+  - title: Extraordinary
+    season: season 1
+    watched: "!no"
+    personal_rating: 
+    review: 
+  - watched: "!no"
+    title: Gen V
+    season: season 1
+    personal_rating: 4
+  - title: Glitch
+    season: 3 seasons
+    watched: "!no"
+    personal_rating: 
+    review: Dead people coming back to life. 
+  - title: Maid
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Midnight Mass
+    tags: "!Horror !Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: Vampire people and religion
+  - title: My Adventures With Superman
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: it was pretty good
+  - title: Human Resources
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Human Resources
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 4
+    review: 
+  - title: I Am Not Okay With This
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Imperfects
+    tags: "!Kids with superpowers"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: Pretty good and funny
+  - title: Inside Job
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: Banger intro
+  - title: Inside Job
+    tags: "!Netflix"
+    season: season 2
+    watched: "!notsure"
+    personal_rating: 4
+    review: 
+  - title: Iron fist
+    tags: "!Disney+ !Marvel"
+    season: season 1
+    watched: "!no"
+    personal_rating: 
+    review: 
+  - title: Jessica Jones
+    tags: "!Disney+ !Marvel"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 4
+    review: 
+  - title: Jupiter’s Legacy
+    tags: "!Superhero !Netflix"
+    season: 
+    watched: "!yes"
+    personal_rating: 3
+    review: It being one season was kind of bad and i didn’t really care for the
+      show that much
+  - title: Legends of Tomorrow
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Legends of Tomorrow
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Legends of Tomorrow
+    season: season 3
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Legends of Tomorrow
+    season: season 4
+    watched: "!yes"
+    personal_rating: 4
+    review: 
+  - title: Legends of Tomorrow
+    season: season 5
+    watched: "!yes"
+    personal_rating: 4
+    review: 
+  - title: Legends of Tomorrow
+    season: season 6
+    watched: "!yes"
+    personal_rating: 4
+    review: 
+  - title: Legends of Tomorrow
+    season: season 7
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Legends of Tomorrow
+    season: season 8
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Loki
+    tags: "!Time Travel !Disney+"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: Good show
+  - title: Loki
+    tags: "!Time Travel !Disney+"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: The time travel thing is amazing, really good ending
+  - title: Lost
+    season: season 1
+    watched: "!no"
+    personal_rating: 
+    review: 
+  - title: Lost in Space
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 4
+    review: 
+  - title: Lost in Space
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 3
+    review: 
+  - title: Lost in Space
+    tags: "!Netflix"
+    season: season 3
+    watched: "!yes"
+    personal_rating: 4
+    review: 
+  - title: Love Death + Robots
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 
+    review: 
+  - title: Love Death + Robots
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 
+    review: 
+  - title: Love Death + Robots
+    tags: "!Netflix"
+    season: season 3
+    watched: "!yes"
+    personal_rating: 
+    review: 
+  - title: OA
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: OA
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Outer Banks
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 4
+    review: if i were to compare it to others on this list, this wouldn’t be as good
+      of a show
+  - title: Outer Banks
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 3
+    review: if i were to compare it to others on this list, this wouldn’t be as good
+      of a show
+  - title: Outer Banks
+    tags: "!Netflix"
+    season: season 3
+    watched: "!yes"
+    personal_rating: 4
+    review: if i were to compare it to others on this list, this wouldn’t be as good
+      of a show
+  - title: Pieces of her
+    tags: "!Netflix"
+    season: season 1
+    watched: 1 episode
+    personal_rating: 
+    review: Something with a murder, police daughter and weird mother
+  - title: Resident Evil
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 2
+    review: Rip Lance Reddick but other than that kind of bad show
+  - title: Sense8
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Sense8
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Sex Education
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 
+    review: 
+  - title: Sex Education
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 
+    review: 
+  - title: Sex Education
+    tags: "!Netflix"
+    season: season 3
+    watched: "!yes"
+    personal_rating: 
+    review: 
+  - title: Sex Education
+    tags: "!Netflix"
+    season: season 4
+    watched: "!yes"
+    personal_rating: 5
+    review: God fucking damnit
+  - title: Solos
+    season: 
+    watched: "!no"
+    personal_rating: 
+    review: 
+  - title: Squid Game
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Squid Game
+    tags: "!Netflix"
+    season: season 2
+    watched: 
+    personal_rating: 
+    review: 
+  - title: Stranger Things
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Stranger Things
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 
+    review: 
+  - title: Stranger Things
+    tags: "!Netflix"
+    season: season 3
+    watched: "!yes"
+    personal_rating: 
+    review: 
+  - title: Stranger Things
+    tags: "!Netflix"
+    season: season 4
+    watched: "!yes"
+    personal_rating: 
+    review: 
+  - title: Stranger Things
+    tags: "!Netflix"
+    season: season 5
+    watched: 
+    personal_rating: 
+    review: 
+  - title: Sweet Tooth
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 3
+    review: 
+  - title: Sweet Tooth
+    tags: "!Netflix"
+    season: season 2
+    watched: "!no"
+    personal_rating: 
+    review: 
+  - title: The Society
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: The cliffhanger ending sucks because there isn’t a second season
+  - title: The End of the Fucking World
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: The Flash
+    season: season 1
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 2
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 3
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 4
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 5
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 6
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 7
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 8
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The Flash
+    season: season 9
+    watched: "!yes"
+    personal_rating: 4
+    review: The ending was not that good
+  - title: The leftovers
+    season: 
+    watched: "!no"
+    personal_rating: 
+    review: 
+  - title: The power
+    season: 
+    watched: "!no"
+    personal_rating: 
+    review: 
+  - title: The Rain
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 3
+    review: 
+  - title: The Rain
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 3
+    review: 
+  - title: The Rain
+    tags: "!Netflix"
+    season: season 3
+    watched: "!notsure 50%"
+    personal_rating: 2
+    review: lost interest and didn’t want to finish it
+  - title: The Queen’s Gambit
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Time Travelers Wife
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: canceled after 1 season
+  - title: Titans
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: The ending was not that good
+  - title: Titans
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: The ending was not that good
+  - title: Titans
+    season: season 3
+    watched: "!yes"
+    personal_rating: 5
+    review: The ending was not that good
+  - title: Titans
+    season: season 4
+    watched: "!yes"
+    personal_rating: 5
+    review: The ending was not that good
+  - title: Travelers
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Travelers
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Travelers
+    tags: "!Netflix"
+    season: season 3
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Umbrella Academy
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Umbrella Academy
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Umbrella Academy
+    tags: "!Netflix"
+    season: season 3
+    watched: "!yes"
+    personal_rating: 4
+    review: 
+  - title: Umbrella Academy
+    tags: "!Netflix"
+    season: season 4
+    watched: 
+    personal_rating: 
+    review: 
+  - title: Warrior Nun
+    tags: "!Religious !Action  !Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: One of the best shows
+  - title: Warrior Nun
+    tags: "!Netflix"
+    season: season 2
+    watched: "!yes"
+    personal_rating: 5
+    review: One of the best shows
+  - title: Wednesday
+    tags: "!Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 4
+    review: Overrated but it was still good
+  - title: Wednesday
+    tags: "!Netflix"
+    season: season 2
+    watched: 
+    personal_rating: 
+    review: 
+  - title: Wu Assassins
+    tags: "!Elemental !Superpowered people !Netflix"
+    season: season 1
+    watched: "!yes"
+    personal_rating: 5
+    review: 
+  - title: Yellowjackets
+    season: season 1
+    watched: "!no"
+    personal_rating: 
+    review: 
+games:
+  - title: "A Plague Tale: Innocence"
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: "A Plague Tale: Requiem"
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: Bad game performance
+  - title: Alan Wake
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Alan Wake 2
+    tags: ""
+    played: ""
+    finished: null
+    personal_rating: null
+    review: null
+  - title: Among Trees
+    tags: "!Survival !PC"
+    played: ""
+    finished: ""
+    personal_rating: 3
+    review: Survival Game
+  - title: Among Us
+    tags: "!PC"
+    played: ""
+    finished: null
+    personal_rating: 2
+    review: null
+  - title: Anthem
+    tags: ""
+    played: ""
+    finished: null
+    personal_rating: null
+    review: null
+  - title: Astroneer
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: "Beyond: Two Souls"
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: Good game
+  - title: Brawlhalla
+    tags: "!PC"
+    played: ""
+    finished: null
+    personal_rating: 2
+    review: null
+  - played: "!yes"
+    finished: "!no"
+    title: Brotato
+    tags: "!Shooter !Rogue-like"
+    personal_rating: 4
+  - title: Call of Juarez
+    tags: "!Shooter !Steam Deck"
+    played: ""
+    finished: null
+    personal_rating: 3
+    review: null
+  - title: Captain Spirit
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: 3
+    review: null
+  - title: Crab Game
+    tags: "!PC"
+    played: ""
+    finished: null
+    personal_rating: 3
+    review: Carb Game
+  - title: Creative Destruction
+    tags: "!Fortnite Type !PC"
+    played: ""
+    finished: null
+    personal_rating: 3
+    review: null
+  - title: Creativerse
+    tags: "!PC"
+    played: ""
+    finished: null
+    personal_rating: 1
+    review: Weird game
+  - title: CS:GO
+    tags: "!FPS !PC"
+    played: ""
+    finished: null
+    personal_rating: 2
+    review: null
+  - title: Cyberpunk 2077
+    tags: "!Steam Deck !PC"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: null
+  - title: "Detroid: Become Human"
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 2
+    review: Not playable on steam deck
+  - title: Edengate
+    tags: ""
+    played: ""
+    finished: null
+    personal_rating: null
+    review: null
+  - title: Exo One
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: Flying disc
+  - played: "!yes"
+    finished: "!no"
+    title: Fortnite
+    tags: "!Shooter"
+    personal_rating: 3
+  - title: FPS Chess
+    tags: "!FPS !Chess !Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 3
+    review: null
+  - title: God of War
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Green hell
+    tags: ""
+    played: ""
+    finished: null
+    personal_rating: null
+    review: null
+  - title: Grand Theft Auto 4
+    tags: ""
+    played: ""
+    finished: null
+    personal_rating: null
+    review: null
+  - title: Grand Theft Auto 5
+    tags: ""
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: "Grand Theft Auto: Vice City"
+    tags: "!Mobile !PC"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: "Harmony: The Fall of Reverie"
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: 3
+    review: null
+  - title: Havendock
+    tags: ""
+    played: ""
+    finished: null
+    personal_rating: null
+    review: null
+  - title: Heavy rain
+    tags: ""
+    played: ""
+    finished: null
+    personal_rating: null
+    review: null
+  - title: Hogwards Legacy
+    tags: "!Steam Deck !PC"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: Wizard
+  - title: Horizon Forbidden West
+    tags: "!Playstation"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: null
+  - title: Horizon Zero Dawn
+    tags: "!PC !Playstation"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: null
+  - title: Infamous second son
+    tags: "!Playstation"
+    played: ""
+    finished: null
+    personal_rating: null
+    review: Something with superpowers
+  - title: "Jedi: Fallen Order"
+    tags: "!PC !Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: Just Cause 3
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: null
+  - title: Just Cause 4
+    tags: "!PC !Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: null
+  - title: Kena Bridge of Spirits
+    tags: ""
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Lake
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: Last Stop
+    tags: ""
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: LEGO Batman
+    tags: "!Steam Deck !PC"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: LEGO City Undercover
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: LEGO DC Supervillains
+    tags: "!Playstation"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: LEGO MARVEL Super Heroes
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 3
+    review: null
+  - title: LEGO NINJAGO MOVIE Videogame
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 3
+    review: null
+  - title: LEGO Pirates of the Caribbean
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: LEGO Star Wars the Complete Saga
+    tags: "!PC !Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: LEGO Star Wars III The Clone Wars
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: LEGO Star Wars The Skywalker Saga
+    tags: "!Playstation !PC !Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: null
+  - title: LEGO The Incredibles
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 3
+    review: null
+  - title: LEGO The Lord of the Rings
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: LEGO Worlds
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Life is Strange
+    tags: "!Time Travel !PC"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: Good Game
+  - title: "Life is Strange: Before the Storm"
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: Good Game
+  - title: Life is Strange 2
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: Good Game
+  - title: Life is Strange True Colors
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: Good Game
+  - title: Martha is Dead
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Marvel’s Guardians of the Galaxy
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Marvel’s Spider-Man Miles Morales
+    tags: "!Steam Deck !Playstation"
+    played: ""
+    finished: 99%
+    personal_rating: 5
+    review: null
+  - title: Minecraft Legends
+    tags: "!PC"
+    played: ""
+    finished: <canceled>
+    personal_rating: 2
+    review: null
+  - title: Mirror’s Edge
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: "Mirror’s Edge: Catalyst"
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Muck
+    tags: "!PC"
+    played: ""
+    finished: <canceled>
+    personal_rating: 3
+    review: null
+  - title: Multiversus
+    tags: "!Steam Deck"
+    played: ""
+    finished: <canceled>
+    personal_rating: 2
+    review: null
+  - title: No Time
+    tags: "!Sandbox !Time Travel !PC"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: Good Game
+  - title: Ori and the Blind Forest
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Phasmophobia
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Planet of Lana
+    tags: ""
+    played: ""
+    finished: Demo
+    personal_rating: null
+    review: null
+  - title: Plasticity
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: PREY
+    tags: ""
+    played: ""
+    finished: null
+    personal_rating: null
+    review: null
+  - title: Portal
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: Portal 2
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: null
+  - title: Portal Prelude RTX
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: 3
+    review: This is a whole new game
+  - title: Portal Reloaded
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: null
+  - title: "Portal Stories: Mel"
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: Portal With RTX
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - played: "!no"
+    finished: "!no"
+    title: Powerwash Simulator
+  - title: RavenField
+    tags: "!PC !Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Red Dead Redemption 2
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Reminiscence
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Republique
+    tags: "!Mobile !Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 3
+    review: null
+  - title: Road 96
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: Road 96 Mile 0
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: Scars Above
+    tags: ""
+    played: ""
+    finished: <canceled>
+    personal_rating: null
+    review: null
+  - title: "Season: a letter to the future"
+    tags: ""
+    played: ""
+    finished: null
+    personal_rating: null
+    review: null
+  - title: sifu
+    tags: ""
+    played: ""
+    finished: null
+    personal_rating: null
+    review: null
+  - title: Sonic frontiers
+    tags: ""
+    played: ""
+    finished: null
+    personal_rating: null
+    review: null
+  - title: STAR WARS Battlefront ll
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: null
+  - title: Stardew Valley
+    tags: "!PC !Mobile"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: null
+  - title: Starfield
+    tags: ""
+    played: ""
+    finished: null
+    personal_rating: null
+    review: Still a bit too big and laggy 120GB
+  - title: Superhot
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Tchia
+    tags: "!PC !Steam Deck"
+    played: ""
+    finished: <canceled>
+    personal_rating: null
+    review: null
+  - title: Tell Me Why
+    tags: "!PC !Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: 3
+    review: null
+  - title: The Complex
+    tags: "!Simulation !PC"
+    played: ""
+    finished: ""
+    personal_rating: 4
+    review: Backrooms game
+  - title: The Gap
+    tags: "!Deja Vu !Story !Puzzle !PC"
+    played: ""
+    finished: ""
+    personal_rating: 5
+    review: very interesting game
+  - title: The Last of Us Part 1
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: The Sims 4
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Thinking with Time Machine
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Twin Mirror
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - title: Uncharted Legacy of Thieves Collection
+    tags: "!PC"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+  - played: "!no"
+    finished: "!no"
+    title: Undertale
+  - title: Undefeated
+    tags: "!PC !Steam Deck"
+    played: ""
+    finished: <canceled>
+    personal_rating: null
+    review: null
+  - title: Waves
+    tags: "!Steam Deck"
+    played: ""
+    finished: <canceled>
+    personal_rating: null
+    review: null
+  - title: What Remains of Edith Finch
+    tags: "!Steam Deck"
+    played: ""
+    finished: ""
+    personal_rating: null
+    review: null
+wishlist:
+  - name: "Galaxy Smarttag"
+    image: "https://m.media-amazon.com/images/I/619mOsYv29L._AC_SX679_.jpg"
+    links:
+      - name: "amazon.nl"
+        url: "https://www.amazon.nl/Origineel-Samsung-Galaxy-SmartTag-Siliconen/dp/B0CHRWMWF1/ref=sr_1_82?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2CJRQZUXIYLG4&keywords=samsung&qid=1699706652&refinements=p_89%3ASAMSUNG&rnid=16463267031&s=electronics&sprefix=samsung%2Caps%2C85&sr=1-82"
+  - name: "Samsung Galaxy Tab S9 NotePaper Screen - Wit"
+    image: "https://media.s-bol.com/NnmgZJm2kMQp/1Jj67V/813x1200.jpg"
+    links:
+      - name: "bol.com"
+        url: "https://www.bol.com/nl/nl/p/samsung-galaxy-tab-s9-notepaper-screen-wit/9300000151141465/?bltgh=jJLoSD--HC19C3-XHnhA8g.2.5.ProductTitle"
+  - name: "Sennheiser Momentum 4 - Denim skin"
+    image: "https://media.s-bol.com/7wjPwmJRRvB8/3zryZR/967x1200.jpg"
+    links:
+      - name: "bol.com"
+        url: "https://www.bol.com/nl/nl/p/sennheiser-momentum-4-wireless-denim-over-ear-koptelefoon/9300000160782409/?bltgh=oMCfKgDVMnyK3X4dvLdKMQ.2.3.ProductImage"
+christmaslist:
+  - image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.tldevtech.com%2Fwp-content%2Fuploads%2F2021%2F06%2FAISBUGUR-Pocket-Notebook.jpg&f=1&nofb=1&ipt=431a9781c0d2369db81bb16e4f6247622d019e976be07456851080bb96cb08e4&ipo=images"
+    name: "Pocket notebook"
+    description: "Wil ik misschien nog zelf gaan kopen"
+    links:  
+      - name: "amazon.nl"
+        url: "https://www.amazon.nl/Moleskine-Journal-Notitieboek-3-Delig-Gelinieerd/dp/8883704894/ref=sr_1_1?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=27RQ3MJWARJ6G&keywords=moleskine&qid=1699457715&refinements=p_89%3AMoleskine%2Cp_36%3A20314668031%2Cp_n_feature_browse-bin%3A28174109031&rnid=28174105031&s=office-products&sprefix=moleskine%2Caps%2C83&sr=1-1&th=1"
+      - name: "bol.com"
+        url: "https://www.bol.com/nl/nl/p/moleskine-classic-notitieboek-pocket-hardcover-gelinieerd-zwart/1001004006406207/?bltgh=qEeh2rVebjnDn5TflvZK4w.mAfQZMQYbM-4T0WHvx5J4g_0_16.17.ProductTitle"
+  - name: "Pocket notebook case"
+    image: "https://m.media-amazon.com/images/I/81gqgPoJStL._AC_SX466_.jpg"
+    links:
+      - name: "amazon.com"
+        url: "https://www.amazon.com/Plinyvel-Compatible-Moleskine-Waterproof-Multifunctional/dp/B0BYHYRCJW/ref=sr_1_8?keywords=pocket%2Bnotebook%2Bcover&qid=1699457536&refinements=p_36%3A1253550011&rnid=386479011&s=office-products&sr=1-8&th=1"
+      - name: "amazon.nl"
+        url: "https://www.amazon.nl/Journal-Wisdompro-Notebook-Moleskine-Notebooks/dp/B08P2L7JK3/ref=sr_1_5?__mk_nl_NL=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3V73361Y97C6O&keywords=pocket%2B%2B%2Bnotebook%2B%2B%2Bjournal%2Bcover&qid=1699705786&sprefix=pocket%2Bnotebook%2Bjournal%2Bcover%2Caps%2C93&sr=8-5&th=1"
+  - name: "Four Quartets book"
+    image: "https://m.media-amazon.com/images/I/31HqFgoGTrL._SY445_SX342_.jpg"
+    links:
+      - name: "amazon.nl"
+        url: "https://www.amazon.nl/Four-Quartets-T-S-Eliot/dp/0571068944/ref=asc_df_0571068944/?tag=nlshogostdsp-21&linkCode=df0&hvadid=453056616635&hvpos=&hvnetw=g&hvrand=12176642819542021103&hvpone=&hvptwo=&hvqmt=&hvdev=m&hvdvcmdl=&hvlocint=&hvlocphy=9102604&hvtargid=pla-458505932381&psc=1"
+      - name: "bol.com"
+        url: "https://www.bol.com/nl/p/four-quartets/1001004000638200?referrer=socialshare_pdp_androidapp"
+  - name: "Cyberpunk 2077: No Coincidence book"
+    image: "https://m.media-amazon.com/images/I/71EquicE6fL._SY466_.jpg"
+    links:
+      - name: "amazon.nl"
+        url: "https://www.amazon.nl/Cyberpunk-2077-Coincidence-Rafal-Kosik/dp/0356518191"
+      - name: "bol.com"
+        url: "https://www.bol.com/nl/nl/f/cyberpunk-2077-no-coincidence/9300000125617023/"
+  - name: "USB C Adapter 4 Stuks"
+    image: "https://m.media-amazon.com/images/I/51CZ9AOq8JL._AC_SX679_.jpg"
+    links:
+      - name: "amazon.nl"
+        url: "https://www.amazon.nl/Adapter-Compatibel-MacBook-Samsung-Telefoons/dp/B0B8PBDZS9/ref=zg_bs_g_electronics_sccl_46/261-1502484-7867435?psc=1"
+  - image: "https://media.s-bol.com/x9vgV4Nrmknq/qYzKyPD/681x1200.jpg"
+    name: "Deken met mouwen"
+    description: "(het liefst ook met handschoenen als die bestaan)"
+    links:
+      - name: "bol.com - van de foto"
+        url: "https://www.bol.com/nl/nl/p/o-daddy-fleece-deken-met-mouwen-fleece-plaid-150x200-fleece-deken-sherpa-super-zacht-plaids-met-mouwen-grijs/9200000054686077/?bltgh=tf9-4hxaEzvaQ98ujpxPjg.2.7.ProductImage"
+      - name: "bol.com - een andere soort"
+        url: "https://www.bol.com/nl/nl/p/kesser-fleece-deken-met-mouwen-voetenzak-plaid-met-mouwen-extra-snuggie-incl-2-in-1-externe-zak-draagbare-hoodie-deken-bruin/9300000160017718/"
