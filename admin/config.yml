@@ -6,50 +6,38 @@ backend:
 media_folder: "assets/images/uploads"
 
 collections:
-  - name: "data"
-    label: "Data"
+  - name: "lists"
+    label: "Lists"
     files:
-      - name: "content"
-        label: "Content"
+      - name: "movies"
+        label: "Movies"
         file: "_data/lists.yml"
         fields:
-          - label: "Movies"
-            name: "movies"
-            widget: "object"
+          - label: "Movie"
+            name: "movie"
+            widget: "list"
             fields:
-              - label: "Movie"
-                name: "movie"
-                widget: "list"
-                fields:
-                  - {label: "Title", name: "title", widget: "string", required: false}
-                  - {label: "Tags", name: "tags", widget: "string", required: false}
-                  - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
-                  - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
-                  - {label: "Review", name: "review", widget: "text", required: false}
-          - label: "Shows"
-            name: "shows"
-            widget: "object"
+              - {label: "Title", name: "title", widget: "string", required: false}
+              - {label: "Tags", name: "tags", widget: "string", required: false}
+              - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
+              - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
+              - {label: "Review", name: "review", widget: "text", required: false}
+          - label: "Show"
+            name: "show"
+            widget: "list"
             fields:
-              - label: "Show"
-                name: "show"
-                widget: "list"
-                fields:
-                  - {label: "Title", name: "title", widget: "string", required: false}
-                  - {label: "Tags", name: "tags", widget: "string", required: false}
-                  - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
-                  - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
-                  - {label: "Review", name: "review", widget: "text", required: false}
-          - label: "Games"
-            name: "games"
-            widget: "object"
+              - {label: "Title", name: "title", widget: "string", required: false}
+              - {label: "Tags", name: "tags", widget: "string", required: false}
+              - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
+              - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
+              - {label: "Review", name: "review", widget: "text", required: false}
+          - label: "Game"
+            name: "game"
+            widget: "list"
             fields:
-              - label: "Game"
-                name: "game"
-                widget: "list"
-                fields:
-                  - {label: "Title", name: "title", widget: "string", required: false}
-                  - {label: "Tags", name: "tags", widget: "string", required: false}
-                  - {label: "Played", name: "played", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
-                  - {label: "Finished", name: "finished", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
-                  - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
-                  - {label: "Review", name: "review", widget: "text", required: false}
+              - {label: "Title", name: "title", widget: "string", required: false}
+              - {label: "Tags", name: "tags", widget: "string", required: false}
+              - {label: "Played", name: "played", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
+              - {label: "Finished", name: "finished", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
+              - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
+              - {label: "Review", name: "review", widget: "text", required: false}
