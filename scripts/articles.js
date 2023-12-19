@@ -97,6 +97,13 @@ document
       }
       window.history.replaceState({}, "", url);
       filterPosts();
+
+      // Add or remove the 'selected' class based on whether the checkbox is checked
+      if (this.checked) {
+        this.parentElement.classList.add('selected');
+      } else {
+        this.parentElement.classList.remove('selected');
+      }
     });
   });
 
