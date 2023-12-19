@@ -45,6 +45,6 @@ collections:
             label: "Wishlists"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string", required: false}
-              - {label: "Tags", name: "tags", widget: "string", required: false}
-              - {label: "Priority", name: "priority", widget: "select", options: ["!high", "!medium", "!low"], default: "!low", required: false}
+              - {label: "Name", name: "name", widget: "string", required: false}
+              - {label: "Image", name: "image", widget: "link", required: false}
+              - {label: "Links", name: "links", widget: "list", fields: [{label: "Link", name: "link", widget: "string"}]}
