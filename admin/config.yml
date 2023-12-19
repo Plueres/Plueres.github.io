@@ -17,7 +17,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime", default: ""}
       - {label: "Updated Date", name: "updated", widget: "hidden", required: false}
       - {label: "Header Image", name: "header_image", widget: "image"}
-      - {label: "Images", name: "images", widget: "list", fields: [{label: "Image Path", name: "image_path", widget: "image"}], required: false}
+      - {label: "Images", name: "images", widget: "list", fields: [{label: "Image Path", widget: "image"}], required: false}
       - {label: "Tags", name: "tags", widget: "string", hint: "Enter tags as a comma-separated list", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "lists"
