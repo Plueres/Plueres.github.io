@@ -1,6 +1,8 @@
 /*
  ****************************************************** HOMEPAGE ******************************************************
 */
+
+//! wont work because these variables are not defined in this file
 @media (prefers-color-scheme: light) {
     $text-color: black;
     $background-color: rgb(240, 240, 240);
@@ -8,6 +10,7 @@
     $secondary-color: rgb(170, 163, 199);
     $accent-color: rgb(112, 71, 250);
 }
+//----------------------------------------------------------------
 body {
     height: calc(100vh - env(safe-area-inset-top));
 }

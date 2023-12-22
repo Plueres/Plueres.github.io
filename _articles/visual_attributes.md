@@ -2,7 +2,7 @@
 layout: minecraftpost
 title: "Visual Attributes | Bedrock Edition"
 date: 2023-10-31 23:46:27 +0100
-updated: 2023-11-23 21:25:22 +0100
+updated: 2023-12-22 09:57:24 +0100
 permalink: "/minecraft/visual-attributes"
 tags: [Minecraft, Resource pack]
 comments: true
@@ -27,5 +27,4 @@ images:
 - one
 - two
 
-<div>
-</div>
+
