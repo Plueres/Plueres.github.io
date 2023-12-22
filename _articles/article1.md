@@ -1,10 +1,10 @@
 ---
 layout: article
-title: "testpost!"
+title: testpost!
 date: 2021-12-01 14:31:01 +0100
 updated: 2023-12-19 20:54:40 +0100
-header_image: "/assets/images/header.jpg"
-tags: [Article, Testpost]
+header_image: /assets/images/header.jpg
+tags: List [  ]
 hidden: true
 ---
 
