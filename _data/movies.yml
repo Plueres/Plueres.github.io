@@ -24,6 +24,12 @@ movies:
     watched: "!yes"
     personal_rating: 4
     review: Good movie
+  - watched: "!yes"
+    title: Beautiful Boy
+    tags: "!Addiction !Drugs"
+    personal_rating: 5
+    review: Good story, a bit long but it really shows a dynamic between a father
+      and son with the son having a drug addiction
   - title: Blue Beetle
     watched: "!no"
   - title: Brain On Fire
@@ -312,6 +318,9 @@ movies:
     watched: "!no"
   - title: They Cloned Tyrone
     watched: "!no"
+  - watched: "!no"
+    title: Undone
+    tags: "!Animated"
   - title: Wakanda Forever
     tags: "!Marvel"
     watched: "!no"
