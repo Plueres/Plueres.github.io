@@ -318,6 +318,9 @@ movies:
     watched: "!no"
   - title: They Cloned Tyrone
     watched: "!no"
+  - watched: "!no"
+    title: Undone
+    tags: "!Animated"
   - title: Wakanda Forever
     tags: "!Marvel"
     watched: "!no"
