@@ -220,6 +220,13 @@ shows:
     watched: "!yes"
     personal_rating: 3
     review: null
+  - watched: "!yes"
+    title: Doctor Who
+    tags: "!Time Travel"
+    personal_rating: 5
+    review: I liked the first season even though it was set in 2005/2006. The CGI
+      was very dated but funny non the less. I kinda wish the ninth doctor
+      would've stayed for more seasons.
   - title: Extraordinary
     season: season 1
     watched: "!no"
