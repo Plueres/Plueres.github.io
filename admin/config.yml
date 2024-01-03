@@ -59,6 +59,7 @@ collections:
           - label: "Games"
             name: "games"
             widget: "list"
+            summary: "{{title}} - {{tags}}"
             fields:
               - {label: "Title", name: "title", widget: "string", required: false}
               - {label: "Tags", name: "tags", widget: "string", required: false}
@@ -89,6 +90,7 @@ collections:
       - name: "movies"
         label: "Movies"
         file: "_data/lists.yml"
+        collapsed: true
         fields:
           - label: "Movies"
             name: "movies"
@@ -102,6 +104,7 @@ collections:
       - name: "shows"
         label: "Shows"
         file: "_data/lists.yml"
+        collapsed: true
         fields:
           - label: "Shows"
             name: "shows"
