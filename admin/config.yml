@@ -87,32 +87,32 @@ collections:
               - {label: "Description", name: "description", widget: "string", required: false}
               - {label: "Links", name: "links", widget: "list", fields: [{label: "Name", name: "name", widget: "string"}, {label: "URL", name: "url", widget: "string"}]}
 
-      - name: "movies"
-        label: "Movies"
-        file: "_data/lists.yml"
-        collapsed: true
-        fields:
-          - label: "Movies"
-            name: "movies"
-            widget: "list"
+          - name: "movies"
+            label: "Movies"
+            file: "_data/lists.yml"
+            collapsed: true
             fields:
-              - {label: "Title", name: "title", widget: "string", required: false}
-              - {label: "Tags", name: "tags", widget: "string", required: false}
-              - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
-              - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
-              - {label: "Review", name: "review", widget: "text", required: false}
-      - name: "shows"
-        label: "Shows"
-        file: "_data/lists.yml"
-        collapsed: true
-        fields:
-          - label: "Shows"
-            name: "shows"
-            widget: "list"
+              - label: "Movies"
+                name: "movies"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string", required: false}
+                  - {label: "Tags", name: "tags", widget: "string", required: false}
+                  - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
+                  - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
+                  - {label: "Review", name: "review", widget: "text", required: false}
+          - name: "shows"
+            label: "Shows"
+            file: "_data/lists.yml"
+            collapsed: true
             fields:
-              - {label: "Title", name: "title", widget: "string", required: false}
-              - {label: "Tags", name: "tags", widget: "string", required: false}
-              - {label: "Season", name: "season", widget: "string", required: false}
-              - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
-              - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
-              - {label: "Review", name: "review", widget: "text", required: false}
+              - label: "Shows"
+                name: "shows"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string", required: false}
+                  - {label: "Tags", name: "tags", widget: "string", required: false}
+                  - {label: "Season", name: "season", widget: "string", required: false}
+                  - {label: "Watched", name: "watched", widget: "select", options: ["!yes", "!no", "!notsure"], default: "!no", required: false}
+                  - {label: "Personal_Rating", name: "personal_rating", widget: "number", required: false}
+                  - {label: "Review", name: "review", widget: "text", required: false}
