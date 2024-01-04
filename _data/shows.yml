@@ -5,6 +5,10 @@ shows:
     watched: "!yes"
     personal_rating: 4
     review: was quite a good show, kind of mysterious
+  - watched: "!no"
+    title: Agent Carter
+    tags: "!Marvel"
+    season: season 1
   - title: Amazing stories
     season: null
     watched: "!no"
