@@ -586,6 +586,10 @@ shows:
     watched: "!no"
     personal_rating: null
     review: null
+  - watched: "!no"
+    title: Ted
+    tags: "!Comedy"
+    season: "1"
   - title: The Society
     tags: "!Netflix"
     season: season 1
