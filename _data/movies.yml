@@ -249,6 +249,8 @@ movies:
     watched: "!yes"
   - title: Self-less
     watched: "!yes"
+  - watched: "!no"
+    title: Shawshank Redemption
   - title: She’s All That
     watched: "!no"
   - title: Sightless
