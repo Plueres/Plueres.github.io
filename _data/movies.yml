@@ -113,6 +113,8 @@ movies:
     watched: "!yes"
     personal_rating: 3
     review: really dumb ending in my opinion, not satisfying at all
+  - watched: "!no"
+    title: Good will hunting
   - title: Green Mile
     watched: "!yes"
     personal_rating: 4
