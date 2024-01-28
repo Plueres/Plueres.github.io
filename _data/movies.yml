@@ -305,6 +305,8 @@ movies:
   - title: The Discovery
     tags: "!Afterlife"
     watched: "!no"
+  - watched: "!no"
+    title: The Notebook
   - title: The Park
     watched: "!no"
   - title: The Perks Of Being A Wallflower
