@@ -276,6 +276,9 @@ movies:
   - title: Spontaneous
     watched: "!no"
     review: watch before September 1 on netflix
+  - watched: "!no"
+    title: Stay
+    review: "2005"
   - title: Synchronic
     watched: "!no"
     review: falcon guy and something with time
