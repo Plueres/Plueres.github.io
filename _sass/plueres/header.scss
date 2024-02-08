@@ -59,6 +59,13 @@
         cursor: pointer;
     a {
         padding: 1rem 3rem;
+
+        &:active, &:focus {
+            -webkit-tap-highlight-color: $primary-color;
+            border-radius: $border-radius * 2;
+            background-color: $primary-color;
+            transition: all 0.2s ease-in-out;
+        }
     }
 }
 
