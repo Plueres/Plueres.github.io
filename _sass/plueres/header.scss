@@ -24,7 +24,6 @@
     display: flex;
     align-items: center;
 
-
     div {
         z-index: 10;
         height: 100%;
@@ -53,13 +52,14 @@
         width 0.3s ease;
 }
 
-#backbtnnav a {
+#pagesnav {
     display: flex;
-    width: 100%;
-    height: 100%;
     align-items: stretch;
     justify-content: space-evenly;
-    padding: 1rem 8rem;
+        cursor: pointer;
+    a {
+        padding: 1rem 3rem;
+    }
 }
 
 #headernav a.active {

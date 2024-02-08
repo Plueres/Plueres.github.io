@@ -30,13 +30,13 @@ layout: pages
 
     .options {
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
 
     #sort,
     #filter {
-        margin: 1rem;
-        padding: 1rem;
+        margin: 0.8rem;
+        padding: 0.8rem;
     }
 
     yes::before {
@@ -84,7 +84,6 @@ layout: pages
     <select id="sort">
         <option value="name" selected>Name</option>
         <option value="rating">Rating</option>
-        <option value="seen">Seen</option>
     </select>
     <select id="filter">
     </select>
@@ -218,6 +217,16 @@ layout: pages
         tag.style.color = textColor;
         tag.style.background = brColor;
     });
+
+    var pageType = "{{ page.type }}";
+    if (pageType === 'movielist' || pageType === 'showslist') {
+        var selectElement = document.getElementById('sort');
+        var seenOption = document.createElement('option');
+        seenOption.value = 'seen';
+        seenOption.text = 'Seen';
+        selectElement.add(seenOption);
+    }
+    
     document.getElementById('sort').addEventListener('change', sortTable);
 
     function sortTable() {
