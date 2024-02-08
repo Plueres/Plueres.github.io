@@ -2,32 +2,40 @@
     "short_name": "Pluer.es",
     "name": "Plueres.app",
     "icons": [
-      {
-        "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/icon512.png",
-        "type": "image/png",
-        "sizes": "512x512"
-      },
-      {
-        "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/icon192.png",
-        "type": "image/png",
-        "sizes": "192x192"
-      }
+        {
+            "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/icon512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/icon192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
     ],
     "id": "/",
     "start_url": "/",
     "background_color": "#0a0a0a",
-    "display_override": ["window-control-overlay", "standalone"],
-    "display": "fullscreen",
+    "display_override": [
+        "fullscreen",
+        "minimal-ui"
+    ],
+    "display": "standalone",
     "orientation": "landscape",
     "theme_color": "#0a0a0a",
     "shortcuts": [
-      {
-        "name": "Homepage",
-        "short_name": "Homepage",
-        "description": "Plueres Homepage",
-        "url": "/",
-        "icons": [{ "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/icon192.png", "sizes": "192x192" }]
-      }
+        {
+            "name": "Homepage",
+            "short_name": "Homepage",
+            "description": "Plueres Homepage",
+            "url": "/",
+            "icons": [
+                {
+                    "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/icon192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
     ],
     "description": "Work in progress"
-  }
+}
