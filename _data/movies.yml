@@ -224,6 +224,11 @@ movies:
   - title: Pooh Blood And Honey
     tags: "!Horror"
     watched: "!no"
+  - watched: "!yes"
+    title: Press Play
+    tags: "!Time Travel"
+    personal_rating: 5
+    review: I liked the concept very much
   - title: Primer
     watched: "!no"
   - title: Prisoners
