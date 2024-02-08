@@ -229,7 +229,7 @@ self.addEventListener('fetch', function(event) {
 
     // If shouldRespond is still false, check to see if this is a navigation
     // request, and if so, whether the URL matches navigateFallbackWhitelist.
-    var navigateFallback = '';
+    var navigateFallback = 'fallback.html';
     if (!shouldRespond &&
         navigateFallback &&
         (event.request.mode === 'navigate') &&
@@ -267,7 +267,7 @@ self.addEventListener('fetch', function(event) {
           });
         }).catch(function() {
           // If both fail, show a generic fallback:
-          return caches.match('/404.html');
+          return caches.match('/fallback.html');
         })
       );
     }
