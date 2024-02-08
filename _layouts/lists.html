@@ -28,11 +28,6 @@ layout: pages
         height: unset;
     }
 
-    .options {
-        display: flex;
-        justify-content: left;
-    }
-
     #sort,
     #filter {
         margin: 0.8rem;
@@ -109,11 +104,11 @@ layout: pages
         var thead = document.querySelector('thead');
         if (window.pageYOffset > thead.offsetTop && !clonedThead) {
             clonedThead = thead.cloneNode(true); // Clone the thead
-            clonedThead.style.position = 'fixed';
-            clonedThead.style.top = '0';
-            clonedThead.style.display = 'table';
-            clonedThead.style.background = 'linear-gradient(to bottom, black, transparent)';
-            clonedThead.style.backdropFilter = 'blur(1px)';
+            clonedThead.style.cssText = 'position:fixed; top:0; display:table; background:linear-gradient(to bottom, black, transparent); backdrop-filter:blur(1px);'; // Set the style of the clone to match the original
+            if (window.matchMedia("(min-width: 600px)").matches) {
+                clonedThead.style.textAlign = 'left';
+            }
+
 
             // Set the width and padding of each th in the clone to match the original
             var originalThs = Array.from(thead.querySelectorAll('th'));
@@ -218,15 +213,15 @@ layout: pages
         tag.style.background = brColor;
     });
 
-    var pageType = "{{ page.type }}";
-    if (pageType === 'movielist' || pageType === 'showslist') {
+    var pagePath = window.location.pathname;
+    if (pagePath.includes('movielist') || pagePath.includes('showslist')) {
         var selectElement = document.getElementById('sort');
         var seenOption = document.createElement('option');
         seenOption.value = 'seen';
         seenOption.text = 'Seen';
         selectElement.add(seenOption);
     }
-    
+
     document.getElementById('sort').addEventListener('change', sortTable);
 
     function sortTable() {

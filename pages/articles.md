@@ -16,7 +16,7 @@ permalink: /articles
                     <article data-tag="{{ article.tags | join: '|' }}">
                         <div class="article-overlay">
                             {% for tag in article.tags %}
-                            <a href="{{ site.url }}/articles?tags={{ tag | url_encode }}">
+                            <a href="{{ site.url }}/articles?tags={{ tag | downcase | replace: ' ', '-' | url_encode }}">
                                 <posttags>{{ tag }}</posttags>
                             </a>
                             {% endfor %}

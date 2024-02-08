@@ -341,7 +341,7 @@ thead * {
 }
 
 table {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
     width: 100vw;
     border: none;
     border-spacing: 0;
@@ -389,20 +389,17 @@ table {
     table {
         width: 100%;
         overflow-x: auto;
-        margin-bottom: 6rem;
+        margin-bottom: 0;
+        thead {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        tr {
+            margin-bottom: 0.5rem;
+            /* Adjust space between rows */
+        }
     }
-
-    table thead {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    table tr {
-        margin-bottom: 0.5rem;
-        /* Adjust space between rows */
-    }
-
     table td,
     table th {
         padding: 0.5rem;

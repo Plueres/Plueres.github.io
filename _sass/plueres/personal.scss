@@ -21,6 +21,12 @@
     height: 100%;
 }
 
+.options {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
 @include media-query($on-tablet) {
     #pages main {
         width: 100%;
@@ -30,6 +36,11 @@
     #personallists {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: unset;
+    }
+}
+@include media-query($on-laptop) {
+    .options {
+        justify-content: left;
     }
 }
 

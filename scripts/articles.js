@@ -19,12 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   checkboxes.forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
-      if (this.checked) {
-        // Checkbox is checked, add the class to the parent tag
-        this.parentElement.classList.add('selected');
-      } else {
-        // Checkbox is not checked, remove the class from the parent tag
-        this.parentElement.classList.remove('selected');
+      if (this.parentElement) {
+        if (this.checked) {
+          // Checkbox is checked, add the class to the parent tag
+          this.parentElement.classList.add('selected');
+        } else {
+          // Checkbox is not checked, remove the class from the parent tag
+          this.parentElement.classList.remove('selected');
+        }
       }
     });
   });
@@ -38,10 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
   tags.forEach(function (tag) {
     let tagElements = document.querySelectorAll('tag input');
     tagElements.forEach(function (element) {
-      if (element.value.toLowerCase() === tag) {
-        element.parentElement.classList.add('selected');
-        element.checked = true;
+      if (element.parentElement) {
+        if (element.value.toLowerCase() === tag) {
+          element.parentElement.classList.add('selected');
+          element.checked = true;
+        }
       }
+
     });
   });
 });
@@ -99,10 +104,12 @@ document
       filterPosts();
 
       // Add or remove the 'selected' class based on whether the checkbox is checked
-      if (this.checked) {
-        this.parentElement.classList.add('selected');
-      } else {
-        this.parentElement.classList.remove('selected');
+      if (this.parentElement) {
+        if (this.checked) {
+          this.parentElement.classList.add('selected');
+        } else {
+          this.parentElement.classList.remove('selected');
+        }
       }
     });
   });
@@ -146,10 +153,12 @@ window.addEventListener("load", function () {
 window.addEventListener('scroll', function () {
   var filterList = document.querySelector('#filtersheader');
 
-  if (window.scrollY > 0) {
-    filterList.classList.add('fixed');
-  } else {
-    filterList.classList.remove('fixed');
+  if (filterList) {
+    if (window.scrollY > 0) {
+      filterList.classList.add('fixed');
+    } else {
+      filterList.classList.remove('fixed');
+    }
   }
 });
 
