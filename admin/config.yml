@@ -69,6 +69,7 @@ collections:
       - name: "wishlist"
         label: "Wishlist"
         file: "_data/wishlists.yml"
+        preview: false
         fields:
           - name: "wishlist"
             label: "Wishlist"
