@@ -15,14 +15,14 @@
     ],
     "id": "/",
     "start_url": "/",
-    "background_color": "#0a0a0a",
     "display_override": [
         "fullscreen",
         "minimal-ui"
     ],
     "display": "standalone",
     "orientation": "landscape",
-    "theme_color": "#0a0a0a",
+    "theme_color": "#7047fa",
+    "background_color": "#0a0a0a",
     "shortcuts": [
         {
             "name": "Homepage",
@@ -41,7 +41,7 @@
         {
             "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/d6a11a64-823b-4489-9513-8e73f8d7cfe9.webp",
             "type": "image/webp",
-            "sizes": "768x768",
+            "sizes": "1024x1024",
             "form_factor": "narrow"
         },
         {
