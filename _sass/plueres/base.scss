@@ -26,6 +26,11 @@ figure {
     box-sizing: border-box;
 }
 
+*:active, *:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Gabarito:700|Albert Sans:400");
 h1,
 h2,
