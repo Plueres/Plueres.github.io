@@ -3,52 +3,31 @@
     "name": "Plueres.app",
     "icons": [
       {
-        "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/e76befd2-fe83-4353-8806-806e09e0411d.webp",
-        "type": "image/webp",
+        "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/icon512.png",
+        "type": "image/png",
         "sizes": "512x512"
       },
       {
-        "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/e76befd2-fe83-4353-8806-806e09e0411d.webp",
-        "type": "image/webp",
+        "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/icon192.png",
+        "type": "image/png",
         "sizes": "192x192"
       }
     ],
-    "id": "/?source=pwa",
-    "start_url": "/?source=pwa",
+    "id": "/",
+    "start_url": "/",
     "background_color": "#0a0a0a",
-    "display_override": ["window-control-overlay", "minimal-ui"],
-    "display": "standalone",
-    "scope": "/",
+    "display_override": ["window-control-overlay", "standalone"],
+    "display": "fullscreen",
+    "orientation": "landscape",
     "theme_color": "#0a0a0a",
     "shortcuts": [
       {
-        "name": "How's weather today?",
-        "short_name": "Today",
-        "description": "View weather information for today",
-        "url": "/today?source=pwa",
-        "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
-      },
-      {
-        "name": "How's weather tomorrow?",
-        "short_name": "Tomorrow",
-        "description": "View weather information for tomorrow",
-        "url": "/tomorrow?source=pwa",
-        "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
+        "name": "Homepage",
+        "short_name": "Homepage",
+        "description": "Plueres Homepage",
+        "url": "/",
+        "icons": [{ "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/icon192.png", "sizes": "192x192" }]
       }
     ],
-    "description": "Weather forecast information",
-    "screenshots": [
-      {
-        "src": "/images/screenshot1.png",
-        "type": "image/png",
-        "sizes": "540x720",
-        "form_factor": "narrow"
-      },
-      {
-        "src": "/images/screenshot2.jpg",
-        "type": "image/jpg",
-        "sizes": "720x540",
-        "form_factor": "wide"
-      }
-    ]
+    "description": "Work in progress"
   }
