@@ -1,14 +1,14 @@
 shows:
   - title: 1899
     tags: "!Mystery !Sci-fi !Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 4
     review: was quite a good show, kind of mysterious
   - watched: "!no"
     title: Agent Carter
     tags: "!Marvel"
-    season: season 1
+    season: 1
   - title: Amazing stories
     season: null
     watched: "!no"
@@ -22,44 +22,44 @@ shows:
     review: null
   - title: Arcane
     tags: "!Action !Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: Really good show, also really love the animation style
   - title: Archive 81
     tags: "!Time Travel !Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: One of the best shows because it links 2 times and makes them interact
       witheachother
   - title: Atypical
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: I really liked it, has a very good storyline
   - title: Atypical
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 5
     review: I really liked it, has a very good storyline
   - title: Atypical
     tags: "!Netflix"
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: 5
     review: I really liked it, has a very good storyline
   - title: Atypical
     tags: "!Netflix"
-    season: season 4
+    season: 4
     watched: "!yes"
     personal_rating: 5
     review: I really liked it, has a very good storyline
   - title: Better Call Saul
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: Prequel to Breaking Bad and it also has some really good story telling,
@@ -67,7 +67,7 @@ shows:
       bad first
   - title: Better Call Saul
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 5
     review: Prequel to Breaking Bad and it also has some really good story telling,
@@ -75,7 +75,7 @@ shows:
       bad first
   - title: Better Call Saul
     tags: "!Netflix"
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: 5
     review: Prequel to Breaking Bad and it also has some really good story telling,
@@ -83,7 +83,7 @@ shows:
       bad first
   - title: Better Call Saul
     tags: "!Netflix"
-    season: season 4
+    season: 4
     watched: "!yes"
     personal_rating: 5
     review: Prequel to Breaking Bad and it also has some really good story telling,
@@ -91,7 +91,7 @@ shows:
       bad first
   - title: Better Call Saul
     tags: "!Netflix"
-    season: season 5
+    season: 5
     watched: "!yes"
     personal_rating: 5
     review: Prequel to Breaking Bad and it also has some really good story telling,
@@ -99,7 +99,7 @@ shows:
       bad first
   - title: Better Call Saul
     tags: "!Netflix"
-    season: season 6
+    season: 6
     watched: "!yes"
     personal_rating: 5
     review: Prequel to Breaking Bad and it also has some really good story telling,
@@ -113,45 +113,45 @@ shows:
     review: Was good at first but gets a bit repetetive at the later stages
   - title: Black mirror
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 3
     review: Good but kind of gross
   - title: Black mirror
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 4
     review: Bit more sci-fi, kind of liked this one
   - title: Black mirror
     tags: "!Netflix"
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: 4
     review: Very mixed, there were some kind of not enjoyable ones and some really
       really good ones in there
   - title: Black mirror
     tags: "!Netflix"
-    season: season 4
+    season: 4
     watched: "!yes"
     personal_rating: null
     review: null
   - title: Black mirror
     tags: "!Netflix"
-    season: season 5
+    season: 5
     watched: "!yes"
     personal_rating: null
     review: null
   - title: Black mirror
     tags: "!Netflix"
-    season: season 6
+    season: 6
     watched: "!yes"
     personal_rating: null
     review: null
   - watched: "!no"
     title: Bodies
     tags: "!Time Travel"
-    season: season 1
+    season: 1
   - title: Breaking Bad
     tags: "!Netflix"
     season: All seasons
@@ -166,19 +166,19 @@ shows:
     review: null
   - title: Chicago Party Aunt
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 2
     review: Not that interesting or funny and that voice was very annoying
   - title: Cyberpunk EdgeRunners
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: This was a good show
   - title: Dark
     tags: "!Time Travel !Time Loop !German !Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: The only bad thing being for me that it was german so it wasn’t easy to
@@ -186,7 +186,7 @@ shows:
       didn’t matter…
   - title: Dark
     tags: "!Time Travel !Time Loop !German !Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 5
     review: The only bad thing being for me that it was german so it wasn’t easy to
@@ -194,7 +194,7 @@ shows:
       didn’t matter…
   - title: Dark
     tags: "!Time Travel !Time Loop !German !Netflix"
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: 5
     review: The only bad thing being for me that it was german so it wasn’t easy to
@@ -202,25 +202,25 @@ shows:
       didn’t matter…
   - title: Disenchantment
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Disenchantment
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 4
     review: null
   - title: Disenchantment
     tags: "!Netflix"
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: 4
     review: null
   - title: Disenchantment
     tags: "!Netflix"
-    season: season 4
+    season: 4
     watched: "!yes"
     personal_rating: 3
     review: null
@@ -228,10 +228,10 @@ shows:
     title: Doctor Who
     tags: "!Time Travel"
     personal_rating: 5
-    review: I liked the first season even though it was set in 2005/2006. The CGI
+    review: I liked the first even though it was set in 2005/2006. The CGI
       was very dated but funny non the less. I kinda wish the ninth doctor
       would've stayed for more seasons.
-    season: season 1
+    season: 1
   - watched: "!yes"
     title: Doctor who
     season: "2"
@@ -250,7 +250,7 @@ shows:
     personal_rating: 4
     review: I liked Donna more than Martha, she's a bit older than the earlier
       companions which makes it interesting. The story was a bit strange in this
-      season as well
+      as well
   - watched: "!yes"
     title: Doctor who
     season: "5"
@@ -260,21 +260,21 @@ shows:
   - watched: "!yes"
     title: Doctor who
     season: "6"
-    review: This season was more about Melody Pond/River song, kind of a confusing
-      season to be honest
+    review: This was more about Melody Pond/River song, kind of a confusing
+      to be honest
     personal_rating: 5
   - watched: "!no"
     title: Echo
     tags: "!Marvel"
     season: "1"
   - title: Extraordinary
-    season: season 1
+    season: 1
     watched: "!no"
     personal_rating: null
     review: null
   - watched: "!no"
     title: Gen V
-    season: season 1
+    season: 1
     personal_rating: 4
   - title: Glitch
     season: 3 seasons
@@ -283,66 +283,66 @@ shows:
     review: Dead people coming back to life.
   - title: Maid
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Midnight Mass
     tags: "!Horror !Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: Vampire people and religion
   - title: My Adventures With Superman
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: it was pretty good
   - title: Human Resources
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Human Resources
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 4
     review: null
   - title: I Am Not Okay With This
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Imperfects
     tags: "!Kids with superpowers"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: Pretty good and funny
   - title: Inside Job
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: Banger intro
   - title: Inside Job
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!notsure"
     personal_rating: 4
     review: null
   - title: Iron fist
     tags: "!Disney+ !Marvel"
-    season: season 1
+    season: 1
     watched: "!no"
     personal_rating: null
     review: null
   - title: Jessica Jones
     tags: "!Disney+ !Marvel"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 4
     review: null
@@ -351,179 +351,179 @@ shows:
     season: null
     watched: "!yes"
     personal_rating: 3
-    review: It being one season was kind of bad and i didn’t really care for the
+    review: It being one was kind of bad and i didn’t really care for the
       show that much
   - title: Legends of Tomorrow
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Legends of Tomorrow
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Legends of Tomorrow
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Legends of Tomorrow
-    season: season 4
+    season: 4
     watched: "!yes"
     personal_rating: 4
     review: null
   - title: Legends of Tomorrow
-    season: season 5
+    season: 5
     watched: "!yes"
     personal_rating: 4
     review: null
   - title: Legends of Tomorrow
-    season: season 6
+    season: 6
     watched: "!yes"
     personal_rating: 4
     review: null
   - title: Legends of Tomorrow
-    season: season 7
+    season: 7
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Legends of Tomorrow
-    season: season 8
+    season: 8
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Loki
     tags: "!Time Travel !Disney+"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: Good show
   - title: Loki
     tags: "!Time Travel !Disney+"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 5
     review: The time travel thing is amazing, really good ending
   - title: Lost
-    season: season 1
+    season: 1
     watched: "!no"
     personal_rating: null
     review: null
   - title: Lost in Space
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 4
     review: null
   - title: Lost in Space
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 3
     review: null
   - title: Lost in Space
     tags: "!Netflix"
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: 4
     review: null
   - title: Love Death + Robots
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: null
     review: null
   - title: Love Death + Robots
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: null
     review: null
   - title: Love Death + Robots
     tags: "!Netflix"
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: null
     review: null
   - title: OA
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: OA
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Outer Banks
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 4
     review: if i were to compare it to others on this list, this wouldn’t be as good
       of a show
   - title: Outer Banks
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 3
     review: if i were to compare it to others on this list, this wouldn’t be as good
       of a show
   - title: Outer Banks
     tags: "!Netflix"
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: 4
     review: if i were to compare it to others on this list, this wouldn’t be as good
       of a show
   - title: Pieces of her
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: 1 episode
     personal_rating: null
     review: Something with a murder, police daughter and weird mother
   - title: Resident Evil
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 2
     review: Rip Lance Reddick but other than that kind of bad show
   - title: Sense8
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Sense8
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Sex Education
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: null
     review: null
   - title: Sex Education
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: null
     review: null
   - title: Sex Education
     tags: "!Netflix"
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: null
     review: null
   - title: Sex Education
     tags: "!Netflix"
-    season: season 4
+    season: 4
     watched: "!yes"
     personal_rating: 5
     review: good show
@@ -534,55 +534,55 @@ shows:
     review: null
   - title: Squid Game
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Squid Game
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: null
     personal_rating: null
     review: null
   - title: Stranger Things
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Stranger Things
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: null
     review: null
   - title: Stranger Things
     tags: "!Netflix"
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: null
     review: null
   - title: Stranger Things
     tags: "!Netflix"
-    season: season 4
+    season: 4
     watched: "!yes"
     personal_rating: null
     review: null
   - title: Stranger Things
     tags: "!Netflix"
-    season: season 5
+    season: 5
     watched: null
     personal_rating: null
     review: null
   - title: Sweet Tooth
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 3
     review: null
   - title: Sweet Tooth
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!no"
     personal_rating: null
     review: null
@@ -592,58 +592,58 @@ shows:
     season: "1"
   - title: The Society
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: The cliffhanger ending sucks because there isn’t a second season
   - title: The End of the Fucking World
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: The Flash
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 4
     review: The ending was not that good
   - title: The Flash
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 4
     review: The ending was not that good
   - title: The Flash
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: 4
     review: The ending was not that good
   - title: The Flash
-    season: season 4
+    season: 4
     watched: "!yes"
     personal_rating: 4
     review: The ending was not that good
   - title: The Flash
-    season: season 5
+    season: 5
     watched: "!yes"
     personal_rating: 4
     review: The ending was not that good
   - title: The Flash
-    season: season 6
+    season: 6
     watched: "!yes"
     personal_rating: 4
     review: The ending was not that good
   - title: The Flash
-    season: season 7
+    season: 7
     watched: "!yes"
     personal_rating: 4
     review: The ending was not that good
   - title: The Flash
-    season: season 8
+    season: 8
     watched: "!yes"
     personal_rating: 4
     review: The ending was not that good
   - title: The Flash
-    season: season 9
+    season: 9
     watched: "!yes"
     personal_rating: 4
     review: The ending was not that good
@@ -659,127 +659,127 @@ shows:
     review: null
   - title: The Rain
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 3
     review: null
   - title: The Rain
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 3
     review: null
   - title: The Rain
     tags: "!Netflix"
-    season: season 3
+    season: 3
     watched: "!notsure 50%"
     personal_rating: 2
     review: lost interest and didn’t want to finish it
   - title: The Queen’s Gambit
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Time Travelers Wife
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: canceled after 1 season
   - title: Titans
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: The ending was not that good
   - title: Titans
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 5
     review: The ending was not that good
   - title: Titans
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: 5
     review: The ending was not that good
   - title: Titans
-    season: season 4
+    season: 4
     watched: "!yes"
     personal_rating: 5
     review: The ending was not that good
   - title: Travelers
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Travelers
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Travelers
     tags: "!Netflix"
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Umbrella Academy
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Umbrella Academy
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Umbrella Academy
     tags: "!Netflix"
-    season: season 3
+    season: 3
     watched: "!yes"
     personal_rating: 4
     review: null
   - title: Umbrella Academy
     tags: "!Netflix"
-    season: season 4
+    season: 4
     watched: null
     personal_rating: null
     review: null
   - title: Warrior Nun
     tags: "!Religious !Action  !Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: One of the best shows
   - title: Warrior Nun
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: "!yes"
     personal_rating: 5
     review: One of the best shows
   - title: Wednesday
     tags: "!Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 4
     review: Overrated but it was still good
   - title: Wednesday
     tags: "!Netflix"
-    season: season 2
+    season: 2
     watched: null
     personal_rating: null
     review: null
   - title: Wu Assassins
     tags: "!Elemental !Superpowered people !Netflix"
-    season: season 1
+    season: 1
     watched: "!yes"
     personal_rating: 5
     review: null
   - title: Yellowjackets
-    season: season 1
+    season: 1
     watched: "!no"
     personal_rating: null
     review: null
