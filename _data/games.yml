@@ -447,6 +447,10 @@ games:
     finished: ""
     personal_rating: 5
     review: null
+  - played: "!no"
+    finished: "!no"
+    title: Portal Revolution
+    tags: "!Sci-fi"
   - title: "Portal Stories: Mel"
     tags: "!PC"
     played: ""

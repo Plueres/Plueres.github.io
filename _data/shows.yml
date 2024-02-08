@@ -5,6 +5,10 @@ shows:
     watched: "!yes"
     personal_rating: 4
     review: was quite a good show, kind of mysterious
+  - watched: "!no"
+    title: Agent Carter
+    tags: "!Marvel"
+    season: season 1
   - title: Amazing stories
     season: null
     watched: "!no"
@@ -228,6 +232,41 @@ shows:
       was very dated but funny non the less. I kinda wish the ninth doctor
       would've stayed for more seasons.
     season: season 1
+  - watched: "!yes"
+    title: Doctor who
+    season: "2"
+    personal_rating: 5
+    review: I had to adjust to the new doctor to be honest but I did like him, very
+      sad that Rose had to leave
+  - watched: "!yes"
+    title: Doctor who
+    season: "3"
+    personal_rating: 3
+    review: I didn't really like Martha as a companion, the story was okay but a bit
+      too different
+  - watched: "!yes"
+    title: Doctor who
+    season: "4"
+    personal_rating: 4
+    review: I liked Donna more than Martha, she's a bit older than the earlier
+      companions which makes it interesting. The story was a bit strange in this
+      season as well
+  - watched: "!yes"
+    title: Doctor who
+    season: "5"
+    personal_rating: 4
+    review: Another new doctor which I had to adjust to again. This one was the
+      youngest but he's definitely a good doctor. Also like the new companions
+  - watched: "!yes"
+    title: Doctor who
+    season: "6"
+    review: This season was more about Melody Pond/River song, kind of a confusing
+      season to be honest
+    personal_rating: 5
+  - watched: "!no"
+    title: Echo
+    tags: "!Marvel"
+    season: "1"
   - title: Extraordinary
     season: season 1
     watched: "!no"
@@ -547,6 +586,10 @@ shows:
     watched: "!no"
     personal_rating: null
     review: null
+  - watched: "!no"
+    title: Ted
+    tags: "!Comedy"
+    season: "1"
   - title: The Society
     tags: "!Netflix"
     season: season 1
