@@ -37,5 +37,19 @@
             ]
         }
     ],
+    "screenshots": [
+        {
+            "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/d6a11a64-823b-4489-9513-8e73f8d7cfe9.webp",
+            "type": "image/webp",
+            "sizes": "768x768",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/240837-nature-sunset-sea-waves-clouds-water-colorful-3334177499.webp",
+            "type": "image/webp",
+            "sizes": "2500x1563",
+            "form_factor": "wide"
+        }
+    ],
     "description": "Work in progress"
 }
