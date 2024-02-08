@@ -1,5 +1,5 @@
 {
-    "short_name": "Pluer.es",
+    "short_name": "Plueres",
     "name": "Plueres.app",
     "icons": [
         {
@@ -17,7 +17,7 @@
     "start_url": "/",
     "display_override": ["fullscreen", "minimal-ui"],
     "display": "standalone",
-    "orientation": "landscape",
+    "orientation": "any",
     "theme_color": "#7047fa",
     "background_color": "#0a0a0a",
     "shortcuts": [

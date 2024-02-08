@@ -98,3 +98,9 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.style.display = "none";
     }
 });
+
+// SERVICE WORKER
+if ("serviceWorker" in navigator) {
+    // register service worker
+    navigator.serviceWorker.register("service-worker.js");
+  }
