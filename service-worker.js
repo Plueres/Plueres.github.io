@@ -238,8 +238,6 @@ self.addEventListener('fetch', function(event) {
       shouldRespond = urlsToCacheKeys.has(url);
     }
 
-    // If shouldRespond was set to true at any point, then call
-    // event.respondWith(), using the appropriate cache key.
     if (shouldRespond) {
       event.respondWith(
         caches.open(cacheName).then(function(cache) {
@@ -253,16 +251,25 @@ self.addEventListener('fetch', function(event) {
           // Fall back to just fetch()ing the request if some unexpected error
           // prevented the cached response from being valid.
           console.warn('Couldn\'t serve response for "%s" from cache: %O', event.request.url, e);
-          return fetch(event.request);
+          return fetch(event.request).then(function(networkResponse) {
+            // Check if the status is 404 and handle it.
+            if (networkResponse.status === 404) {
+              console.log('File not found: ' + event.request.url);
+              // You can decide what to do here. For example, you might want to cache a default file instead.
+              return caches.match('/default-file.html');
+            }
+            // Create a new response to make sure the promise is resolved even if the status is not OK.
+            return new Response(networkResponse.body, {
+              status: networkResponse.status,
+              statusText: networkResponse.statusText,
+              headers: networkResponse.headers
+            });
+          });
+        }).catch(function() {
+          // If both fail, show a generic fallback:
+          return caches.match('/404.html');
         })
       );
     }
   }
 });
-
-
-
-
-
-
-
