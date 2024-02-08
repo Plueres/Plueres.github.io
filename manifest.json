@@ -3,6 +3,12 @@
     "name": "Plueres.app",
     "icons": [
         {
+            "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/maskable_icon512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        },
+        {
             "src": "https://raw.githubusercontent.com/Plueres/plueres/main/website_images/icon512.png",
             "type": "image/png",
             "sizes": "512x512"
@@ -13,7 +19,6 @@
             "sizes": "192x192"
         }
     ],
-    "id": "/",
     "start_url": "/",
     "display_override": ["fullscreen", "minimal-ui"],
     "display": "standalone",
