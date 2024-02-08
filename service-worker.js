@@ -221,7 +221,7 @@ self.addEventListener('fetch', function(event) {
 
     // If shouldRespond is false, check again, this time with 'index.html'
     // (or whatever the directoryIndex option is set to) at the end.
-    var directoryIndex = 'index.html';
+    var directoryIndex = '/';
     if (!shouldRespond && directoryIndex) {
       url = addDirectoryIndex(url, directoryIndex);
       shouldRespond = urlsToCacheKeys.has(url);
@@ -229,7 +229,7 @@ self.addEventListener('fetch', function(event) {
 
     // If shouldRespond is still false, check to see if this is a navigation
     // request, and if so, whether the URL matches navigateFallbackWhitelist.
-    var navigateFallback = '';
+    var navigateFallback = '404.html';
     if (!shouldRespond &&
         navigateFallback &&
         (event.request.mode === 'navigate') &&
