@@ -385,6 +385,27 @@ table {
     }
 }
 
+#installButton {
+    padding: 1rem;
+    background-color: $accent-color;
+    border: none;
+    border-radius: $border-radius;
+    color: $text-color;
+    cursor: pointer;
+}
+#cancelButton {
+    padding: 1rem;
+    background-color: $primary-color;
+    border: none;
+    border-radius: $border-radius;
+    color: $text-color;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
+
 @include media-query($on-tablet) {
     table *,
     thead * {
