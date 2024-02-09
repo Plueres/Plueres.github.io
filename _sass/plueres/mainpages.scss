@@ -77,8 +77,8 @@ body {
     object-fit: contain; // Add this line
 }
 #spotify-widget {
-    background-color: black;
-    border: 5px solid rgba(30, 215, 96, 0.5);
+    background-color: rgb(30, 215, 96);
+    // border: 5px solid black;
     border-radius: $border-radius;
     justify-content: center;
 }
