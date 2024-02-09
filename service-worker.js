@@ -1,7 +1,33 @@
+const CACHE_NAME = 'my-cache';
+const urlsToCache = [
+    '/',
+    '/lists',
+    '/articles',
+    '/assets/main.css',
+    '/scripts/global.js',
+    '/scripts/script.js',
+    '/scripts/protectedpage.js',
+    '/scripts/header.js',
+];
+
 self.addEventListener('install', function(event) {
-    // The service worker is installing.
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+            .then(function(cache) {
+                console.log('Opened cache');
+                return cache.addAll(urlsToCache);
+            })
+    );
 });
 
 self.addEventListener('fetch', function(event) {
-    // The service worker is serving the asset.
+    event.respondWith(
+        caches.match(event.request)
+            .then(function(response) {
+                if (response) {
+                    return response;
+                }
+                return fetch(event.request);
+            })
+    );
 });
