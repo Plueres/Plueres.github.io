@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
     {%- include head.html -%}
-    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-    <!-- Link the icons from Google -->
+    <!-- PRELOAD/PRECONNECT -->
+    <link rel="preload" href="https://raw.githubusercontent.com/Plueres/plueres/main/website_images" as="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabarito:700|Albert Sans:400" />
+    <!-- ICONS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <body>
-        
         {%- include header.html -%}
         <main class="{{ page.permalink | remove: '/' }}">
             {{ content }}
@@ -17,6 +21,5 @@
         <script src="/scripts/script.js"></script>
 
     </body>
-
 
 </html>
