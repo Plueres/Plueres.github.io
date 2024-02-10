@@ -22,7 +22,7 @@ body {
 #home {
     // grid-template-columns: repeat(3, 1fr);
     display: grid;
-    margin: 1rem auto; // to 10% on desktop
+    margin: 1rem auto 7rem auto; // to 10% on desktop
     padding: 1rem;
     gap: 1rem;
     grid-auto-flow: dense;
@@ -30,6 +30,17 @@ body {
         "masonryabout"
         "masonrymedia"
         "masonryother";
+    &.wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+    & p {
+        margin: 0;
+        text-align: center;
+    }
 }
 
 #masonryabout {
@@ -42,10 +53,6 @@ body {
 
 #masonryother {
     grid-area: masonryother;
-}
-
-#home h2 {
-    margin: 0;
 }
 
 .masonrycol {
@@ -126,6 +133,12 @@ body {
     }
 }
 
+#installBox {
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+}
+
 h1 {
     text-align: center;
     font-size: 2em;
@@ -149,7 +162,7 @@ h1 {
         grid-template-areas: "masonrymedia masonryabout masonryother";
         width: 100%;
         height: 80vh;
-        margin: 0rem 7rem;
+        margin: 0rem 7rem ;
     }
     .masonrycol {
         width: 100%;

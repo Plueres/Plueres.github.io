@@ -77,13 +77,6 @@ main {
   min-width: 100vw;
   transition: all 0.5s ease;
 }
-#home .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-}
 #lists {
   transform: translateX(-100vw);
 }

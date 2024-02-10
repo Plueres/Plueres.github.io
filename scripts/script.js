@@ -13,7 +13,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
     // Show the install button
     const installBox = document.getElementById('installBox');
     const cancelButton = document.getElementById('cancelButton');
-    installBox.style.display = 'block';
+    installBox.style.display = 'flex';
 
     installButton.addEventListener('click', (e) => {
         // Hide the install button
