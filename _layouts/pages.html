@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+---
+layout: default
+---
 
-    {%- include head.html -%}
-
-    <body>
-        {% include header-pages.html -%}
-        <main class="{{ page.permalink | remove: '/' }}">
-            {{ content }}
-        </main>
-    </body>
-
-</html>
+<body>
+    {% include header-pages.html -%}
+    <main class="{{ page.permalink | remove: '/' }}">
+        {{ content }}
+    </main>
+</body>
