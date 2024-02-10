@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+---
+layout: html
+---
 
-    {%- include head.html -%}
+<body id="pages">
+    {% include header-pages.html -%}
+    <main class="{{ page.permalink | remove: '/' }}">
+        {{ content }}
+    </main>
+</body>
 
-    <body id="pages">
-        {% include header-pages.html -%}
-        <main class="{{ page.permalink | remove: '/' }}">
-            {{ content }}
-        </main>
-    </body>
-
-    <script src="/scripts/protectedpage.js"></script>
-
-</html>
+<script src="/scripts/protectedpage.js"></script>

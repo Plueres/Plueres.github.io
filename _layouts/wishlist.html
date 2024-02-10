@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+---
+layout: html
+---
 
-    {%- include head.html -%}
+<body>
+    {% include header-pages.html -%}
+    <main id="mainwishlist">
+        {{ content }}
+    </main>
+</body>
 
-    <body>
-        {% include header-pages.html -%}
-        <main id="mainwishlist">
-            {{ content }}
-        </main>
-    </body>
-
-    <script src="/scripts/protectedpage.js"></script>
-
-</html>
+<script src="/scripts/protectedpage.js"></script>
