@@ -64,6 +64,7 @@ body {
     width: 100%; /* adjust as needed */
     border-radius: $border-radius;
     background-repeat: no-repeat;
+    filter: blur(5px);
 }
 
 .widget {
