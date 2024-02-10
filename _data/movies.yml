@@ -210,6 +210,8 @@ movies:
     personal_rating: 2
   - title: Mute
     watched: "!no"
+  - watched: "!no"
+    title: Nightcrawler
   - title: No Hard Feelings
     tags: "!Comedy"
     watched: "!yes"
