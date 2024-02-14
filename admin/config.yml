@@ -2,6 +2,9 @@ backend:
   name: github
   repo: Plueres/Plueres.github.io
   branch: main
+  identity_url: https://identity.netlify.com # URL to access the Identity service. (optional; defaults to https://identity.netlify.com)
+  gateway_url: https://identity.netlify.com # URL to access the Git Gateway service. (optional; defaults to https://identity.netlify.com)
+  enable_identity_widget: true # Enables the Netlify Identity widget on the site. (optional; default is true)
 
 media_folder: "assets/images"
 
