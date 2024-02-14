@@ -10,7 +10,7 @@ shows:
     tags: "!Marvel"
     season: 1
   - title: Amazing stories
-    season: null
+    season: "1"
     watched: "!no"
     personal_rating: null
     review: null
@@ -228,9 +228,9 @@ shows:
     title: Doctor Who
     tags: "!Time Travel"
     personal_rating: 5
-    review: I liked the first even though it was set in 2005/2006. The CGI
-      was very dated but funny non the less. I kinda wish the ninth doctor
-      would've stayed for more seasons.
+    review: I liked the first even though it was set in 2005/2006. The CGI was very
+      dated but funny non the less. I kinda wish the ninth doctor would've
+      stayed for more seasons.
     season: 1
   - watched: "!yes"
     title: Doctor who
@@ -260,9 +260,50 @@ shows:
   - watched: "!yes"
     title: Doctor who
     season: "6"
-    review: This was more about Melody Pond/River song, kind of a confusing
-      to be honest
+    review: This was more about Melody Pond/River song, kind of a confusing to be
+      honest
     personal_rating: 5
+  - watched: "!yes"
+    title: Doctor Who
+    tags: "!Time Travel"
+    season: "7"
+    personal_rating: 5
+    review: This season made the switch from amy and rory to clara, which is someone
+      very different and the doctor and her made quite a fun duo. I do also
+      remember the episodes from the second half of this season very well
+  - watched: "!yes"
+    title: Doctor Who
+    tags: "!Time Travel"
+    season: "8"
+    personal_rating: 3
+    review: This season introduced the 12th doctor, which i didn't really like at
+      first with his scottish accent but it was okayish. I didn't really like
+      most episodes either, they all felt like filler episodes
+  - watched: "!yes"
+    title: Doctor Who
+    tags: "!Time Travel"
+    season: "9"
+    personal_rating: 4
+    review: This season was kind of bad overall in my opinion but it did have some
+      very good episodes in between and at the end which made it just a bit
+      better. The added lore was really cool to see but the departure of Clara
+      was kind of lame
+  - watched: "!no"
+    title: Doctor Who
+    tags: "!Time Travel"
+    season: "10"
+    personal_rating: 3
+    review: This season introduces Bill as a companion and Nardole as some sort of
+      sidekick. It was fun but not that great of a season and i honestly didnt
+      really like Bill as a companion
+  - watched: "!no"
+    title: Doctor Who
+    tags: "!Time Travel"
+    season: "11"
+  - watched: "!no"
+    title: Doctor Who
+    tags: "!Time Travel"
+    season: "12"
   - watched: "!no"
     title: Echo
     tags: "!Marvel"
@@ -277,7 +318,7 @@ shows:
     season: 1
     personal_rating: 4
   - title: Glitch
-    season: 3 seasons
+    season: "1"
     watched: "!no"
     personal_rating: null
     review: Dead people coming back to life.
@@ -351,8 +392,8 @@ shows:
     season: null
     watched: "!yes"
     personal_rating: 3
-    review: It being one was kind of bad and i didn’t really care for the
-      show that much
+    review: It being one was kind of bad and i didn’t really care for the show that
+      much
   - title: Legends of Tomorrow
     season: 1
     watched: "!yes"
@@ -648,15 +689,16 @@ shows:
     personal_rating: 4
     review: The ending was not that good
   - title: The leftovers
-    season: null
+    season: "1"
     watched: "!no"
     personal_rating: null
     review: null
   - title: The power
-    season: null
+    season: "1"
     watched: "!no"
     personal_rating: null
     review: null
+    tags: "!Superpowers"
   - title: The Rain
     tags: "!Netflix"
     season: 1
@@ -672,7 +714,7 @@ shows:
   - title: The Rain
     tags: "!Netflix"
     season: 3
-    watched: "!notsure 50%"
+    watched: "!notsure"
     personal_rating: 2
     review: lost interest and didn’t want to finish it
   - title: The Queen’s Gambit
@@ -745,7 +787,7 @@ shows:
   - title: Umbrella Academy
     tags: "!Netflix"
     season: 4
-    watched: null
+    watched: "!no"
     personal_rating: null
     review: null
   - title: Warrior Nun

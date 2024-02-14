@@ -315,8 +315,10 @@ movies:
   - title: The Discovery
     tags: "!Afterlife"
     watched: "!no"
-  - watched: "!no"
+  - watched: "!yes"
     title: The Notebook
+    personal_rating: 4
+    review: It was something different, a very 1940ish love story with ryan gosling
   - title: The Park
     watched: "!no"
   - title: The Perks Of Being A Wallflower
