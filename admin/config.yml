@@ -20,7 +20,7 @@ collections:
       - {label: "Header Image", name: "header_image", widget: "image", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime", default: "now"}
       - {label: "Images", name: "images", widget: "list", fields: [{label: "Image", name: "", widget: "image"}], required: false}
-      - {label: "Hidden Post", name: "hidden", widget: "select", options: ["true", "true"], default: "false"}
+      - {label: "Hidden Post", name: "hidden", widget: "select", options: ["true", "false"], default: "false"}
       - {label: "Tags", name: "tags", widget: "string", default: "[]", hint: "Enter tags in the format [tag1, tag2, tag3]", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "lists"
