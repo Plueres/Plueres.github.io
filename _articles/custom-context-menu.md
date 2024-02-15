@@ -3,7 +3,8 @@ layout: article
 title: Custom Context Menu configuration
 header_image: https://windows-cdn.softpedia.com/screenshots/Custom-Context-Menu_1.png
 date: 2024-02-08T16:35:16.782Z
-updated: 2024-02-15 13:40:21 +0100
+updated: 2024-02-15 13:46:06 +0100
+tags: [Application]
 hidden: false
 ---
 
