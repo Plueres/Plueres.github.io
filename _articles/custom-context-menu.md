@@ -1,9 +1,10 @@
 ---
 layout: article
 title: Custom Context Menu
+header_image: https://windows-cdn.softpedia.com/screenshots/Custom-Context-Menu_1.png
 date: 2024-02-08T16:35:16.782Z
 updated: 2024-02-15 12:33:10 +0100
-hidden: false
+hidden: "false"
 ---
 
 ## My personal configuration for the [Custom Context Menu](https://github.com/ikas-mc/ContextMenuForWindows11) application
