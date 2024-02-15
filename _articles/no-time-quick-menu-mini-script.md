@@ -2,10 +2,11 @@
 layout: article
 title: "No Time Quick Menu Mini Script v1.0"
 date: 2023-11-27 09:31:15 +0100
-updated: 2023-11-27 22:19:30 +0100
+updated: 2024-02-15 13:40:21 +0100
 tags: [No Time, Script]
 comments: false
 codeblock: true
+hidden: false
 github: "https://github.com/Plueres/plueres/blob/main/No_Time/quick_menu_mini.ms"
 header_image: "/assets/images/no_time/quick-menu-mini-plc-run.jpg"
 images:
