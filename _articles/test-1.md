@@ -1,6 +1,6 @@
 ---
 layout: article
-title: test
+title: test2
 date: now
 hidden: true
 tags: ""
