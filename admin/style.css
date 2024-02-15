@@ -1,3 +1,8 @@
-header, aside, main {
+hmtl, html body, body header.css-y7r3-AppHeader, aside.css-1gj57a0-SidebarContainer-card, main {
     background-color: #000;
+}
+
+li.css-5wgw3f-ListCard-card, li a, li a h2, div.css-1hvrgvd-CollectionTopContainer-card-cardTop, .css-npvq26-SidebarHeading, h1.css-37khcc-CollectionTopHeading-cardTopHeading {
+    background-color: #202020;
+    color: #fff;
 }
