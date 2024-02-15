@@ -1,10 +1,14 @@
 ---
 layout: article
-title: "All known PLC commands in No Time"
+title: All known PLC commands in No Time
+header_image: https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0CAE4C679FAB8550AC9B9FD44BFC8ADFF7F8CA73/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false
 date: 2023-11-20 18:41:33 +0100
 updated: 2023-12-19 08:41:27 +0100
-tags: [No Time, Script, Commands]
-header_image: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0CAE4C679FAB8550AC9B9FD44BFC8ADFF7F8CA73/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+hidden: false
+tags:
+  - No Time
+  - Script
+  - Commands
 ---
 > For more information and documentation see the bottom of this page
 
@@ -17,6 +21,8 @@ header_image: "https://steamuserimages-a.akamaihd.net/ugc/1842536456311331239/0C
 - `gettemperature` get temperature as read from the plc temperature meter
 - `reboot` Reboot the system
 - `timegraph` shows the time graph and tells where you can travel to
+-﻿ `openperipheral` Open the gate/door connected to a terminal
+-﻿ `closeperipheral` Close the gate/door connected to a terminal
 - `setlabel` Set the label of a HVD chip
 - `create "name of file"` creates a new file in the current directory
 - `delete "name of file"` deletes a file with the gives name in the current directory
