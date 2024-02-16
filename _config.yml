@@ -19,9 +19,9 @@
 # in the templates via {{ site.myvariable }}.
 
 title: WIP Website
-email: ""
+placeholder: Work in progress
 description: >- # this means to ignore newlines until "baseurl:"
-  My website
+  Thers Personal Website
 domain: Plueres.netlify.app # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
