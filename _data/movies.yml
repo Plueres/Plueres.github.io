@@ -315,6 +315,9 @@ movies:
   - title: The Discovery
     tags: "!Afterlife"
     watched: "!no"
+  - watched: "!no"
+    title: The nice guys
+    tags: "!Comedy?"
   - watched: "!yes"
     title: The Notebook
     personal_rating: 4
