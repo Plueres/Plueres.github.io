@@ -184,6 +184,8 @@ movies:
     personal_rating: 4
     review: something with Ryan gosling. A very introverted guy with a delusion
       where he is in love with a doll
+  - watched: "!no"
+    title: Last night in soho
   - watched: "!yes"
     title: Leave the world behind
     personal_rating: 3
