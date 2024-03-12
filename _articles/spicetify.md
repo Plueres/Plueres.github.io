@@ -9,12 +9,12 @@ tags: Spicetify
 ---
 ## Installation
 ### Powershell
-`﻿``iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.ps1 | iex```
+```iwr -useb https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.ps1 | iex```
 ### W﻿inget
 ```winget install Spicetify.Spicetify﻿```
 
-##﻿ Update
+## Update
 ```﻿spicetify upgrade```
 `﻿``spicetify restore backup apply```
-#﻿## Marketplace
-`﻿``Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.ps1" | Invoke-Expression```
+### Marketplace
+```Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.ps1" | Invoke-Expression```
