@@ -16,3 +16,5 @@ tags: Spicetify
 ##﻿ Update
 ```﻿spicetify upgrade```
 `﻿``spicetify restore backup apply```
+#﻿## Marketplace
+`﻿``Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.ps1" | Invoke-Expression```
