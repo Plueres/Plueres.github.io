@@ -178,7 +178,11 @@ movies:
     watched: "!yes"
     personal_rating: 3
   - title: La La Land
-    watched: "!no"
+    watched: "!yes"
+    tags: "!Musical"
+    personal_rating: 4
+    review: The movie was pretty good, good story overall but the musical parts
+      where there was singing really caught me off
   - title: Lars And The Real Girl
     watched: "!yes"
     personal_rating: 4
