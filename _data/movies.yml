@@ -25,6 +25,21 @@ movies:
     personal_rating: 4
     review: Good movie
   - watched: "!yes"
+    title: Back to the Future
+    tags: "!Time Travel"
+    personal_rating: 5
+    review: Amazing movie
+  - watched: "!yes"
+    title: Back to the Future 2
+    tags: "!Time Travel"
+    personal_rating: 5
+    review: Great movie
+  - watched: "!yes"
+    title: Back to the Future 3
+    tags: "!Time Travel"
+    personal_rating: 5
+    review: Amazing movie
+  - watched: "!yes"
     title: Beautiful Boy
     tags: "!Addiction !Drugs"
     personal_rating: 5
