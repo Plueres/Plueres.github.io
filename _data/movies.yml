@@ -336,8 +336,13 @@ movies:
   - title: The Discovery
     tags: "!Afterlife"
     watched: "!no"
+  - watched: "!yes"
+    title: The Fall Guy
+    tags: "!Movie in a movie !Action"
+    personal_rating: 4
+    review: Great movie but it was very chaotic and distracting almost
   - watched: "!no"
-    title: The nice guys
+    title: The Nice Guys
     tags: "!Comedy?"
   - watched: "!yes"
     title: The Notebook
