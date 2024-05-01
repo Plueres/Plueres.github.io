@@ -304,6 +304,19 @@ shows:
     title: Doctor Who
     tags: "!Time Travel"
     season: "12"
+  - watched: "!yes"
+    title: Doctor Who
+    tags: "!Time Travel"
+    season: 13 - Flux
+    personal_rating: 4
+    review: Was pretty okay but maybe one of the better seasons for the 13th doctor
+      I think
+  - watched: "!yes"
+    title: Doctor Who
+    tags: "!Time Travel"
+    season: 14 - 60th Anniversary specials
+    personal_rating: 5
+    review: The first episode was abit of a rollercoaster but the rest was great
   - watched: "!no"
     title: Echo
     tags: "!Marvel"
