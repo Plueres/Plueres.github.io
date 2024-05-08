@@ -25,6 +25,21 @@ movies:
     personal_rating: 4
     review: Good movie
   - watched: "!yes"
+    title: Back to the Future
+    tags: "!Time Travel"
+    personal_rating: 5
+    review: Amazing movie
+  - watched: "!yes"
+    title: Back to the Future 2
+    tags: "!Time Travel"
+    personal_rating: 5
+    review: Great movie
+  - watched: "!yes"
+    title: Back to the Future 3
+    tags: "!Time Travel"
+    personal_rating: 5
+    review: Amazing movie
+  - watched: "!yes"
     title: Beautiful Boy
     tags: "!Addiction !Drugs"
     personal_rating: 5
@@ -178,7 +193,11 @@ movies:
     watched: "!yes"
     personal_rating: 3
   - title: La La Land
-    watched: "!no"
+    watched: "!yes"
+    tags: "!Musical"
+    personal_rating: 4
+    review: The movie was pretty good, good story overall but the musical parts
+      where there was singing really caught me off
   - title: Lars And The Real Girl
     watched: "!yes"
     personal_rating: 4
@@ -317,8 +336,13 @@ movies:
   - title: The Discovery
     tags: "!Afterlife"
     watched: "!no"
+  - watched: "!yes"
+    title: The Fall Guy
+    tags: "!Movie in a movie !Action"
+    personal_rating: 4
+    review: Great movie but it was very chaotic and distracting almost
   - watched: "!no"
-    title: The nice guys
+    title: The Nice Guys
     tags: "!Comedy?"
   - watched: "!yes"
     title: The Notebook
