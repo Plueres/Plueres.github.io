@@ -730,6 +730,10 @@ shows:
     watched: "!notsure"
     personal_rating: 2
     review: lost interest and didn’t want to finish it
+  - watched: "!no"
+    title: The Rising
+    tags: "!Crime !Drama !Mystery !Thriller"
+    season: "1"
   - title: The Queen’s Gambit
     tags: "!Netflix"
     season: 1
