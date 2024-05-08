@@ -76,7 +76,7 @@ movies:
   - title: Death Note
     tags: "!Netflix"
     watched: "!yes"
-    personal_rating: 5
+    personal_rating: 4
   - title: Dreamers
     watched: "!no"
   - title: Drive 2011
@@ -111,7 +111,7 @@ movies:
   - title: Fistful Of Vengeance
     tags: "!Netflix"
     watched: "!yes"
-    personal_rating: 5
+    personal_rating: 3
     review: Sequel to Wu Assassins show
   - watched: "!no"
     title: Five Nights at Freddy's
@@ -133,6 +133,7 @@ movies:
   - title: Green Mile
     watched: "!yes"
     personal_rating: 4
+    review: A little scary
   - title: Groundhog Day
     tags: "!Time Loop"
     watched: "!yes"
@@ -142,7 +143,7 @@ movies:
   - title: Hidden Strike
     tags: "!Comedy"
     watched: "!yes"
-    personal_rating: 5
+    personal_rating: 4
     review: Amazing duo with John Cena & Jackie Chan
   - title: Host
     tags: "!Horror !Videocalling"
@@ -156,7 +157,8 @@ movies:
   - title: Ideocrazy
     tags: "!Comedy"
     watched: "!yes"
-    review: Two people wake up many years later where people became stupid
+    review: Meh movie. Two people wake up many years later where people became stupid
+    personal_rating: 3
   - title: In Your Eyes
     watched: "!no"
   - title: Inception
@@ -195,7 +197,7 @@ movies:
   - title: La La Land
     watched: "!yes"
     tags: "!Musical"
-    personal_rating: 4
+    personal_rating: 5
     review: The movie was pretty good, good story overall but the musical parts
       where there was singing really caught me off
   - title: Lars And The Real Girl
