@@ -26,7 +26,8 @@ figure {
     box-sizing: border-box;
 }
 
-*:active, *:focus {
+*:active,
+*:focus {
     outline: none;
     -webkit-tap-highlight-color: transparent;
 }
@@ -116,12 +117,6 @@ small {
 
     ::-webkit-scrollbar-corner {
         display: none;
-    }
-}
-
-@include media-query($on-laptop) {
-    main > div:not(#lists):first-child {
-        margin-top: 7rem;
     }
 }
 
