@@ -154,6 +154,9 @@ movies:
   - title: I Am Mother
     tags: "!Netflix"
     watched: "!yes"
+  - watched: "!no"
+    title: I Saw The TV Glow
+    tags: "!Mistery"
   - title: Ideocrazy
     tags: "!Comedy"
     watched: "!yes"
