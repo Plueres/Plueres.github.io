@@ -152,6 +152,8 @@ shows:
     title: Bodies
     tags: "!Time Travel"
     season: 1
+  - watched: "!no"
+    title: Bojack horse
   - title: Breaking Bad
     tags: "!Netflix"
     season: All seasons
