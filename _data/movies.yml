@@ -371,6 +371,9 @@ movies:
   - title: They Cloned Tyrone
     watched: "!no"
   - watched: "!no"
+    title: Totally Killer
+    tags: "!bttf ripoff?"
+  - watched: "!no"
     title: Undone
     tags: "!Animated"
   - title: Wakanda Forever
