@@ -252,6 +252,8 @@ movies:
   - title: Pooh Blood And Honey
     tags: "!Horror"
     watched: "!no"
+  - watched: "!no"
+    title: Poor Things
   - watched: "!yes"
     title: Press Play
     tags: "!Time Travel"
