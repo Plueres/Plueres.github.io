@@ -668,6 +668,10 @@ shows:
     title: Ted
     tags: "!Comedy"
     season: "1"
+  - watched: "!no"
+    title: The Acolytes
+    tags: "!Star Wars"
+    season: "1"
   - watched: "!yes"
     title: The Boys
     season: "1"
