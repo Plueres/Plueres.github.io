@@ -240,12 +240,14 @@ shows:
     personal_rating: 5
     review: I had to adjust to the new doctor to be honest but I did like him, very
       sad that Rose had to leave
+    tags: "!Time Travel"
   - watched: "!yes"
     title: Doctor who
     season: "3"
     personal_rating: 3
     review: I didn't really like Martha as a companion, the story was okay but a bit
       too different
+    tags: "!Time Travel"
   - watched: "!yes"
     title: Doctor who
     season: "4"
@@ -253,18 +255,21 @@ shows:
     review: I liked Donna more than Martha, she's a bit older than the earlier
       companions which makes it interesting. The story was a bit strange in this
       as well
+    tags: "!Time Travel"
   - watched: "!yes"
     title: Doctor who
     season: "5"
     personal_rating: 4
     review: Another new doctor which I had to adjust to again. This one was the
       youngest but he's definitely a good doctor. Also like the new companions
+    tags: "!Time Travel"
   - watched: "!yes"
     title: Doctor who
     season: "6"
     review: This was more about Melody Pond/River song, kind of a confusing to be
       honest
     personal_rating: 5
+    tags: "!Time Travel"
   - watched: "!yes"
     title: Doctor Who
     tags: "!Time Travel"
@@ -319,6 +324,12 @@ shows:
     season: 14 - 60th Anniversary specials
     personal_rating: 5
     review: The first episode was abit of a rollercoaster but the rest was great
+  - watched: "!yes"
+    title: Doctor Who
+    personal_rating: 4
+    review: Not as good as the earlier seasons but it was pretty good
+    season: 15 / 1
+    tags: "!Time Travel"
   - watched: "!no"
     title: Echo
     tags: "!Marvel"
@@ -360,6 +371,11 @@ shows:
     watched: "!yes"
     personal_rating: 5
     review: it was pretty good
+  - watched: "!no"
+    title: My Adventures With Superman
+    season: "2"
+    personal_rating: 5
+    review: Good season because it introduces supergirl but an evil one
   - title: Human Resources
     tags: "!Netflix"
     season: 1
@@ -652,12 +668,30 @@ shows:
     title: Ted
     tags: "!Comedy"
     season: "1"
-  - title: The Society
-    tags: "!Netflix"
-    season: 1
-    watched: "!yes"
+  - watched: "!yes"
+    title: The Boys
+    season: "1"
     personal_rating: 5
-    review: The cliffhanger ending sucks because there isn’t a second season
+    tags: "!Comedy !Sci-fi & Fantasy !Superheroes !Action & Adventure"
+    review: Really good intro
+  - watched: "!yes"
+    title: The Boys
+    season: "2"
+    personal_rating: 4
+    tags: "!Comedy !Sci-fi & Fantasy !Superheroes !Action & Adventure"
+  - watched: "!yes"
+    title: The Boys
+    season: "3"
+    personal_rating: 4
+    tags: "!Comedy !Sci-fi & Fantasy !Superheroes !Action & Adventure"
+  - watched: "!no"
+    title: The Boys
+    season: "4"
+    personal_rating: 5
+    tags: "!Comedy !Sci-fi & Fantasy !Superheroes !Action & Adventure"
+    review: The introduction of the gen-v show into this show was cool despite it
+      being minimal. And ryan the son of homelander going more and more evil was
+      also really cool.
   - title: The End of the Fucking World
     tags: "!Netflix"
     season: 1
@@ -742,6 +776,12 @@ shows:
     title: The Rising
     tags: "!Crime !Drama !Mystery !Thriller"
     season: "1"
+  - title: The Society
+    tags: "!Netflix"
+    season: 1
+    watched: "!yes"
+    personal_rating: 5
+    review: The cliffhanger ending sucks because there isn’t a second season
   - title: The Queen’s Gambit
     tags: "!Netflix"
     season: 1
