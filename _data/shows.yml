@@ -329,6 +329,12 @@ shows:
     personal_rating: null
     review: null
   - watched: "!no"
+    title: Fallout
+    tags: "!Post Apocalyptic "
+    season: "1"
+    personal_rating: 4
+    review: From episode 1 it is good
+  - watched: "!no"
     title: Gen V
     season: 1
     personal_rating: 4
