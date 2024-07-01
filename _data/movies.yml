@@ -54,6 +54,11 @@ movies:
   - title: Bright
     watched: "!yes"
     review: police aliens
+  - watched: "!yes"
+    title: Brightburn
+    tags: "!Horror"
+    personal_rating: 3
+    review: Evil superman
   - title: Bullet Train
     tags: "!Netflix"
     watched: 50%
