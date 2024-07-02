@@ -202,6 +202,8 @@ movies:
     tags: "!Action !Netflix"
     watched: "!yes"
     personal_rating: 3
+  - watched: "!no"
+    title: Kinds of kindness
   - title: La La Land
     watched: "!yes"
     tags: "!Musical"
