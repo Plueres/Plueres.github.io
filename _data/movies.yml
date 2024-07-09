@@ -4,6 +4,10 @@ movies:
   - title: 65
     tags: "!Sci-fi !Time Travel"
     watched: "!no"
+  - watched: "!yes"
+    title: About \Time
+    tags: "!Time Travel"
+    personal_rating: 5
   - title: American Psycho
     tags: "!Horror"
     watched: "!no"
