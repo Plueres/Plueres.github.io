@@ -1,4 +1,6 @@
 movies:
+  - watched: "!no"
+    title: 500 Days of Summer
   - title: 65
     tags: "!Sci-fi !Time Travel"
     watched: "!no"
