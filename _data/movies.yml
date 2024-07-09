@@ -51,6 +51,9 @@ movies:
     personal_rating: 5
     review: Good story, a bit long but it really shows a dynamic between a father
       and son with the son having a drug addiction
+  - watched: "!yes"
+    title: Blade Runner 2049
+    tags: "!Dystopian Future"
   - title: Blue Beetle
     watched: "!no"
   - title: Brain On Fire
@@ -139,6 +142,8 @@ movies:
     watched: "!yes"
     personal_rating: 3
     review: really dumb ending in my opinion, not satisfying at all
+  - watched: "!no"
+    title: Good Will hunting
   - watched: "!no"
     title: Good will hunting
   - title: Green Mile
