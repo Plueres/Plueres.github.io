@@ -799,6 +799,9 @@ shows:
     watched: "!yes"
     personal_rating: 5
     review: null
+  - watched: "!no"
+    title: The Walking Dead
+    season: "1"
   - title: Time Travelers Wife
     season: 1
     watched: "!yes"
