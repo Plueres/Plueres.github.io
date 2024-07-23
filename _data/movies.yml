@@ -143,13 +143,13 @@ movies:
     personal_rating: 3
     review: really dumb ending in my opinion, not satisfying at all
   - watched: "!no"
-    title: Good Will hunting
-  - watched: "!no"
-    title: Good will hunting
+    title: Good Will Hunting
   - title: Green Mile
     watched: "!yes"
     personal_rating: 4
     review: A little scary
+  - watched: "!notsure"
+    title: Gremlins
   - title: Groundhog Day
     tags: "!Time Loop"
     watched: "!yes"
