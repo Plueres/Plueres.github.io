@@ -172,6 +172,13 @@ shows:
     watched: "!yes"
     personal_rating: 2
     review: Not that interesting or funny and that voice was very annoying
+  - watched: "!yes"
+    title: Clickbait
+    tags: "!Netflix"
+    season: "1"
+    personal_rating: 3
+    review: Nothing special, just someone went missing. Cannot remember the story
+      all that well
   - title: Cyberpunk EdgeRunners
     tags: "!Netflix"
     season: 1
