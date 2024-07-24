@@ -213,6 +213,11 @@ movies:
     tags: "!Action !Netflix"
     watched: "!yes"
     personal_rating: 3
+  - watched: "!yes"
+    title: Kimi
+    tags: "!Covid movie"
+    review: I don't remember much but it does depict a person with anxiety of
+      leaving your house
   - watched: "!no"
     title: Kinds of kindness
   - title: La La Land
