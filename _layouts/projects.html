@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: "/projects"
+---
+
+<body>
+    {%- include header.html -%}
+    <main class="{{ page.permalink | remove: '/' }}">
+        {{ content }}
+    </main>
+
+</body>
