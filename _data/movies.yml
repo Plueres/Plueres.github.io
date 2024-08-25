@@ -395,9 +395,12 @@ movies:
     watched: "!no"
   - title: They Cloned Tyrone
     watched: "!no"
-  - watched: "!no"
+  - watched: "!yes"
     title: Totally Killer
     tags: "!bttf ripoff?"
+    personal_rating: 4
+    review: Fun movie, Had some hints about back to the future but it had its own
+      twists which made it more suitable for the modern times of 2023
   - watched: "!no"
     title: Undone
     tags: "!Animated"
